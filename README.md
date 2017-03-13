@@ -35,5 +35,39 @@
 		* UIComponents：UI组件
 
 ## 示例
-![](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/wave_effective.gif)
+![波浪效果](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/wave_effective.gif)
+
+![气泡提示](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/bubble_tip.gif)
+
+![点击扩散](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/click_spread.gif)
+
+![手势密码](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/gesture_secret.gif)
+
+![画个圆](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/draw_a_circle.gif)
+
+![数据持久化](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/data_persistence.gif)
+
+![跟着我](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/follow_me.gif)
+
+![侧滑菜单](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/left_menu.gif)
+
+![连连看](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/link_up.gif)
+
+![小飞机](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/little_plane.gif)
+
+![遮罩转场动画](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/mask_transition.gif)
+
+![网络技术](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/network_tech.gif)
+
+![弹出式菜单](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/pop_menu.gif)
+
+![摇一摇/指南针](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/shake_shake_and_compass.gif)
+
+![信手涂鸦](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/simple_scrawl.gif)
+
+![超级跳跃者](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/super_jumper.gif)
+
+![翻牌游戏](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/trun_cards.gif)
+
+![视唱练耳](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/Solfeggio.gif)
 
