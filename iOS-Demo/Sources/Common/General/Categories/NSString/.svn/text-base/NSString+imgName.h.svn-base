@@ -1,0 +1,13 @@
+//
+//  NSString+imgName.h
+//  hxj
+//
+//  Created by wangzhen on 16/1/4.
+//  Copyright © 2016年 gaofu. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface NSString (imgName)
+@property(nonatomic,copy,readonly)NSString * imgName;
+@end

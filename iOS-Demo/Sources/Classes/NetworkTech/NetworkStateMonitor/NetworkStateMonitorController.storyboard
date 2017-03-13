@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--网络状态监视器-->
+        <scene sceneID="rDW-o8-0lB">
+            <objects>
+                <viewController storyboardIdentifier="NetworkStateMonitorController" id="nB8-Pg-dpw" customClass="NetworkStateMonitorController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rf1-h6-jvB"/>
+                        <viewControllerLayoutGuide type="bottom" id="qI5-ZR-eQz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sxh-Gz-GY5">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网络状态：无" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpQ-U3-eQn">
+                                <rect key="frame" x="98.5" y="224" width="123" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.90588235289999997" green="0.3803921569" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PpQ-U3-eQn" firstAttribute="centerX" secondItem="sxh-Gz-GY5" secondAttribute="centerX" id="Ss2-1C-rSl"/>
+                            <constraint firstItem="PpQ-U3-eQn" firstAttribute="centerY" secondItem="sxh-Gz-GY5" secondAttribute="centerY" constant="-16" id="ozi-M2-sXI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="网络状态监视器" id="mbF-z0-bCj"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="_networkAvailableStateLabel" destination="PpQ-U3-eQn" id="IYv-3j-Cql"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kkR-cf-awG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-341" y="92"/>
+        </scene>
+    </scenes>
+</document>

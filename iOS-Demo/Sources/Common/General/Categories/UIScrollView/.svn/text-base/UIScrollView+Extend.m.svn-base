@@ -1,0 +1,34 @@
+//
+//  UIScrollView+Extend.m
+//  hxj
+//
+//  Created by gaofu on 15/10/25.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "UIScrollView+Extend.h"
+
+@implementation UIScrollView (Extend)
+
+- (void)scrollToTop
+{
+    [self scrollToTopAnimated:NO];
+}
+
+
+- (void)scrollToTopAnimated:(BOOL)animated
+{
+    [self setContentOffset:CGPointMake(0.0f, 0.0f) animated:animated];
+}
+
+- (void)scrollToBottom
+{
+    [self scrollToBottomAnimated:NO];
+}
+
+- (void)scrollToBottomAnimated:(BOOL)animated
+{
+    CGPoint bottomOffset = CGPointMake(0.0f, self.contentSize.height - self.bounds.size.height);
+    [self setContentOffset:bottomOffset animated:animated];
+}
+@end

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TurnCards-->
+        <scene sceneID="QsF-7e-QMz">
+            <objects>
+                <viewController storyboardIdentifier="TurnCardsController" id="HTK-aa-Dhf" customClass="TurnCardsController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lLn-9V-6K5"/>
+                        <viewControllerLayoutGuide type="bottom" id="kaZ-aU-jh0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u4j-IO-Rbt">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TurnCards" id="SvH-Bd-rgg">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="OF4-Ca-acs">
+                            <connections>
+                                <action selector="restartAction:" destination="HTK-aa-Dhf" id="CVG-P5-9fu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pVz-9T-Z9P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-656" y="213"/>
+        </scene>
+    </scenes>
+</document>

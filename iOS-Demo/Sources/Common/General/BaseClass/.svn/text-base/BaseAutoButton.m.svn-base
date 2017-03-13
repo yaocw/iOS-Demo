@@ -1,0 +1,33 @@
+//
+//  BaseAutoButton.m
+//  ksf
+//
+//  Created by gaofu on 15/11/28.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "BaseAutoButton.h"
+
+@implementation BaseAutoButton
+
+-(void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents
+{
+    [super addTarget:target action:action forControlEvents:controlEvents];
+    
+    [self addTarget:self action:@selector(BACclick) forControlEvents:UIControlEventTouchUpInside];
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:kRequestDidCompleted object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+        self.userInteractionEnabled = YES;
+    }];
+}
+
+-(void)BACclick
+{
+    self.userInteractionEnabled = NO;
+}
+
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+@end

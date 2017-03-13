@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--单音练习-->
+        <scene sceneID="kOU-mb-dI9">
+            <objects>
+                <viewController storyboardIdentifier="SingleSoundExerciseController" id="I1w-9t-jLc" customClass="SingleSoundExerciseController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UlO-ej-hSk"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZaB-en-PFA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pYT-PW-f0O">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWY-mZ-Kp0">
+                                <rect key="frame" x="120" y="344" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.47017461059999999" green="0.64893096689999996" blue="0.0045386576090000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6A2-m5-fMf"/>
+                                    <constraint firstAttribute="width" constant="80" id="zPp-NV-lh2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="开始">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="repeatSoundsAction:" destination="I1w-9t-jLc" eventType="touchUpInside" id="BAu-Sh-6dp"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fHx-KV-B6e">
+                                <rect key="frame" x="90" y="20" width="51" height="31"/>
+                                <color key="onTintColor" red="0.47017461059999999" green="0.64893096689999996" blue="0.0045386576090000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="showTheAnswerAction:" destination="I1w-9t-jLc" eventType="valueChanged" id="CbN-tC-jqe"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="显示答案" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvC-iK-as3">
+                                <rect key="frame" x="16" y="25" width="66" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.47017461059999999" green="0.64893096689999996" blue="0.0045386576090000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="答案" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bt9-PI-Y2T">
+                                <rect key="frame" x="129.5" y="88" width="61" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ola-ja-fYS">
+                                <rect key="frame" x="240" y="344" width="80" height="80"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="下一个">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextSoundsAction:" destination="I1w-9t-jLc" eventType="touchUpInside" id="hya-MY-nNT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ola-ja-fYS" firstAttribute="leading" secondItem="gWY-mZ-Kp0" secondAttribute="trailing" constant="40" id="0ux-6d-kDZ"/>
+                            <constraint firstItem="fHx-KV-B6e" firstAttribute="leading" secondItem="wvC-iK-as3" secondAttribute="trailing" constant="8" id="Aza-87-IR1"/>
+                            <constraint firstItem="wvC-iK-as3" firstAttribute="leading" secondItem="pYT-PW-f0O" secondAttribute="leading" constant="16" id="J4M-hh-OHv"/>
+                            <constraint firstItem="bt9-PI-Y2T" firstAttribute="top" secondItem="UlO-ej-hSk" secondAttribute="bottom" constant="88" id="MRo-1S-A1T"/>
+                            <constraint firstItem="ola-ja-fYS" firstAttribute="height" secondItem="gWY-mZ-Kp0" secondAttribute="height" id="Nb0-QY-JhI"/>
+                            <constraint firstItem="ola-ja-fYS" firstAttribute="centerY" secondItem="gWY-mZ-Kp0" secondAttribute="centerY" id="Pmo-Lq-Jhj"/>
+                            <constraint firstItem="bt9-PI-Y2T" firstAttribute="centerX" secondItem="pYT-PW-f0O" secondAttribute="centerX" id="WjN-cm-3oI"/>
+                            <constraint firstItem="fHx-KV-B6e" firstAttribute="centerY" secondItem="wvC-iK-as3" secondAttribute="centerY" id="amF-KY-32b"/>
+                            <constraint firstItem="ola-ja-fYS" firstAttribute="width" secondItem="gWY-mZ-Kp0" secondAttribute="width" id="bzB-Hf-ZO0"/>
+                            <constraint firstItem="ZaB-en-PFA" firstAttribute="top" secondItem="gWY-mZ-Kp0" secondAttribute="bottom" constant="80" id="dV4-oh-arJ"/>
+                            <constraint firstItem="gWY-mZ-Kp0" firstAttribute="centerX" secondItem="pYT-PW-f0O" secondAttribute="centerX" id="fRj-Pu-WI6"/>
+                            <constraint firstItem="wvC-iK-as3" firstAttribute="top" secondItem="UlO-ej-hSk" secondAttribute="bottom" constant="25" id="jYy-Pn-cN7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="单音练习" id="cXH-fk-u4z">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ur6-nD-jQj">
+                            <connections>
+                                <action selector="popMenuAction:" destination="I1w-9t-jLc" id="Ckr-dF-SZ5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="bt9-PI-Y2T" id="XsE-oL-VlR"/>
+                        <outlet property="nextButton" destination="ola-ja-fYS" id="2mR-If-f7D"/>
+                        <outlet property="repeatBtnVerticalConstraint" destination="fRj-Pu-WI6" id="fQ4-kj-904"/>
+                        <outlet property="repeatButton" destination="gWY-mZ-Kp0" id="vJG-H5-MFO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Saz-Ll-IMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-354.375" y="143.66197183098592"/>
+        </scene>
+    </scenes>
+</document>

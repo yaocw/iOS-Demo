@@ -1,0 +1,287 @@
+//
+//  NSString+Extend.m
+//  CoreCategory
+//
+//  Created by 成林 on 15/4/6.
+//  Copyright (c) 2015年 沐汐. All rights reserved.
+//
+
+#import "NSString+Extend.h"
+
+@implementation NSString (Extend)
+
+-(NSString*)siftNil
+{
+    if ([self isNil])
+    {
+        return @"";
+    }
+    return self;
+}
+
+
+-(BOOL)isNil
+{
+    if (self == nil)
+    {
+        return YES;
+    }
+    
+    if (self == NULL)
+    {
+        return YES;
+    }
+    
+    if ([self isKindOfClass:[NSNull class]])
+    {
+        return YES;   
+    }
+    return NO;
+}
+
+- (BOOL)isBlankString{
+    
+    if ([self isNil])
+    {
+        return YES;
+    }
+    
+    if ([[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length]==0)
+    {
+        return YES;
+    }
+    
+    return NO;
+}
+
++ (NSString *)separatedDigitStringWithStr:(NSString *)digitString
+{
+    NSLog(@"The begin string:%@",digitString);
+    
+    if (digitString.length <= 3) {
+        
+        return digitString;
+        
+    } else {
+        
+        NSMutableString *processString = [NSMutableString stringWithString:digitString];
+        
+        // 1
+        int location = processString.length - 3;
+        
+        NSMutableArray *processArray = [NSMutableArray array];
+        
+        while (location >= 0) {
+            
+            NSString *temp = [processString substringWithRange:NSMakeRange(location, 3)];
+            
+            [processArray addObject:temp];
+            
+            if (location < 3 && location > 0)
+                
+            {
+                
+                NSString *t = [processString substringWithRange:NSMakeRange(0, location)];
+                
+                [processArray addObject:t];
+                
+            }
+            
+            location -= 3;
+            
+        }
+        
+        //    NSLog(@"processArray = %@",processArray);
+        
+        // 2
+        
+        NSMutableArray *resultsArray = [NSMutableArray array];
+        
+        int k = 0;
+        
+        for (NSString *str in processArray)
+            
+        {
+            
+            k++;
+            
+            NSMutableString *tmp = [NSMutableString stringWithString:str];
+            
+            if (str.length > 2 && k < processArray.count )
+                
+            {
+                
+                [tmp insertString:@"," atIndex:0];
+                
+                [resultsArray addObject:tmp];
+                
+            } else {
+                
+                [resultsArray addObject:tmp];
+                
+            }
+            
+        }
+        
+        //    NSLog(@"resultsArray = %@",resultsArray);
+        
+        // 3
+        
+        NSMutableString *resultString = [NSMutableString string];
+        
+        for (int i = resultsArray.count - 1 ; i >= 0; i--)
+            
+        {
+            
+            NSString *tmp = [resultsArray objectAtIndex:i];
+            [resultString appendString:tmp];
+            
+        }
+        
+        //    NSLog(@"resultStr = %@",resultString);
+        
+        return resultString;
+        
+    }
+    
+}
+
+
++ (NSString *)moneyFormatting:(NSString *)oldString
+{
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    
+    formatter.numberStyle = NSNumberFormatterCurrencyStyle;
+    
+    NSString *string = [formatter stringFromNumber:[NSNumber numberWithDouble:oldString.doubleValue]];
+    
+    NSString *strNum = @"";
+    
+    for (int i=0; i<string.length; ++i)
+    {
+        NSString *character=[string substringWithRange:NSMakeRange(i, 1)];//循环取每个字符
+        
+        if ([character isEqual: @"0"]|
+            [character isEqual: @"1"]|
+            [character isEqual: @"2"]|
+            [character isEqual: @"3"]|
+            [character isEqual: @"4"]|
+            [character isEqual: @"5"]|
+            [character isEqual: @"6"]|
+            [character isEqual: @"7"]|
+            [character isEqual: @"8"]|
+            [character isEqual: @"9"]|
+            [character isEqual: @","]|
+            [character isEqual: @"."])
+        {
+            strNum = [strNum stringByAppendingString:character];//是数字的累加起来
+        }
+        
+    }
+    
+    //    NSString *str = [string substringFromIndex:2];
+    
+    if([strNum isEqualToString:@"00"])
+    {
+        strNum = @"0";
+    }
+    
+    NSString *subStr = [NSString stringWithFormat:@"%@元", strNum];
+    
+    return subStr;
+}
+///为价钱添加元，并且保留两位小数
++ (NSString *)addPriceUnit:(NSString *)priceStr
+{
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init] ;
+    [numberFormatter setPositiveFormat:@"##0.00;"];
+    float priceNum = [priceStr floatValue];
+    NSString *formattedNumberString = [numberFormatter stringFromNumber:[NSNumber numberWithDouble:priceNum]];
+    NSString *subStr = [NSString stringWithFormat:@"%@元",formattedNumberString];
+    
+    return subStr;
+}
+
+///为面积添加㎡
++ (NSString *)addAreaUnit:(NSString *)areaStr
+{
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init] ;
+    [numberFormatter setPositiveFormat:@"##0.00;"];
+    float areaNum = [areaStr floatValue];
+    NSString *formattedNumberString = [numberFormatter stringFromNumber:[NSNumber numberWithDouble:areaNum]];
+    NSString *subStr = [NSString stringWithFormat:@"%@㎡",formattedNumberString];
+    
+    return subStr;
+
+}
+
+//[str isPositiveFloatingNumber]
+//判断正数
++(BOOL)isPositiveNum:(NSString*)str
+{
+    return [str isPositiveFloatingNumber] || [str isPositiveInteger];
+}
+
+/**
+ *  去掉字符串两端的空格
+ */
+- (NSString *)trimmingCharacters
+{
+    return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+}
+
+
+-(NSString*)getTheCorrectNum:(NSString*)tempString
+{
+    //先判断第一位是不是 . ,是 . 补0
+    if ([tempString hasPrefix:@"."]) {
+        tempString = [NSString stringWithFormat:@"0%@",tempString];
+    }
+    //计算截取的长度
+    NSUInteger endLength = tempString.length;
+    //判断字符串是否包含 .
+    if ([tempString containsString:@"."]) {
+        //取得 . 的位置
+        NSRange pointRange = [tempString rangeOfString:@"."];
+        NSLog(@"%lu",pointRange.location);
+        //判断 . 后面有几位
+        NSUInteger f = tempString.length - 1 - pointRange.location;
+        //如果大于2位就截取字符串保留两位,如果小于两位,直接截取
+        if (f > 2) {
+            endLength = pointRange.location + 2;
+        }
+    }
+    //先将tempString转换成char型数组
+    NSUInteger start = 0;
+    const char *tempChar = [tempString UTF8String];
+    //遍历,去除取得第一位不是0的位置
+    for (int i = 0; i < tempString.length; i++) {
+        if (tempChar[i] == '0') {
+            start++;
+        }else {
+            break;
+        }
+    }
+    //如果第一个字母为 . start后退一位
+    if (tempChar[start] == '.') {
+        start--;
+    }
+    //根据最终的开始位置,计算长度,并截取
+    NSRange range = {start,endLength-start};
+    tempString = [tempString substringWithRange:range];
+    return tempString;
+}
+
+-(CGSize)imageSize
+{
+    NSArray *tmpArr = [self componentsSeparatedByString:@"W"];
+    NSArray *tmpArr2 = tmpArr.count > 1 ? [[tmpArr lastObject] componentsSeparatedByString:@"."] : nil;
+    NSArray *tmpArr3 = tmpArr2.count  ? [[tmpArr2 firstObject] componentsSeparatedByString:@"H"] : nil;
+    
+    CGSize tmpSize = tmpArr3.count > 1 ? CGSizeMake([tmpArr3.firstObject floatValue], [tmpArr3.lastObject floatValue]) : CGSizeZero;
+    
+    return [Helper multipleSize:tmpSize];
+}
+
+
+@end

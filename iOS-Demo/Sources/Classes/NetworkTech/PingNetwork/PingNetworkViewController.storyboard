@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ping Network-->
+        <scene sceneID="Opb-iO-JDf">
+            <objects>
+                <viewController storyboardIdentifier="PingNetworkViewController" id="xck-Wx-m3P" customClass="PingNetworkViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="70I-J8-DHT"/>
+                        <viewControllerLayoutGuide type="bottom" id="m43-D1-S8G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wjg-1n-Amk">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入IP地址/网址" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kXv-aO-8aY">
+                                <rect key="frame" x="16" y="8" width="220" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zk-4p-jmA">
+                                <rect key="frame" x="244" y="8" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.47017461059999999" green="0.64893096689999996" blue="0.0045386576090000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4oT-ic-JWg"/>
+                                    <constraint firstAttribute="width" constant="60" id="WXU-7e-BeZ"/>
+                                </constraints>
+                                <state key="normal" title="Ping">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pingAction:" destination="xck-Wx-m3P" eventType="touchUpInside" id="Uvr-jm-ky9"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="msf-Ce-hld">
+                                <rect key="frame" x="16" y="46" width="288" height="458"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kXv-aO-8aY" firstAttribute="leading" secondItem="wjg-1n-Amk" secondAttribute="leadingMargin" id="2H8-Zq-wSz"/>
+                            <constraint firstItem="msf-Ce-hld" firstAttribute="top" secondItem="1Zk-4p-jmA" secondAttribute="bottom" constant="8" id="Aya-sx-42V"/>
+                            <constraint firstItem="m43-D1-S8G" firstAttribute="top" secondItem="msf-Ce-hld" secondAttribute="bottom" id="Bti-l8-s00"/>
+                            <constraint firstItem="msf-Ce-hld" firstAttribute="leading" secondItem="wjg-1n-Amk" secondAttribute="leading" constant="16" id="QGh-5Q-da0"/>
+                            <constraint firstAttribute="trailing" secondItem="1Zk-4p-jmA" secondAttribute="trailing" constant="16" id="VRE-jk-WVw"/>
+                            <constraint firstItem="kXv-aO-8aY" firstAttribute="centerY" secondItem="1Zk-4p-jmA" secondAttribute="centerY" id="aNh-kU-T3O"/>
+                            <constraint firstItem="1Zk-4p-jmA" firstAttribute="top" secondItem="70I-J8-DHT" secondAttribute="bottom" constant="8" id="cCw-yu-QrI"/>
+                            <constraint firstAttribute="trailing" secondItem="msf-Ce-hld" secondAttribute="trailing" constant="16" id="d0c-7q-OgB"/>
+                            <constraint firstItem="1Zk-4p-jmA" firstAttribute="leading" secondItem="kXv-aO-8aY" secondAttribute="trailing" constant="8" id="z0X-dR-5gi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ping Network" id="Q9F-iG-j88">
+                        <barButtonItem key="rightBarButtonItem" title="Clear" id="rck-Nf-SwS">
+                            <connections>
+                                <action selector="clearAction:" destination="xck-Wx-m3P" id="caZ-aq-gkz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="_networkAddressTextField" destination="kXv-aO-8aY" id="S7Y-fB-SqE"/>
+                        <outlet property="_pingMessageTextView" destination="msf-Ce-hld" id="Xcg-G1-iie"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Be2-A6-tiP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-135" y="76.056338028169009"/>
+        </scene>
+    </scenes>
+</document>

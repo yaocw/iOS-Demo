@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--网络技术-->
+        <scene sceneID="dYn-Dr-LJr">
+            <objects>
+                <tableViewController storyboardIdentifier="NetworkTechController" id="S7E-8I-OZa" customClass="NetworkTechController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" id="rMi-1X-7zj">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="8Rp-qv-KYu">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="R0j-f4-vNY">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R0j-f4-vNY" id="Jsh-eE-1WY">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="获取ip地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7H-aZ-Fxb">
+                                                    <rect key="frame" x="16" y="17" width="84" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="S7H-aZ-Fxb" firstAttribute="centerY" secondItem="Jsh-eE-1WY" secondAttribute="centerY" id="HyJ-Xf-Fzb"/>
+                                                <constraint firstItem="S7H-aZ-Fxb" firstAttribute="leading" secondItem="Jsh-eE-1WY" secondAttribute="leading" constant="16" id="uPj-ME-4SK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="r89-Q6-3Xf">
+                                        <rect key="frame" x="0.0" y="56" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r89-Q6-3Xf" id="SJM-5B-duK">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网络状态监视器" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qws-wc-XDG">
+                                                    <rect key="frame" x="16" y="17" width="122" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Qws-wc-XDG" firstAttribute="centerY" secondItem="SJM-5B-duK" secondAttribute="centerY" id="0g6-mZ-gsA"/>
+                                                <constraint firstItem="Qws-wc-XDG" firstAttribute="leading" secondItem="SJM-5B-duK" secondAttribute="leading" constant="16" id="rSr-xK-zcJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ODf-sB-ydE" kind="show" id="KP0-Tj-deF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="1DD-dm-uef">
+                                        <rect key="frame" x="0.0" y="112" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1DD-dm-uef" id="m6f-jM-agU">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ping Network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuq-xw-upn">
+                                                    <rect key="frame" x="16" y="17" width="103" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wuq-xw-upn" firstAttribute="centerY" secondItem="m6f-jM-agU" secondAttribute="centerY" id="VAK-Vt-Tsm"/>
+                                                <constraint firstItem="wuq-xw-upn" firstAttribute="leading" secondItem="m6f-jM-agU" secondAttribute="leading" constant="16" id="kyI-MD-J5P"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5xP-pi-QDx" kind="show" id="cBu-yy-MJr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="V2D-rb-dVO">
+                                        <rect key="frame" x="0.0" y="168" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V2D-rb-dVO" id="uIE-Zs-OAs">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网络爬虫简单实现" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kcm-Hi-Hpc">
+                                                    <rect key="frame" x="16" y="17" width="139" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Kcm-Hi-Hpc" firstAttribute="leading" secondItem="uIE-Zs-OAs" secondAttribute="leading" constant="16" id="2UK-2f-fSN"/>
+                                                <constraint firstItem="Kcm-Hi-Hpc" firstAttribute="centerY" secondItem="uIE-Zs-OAs" secondAttribute="centerY" id="dtb-uz-gc5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Ege-QT-xE9" kind="show" id="lUv-99-8Ro"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="S7E-8I-OZa" id="k2U-re-Cbn"/>
+                            <outlet property="delegate" destination="S7E-8I-OZa" id="U1k-md-WpG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="网络技术" id="cT3-3A-Ix1"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vwe-NH-Zuc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-126" y="157"/>
+        </scene>
+        <!--NetworkStateMonitorController-->
+        <scene sceneID="ElY-WH-wbm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NetworkStateMonitorController" referencedIdentifier="NetworkStateMonitorController" id="ODf-sB-ydE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F3Q-Va-5RR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="38"/>
+        </scene>
+        <!--PingNetworkViewController-->
+        <scene sceneID="Mgd-8i-Tw3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PingNetworkViewController" referencedIdentifier="PingNetworkViewController" id="5xP-pi-QDx" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDq-et-JPV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="475" y="100"/>
+        </scene>
+        <!--SimpleNetworkSpiderController-->
+        <scene sceneID="ZiB-h1-202">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SimpleNetworkSpiderController" referencedIdentifier="SimpleNetworkSpiderController" id="Ege-QT-xE9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9cr-9l-p08" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="498" y="175"/>
+        </scene>
+    </scenes>
+</document>

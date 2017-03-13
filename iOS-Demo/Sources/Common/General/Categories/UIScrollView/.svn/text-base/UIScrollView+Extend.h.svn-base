@@ -1,0 +1,23 @@
+//
+//  UIScrollView+Extend.h
+//  hxj
+//
+//  Created by gaofu on 15/10/25.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UIScrollView (Extend)
+/**
+ *  滚动到顶部
+ */
+- (void)scrollToTop;
+- (void)scrollToTopAnimated:(BOOL)animated;
+
+/**
+ *  滚动到底部
+ */
+- (void)scrollToBottom;
+- (void)scrollToBottomAnimated:(BOOL)animated;
+@end

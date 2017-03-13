@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="DP_USWCD_UserInfoModel" representedClassName="DP_USWCD_UserInfoModel" syncable="YES" codeGenerationType="class">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nickname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="realname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="realnameFirstPinYin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="telephone" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <fetchRequest name="AllUserInfo" entity="DP_USWCD_UserInfoModel"/>
+    <fetchRequest name="ExistUserInfoWithTelephone" entity="DP_USWCD_UserInfoModel"/>
+    <elements>
+        <element name="DP_USWCD_UserInfoModel" positionX="-36" positionY="9" width="128" height="135"/>
+    </elements>
+</model>

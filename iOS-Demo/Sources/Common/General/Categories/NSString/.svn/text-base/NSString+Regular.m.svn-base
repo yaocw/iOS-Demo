@@ -1,0 +1,224 @@
+//
+//  NSString+Regular.m
+//  hxj
+//
+//  Created by gaofu on 15/10/22.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "NSString+Regular.h"
+
+@implementation NSString (Regular)
+/**
+ *  验证邮箱
+ *
+ *  @param email 邮箱字符串
+ *
+ *  @return 是否邮箱
+ *
+ *  [A-Z0-9a-z] 表示 A-Z 与 0-9 与 a-z 任意一个
+ *  {2,4}       表示 字符位大于2个，小于4个
+ */
+- (BOOL) isEmail
+{
+    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:self];
+}
+
+
+/**
+ *  手机号码验证
+ *
+ *  @param NSString 手机号码字符串
+ *
+ *  @return 是否手机号
+ *
+ *  (13[0-9]) 13开头
+ */
+- (BOOL) isMobile
+{
+    
+//    //手机号以13， 14，15,17,18开头，八个 \d 数字字符
+//    NSString *phoneRegex = @"^1[3|4|5|7|8][0-9]{9}$";
+//    NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
+//    return [phoneTest evaluateWithObject:mobile];
+    
+    //手机号以13， 15，18开头，八个 \d 数字字符
+      NSString *phoneRegex = @"^1[3|4|5|7|8][0-9]{9}$";
+//    NSString *phoneRegex = @"^((13[0-9])|(15[^4,\\D])|(18[0,0-9]))\\d{8}$";
+    NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
+    return [phoneTest evaluateWithObject:self];
+}
+
+/**
+ *  车牌号验证
+ *
+ *  @param NSString 车牌号码字符串
+ *
+ *  @return 是否车牌号
+ *
+ *  [\u4e00-\u9fa5] 是否中文字
+ */
+- (BOOL) isCarNo
+{
+    NSString *carRegex = @"^[\u4e00-\u9fa5]{1}[a-zA-Z]{1}[a-zA-Z_0-9]{4}[a-zA-Z_0-9_\u4e00-\u9fa5]$";
+    NSPredicate *carTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",carRegex];
+    NSLog(@"carTest is %@",carTest);
+    return [carTest evaluateWithObject:self];
+}
+
+/**
+ *  车型验证
+ *
+ *  @param NSString 车型字符串
+ *
+ *  @return 是否车型
+ *
+ *  [\u4E00-\u9FFF] 是否中文字
+ */
+//
+- (BOOL) isCarType
+{
+    NSString *CarTypeRegex = @"^[\u4E00-\u9FFF]+$";
+    NSPredicate *carTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",CarTypeRegex];
+    return [carTest evaluateWithObject:self];
+}
+
+/**
+ *  用户名验证
+ *
+ *  @param NSString 用户名字符串
+ *
+ *  @return 是否用户名
+ *  {6,20}  6到20位
+ */
+- (BOOL) isUserName
+{
+    NSString *userNameRegex = @"^[A-Za-z0-9]{6,20}+$";
+    NSPredicate *userNamePredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",userNameRegex];
+    return [userNamePredicate evaluateWithObject:self];
+}
+
+/**
+ *  密码认证
+ *
+ *  @param NSString 密码字符串
+ *
+ *  @return 是否密码
+ *  {6,20}  6到20位
+ */
+- (BOOL) isPassword
+{
+    NSString *passWordRegex = @"^[@-zA-Z0-9]{6,20}+$";
+    NSPredicate *passWordPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",passWordRegex];
+    return [passWordPredicate evaluateWithObject:self];
+}
+
+/**
+ *  验证昵称
+ *
+ *  @param NSString 昵称字符串
+ *
+ *  @return 是否昵称
+ *  {4,8}  4到8位
+ */
+- (BOOL) isNickname
+{
+    NSString *nicknameRegex = @"^[\u4e00-\u9fa5]{4,8}$";
+    NSPredicate *passWordPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",nicknameRegex];
+    return [passWordPredicate evaluateWithObject:self];
+}
+
+/**
+ *  身份证号
+ *
+ *  @param NSString 身份证号字符串
+ *
+ *  @return 是否身份证号
+ *  d{14} 14位数字
+ */
+- (BOOL) isIdentityCard
+{
+    BOOL flag;
+    if (self.length <= 0) {
+        flag = NO;
+        return flag;
+    }
+    NSString *regex2 = @"^(\\d{14}|\\d{17})(\\d|[xX])$";
+    NSPredicate *identityCardPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex2];
+    return [identityCardPredicate evaluateWithObject:self];
+}
+
+/**
+ *  判断表情
+ *
+ *  @param string 含表情字符串
+ *
+ *  @return 是否有表情
+ */
+- (BOOL)containsEmoji
+{
+    
+    __block BOOL returnValue =NO;
+    
+    [self enumerateSubstringsInRange:NSMakeRange(0, [self length])
+                               options:NSStringEnumerationByComposedCharacterSequences
+                            usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop)
+     {
+         const unichar hs = [substring characterAtIndex:0];
+         
+         if (0xd800 <= hs && hs <= 0xdbff) {
+             
+             if (substring.length > 1) {
+                 
+                 const unichar ls = [substring characterAtIndex:1];
+                 
+                 const int uc = ((hs - 0xd800) * 0x400) + (ls - 0xdc00) + 0x10000;
+                 
+                 if (0x1d000 <= uc && uc <= 0x1f77f) {
+                     
+                     returnValue =YES;
+                     
+                 }
+                 
+             }
+             
+         }else if (substring.length > 1) {
+             
+             const unichar ls = [substring characterAtIndex:1];
+             
+             if (ls == 0x20e3) {
+                 
+                 returnValue =YES;
+                 
+             }
+             
+         }else {
+             
+             if (0x2100 <= hs && hs <= 0x27ff) {
+                 
+                 returnValue =YES;
+                 
+             }else if (0x2B05 <= hs && hs <= 0x2b07) {
+                 
+                 returnValue =YES;
+                 
+             }else if (0x2934 <= hs && hs <= 0x2935) {
+                 
+                 returnValue =YES;
+                 
+             }else if (0x3297 <= hs && hs <= 0x3299) {
+                 
+                 returnValue =YES;
+                 
+             }else if (hs == 0xa9 || hs == 0xae || hs == 0x303d || hs == 0x3030 || hs == 0x2b55 || hs == 0x2b1c || hs == 0x2b1b || hs == 0x2b50) {
+                 
+                 returnValue =YES;
+                 
+             }
+         }
+     }];
+    return returnValue;
+}
+@end

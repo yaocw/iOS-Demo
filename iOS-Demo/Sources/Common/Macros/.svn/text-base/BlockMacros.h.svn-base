@@ -1,0 +1,45 @@
+//
+//  BlockMacros.h
+//  RaccoonHomeClient
+//
+//  Created by gaofu on 15/10/20.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+/**
+ *  Block宏
+ */
+
+
+#ifndef BlockMacros_h
+#define BlockMacros_h
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+typedef void(^BLKBlock)();
+
+typedef void(^BLKBoolBlock)(BOOL isSelected);
+
+typedef void(^BLKSuccessBlock)(id result,id manager);
+
+typedef void(^BLKFailureBlock)(NSError*error,id manager);
+
+typedef void(^BLKSelecetBtnBlock)(UIButton*btn);
+
+typedef void(^BLKSelecetImgBlock)(UIImageView*img);
+
+typedef void(^BLKSelecetStrBlock)(NSString*str);
+
+typedef void(^BLKSelecetIndexBlock)(NSInteger index);
+
+typedef void(^BLKSelecetIndexAndTitleBlock)(NSInteger index,NSString *title);
+
+typedef void(^BLKSelectTableviewBlock)(UITableView *tableview);
+
+typedef void(^BLKDicBlock)(NSDictionary *dic);
+
+typedef void(^BLKArrBlock)(NSArray *arr);
+
+
+#endif /* BlockMacros_h */

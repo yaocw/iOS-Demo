@@ -1,0 +1,27 @@
+//
+//  UITableViewCell+RoundCell.h
+//  RoundCell
+//
+//  Created by gaofu on 15/10/30.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UITableViewCell (RoundCell)
+/**
+ *  圆角section
+ */
+-(void)roundSectionWithTableview:(UITableView*)tableView indexPath:(NSIndexPath*)indexPath;
+
+/**
+ *  圆角row
+ */
+-(void)roundRowWithTableview:(UITableView*)tableView indexPath:(NSIndexPath*)indexPath;
+
+/**
+ *  圆角tableview
+ */
+-(void)roundTableViewWithTableview:(UITableView*)tableView indexPath:(NSIndexPath*)indexPath sectionsNum:(NSInteger)sectionsNum;
+
+@end

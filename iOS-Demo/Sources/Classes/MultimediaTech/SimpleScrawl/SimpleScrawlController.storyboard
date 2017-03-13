@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--信手涂鸦-->
+        <scene sceneID="pnx-c7-Xo0">
+            <objects>
+                <viewController storyboardIdentifier="SimpleScrawlController" id="lxR-R4-h5J" customClass="SimpleScrawlController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PQV-nB-lVw"/>
+                        <viewControllerLayoutGuide type="bottom" id="XeV-e8-tza"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RFk-2k-LKO">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HL6-kx-X65">
+                                <rect key="frame" x="0.0" y="460" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="kBv-DW-PAR"/>
+                                    <barButtonItem title="撤销" id="U49-cc-CI2">
+                                        <connections>
+                                            <action selector="withdrawAction:" destination="lxR-R4-h5J" id="HTK-yq-yhw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="CBf-qq-kkv"/>
+                                    <barButtonItem title="反撤销" id="paV-yd-BKi">
+                                        <connections>
+                                            <action selector="unWithdrawAction:" destination="lxR-R4-h5J" id="Z0v-JA-vNB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fai-Tq-duW"/>
+                                    <barButtonItem title="画笔" id="87B-48-VR1">
+                                        <connections>
+                                            <action selector="paintbrushSettingAction:" destination="lxR-R4-h5J" id="umj-OI-C0F"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xUS-zQ-FLM"/>
+                                    <barButtonItem title="清屏" id="vur-xW-j3k">
+                                        <connections>
+                                            <action selector="clearAction:" destination="lxR-R4-h5J" id="T2Z-Td-JSD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="iCe-hi-NBg"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HL6-kx-X65" firstAttribute="bottom" secondItem="XeV-e8-tza" secondAttribute="top" id="DLD-PQ-aKc"/>
+                            <constraint firstAttribute="trailing" secondItem="HL6-kx-X65" secondAttribute="trailing" id="fKr-ls-89t"/>
+                            <constraint firstItem="HL6-kx-X65" firstAttribute="leading" secondItem="RFk-2k-LKO" secondAttribute="leading" id="syv-sk-rGU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="信手涂鸦" id="BBs-dZ-A3Q"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="442-JX-nCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358" y="-107"/>
+        </scene>
+    </scenes>
+</document>

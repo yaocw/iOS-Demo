@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>RuleContent</key>
+		<string>[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}</string>
+		<key>RuleName</key>
+		<string>邮箱地址</string>
+	</dict>
+	<dict>
+		<key>RuleContent</key>
+		<string>((http{0,1})://[a-zA-Z0-9\.\-]+\.([a-zA-Z]{2,4})(:\d+)?(/[a-zA-Z0-9\.\-~!@#$%^&amp;*+?:_/=&lt;&gt;]*)?)|(www.[a-zA-Z0-9\.\-]+\.([a-zA-Z]{2,4})(:\d+)?(/[a-zA-Z0-9\.\-~!@#$%^&amp;*+?:_/=&lt;&gt;]*)?)</string>
+		<key>RuleName</key>
+		<string>网址</string>
+	</dict>
+</array>
+</plist>

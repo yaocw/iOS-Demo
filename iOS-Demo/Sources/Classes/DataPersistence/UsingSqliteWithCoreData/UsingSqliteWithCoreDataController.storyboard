@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CoreData-->
+        <scene sceneID="UbG-1t-PfT">
+            <objects>
+                <viewController storyboardIdentifier="UsingSqliteWithCoreDataController" id="d39-HN-LrX" customClass="UsingSqliteWithCoreDataController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ya8-yq-7Ac"/>
+                        <viewControllerLayoutGuide type="bottom" id="OMl-I3-WcP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q2Z-V8-ynl">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="搜索" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Yl2-5P-adr" customClass="BaseTextField">
+                                <rect key="frame" x="16" y="8" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uMf-wk-4dS">
+                                <rect key="frame" x="0.0" y="47" width="320" height="457"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="d39-HN-LrX" id="ti2-dd-OtY"/>
+                                    <outlet property="delegate" destination="d39-HN-LrX" id="ilL-W6-B07"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHA-uY-Hmv">
+                                <rect key="frame" x="0.0" y="46" width="320" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="DhV-sw-QNW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uMf-wk-4dS" secondAttribute="trailing" id="1pS-Dy-Pbt"/>
+                            <constraint firstAttribute="trailing" secondItem="CHA-uY-Hmv" secondAttribute="trailing" id="7D4-Aj-mhz"/>
+                            <constraint firstItem="OMl-I3-WcP" firstAttribute="top" secondItem="uMf-wk-4dS" secondAttribute="bottom" id="ANG-0m-heb"/>
+                            <constraint firstItem="uMf-wk-4dS" firstAttribute="top" secondItem="CHA-uY-Hmv" secondAttribute="bottom" id="ARz-c3-B1L"/>
+                            <constraint firstItem="CHA-uY-Hmv" firstAttribute="top" secondItem="Ya8-yq-7Ac" secondAttribute="bottom" constant="46" id="MTd-yh-hs8"/>
+                            <constraint firstItem="uMf-wk-4dS" firstAttribute="leading" secondItem="q2Z-V8-ynl" secondAttribute="leading" id="R34-z9-bYL"/>
+                            <constraint firstItem="Yl2-5P-adr" firstAttribute="top" secondItem="Ya8-yq-7Ac" secondAttribute="bottom" constant="8" id="ash-rS-Sw6"/>
+                            <constraint firstItem="CHA-uY-Hmv" firstAttribute="leading" secondItem="q2Z-V8-ynl" secondAttribute="leading" id="f7o-Q5-gDJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Yl2-5P-adr" secondAttribute="trailing" constant="16" id="mlI-AH-vyr"/>
+                            <constraint firstItem="Yl2-5P-adr" firstAttribute="leading" secondItem="q2Z-V8-ynl" secondAttribute="leading" constant="16" id="uqd-G8-GeY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="CoreData" id="HnP-st-U5I">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="YTS-eS-1g1">
+                            <connections>
+                                <segue destination="Iqd-Zg-BHp" kind="show" identifier="DP_USWCD_AddUserInfoController" id="0S2-Nb-zAx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="_searchInputHeightConstraint" destination="MTd-yh-hs8" id="oB7-TH-2xp"/>
+                        <outlet property="_searchTextField" destination="Yl2-5P-adr" id="r51-ml-4qd"/>
+                        <outlet property="_tableView" destination="uMf-wk-4dS" id="2Vb-hF-Qfe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HhX-dj-3by" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476.25" y="-201.7605633802817"/>
+        </scene>
+        <!--DP_USWCD_AddUserInfoController-->
+        <scene sceneID="d0A-XL-z0W">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DP_USWCD_AddUserInfoController" referencedIdentifier="DP_USWCD_AddUserInfoController" id="Iqd-Zg-BHp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dt6-PZ-ZWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="-352"/>
+        </scene>
+    </scenes>
+</document>

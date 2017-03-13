@@ -1,0 +1,30 @@
+//
+//  BaseButton.m
+//  ksf
+//
+//  Created by gaofu on 15/10/28.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "BaseButton.h"
+
+@implementation BaseButton
+
+-(void)awakeFromNib
+{
+    //圆角
+    self.layer.cornerRadius = kCornerRadius;
+    self.layer.masksToBounds = YES;
+    
+    //边框(黄色)
+    self.layer.borderWidth = kBorderWidth;
+    self.layer.borderColor = kMinorRedColorOfWorder.CGColor;
+    
+    self.titleLabel.font = [UIFont systemFontOfSize:16];
+    
+    //设置标题颜色(黄色)
+    [self setTitleColor:kMinorRedColorOfWorder forState:UIControlStateNormal];
+    
+}
+
+@end

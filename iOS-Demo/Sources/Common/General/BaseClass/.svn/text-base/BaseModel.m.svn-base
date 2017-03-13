@@ -1,0 +1,25 @@
+//
+//  BaseModel.m
+//  RaccoonHomeClient
+//
+//  Created by gaofu on 15/10/20.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "BaseModel.h"
+#import "MJExtension.h"
+
+@implementation BaseModel
+
+MJLogAllIvars
+
+-(id)newValueFromOldValue:(id)oldValue property:(MJProperty *)property
+{
+    if (property.type.typeClass == [NSString class] && [Helper isNilStr:oldValue])
+    {
+        return @"";
+    }
+    return oldValue;
+}
+
+@end

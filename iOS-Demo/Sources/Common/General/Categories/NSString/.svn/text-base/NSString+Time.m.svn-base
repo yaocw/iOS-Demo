@@ -1,0 +1,76 @@
+//
+//  NSString+Time.m
+//  hxj
+//
+//  Created by gaofu on 16/1/11.
+//  Copyright © 2016年 gaofu. All rights reserved.
+//
+
+#import "NSString+Time.h"
+
+@implementation NSString (Time)
+
+//时差是否超过3分钟
+-(BOOL)timeDistanceMore:(NSString*)timeStr
+{
+    if (timeStr.length)
+    {
+        NSDate*date1 = [NSDate dateFromString:timeStr withFormat:[NSDate timestampFormatStringSubSeconds]];
+        NSDate*date2 = [NSDate dateFromString:self withFormat:[NSDate timestampFormatStringSubSeconds]];
+        
+        NSDateComponents *dateComponents = [NSDate daysOffsetBetweenStartDate:date1 endDate:date2 with:NSCalendarUnitMinute];
+        
+        return dateComponents.minute >= 3;
+    }
+    return YES;
+}
+
+
+//消息显示时间
+-(NSString*)messageTime
+{
+    NSDate*date = [NSDate dateFromString:self withFormat:[NSDate timestampFormatStringSubSeconds]];
+    
+    //今天
+    if ([date isToday])
+    {
+        return [date stringTime];
+    }
+    
+      //本周
+    if ([date isToweek])
+    {
+        return [NSString stringWithFormat:@"%@  %@",[date weekday],[date stringTime]];
+    }
+    
+    return [NSString stringWithFormat:@"%@  %@",[date stringYearMonthDay],[date stringTime]];
+}
+
+//消息列表显示时间
+-(NSString*)messageListTime
+{
+    NSDate*date = [NSDate dateFromString:self withFormat:[NSDate timestampFormatStringSubSeconds]];
+    
+    //今天
+    if ([date isToday])
+    {
+        return [date stringTime];
+    }
+    
+    
+    NSDate*date1 = [NSDate dateFromString:self withFormat:[NSDate timestampFormatStringSubSeconds]];
+    
+    NSDateComponents *dateComponents = [NSDate daysOffsetBetweenStartDate:date1 endDate:date with:NSCalendarUnitDay];
+    
+    //本周
+    if (dateComponents.day < 7)
+    {
+        return [date weekday];
+    }
+    
+    return [date stringYearMonthDay];
+}
+
+
+
+@end

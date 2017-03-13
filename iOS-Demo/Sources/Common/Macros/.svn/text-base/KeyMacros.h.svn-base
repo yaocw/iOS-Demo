@@ -1,0 +1,23 @@
+//
+//  KeyMacros.h
+//  RaccoonHomeClient
+//
+//  Created by gaofu on 15/10/20.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+/**
+ *  Key宏
+ */
+
+
+
+#ifndef KeyMacros_h
+#define KeyMacros_h
+
+#define URL_SCHEME [Helper isClientAPP] ? @"hxj://hxj.hbyz.com" : @"ksf://ksf.hbyz.com"
+
+#define BDMAP_API_KEY  [Helper isClientAPP] ? @"QtleDiejGMpcrEi5UucDkjna" : @"nN6QMeApfgzYpnXGgOLZH9Ev"
+
+#define WeChatPay_App_ID @"wx242b2a0ec738152e"
+
+#endif /* KeyMacros_h */

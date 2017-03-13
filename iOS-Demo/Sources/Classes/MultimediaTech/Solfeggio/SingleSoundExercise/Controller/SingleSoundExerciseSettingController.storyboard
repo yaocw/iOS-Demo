@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--设置-->
+        <scene sceneID="0ow-Zu-RyX">
+            <objects>
+                <viewController storyboardIdentifier="SingleSoundExerciseSettingController" id="JjM-r3-JNI" customClass="SingleSoundExerciseSettingController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VU8-RG-kxF"/>
+                        <viewControllerLayoutGuide type="bottom" id="DkP-ek-GOO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NXY-YA-e5d">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每次播放音阶数：1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOy-d8-g3k">
+                                <rect key="frame" x="16" y="20" width="130" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="rzt-TH-kTw">
+                                <rect key="frame" x="30" y="46" width="276" height="31"/>
+                                <connections>
+                                    <action selector="playCountChangedAction:" destination="JjM-r3-JNI" eventType="valueChanged" id="fL1-hn-QTZ"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音阶播放间隔(s)：0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3b-a3-6QY">
+                                <rect key="frame" x="16" y="116" width="135" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="cid-R4-R70">
+                                <rect key="frame" x="30" y="142" width="276" height="31"/>
+                                <connections>
+                                    <action selector="playIntervalChangedAction:" destination="JjM-r3-JNI" eventType="valueChanged" id="3ue-Tp-fQy"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p3b-a3-6QY" firstAttribute="top" secondItem="rzt-TH-kTw" secondAttribute="bottom" constant="40" id="2jd-ur-0Uu"/>
+                            <constraint firstAttribute="trailing" secondItem="cid-R4-R70" secondAttribute="trailing" constant="16" id="ORl-9N-Obo"/>
+                            <constraint firstItem="cid-R4-R70" firstAttribute="leading" secondItem="NXY-YA-e5d" secondAttribute="leading" constant="32" id="YtS-3a-Whg"/>
+                            <constraint firstItem="p3b-a3-6QY" firstAttribute="leading" secondItem="zOy-d8-g3k" secondAttribute="leading" id="ZC1-n7-5yp"/>
+                            <constraint firstItem="cid-R4-R70" firstAttribute="top" secondItem="p3b-a3-6QY" secondAttribute="bottom" constant="8" id="ZFp-iG-yIe"/>
+                            <constraint firstItem="zOy-d8-g3k" firstAttribute="top" secondItem="VU8-RG-kxF" secondAttribute="bottom" constant="20" id="dS8-1D-YYz"/>
+                            <constraint firstAttribute="trailing" secondItem="rzt-TH-kTw" secondAttribute="trailing" constant="16" id="psU-pE-X06"/>
+                            <constraint firstItem="rzt-TH-kTw" firstAttribute="leading" secondItem="NXY-YA-e5d" secondAttribute="leading" constant="32" id="t8a-GD-Gpg"/>
+                            <constraint firstItem="zOy-d8-g3k" firstAttribute="leading" secondItem="NXY-YA-e5d" secondAttribute="leading" constant="16" id="ux3-gb-hpn"/>
+                            <constraint firstItem="rzt-TH-kTw" firstAttribute="top" secondItem="zOy-d8-g3k" secondAttribute="bottom" constant="8" id="w64-U0-Vdw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="设置" id="YU2-Ms-MzW">
+                        <barButtonItem key="rightBarButtonItem" title="确定" id="M8A-Zd-0BW">
+                            <connections>
+                                <action selector="ensureAction:" destination="JjM-r3-JNI" id="1WR-hH-VMo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="playCountEachTimeLabel" destination="zOy-d8-g3k" id="W7D-0L-3aT"/>
+                        <outlet property="playCountEachTimeSlider" destination="rzt-TH-kTw" id="6rr-n4-udc"/>
+                        <outlet property="playIntervalLabel" destination="p3b-a3-6QY" id="aMS-6p-Uw9"/>
+                        <outlet property="playIntervalSlider" destination="cid-R4-R70" id="x3E-uD-Mzf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G9o-QS-A7m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-202.5" y="-152.11267605633802"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,126 @@
+//
+//  UITableView+Refresh.m
+//  ksf
+//
+//  Created by gaofu on 15/11/23.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "UITableView+Refresh.h"
+
+@implementation UITableView (Refresh)
+/**
+ * 设置头部刷新
+ */
+
+-(void)refreshHeaderWithBlock:(MJRefreshComponentRefreshingBlock)block
+{
+    self.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^
+                   {
+                       block();
+                   }];
+}
+
+
+/**
+ * 设置尾部刷新
+ */
+
+-(void)refreshFooterWithBlock:(MJRefreshComponentRefreshingBlock)block
+{
+    self.footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^
+                   {
+                       block();
+                   }];
+}
+
+
+/**
+ * 同时创建上拉和下拉刷新
+ */
+
+-(void)refreshHeaderWithBlock:(MJRefreshComponentRefreshingBlock)headerBlock
+              footerWithBlock:(MJRefreshComponentRefreshingBlock)footerBlock
+{
+    [self refreshHeaderWithBlock:headerBlock];
+    [self refreshFooterWithBlock:footerBlock];
+}
+
+
+/**
+ * 停止头部上拉刷新
+ */
+
+-(void)endHeaderRefresh
+{
+    [self.header endRefreshing];
+}
+
+
+/**
+ *  停止尾部刷新
+ */
+
+-(void)endFooterRefresh
+{
+     [self.footer endRefreshing];
+}
+
+
+/**
+ *  停止尾部刷新(没有更多数据)
+ */
+
+-(void)endFooterRefreshWithoutMoreData
+{
+    [self.footer endRefreshingWithNoMoreData];
+}
+
+/**
+ *  重置尾部刷新(没有更多数据)
+ */
+
+-(void)resetFooterRefreshWithoutMoreData
+{
+    [self.footer resetNoMoreData];
+}
+
+/**
+ * 停止尾部刷新
+ */
+
+-(void)endFooterRefreshWithData:(NSArray*)data
+{
+    if (data.count < Load_Num)
+    {
+        [self endFooterRefreshWithoutMoreData];
+    }
+    else
+    {
+        [self endFooterRefresh];
+    }
+}
+
+
+/**
+ * 停止头部和尾部刷新
+ */
+
+-(void)endRefresh
+{
+    [self endHeaderRefresh];
+    [self endFooterRefresh];
+}
+
+/**
+ * 停止头部和尾部刷新
+ */
+
+-(void)endRefreshWithData:(NSArray*)data
+{
+    [self endHeaderRefresh];
+    [self endFooterRefreshWithData:data];
+}
+
+
+@end

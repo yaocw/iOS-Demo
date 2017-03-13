@@ -1,0 +1,47 @@
+//
+//  NSString+Extend.h
+//  CoreCategory
+//
+//  Created by 成林 on 15/4/6.
+//  Copyright (c) 2015年 沐汐. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface NSString (Extend)
+//为数字添加分隔号 如: 123,456
++ (NSString *)separatedDigitStringWithStr:(NSString *)digitString;
+
+//为数字添加分隔号 如: 123,456.00元
++ (NSString *)moneyFormatting:(NSString *)oldString;
+
+//判断正数
++(BOOL)isPositiveNum:(NSString*)str;
+
+//为价钱添加“元”,并且是保留两位小数
++ (NSString *)addPriceUnit:(NSString *)oldString;
+//为面积添加“㎡”,并且是保留两位小数
++ (NSString *)addAreaUnit:(NSString *)oldString;
+
+//判断是否是空字符串(包括全部是空格的)
+- (BOOL)isBlankString;
+
+//是否为空
+-(BOOL)isNil;
+
+//过滤Nil
+-(NSString*)siftNil;
+
+
+/**
+ *  去掉字符串两端的空格
+ */
+- (NSString *)trimmingCharacters;
+
+/** 截取字符串后两位的小数 */
+-(NSString*)getTheCorrectNum:(NSString*)tempString;
+
+//通过url获取imagesize(即时通讯)
+-(CGSize)imageSize;
+
+@end

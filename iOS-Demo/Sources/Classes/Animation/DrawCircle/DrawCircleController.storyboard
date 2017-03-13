@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--画个圆-->
+        <scene sceneID="gWX-hm-RMM">
+            <objects>
+                <viewController storyboardIdentifier="DrawCircleController" id="u9g-O7-YxH" customClass="DrawCircleController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YSx-9s-IUv"/>
+                        <viewControllerLayoutGuide type="bottom" id="s5V-AS-XXC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3wd-TT-OCC">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cGJ-4L-vxS">
+                                <rect key="frame" x="122" y="22" width="182" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                </segments>
+                                <connections>
+                                    <action selector="valueDidChange:" destination="u9g-O7-YxH" eventType="valueChanged" id="HY9-7d-KQr"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实现方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="982-ac-20r">
+                                <rect key="frame" x="16" y="27" width="61.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DeD-0V-GFW">
+                                <rect key="frame" x="0.0" y="66" width="320" height="438"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DeD-0V-GFW" firstAttribute="leading" secondItem="3wd-TT-OCC" secondAttribute="leading" id="1Fb-UY-4KM"/>
+                            <constraint firstItem="cGJ-4L-vxS" firstAttribute="centerY" secondItem="982-ac-20r" secondAttribute="centerY" id="2F0-mR-22s"/>
+                            <constraint firstAttribute="trailing" secondItem="cGJ-4L-vxS" secondAttribute="trailing" constant="16" id="HM6-YW-fBM"/>
+                            <constraint firstItem="s5V-AS-XXC" firstAttribute="top" secondItem="DeD-0V-GFW" secondAttribute="bottom" id="Mb1-tV-Pqd"/>
+                            <constraint firstAttribute="trailing" secondItem="DeD-0V-GFW" secondAttribute="trailing" id="PCh-mk-bOv"/>
+                            <constraint firstItem="982-ac-20r" firstAttribute="top" secondItem="YSx-9s-IUv" secondAttribute="bottom" constant="27" id="hLv-p4-NbS"/>
+                            <constraint firstItem="DeD-0V-GFW" firstAttribute="top" secondItem="cGJ-4L-vxS" secondAttribute="bottom" constant="16" id="hxO-Wb-oro"/>
+                            <constraint firstItem="982-ac-20r" firstAttribute="leading" secondItem="3wd-TT-OCC" secondAttribute="leadingMargin" id="yDe-6A-4Ks"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="画个圆" id="cgW-f5-m0U">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="2P5-To-YrX">
+                            <connections>
+                                <action selector="refreshAction:" destination="u9g-O7-YxH" id="mT2-vl-uLX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="mainView" destination="DeD-0V-GFW" id="7Pl-Zf-keK"/>
+                        <outlet property="segmentedControl" destination="cGJ-4L-vxS" id="LgL-vt-06B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ng-BH-lk2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232.5" y="-170.07042253521126"/>
+        </scene>
+    </scenes>
+</document>

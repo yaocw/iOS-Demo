@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--点击扩散动画-->
+        <scene sceneID="afI-lD-uiO">
+            <objects>
+                <viewController storyboardIdentifier="ClickSpreadAnimationController" id="Gno-WQ-VRv" customClass="ClickSpreadAnimationController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q2o-n5-fod"/>
+                        <viewControllerLayoutGuide type="bottom" id="INl-b3-2I5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oK2-cN-MXt">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v9t-fL-8RG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="v9t-fL-8RG" secondAttribute="trailing" id="5P2-8q-CxJ"/>
+                            <constraint firstItem="v9t-fL-8RG" firstAttribute="bottom" secondItem="INl-b3-2I5" secondAttribute="top" id="EuZ-EH-pDT"/>
+                            <constraint firstItem="v9t-fL-8RG" firstAttribute="leading" secondItem="oK2-cN-MXt" secondAttribute="leading" id="d1S-26-8Kr"/>
+                            <constraint firstItem="v9t-fL-8RG" firstAttribute="top" secondItem="q2o-n5-fod" secondAttribute="bottom" id="oSi-Cd-Y5b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="点击扩散动画" id="KgH-qf-Tm0"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="imageView" destination="v9t-fL-8RG" id="xuR-6B-m16"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c30-5h-uaC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="275.625" y="-105.63380281690141"/>
+        </scene>
+    </scenes>
+</document>

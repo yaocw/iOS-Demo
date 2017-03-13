@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Little Plane Controller-->
+        <scene sceneID="vbi-MP-CRN">
+            <objects>
+                <viewController storyboardIdentifier="LittlePlaneController" id="oL2-2d-e3d" customClass="LittlePlaneController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dff-hg-gIQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="8VX-he-bpu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RFS-3j-tVb" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpy-XZ-rNY">
+                                <rect key="frame" x="273" y="28" width="31" height="30"/>
+                                <state key="normal" title="关闭"/>
+                                <connections>
+                                    <action selector="backAction:" destination="oL2-2d-e3d" eventType="touchUpInside" id="IM2-dq-5DP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tpy-XZ-rNY" firstAttribute="trailing" secondItem="RFS-3j-tVb" secondAttribute="trailingMargin" id="Nb2-6t-AQQ"/>
+                            <constraint firstItem="tpy-XZ-rNY" firstAttribute="top" secondItem="Dff-hg-gIQ" secondAttribute="bottom" constant="8" symbolic="YES" id="oR3-O5-xQ2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bel-eM-Uqe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-33" y="207"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="TCGameOverView" id="iN0-l3-epB" customClass="TCGameOverView">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sex_girl_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FhB-XY-9vo">
+                    <rect key="frame" x="0.0" y="0.0" width="138" height="60"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你淫了!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z33-Pm-fWw">
+                    <rect key="frame" x="26" y="14.5" width="86.5" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <color key="textColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIk-aI-cSl">
+                    <rect key="frame" x="0.0" y="0.0" width="138" height="60"/>
+                    <connections>
+                        <action selector="clickAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ysA-P4-3eQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="FhB-XY-9vo" secondAttribute="trailing" id="0hc-MM-azL"/>
+                <constraint firstAttribute="trailing" secondItem="nIk-aI-cSl" secondAttribute="trailing" id="5w2-lc-n9c"/>
+                <constraint firstItem="nIk-aI-cSl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Qrf-jN-kQO"/>
+                <constraint firstAttribute="bottom" secondItem="FhB-XY-9vo" secondAttribute="bottom" id="SM3-B6-WSj"/>
+                <constraint firstItem="FhB-XY-9vo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Xnf-dj-L7d"/>
+                <constraint firstItem="Z33-Pm-fWw" firstAttribute="centerY" secondItem="FhB-XY-9vo" secondAttribute="centerY" id="bGm-Ip-eRG"/>
+                <constraint firstItem="Z33-Pm-fWw" firstAttribute="centerX" secondItem="FhB-XY-9vo" secondAttribute="centerX" id="bVz-Qo-Vpd"/>
+                <constraint firstAttribute="bottom" secondItem="nIk-aI-cSl" secondAttribute="bottom" id="cAa-jR-XFq"/>
+                <constraint firstItem="nIk-aI-cSl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uI3-Og-GnX"/>
+                <constraint firstItem="FhB-XY-9vo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xEe-H2-Vdo"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-231" y="-153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sex_girl_1.jpg" width="900" height="1290"/>
+    </resources>
+</document>

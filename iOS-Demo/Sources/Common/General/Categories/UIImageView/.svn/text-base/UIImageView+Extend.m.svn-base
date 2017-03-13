@@ -1,0 +1,113 @@
+//
+//  UIImageView+Extend.m
+//  ksf
+//
+//  Created by gaofu on 16/1/5.
+//  Copyright © 2016年 gaofu. All rights reserved.
+//
+
+#import "UIImageView+Extend.h"
+
+static UIImageView *orginImageView;
+
+@implementation UIImageView (Extend)
+
+-(void)showImageWithUrl:(NSString*)imageUrl
+{
+    
+    UIImage *image = self.image;
+    orginImageView = self;
+    orginImageView.alpha = 0;
+    
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    
+    
+    
+    UIScrollView *backgroundView = [[UIScrollView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    backgroundView.maximumZoomScale = 3;
+    backgroundView.minimumZoomScale = 0.3;
+    backgroundView.delegate = self;
+    backgroundView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
+    
+    [window addSubview:backgroundView];
+    
+    
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:[self convertRect:self.bounds toView:window]];
+    imageView.image = image;
+    if (imageUrl)
+    {
+        [imageView sd_setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:self.image];
+    }
+    imageView.tag = 100;
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    
+    [backgroundView addSubview:imageView];
+    
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(hideImage:)];
+    [backgroundView addGestureRecognizer: tap];
+    
+    UITapGestureRecognizer *tapTwo = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(zoomImage:)];
+    tapTwo.numberOfTapsRequired = 2;
+    
+    [backgroundView addGestureRecognizer: tapTwo];
+    
+    [tap requireGestureRecognizerToFail:tapTwo];
+    
+    [UIView animateWithDuration:kAnimationTime animations:^{
+        imageView.frame = CGRectMake(0,([UIScreen mainScreen].bounds.size.height-image.size.height*[UIScreen mainScreen].bounds.size.width/image.size.width)/2, [UIScreen mainScreen].bounds.size.width, image.size.height*[UIScreen mainScreen].bounds.size.width/image.size.width);
+        backgroundView.zoomScale = 1.00001;
+    }];
+}
+
+-(void)showImage
+{
+    [self showImageWithUrl:nil];
+}
+
+-(void)hideImage:(UITapGestureRecognizer*)tap
+{
+    UIScrollView *backgroundView = (UIScrollView *)tap.view;
+    
+    [backgroundView scrollToTopAnimated:NO];
+    backgroundView.zoomScale = MIN(backgroundView.zoomScale, 1);
+    
+    UIImageView *imageView = (UIImageView*)[tap.view viewWithTag:100];
+    imageView.userInteractionEnabled = YES;
+    
+    [UIView animateWithDuration:kAnimationTime animations:^{
+        imageView.frame = [orginImageView convertRect:orginImageView.bounds toView:[UIApplication sharedApplication].keyWindow];
+    } completion:^(BOOL finished) {
+        [backgroundView removeFromSuperview];
+        orginImageView.alpha = 1;
+        backgroundView.alpha = 0;
+    }];
+}
+
+
+-(void)zoomImage:(UITapGestureRecognizer*)sender
+{
+    UIScrollView *backgroundView = (UIScrollView*)sender.view;
+    [backgroundView setZoomScale:1.0f + (backgroundView.zoomScale < 2.0f) animated:YES];
+}
+
+#pragma mark - ScrollView delegate
+
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return (UIImageView*)[scrollView viewWithTag:100];
+}
+
+- (void)scrollViewDidZoom:(UIScrollView *)scrollView
+{
+    CGFloat offsetX = (scrollView.bounds.size.width > scrollView.contentSize.width)?
+    (scrollView.bounds.size.width - scrollView.contentSize.width) * 0.5 : 0.0;
+    
+    CGFloat offsetY = (scrollView.bounds.size.height > scrollView.contentSize.height)?
+    (scrollView.bounds.size.height - scrollView.contentSize.height) * 0.5 : 0.0;
+    
+    [[scrollView subviews] firstObject].center = CGPointMake(scrollView.contentSize.width * 0.5 + offsetX,scrollView.contentSize.height * 0.5 + offsetY);
+}
+
+
+@end

@@ -1,0 +1,77 @@
+//
+//  NSString+File.m
+//  CoreCategory
+//
+//  Created by 成林 on 15/4/6.
+//  Copyright (c) 2015年 沐汐. All rights reserved.
+//
+
+#import "NSString+File.h"
+
+@implementation NSString (File)
+
+/*
+ *  document根文件夹
+ */
++(NSString *)documentFolder
+{
+    return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+}
+
+/*
+ *  caches根文件夹
+ */
++(NSString *)cachesFolder
+{
+    return [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+}
+
+/**
+ *  创建子文件夹
+ */
++(NSString *)createSubFolder:(NSString *)subFolder
+{
+    NSString *subFolderPath = [[NSString documentFolder] stringByAppendingPathComponent:subFolder];
+    BOOL isDir = NO;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    BOOL existed = [fileManager fileExistsAtPath:subFolderPath isDirectory:&isDir];
+    if ( !(isDir == YES && existed == YES) )
+    {
+        [fileManager createDirectoryAtPath:subFolderPath withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    return subFolderPath;
+}
+
+
+///消息中心图片保存路径
++(NSString *)messagePicsPath
+{
+    NSString *subFolderPath = [[NSString documentFolder] stringByAppendingPathComponent:@"messagePics"];
+    BOOL isDir = NO;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    BOOL existed = [fileManager fileExistsAtPath:subFolderPath isDirectory:&isDir];
+    if ( !(isDir == YES && existed == YES) )
+    {
+        [fileManager createDirectoryAtPath:subFolderPath withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    return subFolderPath;
+}
+
+///消息中心语音保存路径
++(NSString *)messageVoicesPath
+{
+    NSString *subFolderPath = [[NSString documentFolder] stringByAppendingPathComponent:@"messageVoices"];
+    BOOL isDir = NO;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    BOOL existed = [fileManager fileExistsAtPath:subFolderPath isDirectory:&isDir];
+    if ( !(isDir == YES && existed == YES) )
+    {
+        [fileManager createDirectoryAtPath:subFolderPath withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    return subFolderPath;
+}
+
+
+
+
+@end

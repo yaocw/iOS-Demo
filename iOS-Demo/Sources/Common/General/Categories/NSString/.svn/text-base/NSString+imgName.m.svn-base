@@ -1,0 +1,119 @@
+//
+//  NSString+imgName.m
+//  hxj
+//
+//  Created by wangzhen on 16/1/4.
+//  Copyright © 2016年 gaofu. All rights reserved.
+//
+
+#import "NSString+imgName.h"
+
+@implementation NSString (imgName)
+-(NSString *)imgName
+{
+    if([self isEqualToString:@"卫生间"])
+    {
+        return @"decorate_washroom1_button";
+    }
+    else if ([self isEqualToString:@"阳台"])
+    {
+        return @"decorate_balcony1_button";
+    }
+    else if ([self isEqualToString:@"主卧"])
+    {
+        return @"decorate_bedroom1_button";
+    }
+    else if ([self isEqualToString:@"玄关"])
+    {
+        return @"decorate_porch1_button";
+    }
+    else if ([self isEqualToString:@"厨房"])
+    {
+        return @"decorate_kitchen1_button";
+    }
+    else if ([self isEqualToString:@"客厅"])
+    {
+        return @"decorate_saloon1_button";
+    }
+    else if ([self isEqualToString:@"餐厅"])
+    {
+        return @"decorate_restaurant1_button";
+    }
+    else if ([self isEqualToString:@"次卧"])
+    {
+        return @"decorate_secondLie1_button";
+    }
+    else if ([self isEqualToString:@"过道"])
+    {
+        return @"decorate_road1_button";
+    }
+    else if ([self isEqualToString:@"其他"])
+    {
+        return @"decorate_other1_button";
+    }
+    else if ([self isEqualToString:@"观景阳台"])
+    {
+        
+        return @"decorate_viewing balcony";
+    }
+    
+    else if ([self isEqualToString:@"公卫"])
+    {
+        
+        return @"decorate_publichealth";
+    }
+    else if ([self isEqualToString:@"客房"])
+    {
+        
+        return @"decorate_guestrooms";
+    }
+    else if ([self isEqualToString:@"书房"])
+    {
+        
+        return @"decorate_bookRoom";
+    }
+    else if ([self isEqualToString:@"生活阳台"])
+    {
+        
+        return @"decorate_Lifebalcony";
+    }
+    else if ([self isEqualToString:@"主卫"])
+    {
+        
+        return @"decorate_wc";
+    }
+    else if ([self isEqualToString:@"休闲阳台"])
+    {
+        
+        return @"decorate_gamebalcony";
+    }
+    else if ([self isEqualToString:@"卧室阳台"])
+    {
+        
+        return @"decorate_bedRoom";
+    }
+    
+
+    else if ([self isEqualToString:@"走廊"])
+    {
+        
+        return @"decorate_corridor";
+    }
+    else if ([self isEqualToString:@"次卫"])
+    {
+        return @"decorate_secondWc";
+    }
+    else if ([self isEqualToString:@"卧室"])
+    {
+    
+        return @"decorate_bedroom-1";
+    }
+   
+    
+    
+    
+    
+    return nil;
+
+}
+@end

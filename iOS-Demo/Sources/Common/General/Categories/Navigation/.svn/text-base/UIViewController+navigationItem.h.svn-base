@@ -1,0 +1,15 @@
+//
+//  UIViewController+navigationItem.h
+//  hxj
+//
+//  Created by wangzhen on 15/10/27.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UIViewController (navigationItem)
+
+-(void)setLeftBarButtonItemWithImageName:(NSString *)imageName action:(SEL)action;
+
+@end

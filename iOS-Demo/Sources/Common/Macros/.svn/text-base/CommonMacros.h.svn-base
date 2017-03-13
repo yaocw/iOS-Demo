@@ -1,0 +1,254 @@
+//
+//  CommonMacros.h
+//  RaccoonHomeClient
+//
+//  Created by gaofu on 15/10/20.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+/**
+ *  一些常用宏
+ */
+
+#ifndef CommonMacros_h
+#define CommonMacros_h
+
+
+/**
+ *  版本判断
+ */
+
+#define IOS9_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"9.0"] != NSOrderedAscending )
+#define IOS8_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"8.0"] != NSOrderedAscending )
+#define IOS7_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
+
+
+/**
+ *  常用尺寸
+ */
+
+//物理屏幕
+#define kDeviceWidth      ([UIScreen mainScreen].bounds.size.width*1.0f)
+#define KDeviceHeight     ([[UIScreen mainScreen] bounds].size.height*1.0f)
+
+//  相对像素(高度)
+#define Relative_Pi_Iphone5s      ([[UIScreen mainScreen] bounds].size.width/320.0)
+
+//是否为iphone4S屏幕
+#define iPhone4S         ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//是否为iphone5屏幕
+#define iPhone5         ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//是否为iphone6(s)屏幕
+#define iPhone6         ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//是否为iphone6(s)plus屏幕
+#define iPhone6P         ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242,2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+//  StatusBar高度
+#define Status_Bar_Height  [UIApplication sharedApplication].statusBarFrame.size.height
+
+//  NavigationBar高度
+#define Navigation_Bar_Height self.navigationController.navigationBar.frame.size.height
+
+//  Tabbar高度
+#define Tab_Bar_Height self.tabBarController.tabBar.frame.size.height
+
+#define kMessagePicMaxWidth 420.0f
+
+#define kMessageLocationMaxWidth 450.0f
+
+/**
+ *  公共字体操作
+ */
+
+//根据大小获取粗体字体
+#define AppBoldFontWithSize(fontSize) [UIFont boldSystemFontOfSize:fontSize]
+
+#define AppBoldFontWithSizeOf11 AppBoldFontWithSize(11.0f)
+#define AppBoldFontWithSizeOf12 AppBoldFontWithSize(12.0f)
+#define AppBoldFontWithSizeOf13 AppBoldFontWithSize(13.0f)
+#define AppBoldFontWithSizeOf14 AppBoldFontWithSize(14.0f)
+#define AppBoldFontWithSizeOf15 AppBoldFontWithSize(15.0f)
+#define AppBoldFontWithSizeOf16 AppBoldFontWithSize(16.0f)
+#define AppBoldFontWithSizeOf17 AppBoldFontWithSize(17.0f)
+#define AppBoldFontWithSizeOf18 AppBoldFontWithSize(18.0f)
+
+
+//根据大小获取普通字体
+#define AppFontWithSize(fontSize) [UIFont systemFontOfSize:fontSize]
+
+#define AppFontWithSizeOf11 AppFontWithSize(11.0f)
+#define AppFontWithSizeOf12 AppFontWithSize(12.0f)
+#define AppFontWithSizeOf13 AppFontWithSize(13.0f)
+#define AppFontWithSizeOf14 AppFontWithSize(14.0f)
+#define AppFontWithSizeOf15 AppFontWithSize(15.0f)
+#define AppFontWithSizeOf16 AppFontWithSize(16.0f)
+#define AppFontWithSizeOf17 AppFontWithSize(17.0f)
+#define AppFontWithSizeOf18 AppFontWithSize(18.0f)
+
+
+/**
+ *  加载条数
+ */
+
+#define Load_Num 5
+
+
+/**
+ *  圆角半径
+ */
+
+#define kCornerRadius 5.0f
+
+
+/**
+ *  组间距
+ */
+
+#define kSectionSpace 10.f
+
+
+/**
+ *  无组间距
+ */
+
+#define kNoSectionSpace 0.01f
+
+
+/**
+ *  边框宽度
+ */
+
+#define kBorderWidth 0.5f
+
+
+/**
+ *  动画时长
+ */
+
+#define kAnimationTime 0.5f
+
+
+/**
+ *  搜索框视图高度
+ */
+
+#define kSearcHeight 60.0f
+
+
+/**
+ *  AES加密key
+ */
+#define APP_PUBLIC_PASSWORD @"Q1Z@3)!(&%*$#@?J"
+
+/**
+ *  日历组件的头部高度
+ */
+#define kCalendarMenuItemViewHeight 40.0f
+
+/**
+ *  日历组件的内容高度
+ */
+#define kCalendarContentViewHeight 260.0f
+
+/**
+ *  日历组件的高度
+ */
+#define kCalendarViewHeight ((kCalendarMenuItemViewHeight) + (kCalendarContentViewHeight))
+
+/**
+ *  按钮边框宽度
+ */
+#define kDefaultButtonBorderWidth 1.0f
+
+/**
+ *  添加TabBarController切换面签的转场动画
+ */
+#define kAddTabBarControllerTransitionAnimation(self) CATransition *transition = [CATransition animation];\
+    [transition setDuration:0.1];\
+    [transition setType:@"fade"];\
+    [self.tabBarController.view.layer addAnimation:transition forKey:nil];\
+
+/**
+ *  请求完成
+ */
+
+#define kRequestDidCompleted @"kRequestDidCompleted"
+
+
+//客服id
+#define kClientServiceID @"10001"
+//客服内容
+#define kClientServiceContent(name) [NSString stringWithFormat:@"您好,万科品质,精修到家,我是客服%@",name]
+
+#define kClientServiceContentPlaceHoldeer [NSString stringWithFormat:@"您好,欢迎光临浣熊家,很高兴为您服务!全国咨询电话为:400-867-6660"]
+
+//客服消息id
+#define kClientServiceMsgID @"1000110001"
+
+
+//快速生成弱引用self变量
+#define kWeakSelf(weakSelf) __weak __typeof(&*self)weakSelf = self;
+
+//强引用
+#define kStrongSelf(strongSelf) __strong __typeof(&*self)strongSelf = weakSelf;
+
+//设置导航栏的tintColor
+#define kSetNavigationControllerTintColor self.navigationController.navigationBar.tintColor = kMinorRedColorOfWorder;
+
+//获取window
+#define kWindow [[[UIApplication sharedApplication] delegate] window]
+
+
+//确保字符串不能为空（nil、NULL或NSNull)
+#define kEnsureStringNotNullForString(str) [Helper ensureStringToNotNULL:str]
+
+//确保字符串不为空（nil或@""），如果为空就将其设置为“暂无”
+#define kEnsureNotNullWithDefaultForString(aString) [Helper isNullOrEmptyString:aString] ? @"暂无" : aString
+
+//确保字符串不为空（nil或@""），如果为空就将其设置为指定的值
+#define kEnsureStringNotNullForStringWithStringAndText(aString, text) [Helper isNullOrEmptyString:aString] ? text : aString
+
+//判断字符串是否为空（nil或@"")
+#define kIsNullOrEmptyWithString(aString) [Helper isNullOrEmptyString:aString]
+#define kIsNotNullOrEmptyWithString(aString) ![Helper isNullOrEmptyString:aString]
+
+//判断对象是否为空（nil、NULL、或NSNull)
+#define kIsNullObjectWith(aObject) [Helper isNullObject:aObject]
+#define kIsNotNullObjectWith(aObject) ![Helper isNullObject:aObject]
+
+//备注、描述等输入框的默认最大字符数
+#define kMaxLengthOfTextView 300
+
+
+
+//将整数转成字符串
+#define kStringWithInteger(number) [NSString stringWithFormat:@"%d", number]
+
+//将浮点数转成字符串
+#define kStringWithFloat(number) [NSString stringWithFormat:@"%f", number]
+
+
+
+//读取本地图片
+#define LOADIMAGE(file,ext) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:file ofType:ext]]
+
+//定义UIImage对象
+#define IMAGE(A) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:A ofType:nil]]
+
+//定义UIImage对象
+#define ImageNamed(_pointer) [UIImage imageNamed:[UIUtil imageName:_pointer]]
+
+
+//默认语音最大录制长度(单位为秒)
+#define kMaxDurationOfRecord 600
+
+//文档路径
+#define DocPathKey @"docPath"
+
+#endif /* CommonMacros_h */
+
+
+

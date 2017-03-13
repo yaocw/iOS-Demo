@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--自定义规则-->
+        <scene sceneID="AuR-cM-G5V">
+            <objects>
+                <tableViewController storyboardIdentifier="SNSAddSelfDefineMatchingRuleController" id="iKL-KV-1Ad" customClass="SNSAddSelfDefineMatchingRuleController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" id="FS5-7F-joL">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="xKI-Zp-muv">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="3hq-dI-UUG">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3hq-dI-UUG" id="HbB-F8-0m1">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入规则名称" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eap-Td-o2w">
+                                                    <rect key="frame" x="16" y="0.0" width="288" height="55.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eap-Td-o2w" firstAttribute="leading" secondItem="HbB-F8-0m1" secondAttribute="leading" constant="16" id="NRW-MS-qH6"/>
+                                                <constraint firstItem="eap-Td-o2w" firstAttribute="top" secondItem="HbB-F8-0m1" secondAttribute="top" id="VLd-59-g7c"/>
+                                                <constraint firstAttribute="trailing" secondItem="eap-Td-o2w" secondAttribute="trailing" constant="16" id="rj3-tl-8Hh"/>
+                                                <constraint firstAttribute="bottom" secondItem="eap-Td-o2w" secondAttribute="bottom" id="z1V-gy-Uhc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="v8A-0f-ODP">
+                                        <rect key="frame" x="0.0" y="56" width="320" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v8A-0f-ODP" id="0ks-3F-HzQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="be8-80-kWs" customClass="BaseTextView">
+                                                    <rect key="frame" x="16" y="0.0" width="288" height="199"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="be8-80-kWs" firstAttribute="top" secondItem="0ks-3F-HzQ" secondAttribute="top" id="HKB-dM-Lex"/>
+                                                <constraint firstAttribute="bottom" secondItem="be8-80-kWs" secondAttribute="bottom" id="Ndf-JG-KAD"/>
+                                                <constraint firstItem="be8-80-kWs" firstAttribute="leading" secondItem="0ks-3F-HzQ" secondAttribute="leading" constant="16" id="UL6-Ib-CEB"/>
+                                                <constraint firstAttribute="trailing" secondItem="be8-80-kWs" secondAttribute="trailing" constant="16" id="tX2-iR-Niy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="iKL-KV-1Ad" id="oXC-vG-yMo"/>
+                            <outlet property="delegate" destination="iKL-KV-1Ad" id="c89-L4-Ces"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="自定义规则" id="uuF-A3-ZXR">
+                        <barButtonItem key="rightBarButtonItem" title="确定" id="bwO-vI-oMZ">
+                            <connections>
+                                <action selector="ensureAction:" destination="iKL-KV-1Ad" id="Cad-wb-fOg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="_ruleContentTextView" destination="be8-80-kWs" id="8Xn-b6-CX8"/>
+                        <outlet property="_ruleNameTextField" destination="eap-Td-o2w" id="f07-8A-VnH"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a5P-Ut-7IT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.625" y="142.6056338028169"/>
+        </scene>
+    </scenes>
+</document>

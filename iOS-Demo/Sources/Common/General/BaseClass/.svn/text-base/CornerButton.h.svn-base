@@ -1,0 +1,13 @@
+//
+//  CornerButton.h
+//  hxj
+//
+//  Created by gaofu on 15/11/28.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface CornerButton : UIButton
+
+@end

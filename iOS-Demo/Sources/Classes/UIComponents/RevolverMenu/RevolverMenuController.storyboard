@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--左轮式菜单-->
+        <scene sceneID="can-SW-Kj8">
+            <objects>
+                <viewController storyboardIdentifier="RevolverMenuController" id="eQJ-1s-QSL" customClass="RevolverMenuController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NKs-yP-CBl"/>
+                        <viewControllerLayoutGuide type="bottom" id="7MZ-Mw-Syu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K40-iN-10m">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCq-Zj-FUK">
+                                <rect key="frame" x="184" y="298" width="6" height="6"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="6" id="oHE-ON-Gco"/>
+                                    <constraint firstAttribute="height" constant="6" id="sJf-Zt-W7B"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cCq-Zj-FUK" firstAttribute="centerY" secondItem="K40-iN-10m" secondAttribute="centerY" id="HZD-cl-8V0"/>
+                            <constraint firstItem="cCq-Zj-FUK" firstAttribute="centerX" secondItem="K40-iN-10m" secondAttribute="centerX" id="M4R-HI-Fdn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="左轮式菜单" id="rIt-RE-Jrn"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2de-jX-67i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="-104"/>
+        </scene>
+    </scenes>
+</document>

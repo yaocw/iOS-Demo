@@ -1,0 +1,41 @@
+//
+//  UITableView+NoData.m
+//  ksf
+//
+//  Created by yaochaowen on 16/5/26.
+//  Copyright © 2016年 gaofu. All rights reserved.
+//
+
+#import "UITableView+NoData.h"
+
+@implementation UITableView (NoData)
+
+
+- (void)noticeHasNoData:(BOOL)hasNoData tableHeaderHeight:(CGFloat)tableHeaderHeight
+{
+    if (tableHeaderHeight <= 0)
+    {
+        tableHeaderHeight = KDeviceHeight;
+    }
+    
+    //没有数据时
+    if (hasNoData)
+    {
+        UIView *noDataView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, tableHeaderHeight)];
+        UIImageView *noDataImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"no_data"]];
+        [noDataView addSubview:noDataImageView];
+        
+        CGFloat noDataImageCenterX = (kDeviceWidth / 2.0) - (noDataImageView.bounds.size.width / 2.0);
+        CGFloat noDataImageCentery = (tableHeaderHeight / 2.0) - (noDataImageView.bounds.size.height / 2.0);
+        noDataImageView.frame = CGRectMake(noDataImageCenterX, noDataImageCentery, noDataImageView.bounds.size.width, noDataImageView.bounds.size.height);
+        
+        self.tableHeaderView = noDataView;
+    }
+    
+    //有数据时
+    else
+    {
+        self.tableHeaderView = [UIView new];
+    }
+}
+@end

@@ -1,0 +1,13 @@
+//
+//  BaseAutoCornerButton.h
+//  ksf
+//
+//  Created by gaofu on 15/11/29.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "BaseAutoCompleteCornerButton.h"
+
+@interface BaseAutoCornerButton : BaseAutoCompleteCornerButton
+
+@end

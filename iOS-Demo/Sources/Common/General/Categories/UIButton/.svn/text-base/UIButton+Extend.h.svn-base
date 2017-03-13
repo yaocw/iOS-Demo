@@ -1,0 +1,14 @@
+//
+//  UIButton+Extend.h
+//  ksf
+//
+//  Created by gaofu on 15/11/2.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UIButton (Extend)
+//设置图片文字偏移量
+-(void)setImageAfterTitleSpace:(CGFloat)space;
+@end

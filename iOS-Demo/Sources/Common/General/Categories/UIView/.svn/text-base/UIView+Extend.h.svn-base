@@ -1,0 +1,14 @@
+//
+//  UIView+Extend.h
+//  hxj
+//
+//  Created by gaofu on 15/10/22.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UIView (Extend)
+//获取当前view 的 viewcontroller
+- (UIViewController*)currentViewController;
+@end

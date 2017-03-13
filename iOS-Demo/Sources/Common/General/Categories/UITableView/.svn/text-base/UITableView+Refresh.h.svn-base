@@ -1,0 +1,91 @@
+//
+//  UITableView+Refresh.h
+//  ksf
+//
+//  Created by gaofu on 15/11/23.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//UITableView的上下拉刷新 ( 基于MJRefresh 2.4.12 )
+
+#import <UIKit/UIKit.h>
+#import "MJRefresh.h"
+
+@interface UITableView (Refresh)
+
+
+/**
+ * 设置头部刷新
+ * @param block 刷新时的Block
+ */
+
+-(void)refreshHeaderWithBlock:(MJRefreshComponentRefreshingBlock)block;
+
+
+/**
+ * 设置尾部刷新
+ * @param block 刷新时的Block
+ */
+
+-(void)refreshFooterWithBlock:(MJRefreshComponentRefreshingBlock)block;
+
+
+/**
+ * 同时创建上拉和下拉刷新
+ * @param headerBlock 上拉刷新Block
+ * @param footerBlock 下拉加载Block
+ */
+
+-(void)refreshHeaderWithBlock:(MJRefreshComponentRefreshingBlock)headerBlock
+                         footerWithBlock:(MJRefreshComponentRefreshingBlock)footerBlock;
+
+
+/**
+ * 停止头部上拉刷新
+ */
+
+-(void)endHeaderRefresh;
+
+
+/**
+ *  停止尾部刷新
+ */
+
+-(void)endFooterRefresh;
+
+
+/**
+ *  停止尾部刷新(没有更多数据)
+ */
+
+-(void)endFooterRefreshWithoutMoreData;
+
+/**
+ *  重置尾部刷新(没有更多数据)
+ */
+
+-(void)resetFooterRefreshWithoutMoreData;
+
+
+/**
+ * 停止尾部刷新
+ * @param data 传入最后一次加载的数据数组
+ */
+
+-(void)endFooterRefreshWithData:(NSArray*)data;
+
+
+
+/**
+ * 停止头部和尾部刷新
+ */
+-(void)endRefresh;
+
+
+/**
+ * 停止头部和尾部刷新
+ * @param data 传入停止刷新时加载的数据数组
+ */
+
+-(void)endRefreshWithData:(NSArray*)data;
+
+
+@end

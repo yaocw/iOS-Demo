@@ -1,0 +1,26 @@
+//
+//  BaseAutoCornerButton.m
+//  ksf
+//
+//  Created by gaofu on 15/11/29.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "BaseAutoCornerButton.h"
+
+@implementation BaseAutoCornerButton
+
+-(void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents
+{
+    [super addTarget:target action:action forControlEvents:controlEvents];
+    
+    [self addTarget:self action:@selector(BACclick) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+-(void)BACclick
+{
+    self.userInteractionEnabled = NO;
+}
+
+@end

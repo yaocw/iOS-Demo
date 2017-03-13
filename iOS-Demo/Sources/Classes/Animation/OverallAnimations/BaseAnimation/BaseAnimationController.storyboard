@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--基础动画-->
+        <scene sceneID="QqH-7K-Snf">
+            <objects>
+                <viewController storyboardIdentifier="BaseAnimationController" id="E1d-g2-5kh" customClass="BaseAnimationController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sHC-Rw-2GL"/>
+                        <viewControllerLayoutGuide type="bottom" id="e98-0d-wii"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5wz-tA-uwR">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OO6-LE-OH3">
+                                <rect key="frame" x="29.5" y="438" width="46" height="46"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="1F7-fx-I12"/>
+                                    <constraint firstAttribute="width" secondItem="OO6-LE-OH3" secondAttribute="height" multiplier="1:1" id="SNP-hG-cUa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="位移">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="E1d-g2-5kh" eventType="touchUpInside" id="UgA-hw-6DG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITJ-Ut-KRg">
+                                <rect key="frame" x="83.5" y="438" width="46" height="46"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="缩放">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="E1d-g2-5kh" eventType="touchUpInside" id="6tt-eK-0qz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6m-ow-U6u">
+                                <rect key="frame" x="137.5" y="438" width="45.5" height="46"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="旋转">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="E1d-g2-5kh" eventType="touchUpInside" id="TPk-Jz-hBw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHC-MS-2uI">
+                                <rect key="frame" x="191" y="438" width="46" height="46"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="透明度">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="E1d-g2-5kh" eventType="touchUpInside" id="ghj-Yo-xcE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehZ-iw-Ajf">
+                                <rect key="frame" x="245" y="438" width="46" height="46"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="颜色">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="E1d-g2-5kh" eventType="touchUpInside" id="7rv-vp-cOi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rHC-MS-2uI" firstAttribute="height" secondItem="OO6-LE-OH3" secondAttribute="height" id="5oW-d9-c3J"/>
+                            <constraint firstItem="rHC-MS-2uI" firstAttribute="width" secondItem="OO6-LE-OH3" secondAttribute="width" id="6yZ-XI-P4c"/>
+                            <constraint firstItem="G6m-ow-U6u" firstAttribute="leading" secondItem="ITJ-Ut-KRg" secondAttribute="trailing" constant="8" id="A0G-6H-Hri"/>
+                            <constraint firstItem="G6m-ow-U6u" firstAttribute="width" secondItem="OO6-LE-OH3" secondAttribute="width" id="AOA-Hs-vq6"/>
+                            <constraint firstItem="e98-0d-wii" firstAttribute="top" secondItem="ITJ-Ut-KRg" secondAttribute="bottom" constant="20" id="CHq-3Y-g6v"/>
+                            <constraint firstItem="ITJ-Ut-KRg" firstAttribute="leading" secondItem="OO6-LE-OH3" secondAttribute="trailing" constant="8" id="ImH-me-tW3"/>
+                            <constraint firstItem="e98-0d-wii" firstAttribute="top" secondItem="G6m-ow-U6u" secondAttribute="bottom" constant="20" id="Ldu-51-KzA"/>
+                            <constraint firstItem="ITJ-Ut-KRg" firstAttribute="height" secondItem="OO6-LE-OH3" secondAttribute="height" id="LeH-iw-reW"/>
+                            <constraint firstItem="ITJ-Ut-KRg" firstAttribute="width" secondItem="OO6-LE-OH3" secondAttribute="width" id="MPp-4k-lrc"/>
+                            <constraint firstItem="e98-0d-wii" firstAttribute="top" secondItem="ehZ-iw-Ajf" secondAttribute="bottom" constant="20" id="VAf-tL-x5q"/>
+                            <constraint firstItem="ehZ-iw-Ajf" firstAttribute="width" secondItem="OO6-LE-OH3" secondAttribute="width" id="blD-0k-ioF"/>
+                            <constraint firstItem="rHC-MS-2uI" firstAttribute="leading" secondItem="G6m-ow-U6u" secondAttribute="trailing" constant="8" id="eMw-kt-ZRq"/>
+                            <constraint firstItem="ehZ-iw-Ajf" firstAttribute="leading" secondItem="rHC-MS-2uI" secondAttribute="trailing" constant="8" id="hEx-he-Sco"/>
+                            <constraint firstItem="e98-0d-wii" firstAttribute="top" secondItem="rHC-MS-2uI" secondAttribute="bottom" constant="20" id="qeg-qZ-IDJ"/>
+                            <constraint firstItem="G6m-ow-U6u" firstAttribute="height" secondItem="OO6-LE-OH3" secondAttribute="height" id="sAY-ee-KFI"/>
+                            <constraint firstItem="e98-0d-wii" firstAttribute="top" secondItem="OO6-LE-OH3" secondAttribute="bottom" constant="20" id="sXp-h4-JF7"/>
+                            <constraint firstItem="G6m-ow-U6u" firstAttribute="centerX" secondItem="5wz-tA-uwR" secondAttribute="centerX" id="tpI-xp-rDf"/>
+                            <constraint firstItem="ehZ-iw-Ajf" firstAttribute="height" secondItem="OO6-LE-OH3" secondAttribute="height" id="v61-0Q-sic"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="基础动画" id="85n-VF-XyY"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e3S-KG-avg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292.5" y="-129.92957746478874"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,13 @@
+//
+//  BaseCollectionViewCell.h
+//  ksf
+//
+//  Created by gaofu on 15/10/28.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//父类cell:
+
+#import <UIKit/UIKit.h>
+
+@interface BaseCollectionViewCell : UICollectionViewCell
+
+@end

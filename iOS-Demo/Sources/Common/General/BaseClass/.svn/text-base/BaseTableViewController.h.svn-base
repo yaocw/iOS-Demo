@@ -1,0 +1,49 @@
+//
+//  BaseTableViewController.h
+//  RaccoonHomeClient
+//
+//  Created by gaofu on 15/10/20.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface BaseTableViewController : UITableViewController
+
+/**
+ *  数据初始化
+ */
+- (void)b_initializeData;
+
+/**
+ *  自定义导航栏
+ */
+- (void)b_initNavigation;
+
+/**
+ *  返回按钮
+ */
+-(void)b_backAction:(UIBarButtonItem*)sender;
+
+/**
+ *  初始化tableview
+ */
+- (void)b_initTableview;
+
+/**
+ *  初始化控件
+ */
+-(void)b_initComponent;
+
+/**
+ *  隐藏键盘
+ */
+-(void)b_hiddenKeyboard;
+
+/**
+ *  网络请求
+ */
+-(void)b_request;
+
+
+@end

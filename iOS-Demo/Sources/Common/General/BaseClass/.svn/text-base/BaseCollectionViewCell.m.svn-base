@@ -1,0 +1,13 @@
+//
+//  BaseCollectionViewCell.m
+//  ksf
+//
+//  Created by gaofu on 15/10/28.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "BaseCollectionViewCell.h"
+
+@implementation BaseCollectionViewCell
+
+@end

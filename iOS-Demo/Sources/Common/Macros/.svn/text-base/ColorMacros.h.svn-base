@@ -1,0 +1,54 @@
+//
+//  ColorMacros.h
+//  RaccoonHomeClient
+//
+//  Created by gaofu on 15/10/20.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+/**
+ *  颜色宏
+ */
+
+
+#ifndef ColorMacros_h
+#define ColorMacros_h
+
+/**
+ *  16进制颜色
+ *
+ *  @param Hex 16进制颜色字符串
+  *  @param a   透明度
+ */
+#define kHexColor(Hex) [UIColor colorWithHexColorString:Hex]
+#define kHexColorA(Hex,a) [UIColor colorWithHexString:Hex alpha:a]
+
+//客户端主色
+#define kMainColorOfCustomer kHexColor(@"fbc600")
+
+//工人端主色
+#define kMainColorOfWorker kHexColor(@"faa01a")
+
+//工人端辅色 - 红色
+#define kMinorRedColorOfWorder kHexColor(@"fa641a")
+
+//工人端辅色 - 绿色
+#define kMinorGreenColorOfWorker kHexColor(@"39b961")
+
+//灰色框
+#define kUIFrameColor kHexColor(@"f0f0f0")
+
+//页面底色
+#define kPageBackgroundColor kHexColor(@"ebebeb")
+
+
+//黑色字体
+#define kBlankFontColor kHexColor(@"3f3536")
+
+//主字体颜色
+#define kMainFontColor kHexColor(@"3a3e39")
+
+//辅助字体颜色
+#define kMinorFontColor kHexColor(@"888888")
+
+
+#endif /* ColorMacros_h */

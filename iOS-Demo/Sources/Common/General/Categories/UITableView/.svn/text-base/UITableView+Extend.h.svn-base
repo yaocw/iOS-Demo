@@ -1,0 +1,43 @@
+//
+//  UITableView+Extend.h
+//  hxj
+//
+//  Created by gaofu on 15/10/22.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UITableView (Extend)
+
+/**
+ *  隐藏多余的cell
+ */
+- (void)hiddenExtraCell;
+
+/**
+ *  注册Xib Cell
+ *
+ *  @param cell的类名
+ */
+-(void)registerNibCell:(Class)cellClass;
+
+/**
+ *  注册Class Cell
+ *
+ *  @param cell的类名
+ */
+-(void)registerClassCell:(Class)cellClass;
+
+/**
+ *  cell复用
+ *
+ *  @param cellClass cell的类名
+ *
+ *  @return cell
+ */
+-(__kindof UITableViewCell*)cellWithClass:(Class)cellClass;
+
+-(__kindof UITableViewCell*)cellWithClass:(Class)cellClass forIndexPath:(NSIndexPath*)index;
+
+@end

@@ -1,0 +1,75 @@
+//
+//  ServerMacros.h
+//  ksf
+//
+//  Created by gaofu on 15/11/11.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//服务器地址
+
+#ifndef ServerMacros_h
+#define ServerMacros_h
+
+/**
+ *  开发库
+ */
+
+////接口服务器
+//#define Base_Service_Url  @"http://10.10.10.231:8081/hxapi"
+//
+////消息服务器
+//#define IM_Service_IP @"10.10.10.231"
+//
+////消息接口服务器
+//#define IM_Service_Url @"http://10.10.10.231:8081/imserver"
+
+
+/*
+ *  测试库
+ */
+
+
+//////测试接口
+#define Base_Service_Test @"http://112.74.80.195/hxapi"
+////
+////接口服务器
+#define Base_Service_Url @"http://112.74.80.195/hxapi"
+
+//消息服务器
+#define IM_Service_IP @"112.74.80.195"
+
+//消息接口服务器
+#define IM_Service_Url @"http://112.74.80.195:8081/imserver"
+
+///*
+// *  正式库
+// */
+
+
+////接口服务器
+//#define Base_Service_Url @"http://120.24.45.81/hxapi"
+//
+////消息服务器
+//#define IM_Service_IP @"120.24.45.81"
+//
+////消息接口服务器
+//#define IM_Service_Url @"http://120.24.45.81/imserver"
+
+
+/**
+ * 域名访问
+ */
+////接口服务器
+//#define Base_Service_Url @"http://rms.huan666.com/hxapi"
+//
+////消息服务器
+//#define IM_Service_IP @"rms.huan666.com"
+//
+////消息接口服务器
+//#define IM_Service_Url @"http://rms.huan666.com/imserver"
+
+
+//端口
+#define IM_Service_Port  8888
+
+
+#endif /* ServerMacros_h */

@@ -1,0 +1,27 @@
+//
+//  UIView+Extend.m
+//  hxj
+//
+//  Created by gaofu on 15/10/22.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "UIView+Extend.h"
+
+@implementation UIView (Extend)
+#pragma mark---------------获取当前view 的 viewcontroller---------------
+- (UIViewController*)currentViewController
+{
+    UIView *tmpSupView = self.superview;
+    UIResponder* nextResponder = [tmpSupView nextResponder];
+    
+    if ([nextResponder isKindOfClass:[UIViewController class]])
+    {
+        return (UIViewController*)nextResponder;
+    }
+    else
+    {
+        return [tmpSupView currentViewController];
+    }
+}
+@end

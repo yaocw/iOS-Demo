@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--过渡动画-->
+        <scene sceneID="pBo-Ao-lSQ">
+            <objects>
+                <viewController storyboardIdentifier="TransitionAnimationController" id="DdY-HG-Djr" customClass="TransitionAnimationController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8w5-eD-eSr"/>
+                        <viewControllerLayoutGuide type="bottom" id="gGi-Ht-Qqy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UG3-c6-LkK">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkq-HI-8nY">
+                                <rect key="frame" x="41.5" y="432" width="52" height="52"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xkq-HI-8nY" secondAttribute="height" multiplier="1:1" id="Mlg-pC-1aU"/>
+                                    <constraint firstAttribute="height" constant="52" id="fBF-DP-iDv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="curl">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="DdY-HG-Djr" eventType="touchUpInside" id="rfq-ZI-o6n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7T8-ih-gyN">
+                                <rect key="frame" x="101.5" y="432" width="52" height="52"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="unCurl">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="DdY-HG-Djr" eventType="touchUpInside" id="mXu-TE-Obi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwb-9Z-eTt">
+                                <rect key="frame" x="161.5" y="432" width="52" height="52"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="caOpen">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="DdY-HG-Djr" eventType="touchUpInside" id="ipq-qg-RtL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q73-cL-nq1">
+                                <rect key="frame" x="221.5" y="432" width="52" height="52"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="caClose">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="DdY-HG-Djr" eventType="touchUpInside" id="BCJ-5E-hNq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymK-dM-sNd">
+                                <rect key="frame" x="41.5" y="372" width="52" height="52"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ymK-dM-sNd" secondAttribute="height" multiplier="1:1" id="ONd-nM-6lY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="cube">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="DdY-HG-Djr" eventType="touchUpInside" id="1Sz-gQ-E8u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNp-2S-Tju">
+                                <rect key="frame" x="101.5" y="372" width="52" height="52"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="suck">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="DdY-HG-Djr" eventType="touchUpInside" id="fXY-mZ-1mw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yi-pO-i59">
+                                <rect key="frame" x="161.5" y="372" width="52" height="52"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="ogFlip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="DdY-HG-Djr" eventType="touchUpInside" id="aGz-81-Ks5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gD2-k6-HWu">
+                                <rect key="frame" x="221.5" y="372" width="52" height="52"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="ripple">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="DdY-HG-Djr" eventType="touchUpInside" id="qXD-ly-rRz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xtn-W2-QRd">
+                                <rect key="frame" x="41.5" y="312" width="52" height="52"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Xtn-W2-QRd" secondAttribute="height" multiplier="1:1" id="r3n-FN-a8g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="fade">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="DdY-HG-Djr" eventType="touchUpInside" id="Lcb-NO-hs7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioz-H7-3xb">
+                                <rect key="frame" x="101.5" y="312" width="52" height="52"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="moveIn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="DdY-HG-Djr" eventType="touchUpInside" id="eNN-ow-bKT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Zg-Im-EcP">
+                                <rect key="frame" x="161.5" y="312" width="52" height="52"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="push">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="DdY-HG-Djr" eventType="touchUpInside" id="ryN-nV-q8Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twV-Nm-CRO">
+                                <rect key="frame" x="221.5" y="312" width="52" height="52"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="reveal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="DdY-HG-Djr" eventType="touchUpInside" id="eyd-4k-VGG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SNp-2S-Tju" firstAttribute="height" secondItem="ymK-dM-sNd" secondAttribute="height" id="1lI-RA-5yR"/>
+                            <constraint firstItem="xkq-HI-8nY" firstAttribute="top" secondItem="ymK-dM-sNd" secondAttribute="bottom" constant="8" id="20H-QE-ccN"/>
+                            <constraint firstItem="q73-cL-nq1" firstAttribute="leading" secondItem="mwb-9Z-eTt" secondAttribute="trailing" constant="8" id="2KU-Zy-2Qt"/>
+                            <constraint firstItem="q73-cL-nq1" firstAttribute="width" secondItem="xkq-HI-8nY" secondAttribute="width" id="2qA-HI-RIt"/>
+                            <constraint firstItem="7T8-ih-gyN" firstAttribute="height" secondItem="xkq-HI-8nY" secondAttribute="height" id="5wN-Js-Dq6"/>
+                            <constraint firstItem="3Zg-Im-EcP" firstAttribute="centerY" secondItem="Xtn-W2-QRd" secondAttribute="centerY" id="6lt-tk-j25"/>
+                            <constraint firstItem="ymK-dM-sNd" firstAttribute="width" secondItem="Xtn-W2-QRd" secondAttribute="width" id="ABx-Cv-gsX"/>
+                            <constraint firstItem="mwb-9Z-eTt" firstAttribute="width" secondItem="xkq-HI-8nY" secondAttribute="width" id="AGp-au-4QX"/>
+                            <constraint firstItem="SNp-2S-Tju" firstAttribute="width" secondItem="Xtn-W2-QRd" secondAttribute="width" id="ArJ-eO-hlk"/>
+                            <constraint firstItem="SNp-2S-Tju" firstAttribute="centerX" secondItem="ioz-H7-3xb" secondAttribute="centerX" id="Ass-9Z-zHJ"/>
+                            <constraint firstItem="gGi-Ht-Qqy" firstAttribute="top" secondItem="xkq-HI-8nY" secondAttribute="bottom" constant="20" id="BDR-TA-hXc"/>
+                            <constraint firstItem="1yi-pO-i59" firstAttribute="width" secondItem="Xtn-W2-QRd" secondAttribute="width" id="Cqj-Mh-y9b"/>
+                            <constraint firstItem="gD2-k6-HWu" firstAttribute="width" secondItem="ymK-dM-sNd" secondAttribute="width" id="DjD-E7-xFd"/>
+                            <constraint firstItem="1yi-pO-i59" firstAttribute="leading" secondItem="SNp-2S-Tju" secondAttribute="trailing" constant="8" id="DnI-YO-E24"/>
+                            <constraint firstItem="gGi-Ht-Qqy" firstAttribute="top" secondItem="mwb-9Z-eTt" secondAttribute="bottom" constant="20" id="ESF-bE-47Z"/>
+                            <constraint firstItem="gD2-k6-HWu" firstAttribute="centerY" secondItem="ymK-dM-sNd" secondAttribute="centerY" id="HGX-ok-o4e"/>
+                            <constraint firstItem="gD2-k6-HWu" firstAttribute="width" secondItem="Xtn-W2-QRd" secondAttribute="width" id="HgN-2V-N2l"/>
+                            <constraint firstItem="gGi-Ht-Qqy" firstAttribute="top" secondItem="q73-cL-nq1" secondAttribute="bottom" constant="20" id="Ica-CT-C8h"/>
+                            <constraint firstItem="1yi-pO-i59" firstAttribute="width" secondItem="ymK-dM-sNd" secondAttribute="width" id="JHC-3D-M8A"/>
+                            <constraint firstItem="SNp-2S-Tju" firstAttribute="centerY" secondItem="ymK-dM-sNd" secondAttribute="centerY" id="JQ9-SJ-0pN"/>
+                            <constraint firstItem="ioz-H7-3xb" firstAttribute="width" secondItem="Xtn-W2-QRd" secondAttribute="width" id="JYx-VP-Exg"/>
+                            <constraint firstItem="3Zg-Im-EcP" firstAttribute="width" secondItem="Xtn-W2-QRd" secondAttribute="width" id="KaM-GT-omw"/>
+                            <constraint firstItem="twV-Nm-CRO" firstAttribute="leading" secondItem="3Zg-Im-EcP" secondAttribute="trailing" constant="8" id="L9k-sE-mCk"/>
+                            <constraint firstItem="3Zg-Im-EcP" firstAttribute="leading" secondItem="ioz-H7-3xb" secondAttribute="trailing" constant="8" id="MCd-tp-qRt"/>
+                            <constraint firstItem="twV-Nm-CRO" firstAttribute="height" secondItem="Xtn-W2-QRd" secondAttribute="height" id="MIi-L3-qzq"/>
+                            <constraint firstItem="ioz-H7-3xb" firstAttribute="leading" secondItem="Xtn-W2-QRd" secondAttribute="trailing" constant="8" id="NgT-U7-J9p"/>
+                            <constraint firstItem="twV-Nm-CRO" firstAttribute="width" secondItem="Xtn-W2-QRd" secondAttribute="width" id="Nz9-9k-7iF"/>
+                            <constraint firstItem="1yi-pO-i59" firstAttribute="centerY" secondItem="ymK-dM-sNd" secondAttribute="centerY" id="OEP-J3-yog"/>
+                            <constraint firstItem="3Zg-Im-EcP" firstAttribute="width" secondItem="Xtn-W2-QRd" secondAttribute="width" id="Oiz-KA-An7"/>
+                            <constraint firstItem="ioz-H7-3xb" firstAttribute="width" secondItem="Xtn-W2-QRd" secondAttribute="width" id="Qf4-me-S6S"/>
+                            <constraint firstItem="1yi-pO-i59" firstAttribute="height" secondItem="ymK-dM-sNd" secondAttribute="height" id="R1V-0r-QGI"/>
+                            <constraint firstItem="gD2-k6-HWu" firstAttribute="leading" secondItem="1yi-pO-i59" secondAttribute="trailing" constant="8" id="T3P-1H-Kbh"/>
+                            <constraint firstItem="7T8-ih-gyN" firstAttribute="centerX" secondItem="ioz-H7-3xb" secondAttribute="centerX" id="VVO-5o-pot"/>
+                            <constraint firstItem="3Zg-Im-EcP" firstAttribute="height" secondItem="Xtn-W2-QRd" secondAttribute="height" id="XAN-7z-SsN"/>
+                            <constraint firstItem="Xtn-W2-QRd" firstAttribute="width" secondItem="Xtn-W2-QRd" secondAttribute="height" multiplier="1:1" id="YYK-x9-4dd"/>
+                            <constraint firstItem="gD2-k6-HWu" firstAttribute="height" secondItem="ymK-dM-sNd" secondAttribute="height" id="cZb-O3-2wV"/>
+                            <constraint firstItem="twV-Nm-CRO" firstAttribute="centerY" secondItem="Xtn-W2-QRd" secondAttribute="centerY" id="dLx-8d-83Y"/>
+                            <constraint firstItem="mwb-9Z-eTt" firstAttribute="height" secondItem="xkq-HI-8nY" secondAttribute="height" id="dTF-kv-JUK"/>
+                            <constraint firstItem="twV-Nm-CRO" firstAttribute="width" secondItem="Xtn-W2-QRd" secondAttribute="width" id="dvc-Nm-xjK"/>
+                            <constraint firstItem="xkq-HI-8nY" firstAttribute="width" secondItem="Xtn-W2-QRd" secondAttribute="width" id="ecM-EH-feO"/>
+                            <constraint firstItem="q73-cL-nq1" firstAttribute="height" secondItem="xkq-HI-8nY" secondAttribute="height" id="egF-cX-7s1"/>
+                            <constraint firstItem="ioz-H7-3xb" firstAttribute="height" secondItem="Xtn-W2-QRd" secondAttribute="height" id="gtp-WG-Kyc"/>
+                            <constraint firstItem="SNp-2S-Tju" firstAttribute="leading" secondItem="ymK-dM-sNd" secondAttribute="trailing" constant="8" id="h9M-hO-EqJ"/>
+                            <constraint firstItem="SNp-2S-Tju" firstAttribute="width" secondItem="ymK-dM-sNd" secondAttribute="width" id="kGp-74-otc"/>
+                            <constraint firstItem="Xtn-W2-QRd" firstAttribute="width" secondItem="Xtn-W2-QRd" secondAttribute="height" multiplier="1:1" id="kwc-Jh-eqk"/>
+                            <constraint firstItem="mwb-9Z-eTt" firstAttribute="centerX" secondItem="UG3-c6-LkK" secondAttribute="centerX" constant="27" id="lQV-4q-e3v"/>
+                            <constraint firstItem="7T8-ih-gyN" firstAttribute="leading" secondItem="xkq-HI-8nY" secondAttribute="trailing" constant="8" id="lVN-3z-WSt"/>
+                            <constraint firstItem="ymK-dM-sNd" firstAttribute="top" secondItem="Xtn-W2-QRd" secondAttribute="bottom" constant="8" id="mc7-U9-8R9"/>
+                            <constraint firstItem="7T8-ih-gyN" firstAttribute="width" secondItem="xkq-HI-8nY" secondAttribute="width" id="muD-6b-uiw"/>
+                            <constraint firstItem="ioz-H7-3xb" firstAttribute="centerY" secondItem="Xtn-W2-QRd" secondAttribute="centerY" id="qNA-PL-Aab"/>
+                            <constraint firstItem="gGi-Ht-Qqy" firstAttribute="top" secondItem="7T8-ih-gyN" secondAttribute="bottom" constant="20" id="sUU-Qh-rIF"/>
+                            <constraint firstItem="ymK-dM-sNd" firstAttribute="width" secondItem="ymK-dM-sNd" secondAttribute="height" multiplier="1:1" id="uhB-HL-ORT"/>
+                            <constraint firstItem="mwb-9Z-eTt" firstAttribute="leading" secondItem="7T8-ih-gyN" secondAttribute="trailing" constant="8" id="yCt-aF-NKP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="过渡动画" id="CJU-OU-wwn"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jl3-r3-fFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292.5" y="-129.92957746478874"/>
+        </scene>
+    </scenes>
+</document>

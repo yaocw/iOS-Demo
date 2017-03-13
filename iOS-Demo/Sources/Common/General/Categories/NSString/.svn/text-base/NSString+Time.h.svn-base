@@ -1,0 +1,22 @@
+//
+//  NSString+Time.h
+//  hxj
+//
+//  Created by gaofu on 16/1/11.
+//  Copyright © 2016年 gaofu. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface NSString (Time)
+
+//时差是否超过3分钟
+-(BOOL)timeDistanceMore:(NSString*)timeStr;
+
+//消息显示时间
+-(NSString*)messageTime;
+
+//消息列表显示时间
+-(NSString*)messageListTime;
+
+@end

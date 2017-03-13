@@ -1,0 +1,51 @@
+//
+//  OperationButton.m
+//  ksf
+//
+//  Created by yaochaowen on 16/1/23.
+//  Copyright © 2016年 gaofu. All rights reserved.
+//
+
+#import "OperationButton.h"
+
+@implementation OperationButton
+
+- (void)awakeFromNib
+{
+    [self settingButtonStyle];
+}
+
+- (instancetype)init
+{
+    if (self = [super init])
+    {
+        [self settingButtonStyle];
+    }
+
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:frame])
+    {
+        [self settingButtonStyle];
+    }
+    
+    return self;
+}
+
+- (void)settingButtonStyle
+{
+    self.layer.cornerRadius = kCornerRadius;
+    self.layer.masksToBounds = YES;
+    
+    self.layer.borderColor = [UIColor orangeColor].CGColor;
+    self.layer.borderWidth = 1;
+    
+    [self setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    
+    self.titleLabel.font = AppFontWithSizeOf16;
+}
+
+@end

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--组合动画-->
+        <scene sceneID="lVh-fV-Sxr">
+            <objects>
+                <viewController storyboardIdentifier="CombinationAnimationController" id="zhR-At-u7s" customClass="CombinationAnimationController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9i7-9X-1Ud"/>
+                        <viewControllerLayoutGuide type="bottom" id="rUu-R1-4iW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J95-fx-iKT">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIx-L0-0IL">
+                                <rect key="frame" x="110" y="438" width="46" height="46"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="BQR-DN-veC"/>
+                                    <constraint firstAttribute="width" secondItem="kIx-L0-0IL" secondAttribute="height" multiplier="1:1" id="nxj-nV-PIi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="同时">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="zhR-At-u7s" eventType="touchUpInside" id="OfS-ps-Sa0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZl-zH-7H4">
+                                <rect key="frame" x="164" y="438" width="46" height="46"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="连续">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="zhR-At-u7s" eventType="touchUpInside" id="tNk-x7-WM6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eZl-zH-7H4" firstAttribute="width" secondItem="kIx-L0-0IL" secondAttribute="width" id="Bz9-rC-Vxf"/>
+                            <constraint firstItem="eZl-zH-7H4" firstAttribute="centerX" secondItem="J95-fx-iKT" secondAttribute="centerX" constant="27" id="DF6-S2-y9C"/>
+                            <constraint firstItem="rUu-R1-4iW" firstAttribute="top" secondItem="kIx-L0-0IL" secondAttribute="bottom" constant="20" id="E2y-nm-lYZ"/>
+                            <constraint firstItem="rUu-R1-4iW" firstAttribute="top" secondItem="eZl-zH-7H4" secondAttribute="bottom" constant="20" id="aZW-ce-EZU"/>
+                            <constraint firstItem="eZl-zH-7H4" firstAttribute="leading" secondItem="kIx-L0-0IL" secondAttribute="trailing" constant="8" id="oWO-iB-cjq"/>
+                            <constraint firstItem="eZl-zH-7H4" firstAttribute="height" secondItem="kIx-L0-0IL" secondAttribute="height" id="y9P-Le-kgf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="组合动画" id="44S-5T-0Bm"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HTh-UV-J0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292.5" y="-129.92957746478874"/>
+        </scene>
+    </scenes>
+</document>

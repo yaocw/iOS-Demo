@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Other-->
+        <scene sceneID="Xob-KF-EWY">
+            <objects>
+                <viewController storyboardIdentifier="OtherMaskTransitionController" id="1JO-WG-fxQ" customClass="OtherMaskTransitionController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7N7-hf-WmN"/>
+                        <viewControllerLayoutGuide type="bottom" id="TRN-mv-Bij"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TEm-8E-mcS">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sex_girl_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2zr-zm-jqH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2zr-zm-jqH" firstAttribute="top" secondItem="7N7-hf-WmN" secondAttribute="bottom" id="7nB-Kd-PV9"/>
+                            <constraint firstAttribute="trailing" secondItem="2zr-zm-jqH" secondAttribute="trailing" id="NOx-Xc-9sj"/>
+                            <constraint firstItem="2zr-zm-jqH" firstAttribute="leading" secondItem="TEm-8E-mcS" secondAttribute="leading" id="hgv-B1-pLB"/>
+                            <constraint firstItem="TRN-mv-Bij" firstAttribute="top" secondItem="2zr-zm-jqH" secondAttribute="bottom" id="o2k-58-2yN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Other" id="YOH-eb-0Fs"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g2F-aF-i5v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309.375" y="231.33802816901408"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sex_girl_2.jpg" width="900" height="1065"/>
+    </resources>
+</document>

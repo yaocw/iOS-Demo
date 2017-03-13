@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="SNS_AddReplacingRuleCell" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="SNS_AddReplacingRuleCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gU3-we-r4t">
+                        <rect key="frame" x="16" y="8" width="258" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="替换为" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGV-Py-cQp">
+                        <rect key="frame" x="32" y="34" width="40" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEV-1C-xiD">
+                        <rect key="frame" x="16" y="58" width="258" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="beauty_girl.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AOl-fs-H87">
+                        <rect key="frame" x="282" y="39" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="7hi-fs-tNu"/>
+                            <constraint firstAttribute="height" constant="22" id="wle-W7-eSV"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4t-3T-b4O">
+                        <rect key="frame" x="0.0" y="99" width="320" height="0.0"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="u2e-pc-9Ao"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HEV-1C-xiD" firstAttribute="leading" secondItem="gU3-we-r4t" secondAttribute="leading" id="6ue-vf-G7g"/>
+                    <constraint firstAttribute="trailing" secondItem="h4t-3T-b4O" secondAttribute="trailing" id="DK5-9X-R12"/>
+                    <constraint firstItem="AOl-fs-H87" firstAttribute="leading" secondItem="gU3-we-r4t" secondAttribute="trailing" constant="8" id="Jfe-jb-Zau"/>
+                    <constraint firstItem="HEV-1C-xiD" firstAttribute="top" secondItem="DGV-Py-cQp" secondAttribute="bottom" constant="8" id="KQh-ih-6AT"/>
+                    <constraint firstItem="DGV-Py-cQp" firstAttribute="leading" secondItem="gU3-we-r4t" secondAttribute="leading" constant="16" id="LDC-1c-JIm"/>
+                    <constraint firstItem="h4t-3T-b4O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PZt-Gi-NlJ"/>
+                    <constraint firstItem="gU3-we-r4t" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Wii-f3-3Y2"/>
+                    <constraint firstItem="AOl-fs-H87" firstAttribute="leading" secondItem="HEV-1C-xiD" secondAttribute="trailing" constant="8" id="XeD-g3-dMs"/>
+                    <constraint firstItem="DGV-Py-cQp" firstAttribute="top" secondItem="gU3-we-r4t" secondAttribute="bottom" constant="8" id="bpT-sN-e4i"/>
+                    <constraint firstItem="gU3-we-r4t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="eN5-Tk-CxQ"/>
+                    <constraint firstAttribute="bottom" secondItem="HEV-1C-xiD" secondAttribute="bottom" constant="8" id="jiW-3B-XgS"/>
+                    <constraint firstAttribute="bottom" secondItem="h4t-3T-b4O" secondAttribute="bottom" id="kZL-LA-h6z"/>
+                    <constraint firstItem="AOl-fs-H87" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ldz-bn-oCw"/>
+                    <constraint firstAttribute="trailing" secondItem="AOl-fs-H87" secondAttribute="trailing" constant="16" id="sDF-Ma-nLp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="999" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="afterReplaceContentLabel" destination="HEV-1C-xiD" id="Il3-rE-Ia1"/>
+                <outlet property="beforeReplaceContentLabel" destination="gU3-we-r4t" id="9W1-dK-chH"/>
+            </connections>
+            <point key="canvasLocation" x="-216" y="-66"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="beauty_girl.jpg" width="535" height="648"/>
+    </resources>
+</document>

@@ -1,0 +1,60 @@
+//
+//  BaseTextFiled.m
+//  RaccoonHomeClient
+//
+//  Created by gaofu on 15/10/20.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "BaseTextFiled.h"
+#import "KeyboardToolBar.h"
+@implementation BaseTextFiled
+
+-(void)awakeFromNib
+{
+//    //收键盘按钮
+//    self.inputAccessoryView = [KeyboardToolBar keyboardToolBarWithFinishInputBlock:^
+//    {
+//        [self resignFirstResponder];
+//    }];
+
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(textValueChange:) name:@"UITextFieldTextDidChangeNotification" object:self];
+    
+    if (_maxLengthOfText == 0)
+    {
+        _maxLengthOfText = 999;
+    }
+}
+
+- (void)textValueChange:(NSNotification *)sender
+{
+    NSString *textInputModel = [[[UIApplication sharedApplication] textInputMode] primaryLanguage];
+    if ([textInputModel isEqualToString:@"zh-Hans"])
+    {
+        UITextRange *selectedRange = [self markedTextRange];
+        UITextPosition *position = [self positionFromPosition:selectedRange.start offset:0];
+        if (!position)
+        {
+            if (self.text.length > _maxLengthOfText)
+            {
+                self.text = [self.text substringToIndex:_maxLengthOfText];
+                return ;
+            }
+        }
+    }
+    else
+    {
+        if (self.text.length > _maxLengthOfText)
+        {
+            self.text = [self.text substringToIndex:_maxLengthOfText];
+            return ;
+        }
+    }
+}
+
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"UITextFieldTextDidChangeNotification" object:self];
+}
+
+@end

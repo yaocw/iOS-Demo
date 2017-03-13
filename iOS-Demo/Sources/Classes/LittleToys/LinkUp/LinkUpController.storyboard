@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LinkUp-->
+        <scene sceneID="gNd-nl-JPH">
+            <objects>
+                <viewController storyboardIdentifier="LinkUpController" id="N6s-ht-8bx" customClass="LinkUpController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S0l-sQ-oiN"/>
+                        <viewControllerLayoutGuide type="bottom" id="xh0-pT-rJP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RIz-NL-HrI">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sex_girl_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9Dk-7Z-27x">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xh0-pT-rJP" firstAttribute="top" secondItem="9Dk-7Z-27x" secondAttribute="bottom" id="20J-1q-iA0"/>
+                            <constraint firstAttribute="trailing" secondItem="9Dk-7Z-27x" secondAttribute="trailing" id="7Oe-a2-LHx"/>
+                            <constraint firstItem="9Dk-7Z-27x" firstAttribute="leading" secondItem="RIz-NL-HrI" secondAttribute="leading" id="f9U-k1-xPz"/>
+                            <constraint firstItem="9Dk-7Z-27x" firstAttribute="top" secondItem="S0l-sQ-oiN" secondAttribute="bottom" id="g47-06-uyf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="LinkUp" id="8yd-F9-7cd">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="r01-EP-gJZ">
+                            <connections>
+                                <action selector="resetAction:" destination="N6s-ht-8bx" id="bSJ-n7-8tD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="9Dk-7Z-27x" id="3Zh-6u-l65"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="COM-1g-fg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1421" y="169"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sex_girl_1.jpg" width="900" height="1290"/>
+    </resources>
+</document>

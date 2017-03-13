@@ -1,0 +1,106 @@
+//
+//  UILabel+Extend.m
+//  hxj
+//
+//  Created by gaofu on 15/10/22.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "UILabel+Extend.h"
+#import "NSString+Size.h"
+
+@implementation UILabel (Extend)
+/**
+ *  返回行数
+ */
+-(NSInteger)lineNumber
+{
+    return [self.text heightWithfont:self.font width:self.bounds.size.width] / [@" " heightWithfont:self.font width:MAXFLOAT];
+}
+
+/**
+ *  计算高度
+ */
+
+-(CGFloat) labelHeight
+{
+    return [self.text heightWithfont:self.font width:self.bounds.size.width] + 0.5f * [self lineNumber];
+}
+
+- (CGFloat)calculateHeightOfLabel
+{
+    if (self == nil)
+    {
+        return 0.0f;
+    }
+    
+    NSDictionary *attribute = @{NSFontAttributeName: self.font};
+    
+    CGSize labelSize = CGSizeZero;
+    labelSize = [self.text boundingRectWithSize:CGSizeMake(self.frame.size.width, 0) options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin attributes:attribute context:nil].size;
+    return labelSize.height;
+}
+
+/**
+ *  换对齐方式:1行右对齐.多行左对齐
+ */
+- (void) autoAlignment
+{
+    if ([self lineNumber] > 1)
+    {
+        self.textAlignment = NSTextAlignmentLeft;
+    }
+    else
+    {
+        self.textAlignment = NSTextAlignmentRight;
+    }
+}
+
+
+/**
+ *  根据字体计算一行Label的高度
+ */
+- (CGFloat)Ex_heightOfRow
+{
+    UILabel *theLabel = [UILabel new];
+    theLabel.numberOfLines = 1;
+    theLabel.text = @"Return The RowHeight.";
+    
+    
+    NSDictionary *attribute = @{NSFontAttributeName: theLabel.font};
+    
+    CGSize labelSize = CGSizeZero;
+    labelSize = [theLabel.text boundingRectWithSize:CGSizeMake(9999, 0) options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin attributes:attribute context:nil].size;
+    
+    return labelSize.height;
+}
+
+
+/**
+ *  根据给定的宽度计算Label的高度
+ */
+- (CGFloat)Ex_heightWithWidth:(CGFloat)width
+{
+    NSDictionary *attribute = @{NSFontAttributeName: self.font};
+    
+    CGSize labelSize = CGSizeZero;
+    labelSize = [self.text boundingRectWithSize:CGSizeMake(width, 0) options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin attributes:attribute context:nil].size;
+    
+    return labelSize.height;
+}
+
+/**
+ *  设置抗压缩和抗拉伸的优先级为1000
+ */
+- (void)setRequireConstraintForHorizonAndVertical
+{
+    [self setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
+    [self setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+    [self setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+    [self setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
+}
+
+@end
+
+
+

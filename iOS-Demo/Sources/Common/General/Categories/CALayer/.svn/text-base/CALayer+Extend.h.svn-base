@@ -1,0 +1,18 @@
+//
+//  CALayer+Extend.h
+//  hxj
+//
+//  Created by gaofu on 15/10/22.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import <QuartzCore/QuartzCore.h>
+
+@interface CALayer (Extend)
+/**
+ *  设置layer的颜色(XIB使用)
+ */
+-(void)setBorderUIColor:(UIColor*)color;
+
+
+@end

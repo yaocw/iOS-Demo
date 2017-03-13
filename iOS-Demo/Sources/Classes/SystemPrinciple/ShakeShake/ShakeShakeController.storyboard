@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--摇一摇-->
+        <scene sceneID="vYr-0h-XCh">
+            <objects>
+                <viewController storyboardIdentifier="ShakeShakeController" id="sVG-Lr-9iD" customClass="ShakeShakeController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sRg-Hh-rjG"/>
+                        <viewControllerLayoutGuide type="bottom" id="PzI-ik-CN1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I7H-fN-78s">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sex_girl_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WiF-W6-Q2B">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shake_up.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Jd-Qr-V5Y">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="222"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shake_down.png" translatesAutoresizingMaskIntoConstraints="NO" id="zc1-rW-azh">
+                                <rect key="frame" x="0.0" y="258" width="320" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96068006753921509" green="0.96084433794021606" blue="0.96066969633102417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96068006750000001" green="0.96084433790000001" blue="0.96066969629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WiF-W6-Q2B" firstAttribute="top" secondItem="I7H-fN-78s" secondAttribute="top" id="JTZ-1Y-36E"/>
+                            <constraint firstAttribute="bottom" secondItem="WiF-W6-Q2B" secondAttribute="bottom" id="MQl-Xv-TKn"/>
+                            <constraint firstItem="WiF-W6-Q2B" firstAttribute="leading" secondItem="I7H-fN-78s" secondAttribute="leading" id="d57-qx-ztF"/>
+                            <constraint firstAttribute="trailing" secondItem="WiF-W6-Q2B" secondAttribute="trailing" id="lmk-Sh-fuR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="摇一摇" id="GlP-wA-p9P"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="_downImageView" destination="zc1-rW-azh" id="bU4-WB-bh7"/>
+                        <outlet property="_upImageView" destination="2Jd-Qr-V5Y" id="Frb-Mg-Qpa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U6b-Wn-viU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575.625" y="-104.5774647887324"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sex_girl_2.jpg" width="491" height="752"/>
+        <image name="shake_down.png" width="320" height="208"/>
+        <image name="shake_up.png" width="320" height="208"/>
+    </resources>
+</document>

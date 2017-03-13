@@ -1,0 +1,13 @@
+//
+//  BaseTableViewCell.h
+//  ksf
+//
+//  Created by gaofu on 15/10/28.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface BaseTableViewCell : UITableViewCell
+
+@end

@@ -1,0 +1,46 @@
+//
+//  ContentLabel.m
+//  ksf
+//
+//  Created by yaochaowen on 16/1/23.
+//  Copyright © 2016年 gaofu. All rights reserved.
+//
+
+#import "ContentLabel.h"
+
+@implementation ContentLabel
+
+- (void)awakeFromNib
+{
+    [self settingContentLabel];
+}
+
+- (instancetype)init
+{
+    if (self = [super init])
+    {
+        [self settingContentLabel];
+    }
+    
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:frame])
+    {
+        [self settingContentLabel];
+    }
+    
+    return self;
+}
+
+- (void)settingContentLabel
+{
+    self.font = AppFontWithSizeOf15;
+    self.textColor = kMainFontColor;
+    
+    self.numberOfLines = 0;
+}
+
+@end

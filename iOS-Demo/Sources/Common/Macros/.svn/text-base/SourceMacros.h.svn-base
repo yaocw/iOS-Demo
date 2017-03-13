@@ -1,0 +1,193 @@
+//
+//  SourceMacros.h
+//  hxj
+//
+//  Created by gaofu on 15/10/22.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+/**
+ *  代码段的宏
+ */
+
+#ifndef SourceMacros_h
+#define SourceMacros_h
+
+/**
+ *  主Window
+ */
+
+#define MainWindow [(AppDelegate *) [[UIApplication sharedApplication] delegate] window]
+
+/**
+ *  自定义view
+ */
+
+#define NIb_View [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] lastObject]
+
+
+#define StoryBoard_ViewControlelr [[UIStoryboard storyboardWithName:NSStringFromClass([self class]) bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([self class])]
+
+
+/**
+ *  app相关
+ */
+
+//app名字
+#define AppName [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleExecutableKey]
+//app版本号
+#define AppVersions [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+//appBulid版本号
+#define AppBulidVersions [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
+//appBundleId
+#define AppBundleId [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleIdentifierKey]
+//appBundleDisplayName
+#define AppBundleDisplayName [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)@"CFBundleDisplayName"]
+//AppUrlScheme
+#define AppUrlScheme [Helper isClientAPP] ? @"hxj" : @"ksf"
+
+
+/**
+ *  定位
+ */
+
+//定位坐标
+#define Coordinate_X  [[NSUserDefaults standardUserDefaults] objectForKey:@"Coordinate_X"]//维度
+#define Coordinate_Y  [[NSUserDefaults standardUserDefaults] objectForKey:@"Coordinate_Y"]//经度
+#define LocationCity  [[NSUserDefaults standardUserDefaults] objectForKey:@"LocationCity"]//城市
+
+
+/**
+ *  用户信息
+ */
+
+//1.用户ID
+#define UserID [[NSUserDefaults standardUserDefaults] objectForKey:@"UserID"]
+
+//2.电话
+#define   UserTel   [[NSUserDefaults standardUserDefaults] objectForKey:@"UserTel"]
+
+//3.密码
+#define   UserKey  [[NSUserDefaults standardUserDefaults] objectForKey:@"UserKey"]
+
+//4.Token
+#define  UserToken  [[NSUserDefaults standardUserDefaults] objectForKey:@"UserToken"]
+
+//5.用户名
+#define  UserName  [[NSUserDefaults standardUserDefaults] objectForKey:@"UserName"]
+
+//6.用户头像
+#define  UserHeadImg  [[NSUserDefaults standardUserDefaults] objectForKey:@"UserHeadImg"]
+
+//7.用户角色
+#define  UserBiztype  [[NSUserDefaults standardUserDefaults] objectForKey:@"UserBiztype"]
+
+//8.用户角色名称
+#define  UserBiztypeName  [[NSUserDefaults standardUserDefaults] objectForKey:@"UserBiztypeName"]
+
+//9.超级用户
+#define  SuperUser  [[NSUserDefaults standardUserDefaults] objectForKey:@"SuperUser"]
+
+
+/**
+ *  网络请求
+ */
+
+#define Request(path) [[AFHTTPRequestOperationManager manager] POST:(Service_IP path) parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {\
+success(responseObject);\
+} failure:^(AFHTTPRequestOperation *operation, NSError *error) {\
+failure(error);\
+}]
+
+
+/**
+ *  请求
+ */
+
+#define Base_Request(path1,path2)   NSMutableDictionary *tmpDic = [NSMutableDictionary dictionaryWithDictionary:params];\
+\
+[UserToken length] ? [tmpDic setObject:UserToken forKey:@"token"] : nil;\
+[tmpDic setObject:path2 forKey:@"operateType"];\
+\
+[HttpManager hm_postWithPath:path1 params:tmpDic success:^(id result, id manager) {\
+    success(result,manager);\
+} failure:^(NSError *error, id manager) {\
+    failure(error,manager);\
+}]
+
+#define Base_Request_InView(path1,path2)   NSMutableDictionary *tmpDic = [NSMutableDictionary dictionaryWithDictionary:params];\
+\
+[UserToken length] ? [tmpDic setObject:UserToken forKey:@"token"] : nil;\
+[tmpDic setObject:path2 forKey:@"operateType"];\
+\
+[HttpManager hm_postWithPath:path1 params:tmpDic inView:view success:^(id result, id manager) {\
+success(result,manager);\
+} failure:^(NSError *error, id manager) {\
+failure(error,manager);\
+}]
+
+/**
+ *  上传图片请求
+ */
+#define Image_Request(path,operateType,imgArr)   NSMutableDictionary *tmpDic = [NSMutableDictionary dictionaryWithDictionary:params];\
+\
+[UserToken length] ? [tmpDic setObject:UserToken forKey:@"token"] : nil;\
+[tmpDic setObject:operateType forKey:@"operateType"];\
+\
+[HttpManager hm_imageUpdateWithPath:path parameters:tmpDic imagesArr:imgArr success:^(id result, id manager) {\
+success(result,manager);\
+} failure:^(NSError *error, id manager) {\
+failure(error,manager);\
+}];
+
+/**
+ *  上传音频请求
+ */
+#define Voice_Request(path1,path2)   NSMutableDictionary *tmpDic = [NSMutableDictionary dictionaryWithDictionary:params];\
+\
+[UserToken length] ? [tmpDic setObject:UserToken forKey:@"token"] : nil;\
+[tmpDic setObject:path2 forKey:@"operateType"];\
+\
+[HttpManager hm_soundUpdateWithPath:path1 parameters:tmpDic voicePath:voicePath success:^(id result, id manager) {\
+          success(result,manager);\
+} failure:^(NSError *error, id manager) {\
+    failure(error,manager);\
+}];
+
+
+
+/**
+ *  上传语音和图片请求
+ */
+#define Voice_And_Image_Request(path1,path2,voicePath,imgArr)   NSMutableDictionary *tmpDic = [NSMutableDictionary dictionaryWithDictionary:params];\
+\
+[UserToken length] ? [tmpDic setObject:UserToken forKey:@"token"] : nil;\
+[tmpDic setObject:path2 forKey:@"operateType"];\
+\
+[HttpManager hm_soundUpdateWithPath:path1 parameters:tmpDic voicePath:voicePath  imagesArr:imgArr success:^(id result, id manager) {\
+success(result,manager);\
+} failure:^(NSError *error, id manager) {\
+failure(error,manager);\
+}];
+
+
+/**
+ *  Model 打印
+ */
+
+#define Model_Log(result)      if ([result isKindOfClass:[NSDictionary class]])\
+{\
+for (NSString *tmpStr in [result allKeys])\
+{\
+printf("\n///<#statemet#>\n@property(nonatomic,copy)NSString *%s;\n",[tmpStr UTF8String]);\
+}\
+printf("\n");\
+}\
+else\
+{\
+DLog(@"打印对象不是字典");\
+}
+
+#define DATABASE_MANAGER_UPDATE_NOTI @"DATABASE_MANAGER_UPDATE_NOTI"
+#define Reload_Client_Mine_VC_NOTI @"Reload_Client_Mine_VC_NOTI"
+
+#endif /* SourceMacros_h */

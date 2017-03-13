@@ -1,0 +1,13 @@
+//
+//  BaseButton.h
+//  ksf
+//
+//  Created by gaofu on 15/10/28.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//父类按钮:加圆角和边框
+
+#import <UIKit/UIKit.h>
+
+@interface BaseButton : UIButton
+
+@end

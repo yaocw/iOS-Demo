@@ -1,0 +1,58 @@
+//
+//  UICollectionView+Extend.m
+//  ksf
+//
+//  Created by gaofu on 15/11/7.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "UICollectionView+Extend.h"
+
+@implementation UICollectionView (Extend)
+
+#pragma mark---------------获取当前view 的 viewcontroller---------------
+- (UIViewController*)currentViewController
+{
+    UIView *tmpSupView = self.superview;
+    UIResponder* nextResponder = [tmpSupView nextResponder];
+    
+    if ([nextResponder isKindOfClass:[UIViewController class]])
+    {
+        return (UIViewController*)nextResponder;
+    }
+    else
+    {
+        return [tmpSupView currentViewController];
+    }
+}
+
+-(void)registerNibCell:(Class)cellClass
+{
+    NSString *cellId = NSStringFromClass(cellClass);
+    [self registerNib:[UINib nibWithNibName:cellId bundle:nil] forCellWithReuseIdentifier:cellId];
+}
+
+-(void)registerClassCell:(Class)cellClass
+{
+    NSString *cellId = NSStringFromClass(cellClass);
+    [self registerClass:cellClass forCellWithReuseIdentifier:cellId];
+}
+
+-(void)registerClassReusableView:(Class)reusableViewClass orSupplementaryViewOfKind:(NSString*)kind
+{
+    NSString *cellId = NSStringFromClass(reusableViewClass);
+    [self registerClass:reusableViewClass forSupplementaryViewOfKind:kind withReuseIdentifier:cellId];
+}
+
+-(void)registerNibReusableView:(Class)reusableViewClass orSupplementaryViewOfKind:(NSString*)kind
+{
+    NSString *cellId = NSStringFromClass(reusableViewClass);
+    [self registerNib:[UINib nibWithNibName:cellId bundle:nil] forSupplementaryViewOfKind:kind withReuseIdentifier:cellId];
+}
+
+- (__kindof UICollectionViewCell *)cellWithClass:(Class)cellClass forIndexPath:(NSIndexPath*)index
+{
+    return [self dequeueReusableCellWithReuseIdentifier:NSStringFromClass(cellClass) forIndexPath:index];
+}
+
+@end

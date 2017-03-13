@@ -1,0 +1,48 @@
+//
+//  UILabel+Extend.h
+//  hxj
+//
+//  Created by gaofu on 15/10/22.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UILabel (Extend)
+/**
+ *  返回label的行数
+ */
+-(NSInteger)lineNumber;
+
+/**
+ *  换对齐方式:1行右对齐.多行左对齐
+ */
+- (void) autoAlignment;
+
+/**
+ *  计算高度(约束和不约束都可以用)
+ */
+-(CGFloat) labelHeight;
+
+/**计算高度*/
+- (CGFloat)calculateHeightOfLabel;
+
+
+
+/**
+ *  根据字体计算一行Label的高度
+ */
+- (CGFloat)Ex_heightOfRow;
+
+/**
+ *  根据给定的宽度计算Label的高度
+ */
+- (CGFloat)Ex_heightWithWidth:(CGFloat)width;
+
+/**
+ *  设置抗压缩和抗拉伸的优先级为1000
+ */
+- (void)setRequireConstraintForHorizonAndVertical;
+
+
+@end

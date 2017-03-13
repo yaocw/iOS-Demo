@@ -1,0 +1,21 @@
+//
+//  BaseDetailTableViewCell.h
+//  ksf
+//
+//  Created by gaofu on 15/11/2.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface BaseDetailTableViewCell : UITableViewCell
+/**
+ *  标题
+ */
+@property (weak, nonatomic) IBOutlet UILabel *titleLab;
+/**
+ *  详情
+ */
+@property (weak, nonatomic) IBOutlet UILabel *detailLab;
+
+@end

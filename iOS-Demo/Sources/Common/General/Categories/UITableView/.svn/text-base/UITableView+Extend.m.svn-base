@@ -1,0 +1,44 @@
+//
+//  UITableView+Extend.m
+//  hxj
+//
+//  Created by gaofu on 15/10/22.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "UITableView+Extend.h"
+
+@implementation UITableView (Extend)
+
+- (void)hiddenExtraCell
+{
+    if (self.style == UITableViewStylePlain)
+    {
+        self.tableFooterView = [UIView new];
+    }
+}
+
+-(void)registerNibCell:(Class)cellClass
+{
+    NSString *cellId = NSStringFromClass(cellClass);
+    [self registerNib:[UINib nibWithNibName:cellId bundle:nil] forCellReuseIdentifier:cellId];
+}
+
+-(void)registerClassCell:(Class)cellClass
+{
+    NSString *cellId = NSStringFromClass(cellClass);
+    [self registerClass:cellClass forCellReuseIdentifier:cellId];
+}
+
+- (__kindof UITableViewCell *)cellWithClass:(Class)cellClass
+{
+    return [self dequeueReusableCellWithIdentifier:NSStringFromClass(cellClass)];
+}
+
+
+-(__kindof UITableViewCell*)cellWithClass:(Class)cellClass forIndexPath:(NSIndexPath*)index
+{
+    return [self dequeueReusableCellWithIdentifier:NSStringFromClass(cellClass) forIndexPath:index];
+}
+
+@end

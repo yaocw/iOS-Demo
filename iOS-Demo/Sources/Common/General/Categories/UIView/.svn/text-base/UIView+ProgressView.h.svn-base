@@ -1,0 +1,69 @@
+//
+//  UIView+ProgressView.h
+//  YouJia
+//
+//  Created by gaofu on 15/9/29.
+//  Copyright (c) 2015年 hhxh. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UIView (ProgressView)
+
+/**
+ *  正在加载(默认)
+ */
+
+-(void)pv_showTextDialog;
+
+
+/**
+ *  正在上传(默认)
+ */
+-(void)pv_uploading;
+
+/**
+ *  正在加载(自定义文字)
+ */
+-(void)pv_showTextDialog:(NSString*)log;
+
+
+/**
+ *  加载成功(默认)
+ */
+-(void)pv_successLoading;
+/**
+ *  加载成功(自定义文字)
+ */
+-(void)pv_successLoading:(NSString*)log;
+
+
+/**
+ *  加载失败(默认)
+ */
+-(void)pv_failureLoading;
+/**
+ *  加载失败(自定义文字)
+ */
+-(void)pv_failureLoading:(NSString*)log;
+
+
+/**
+ *  文字提示框
+ *
+ *  @param log 提示文字
+ */
+
+-(void)pv_warming:(NSString*)log;
+
+
+/**
+ *
+ *  提示框消失
+ */
+
+-(void)pv_hideMBHub;
+
+-(void)pv_hideAllMbHub;
+
+@end

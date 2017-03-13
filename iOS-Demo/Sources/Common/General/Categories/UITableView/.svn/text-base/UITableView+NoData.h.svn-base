@@ -1,0 +1,19 @@
+//
+//  UITableView+NoData.h
+//  ksf
+//
+//  Created by yaochaowen on 16/5/26.
+//  Copyright © 2016年 gaofu. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UITableView (NoData)
+
+/**
+ * 列表没有数据时，用图片提示当前没有数据，提示的图片加在tableHeader上，使用时请注意原来的列表不能设定tableHeader，否则会产生问题
+ * 参数“hasNoData”为Yes代表没有数据，No代表有数据
+ */
+- (void)noticeHasNoData:(BOOL)hasNoData tableHeaderHeight:(CGFloat)tableHeaderHeight;
+
+@end

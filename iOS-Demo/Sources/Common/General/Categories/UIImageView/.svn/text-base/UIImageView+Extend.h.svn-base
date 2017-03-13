@@ -1,0 +1,17 @@
+//
+//  UIImageView+Extend.h
+//  ksf
+//
+//  Created by gaofu on 16/1/5.
+//  Copyright © 2016年 gaofu. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UIImageView (Extend)<UIScrollViewDelegate>
+
+-(void)showImage;
+
+-(void)showImageWithUrl:(NSString*)imageUrl;
+
+@end

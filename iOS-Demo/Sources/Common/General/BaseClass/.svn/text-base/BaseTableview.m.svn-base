@@ -1,0 +1,19 @@
+//
+//  BaseTableview.m
+//  ksf
+//
+//  Created by gaofu on 15/10/28.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "BaseTableview.h"
+
+@implementation BaseTableview
+
+-(void)awakeFromNib
+{
+    //设置背景为灰色
+    self.backgroundColor = kPageBackgroundColor;
+}
+
+@end

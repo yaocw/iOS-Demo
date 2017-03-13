@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--抓取配置-->
+        <scene sceneID="5XL-xo-XNW">
+            <objects>
+                <tableViewController storyboardIdentifier="SimpleNetworkSpiderController" id="dNK-6d-CDW" customClass="SimpleNetworkSpiderController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sqV-SU-M0m">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="Q8y-ea-zPG">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="an2-X3-NVM">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="an2-X3-NVM" id="e79-io-Cgr">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://newhouse.nn.fang.com/" placeholder="请输入IP地址/网址" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="umq-lI-nfT">
+                                                    <rect key="frame" x="16" y="0.0" width="288" height="55"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="umq-lI-nfT" secondAttribute="bottom" id="0X8-8V-qaz"/>
+                                                <constraint firstItem="umq-lI-nfT" firstAttribute="leading" secondItem="e79-io-Cgr" secondAttribute="leading" constant="16" id="MsM-08-LaB"/>
+                                                <constraint firstAttribute="trailing" secondItem="umq-lI-nfT" secondAttribute="trailing" constant="16" id="cnR-9G-SsB"/>
+                                                <constraint firstItem="umq-lI-nfT" firstAttribute="top" secondItem="e79-io-Cgr" secondAttribute="top" id="ijt-tz-yib"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="iP8-gQ-TlM">
+                                        <rect key="frame" x="0.0" y="56" width="320" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iP8-gQ-TlM" id="NnF-BI-bIh">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="匹配规则" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkG-hB-arC">
+                                                    <rect key="frame" x="16" y="8" width="54" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QAn-pO-fEL" customClass="SNS_MatchingRuleView">
+                                                    <rect key="frame" x="0.0" y="32" width="320" height="159"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="QAn-pO-fEL" secondAttribute="trailing" id="EpV-SX-eGy"/>
+                                                <constraint firstItem="AkG-hB-arC" firstAttribute="top" secondItem="NnF-BI-bIh" secondAttribute="top" constant="8" id="Pg6-HM-5W8"/>
+                                                <constraint firstItem="AkG-hB-arC" firstAttribute="leading" secondItem="NnF-BI-bIh" secondAttribute="leading" constant="16" id="WmF-jN-YVm"/>
+                                                <constraint firstAttribute="bottom" secondItem="QAn-pO-fEL" secondAttribute="bottom" constant="8" id="q1v-ju-F4x"/>
+                                                <constraint firstItem="QAn-pO-fEL" firstAttribute="top" secondItem="AkG-hB-arC" secondAttribute="bottom" constant="8" id="tfu-rs-mxh"/>
+                                                <constraint firstItem="QAn-pO-fEL" firstAttribute="leading" secondItem="NnF-BI-bIh" secondAttribute="leading" id="v0i-98-9r8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="999" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="aIh-Tk-yQO">
+                                        <rect key="frame" x="0.0" y="256" width="320" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aIh-Tk-yQO" id="SQy-Mj-4Wi">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="替换规则" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xs0-3p-xma">
+                                                    <rect key="frame" x="16" y="8" width="54" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezO-dk-uAD" customClass="SNS_ReplacingRuleView">
+                                                    <rect key="frame" x="0.0" y="32" width="320" height="159"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ezO-dk-uAD" secondAttribute="bottom" constant="8" id="RNX-ho-AoK"/>
+                                                <constraint firstItem="xs0-3p-xma" firstAttribute="top" secondItem="SQy-Mj-4Wi" secondAttribute="top" constant="8" id="SIG-cT-Xsf"/>
+                                                <constraint firstItem="ezO-dk-uAD" firstAttribute="top" secondItem="xs0-3p-xma" secondAttribute="bottom" constant="8" id="WlZ-2Y-cmp"/>
+                                                <constraint firstItem="ezO-dk-uAD" firstAttribute="leading" secondItem="SQy-Mj-4Wi" secondAttribute="leading" id="Y09-9V-bcv"/>
+                                                <constraint firstItem="xs0-3p-xma" firstAttribute="leading" secondItem="SQy-Mj-4Wi" secondAttribute="leading" constant="16" id="bld-aL-arl"/>
+                                                <constraint firstAttribute="trailing" secondItem="ezO-dk-uAD" secondAttribute="trailing" id="lJy-m0-fkd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="999" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="dNK-6d-CDW" id="NrF-Bu-HoZ"/>
+                            <outlet property="delegate" destination="dNK-6d-CDW" id="rVr-Pu-7cd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="抓取配置" id="VcD-Of-YY3">
+                        <barButtonItem key="rightBarButtonItem" title="抓取" id="NP7-VW-KlC">
+                            <connections>
+                                <action selector="fetchAction:" destination="dNK-6d-CDW" id="BIW-Ih-Aqu"/>
+                                <segue destination="yPU-ee-GmI" kind="show" identifier="SNSFetchDataController" id="rXd-yw-wm0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="_matchingRuleView" destination="QAn-pO-fEL" id="QWu-63-zcq"/>
+                        <outlet property="_networkAddressTextField" destination="umq-lI-nfT" id="TyR-Xo-ssf"/>
+                        <outlet property="_replacingRuleView" destination="ezO-dk-uAD" id="HLo-Cq-7ot"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qtf-3K-lLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-180" y="-322.18309859154931"/>
+        </scene>
+        <!--SNSFetchDataController-->
+        <scene sceneID="lrK-fh-npm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SNSFetchDataController" referencedIdentifier="SNSFetchDataController" id="yPU-ee-GmI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9OI-2N-bvC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="500" y="-322"/>
+        </scene>
+    </scenes>
+</document>

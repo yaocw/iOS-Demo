@@ -1,0 +1,203 @@
+//
+//  UITableViewCell+RoundCell.m
+//  RoundCell
+//
+//  Created by gaofu on 15/10/30.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "UITableViewCell+RoundCell.h"
+
+//圆角
+const static CGFloat cornerRadius = kCornerRadius;
+//边距
+const static CGFloat sideSpace = 0.0f;
+//线的偏移量
+const static CGFloat lineOffsetSpace = 0.0f;
+
+//cell颜色
+#define CellColor [UIColor whiteColor]
+
+
+
+@implementation UITableViewCell (RoundCell)
+
+-(void)roundSectionWithTableview:(UITableView*)tableView indexPath:(NSIndexPath*)indexPath
+{
+    if ([self respondsToSelector:@selector(tintColor)])
+    {
+        self.backgroundColor = UIColor.clearColor;
+        
+        CAShapeLayer *layer = [[CAShapeLayer alloc] init];
+        CGMutablePathRef pathRef = CGPathCreateMutable();
+        CGRect bounds = CGRectInset(self.bounds, sideSpace, 0);
+        
+        BOOL addLine = NO;
+        
+        //只有一行
+        if (indexPath.row == 0 && indexPath.row == [tableView numberOfRowsInSection:indexPath.section]-1)
+        {
+            CGPathAddRoundedRect(pathRef, nil, bounds, cornerRadius, cornerRadius);
+        }
+        
+        //第一行
+        else if (indexPath.row == 0)
+        {
+            CGPathMoveToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMaxY(bounds));
+            CGPathAddArcToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMinY(bounds), CGRectGetMidX(bounds), CGRectGetMinY(bounds), cornerRadius);
+            CGPathAddArcToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMinY(bounds), CGRectGetMaxX(bounds), CGRectGetMidY(bounds), cornerRadius);
+            CGPathAddLineToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMaxY(bounds));
+            if (tableView.separatorStyle != UITableViewCellSeparatorStyleNone)
+            {
+                addLine = YES;
+            }
+        }
+        
+        //最后一行
+        else if (indexPath.row == [tableView numberOfRowsInSection:indexPath.section]-1)
+        {
+            CGPathMoveToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMinY(bounds));
+            CGPathAddArcToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMaxY(bounds), CGRectGetMidX(bounds), CGRectGetMaxY(bounds), cornerRadius);
+            CGPathAddArcToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMaxY(bounds), CGRectGetMaxX(bounds), CGRectGetMidY(bounds), cornerRadius);
+            CGPathAddLineToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMinY(bounds));
+        }
+        
+        //中间
+        else
+        {
+            CGPathAddRect(pathRef, nil, bounds);
+            if (tableView.separatorStyle != UITableViewCellSeparatorStyleNone)
+            {
+                addLine = YES;
+            }
+        }
+        
+        layer.path = pathRef;
+        CFRelease(pathRef);
+        layer.fillColor = CellColor.CGColor;
+        
+        
+        ;
+        
+        //分割线
+        if (addLine == YES)
+        {
+            CALayer *lineLayer = [[CALayer alloc] init];
+            CGFloat lineHeight = (1.f / [UIScreen mainScreen].scale);
+            lineLayer.frame = CGRectMake(CGRectGetMinX(bounds)+lineOffsetSpace, bounds.size.height-lineHeight, bounds.size.width-lineOffsetSpace, lineHeight);
+            lineLayer.backgroundColor = tableView.separatorColor.CGColor;
+            [layer addSublayer:lineLayer];
+        }
+        
+        //背景视图
+        UIView *backgroundView = [[UIView alloc] initWithFrame:bounds];
+        [backgroundView.layer insertSublayer:layer atIndex:0];
+        backgroundView.backgroundColor = UIColor.clearColor;
+        
+        self.backgroundView = backgroundView;
+    }
+}
+
+-(void)roundRowWithTableview:(UITableView*)tableView indexPath:(NSIndexPath*)indexPath
+{
+    if ([self respondsToSelector:@selector(tintColor)])
+    {
+        
+        self.backgroundColor = UIColor.clearColor;
+        
+        CAShapeLayer *layer = [[CAShapeLayer alloc] init];
+        CGMutablePathRef pathRef = CGPathCreateMutable();
+        CGRect bounds = CGRectInset(self.bounds, sideSpace, 0);
+        
+        CGPathAddRoundedRect(pathRef, nil, bounds, cornerRadius, cornerRadius);
+        
+        
+        layer.path = pathRef;
+        CFRelease(pathRef);
+        layer.fillColor = CellColor.CGColor;
+        
+        //分割线
+        if ( indexPath.row != [tableView numberOfRowsInSection:indexPath.section] - 1)
+        {
+            CALayer *lineLayer = [[CALayer alloc] init];
+            CGFloat lineHeight = (1.f / [UIScreen mainScreen].scale);
+            lineLayer.frame = CGRectMake(CGRectGetMinX(bounds)+cornerRadius/2, bounds.size.height-lineHeight, bounds.size.width-cornerRadius, lineHeight);
+            lineLayer.backgroundColor = tableView.separatorColor.CGColor;
+            [layer addSublayer:lineLayer];
+        }
+        
+        //背景视图
+        UIView *backgroundView = [[UIView alloc] initWithFrame:bounds];
+        [backgroundView.layer insertSublayer:layer atIndex:0];
+        backgroundView.backgroundColor = UIColor.clearColor;
+        
+        self.backgroundView = backgroundView;
+    }
+}
+
+-(void)roundTableViewWithTableview:(UITableView*)tableView indexPath:(NSIndexPath*)indexPath sectionsNum:(NSInteger)sectionsNum
+{
+    if ([self respondsToSelector:@selector(tintColor)])
+    {
+        self.backgroundColor = UIColor.clearColor;
+        
+        CAShapeLayer *layer = [[CAShapeLayer alloc] init];
+        CGMutablePathRef pathRef = CGPathCreateMutable();
+        CGRect bounds = CGRectInset(self.bounds, sideSpace, 0);
+        
+        BOOL addLine = NO;
+        
+        //第一行
+        if (indexPath.section == 0 && indexPath.row == 0)
+        {
+            CGPathMoveToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMaxY(bounds));
+            CGPathAddArcToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMinY(bounds), CGRectGetMidX(bounds), CGRectGetMinY(bounds), cornerRadius);
+            CGPathAddArcToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMinY(bounds), CGRectGetMaxX(bounds), CGRectGetMidY(bounds), cornerRadius);
+            CGPathAddLineToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMaxY(bounds));
+            if (tableView.separatorStyle != UITableViewCellSeparatorStyleNone)
+            {
+                addLine = YES;
+            }
+        }
+        
+        //最后一行
+        else if (indexPath.row == [tableView numberOfRowsInSection:indexPath.section]-1 && indexPath.section == sectionsNum - 1)
+        {
+            CGPathMoveToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMinY(bounds));
+            CGPathAddArcToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMaxY(bounds), CGRectGetMidX(bounds), CGRectGetMaxY(bounds), cornerRadius);
+            CGPathAddArcToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMaxY(bounds), CGRectGetMaxX(bounds), CGRectGetMidY(bounds), cornerRadius);
+            CGPathAddLineToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMinY(bounds));
+        }
+        else
+        {
+            CGPathAddRect(pathRef, nil, bounds);
+            if (tableView.separatorStyle != UITableViewCellSeparatorStyleNone)
+            {
+                addLine = YES;
+            }
+        }
+        
+        layer.path = pathRef;
+        CFRelease(pathRef);
+        layer.fillColor = CellColor.CGColor;
+        
+        //分割线
+        if (addLine == YES)
+        {
+            CALayer *lineLayer = [[CALayer alloc] init];
+            CGFloat lineHeight = (1.f / [UIScreen mainScreen].scale);
+            lineLayer.frame = CGRectMake(CGRectGetMinX(bounds)+lineOffsetSpace, bounds.size.height-lineHeight, bounds.size.width-lineOffsetSpace, lineHeight);
+            lineLayer.backgroundColor = tableView.separatorColor.CGColor;
+            [layer addSublayer:lineLayer];
+        }
+        
+        //背景视图
+        UIView *backgroundView = [[UIView alloc] initWithFrame:bounds];
+        [backgroundView.layer insertSublayer:layer atIndex:0];
+        backgroundView.backgroundColor = UIColor.clearColor;
+        
+        self.backgroundView = backgroundView;
+    }
+}
+
+@end

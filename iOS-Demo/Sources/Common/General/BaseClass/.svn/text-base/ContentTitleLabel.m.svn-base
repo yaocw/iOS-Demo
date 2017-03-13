@@ -1,0 +1,49 @@
+//
+//  ContentTitleLabel.m
+//  ksf
+//
+//  Created by yaochaowen on 16/1/23.
+//  Copyright © 2016年 gaofu. All rights reserved.
+//
+
+#import "ContentTitleLabel.h"
+
+@implementation ContentTitleLabel
+
+- (void)awakeFromNib
+{
+    [self settingContentTitleLabel];
+}
+
+- (instancetype)init
+{
+    if (self = [super init])
+    {
+        [self settingContentTitleLabel];
+    }
+    
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:frame])
+    {
+        [self settingContentTitleLabel];
+    }
+    
+    return self;
+}
+
+- (void)settingContentTitleLabel
+{
+    self.font = AppFontWithSizeOf15;
+    self.textColor = kMinorFontColor;
+    
+    [self setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+    [self setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
+    [self setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+    [self setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
+}
+
+@end

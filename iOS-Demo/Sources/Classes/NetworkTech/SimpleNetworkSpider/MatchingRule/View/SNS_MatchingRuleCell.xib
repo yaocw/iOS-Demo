@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="SNS_MatchingRuleCell" selectionStyle="default" indentationWidth="10" rowHeight="56" id="KGk-i7-Jjw" customClass="SNS_MatchingRuleCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHp-QX-3kI">
+                        <rect key="frame" x="13" y="16" width="291" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beauty_girl.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eKm-42-qLx">
+                        <rect key="frame" x="16" y="16" width="22" height="22"/>
+                        <color key="backgroundColor" red="0.90588235289999997" green="0.3803921569" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="1t9-EZ-CjO"/>
+                            <constraint firstAttribute="width" constant="22" id="fuJ-us-veU"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="iHp-QX-3kI" secondAttribute="bottom" constant="16" id="84y-cj-scx"/>
+                    <constraint firstItem="eKm-42-qLx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DxU-i7-ojg"/>
+                    <constraint firstItem="eKm-42-qLx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="QFE-QQ-sUN"/>
+                    <constraint firstItem="iHp-QX-3kI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="bRx-sb-elz"/>
+                    <constraint firstAttribute="trailing" secondItem="iHp-QX-3kI" secondAttribute="trailing" constant="16" id="dU0-yN-AOD"/>
+                    <constraint firstItem="iHp-QX-3kI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="wqe-YY-Xtd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="999" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="_addImageView" destination="eKm-42-qLx" id="iv1-CK-QOO"/>
+                <outlet property="_matchingRuleNameLabel" destination="iHp-QX-3kI" id="U6c-dN-qZf"/>
+                <outlet property="_textLeftConstraint" destination="wqe-YY-Xtd" id="KnI-uV-Y0E"/>
+            </connections>
+            <point key="canvasLocation" x="-16" y="21"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="beauty_girl.jpg" width="535" height="648"/>
+    </resources>
+</document>

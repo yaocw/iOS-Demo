@@ -1,0 +1,37 @@
+//
+//  ActivityTextField.m
+//  ksf
+//
+//  Created by gaofu on 15/11/28.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "ActivityTextField.h"
+
+@implementation ActivityTextField
+-(void)awakeFromNib
+{
+    self.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.layer.masksToBounds = YES;
+    self.layer.borderWidth = 0.5;
+    self.layer.cornerRadius = 5;
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:UITextFieldTextDidBeginEditingNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note)
+     {
+         UITextField *tf = note.object;
+         tf.layer.borderColor = kMinorRedColorOfWorder.CGColor;
+     }];
+
+    [[NSNotificationCenter defaultCenter] addObserverForName:UITextFieldTextDidEndEditingNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note)
+     {
+         UITextField *tf = note.object;
+         tf.layer.borderColor = [UIColor lightGrayColor].CGColor;
+     }];
+}
+
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+@end

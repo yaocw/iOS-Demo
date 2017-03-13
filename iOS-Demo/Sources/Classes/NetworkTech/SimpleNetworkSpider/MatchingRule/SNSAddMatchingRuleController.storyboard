@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--添加匹配规则-->
+        <scene sceneID="lAg-mb-Afd">
+            <objects>
+                <tableViewController storyboardIdentifier="SNSAddMatchingRuleController" id="szf-Kt-Sa1" customClass="SNSAddMatchingRuleController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="615-lm-VIy">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="I73-Kb-1IT">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I73-Kb-1IT" id="guM-HY-ysH">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="szf-Kt-Sa1" id="7HX-g7-4G2"/>
+                            <outlet property="delegate" destination="szf-Kt-Sa1" id="3QR-H4-S1F"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="添加匹配规则" id="8Q1-VE-SJc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vo1-J7-GQ3">
+                            <connections>
+                                <segue destination="9iC-dn-n7h" kind="show" identifier="SNSAddSelfDefineMatchingRuleController" id="Stw-WC-ggW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJj-Cg-2fH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-120" y="39"/>
+        </scene>
+        <!--SNSAddSelfDefineMatchingRuleController-->
+        <scene sceneID="vI9-4V-2Ck">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SNSAddSelfDefineMatchingRuleController" referencedIdentifier="SNSAddSelfDefineMatchingRuleController" id="9iC-dn-n7h" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="caN-6r-Pzy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="38"/>
+        </scene>
+    </scenes>
+</document>

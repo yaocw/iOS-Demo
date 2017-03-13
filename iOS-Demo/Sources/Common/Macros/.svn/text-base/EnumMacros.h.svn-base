@@ -1,0 +1,372 @@
+//
+//  EnumMacros.h
+//  RaccoonHomeClient
+//
+//  Created by gaofu on 15/10/20.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+/**
+ *  枚举宏
+ */
+
+
+
+#ifndef EnumMacros_h
+#define EnumMacros_h
+
+/**
+ *  请求结果状态
+ */
+typedef NS_ENUM(NSInteger, RequestResultState)
+{
+    eRequestResultStateUnusual = -1,//异常
+    eRequestResultStateFailure = 0,//失败
+    eRequestResultStateSuccess = 1,//成功
+};
+
+
+/**
+ *  工人端App 底部页签索引
+ */
+typedef enum : NSUInteger {
+    eTabbarItemIndexWithHome      = 0,//首页
+    eTabbarItemIndexWithWork      = 1,//工作
+    eTabbarItemIndexWithTakeOrder = 2,//抢单
+    eTabbarItemIndexWithMessage   = 3,//消息
+    eTabbarItemIndexWithMe        = 4,//我
+} TabbarItemIndex;
+
+/**
+ *  用户业务类型
+ */
+typedef enum : NSUInteger
+{
+    eEMRoleOfUserWithCustomer          = 1,//客户
+    eEMRoleOfUserWithBackgroundUser    = 2,//后台用户
+    eEMRoleOfUserWithProjectManager    = 3,//项目经理
+    eEMRoleOfUserWithProjectSupervisor = 4,//项目监理
+    eEMRoleOfUserWithForeman           = 5,//工长
+    eEMRoleOfUserWithWorker            = 6,//工人
+    eEMRoleOfUserWithBusinessManager   = 7,//业务经理
+} EMRoleOfUser;
+
+
+/**
+ *  订单状态
+ */
+typedef enum : NSUInteger {
+    eEMOrderStatusWithMakeAnAppointment    = 10,//预约下单
+    eEMOrderStatusWithPayDeposit           = 11,//交诚意金
+    eEMOrderStatusWithMeasureRoom          = 12,//现场量房
+    eEMOrderStatusWithAssessmentMeasure    = 13,//评估测量
+    eEMOrderStatusWithCancelOrder          = 14,//评估退单
+    eEMOrderStatusWithEnsureScheme         = 15,//方案确认
+    eEMOrderStatusWithSignTheContract      = 16,//合同签署
+    eEMOrderStatusWithFeeCharging          = 17,//收取款项
+    eEMOrderStatusWithProjectPlan          = 18,//项目筹划
+    eEMOrderStatusWithSetUpWorkerGroup     = 19,//组建团队
+    eEMOrderStatusWithWorking              = 20,//施工进行
+    eEMOrderStatusWithAcceptance           = 21,//工程验收
+    eEMOrderStatusWithFinalAcceptance      = 22,//工程竣工
+    eEMOrderStatusWithHouseService         = 23,//家居服务
+    eEMOrderStatusWithCancelOrderOfHalfway = 24,//中途退单
+    eEMOrderStatusWithBlankOutOrder        = 25,//订单作废
+    eEMOrderStatusWithCommitOrder          = 141,//提交订单
+} EMOrderStatus;
+
+
+/**
+ *  咨询类型
+ */
+typedef enum : NSUInteger {
+    eEMConsultingTypeWithTelephone = 1,  //电话咨询
+    eEMConsultingTypeWithChat      = 2,  //聊天咨询
+    
+}EMConsultingType;
+
+
+/**
+ *  投诉状态
+ */
+typedef enum : NSUInteger {
+    eEMComplainStatusWithSave         = 1,//保存
+    eEMComplainStatusWithDistribution = 2,//已分配
+    eEMComplainStatusWithClosed       = 3,//关闭
+    
+}EMComplainStatus;
+
+
+/**
+ *  回复结果
+ */
+typedef enum : NSUInteger {
+    eEMComplainReplyResultWithSatisfaction    = 1,//满意
+    eEMComplainReplyResultWithNotSatisfaction = 2,//不满意
+    eEMComplainReplyResultWithUntreated       = 3,//未处理
+    
+}EMComplainReplyResult;
+
+
+/**
+ *  投诉类型
+ */
+typedef enum : NSUInteger {
+    eEMComplainTypeWithTelephone = 1,//电话投诉
+    eEMComplainTypeWithApp       = 2,//App投诉
+    
+}EMComplainType;
+
+
+/**
+ *  工作状态
+ */
+typedef enum : NSUInteger {
+    eEMWorkStatusWithWaitOrder      = 1,//等待接单
+    eEMWorkStatusWithWorking        = 2,//工作中
+    eEMWorkStatusWithDoNotTakeOrder = 3,//暂不接单
+    
+}EMWorkStatus;
+
+
+/**
+ *  服务订单状态
+ */
+typedef enum : NSUInteger {
+    eEMServiceOrderStatusWithHandling    = 1,//受理中
+    eEMServiceOrderStatusWithAccepted    = 2,//已受理
+    eEMServiceOrderStatusWithSending     = 3,//派单中
+    eEMServiceOrderStatusWithSended      = 4,//已派单
+    eEMServiceOrderStatusWithCompletion  = 5,//已完成
+    eEMServiceOrderStatusWithPayed  = 6,//已支付
+    eEMServiceOrderStatusWithComment = 7,//已评价
+    eEMServiceOrderStatusWithBlankOut    = 8,//作废
+    
+}EMServiceOrderStatus;
+
+
+/**
+ *  结算状态
+ */
+typedef enum : NSUInteger {
+    eEMSettleAccountStatusWithNotCommit           = 1,//未提交
+    eEMSettleAccountStatusWithCommited            = 2,//已提交
+    eEMSettleAccountStatusWithFinishSettleAccount = 3,//已结算
+}EMSettleAccountStatus;
+
+
+/**
+ *  工种级别
+ */
+typedef enum : NSUInteger {
+    eEMWorkerLevelWithOne   = 10,//一级
+    eEMWorkerLevelWithTwo   = 20,//二级
+    eEMWorkerLevelWithThree = 30,//三级
+    eEMWorkerLevelWithFour  = 40,//四级
+    eEMWorkerLevelWithFive  = 50,//五级
+}EMWorkerLevel;
+
+
+/**
+ *  订单类型
+ */
+typedef enum : NSUInteger {
+    eEMOrderTypeWithMaintain   = 0,//维修订单
+    eEMOrderTypeWithGurantee   = 1,//保修订单
+    eEMOrderTypeWithDecoration = 2,//装修订单
+}EMOrderType;
+
+
+/**
+ *  施工顺序
+ */
+typedef enum : NSUInteger {
+    eEMWorkSequenceWithD1  = 1,
+    eEMWorkSequenceWithD2  = 2,
+    eEMWorkSequenceWithD3  = 3,
+    eEMWorkSequenceWithD4  = 4,
+    eEMWorkSequenceWithD5  = 5,
+    eEMWorkSequenceWithD6  = 6,
+    eEMWorkSequenceWithD7  = 7,
+    eEMWorkSequenceWithD8  = 8,
+    eEMWorkSequenceWithD9  = 9,
+    eEMWorkSequenceWithD10 = 10,
+    eEMWorkSequenceWithD11 = 11,
+    
+}EMWorkSequence;
+
+/**
+ *  工艺卡任务状态
+ */
+typedef enum : NSUInteger {
+    eEMWorkTaskStatusWithSaved              = 1,//保存
+    eEMWorkTaskStatusWithWorking            = 2,//执行中
+    eEMWorkTaskStatusWithWorkReport         = 3,//汇报
+    eEMWorkTaskStatusWithPostone            = 4,//延期
+    eEMWorkTaskStatusWithRectifyWork        = 5,//整改
+    eEMWorkTaskStatusWithBackToTakePictures = 6,//重新拍照
+    eEMWorkTaskStatusWithRedoWork           = 7,//返工
+    eEMWorkTaskStatusWithFinish             = 8,//完成
+    eEMWorkTaskStatusWithBussinessConfirm   = 9,//业务经理确认
+    eEMWorkTaskStatusWithSended             = 10,//已推送
+}EMWorkTaskStatus;
+
+/**
+ *  补充订单状态
+ */
+typedef enum : NSUInteger {
+    eEMAttachProjectStatusWithSaved           = 1,//保存
+    eEMAttachProjectStatusWithCommit          = 2,//提交
+    eEMAttachProjectStatusWithCancelCommit    = 3,//提交取消
+    eEMAttachProjectStatusWithPaymentReceived = 4,//已收款
+    eEMAttachProjectStatusWithRefundment      = 5,//已退款
+    eEMAttachProjectStatusWithConfirm         = 6,//清单确认
+    eEMAttachProjectStatusWithPublishTasks    = 7,//任务发布
+    eEMAttachProjectStatusWithAssignTasks     = 8,//任务分配
+    eEMAttachProjectStatusWithTrash           = 9,//作废
+}EMAttachProjectStatus;
+
+
+/**
+ *  工艺卡任务类型
+ */
+typedef enum : NSUInteger {
+    eEMWorkTaskTypeWithWork             = 0,//工艺卡任务
+    eEMWorkTaskTypeWithAcceptance       = 1,//验收任务
+    eEMWorkTaskTypeWithFinishAcceptance = 2,//竣工验收任务
+}EMWorkTaskType;
+
+
+/**
+ *  工组
+ */
+typedef enum :NSUInteger{
+   
+    eEMworkGroupManagement  = 1,//管理
+    eEMworkGroupElectrician = 2,//电工
+    eEMworkGroupPainters    = 3,//漆工
+    eEMworkGroupWoodworking = 4,//木工
+    eEMworkGroupBricklayer  = 5,//瓦工
+    eEMworkGroupLineArt     = 6,//线工
+    
+}EMworkGroup;
+
+
+
+
+/**
+ *  邀请状态
+ */
+typedef enum :NSUInteger{
+    
+    eEMstateInvitationConfirmed = 1,//待确认
+    eEMstateInvitationAccepted  = 2,//已接受
+    eEMstateInvitationRefused   = 3,//已拒绝
+    eEMstateInvitationUncommitted = 4 //未提交
+}EMstateInvitation;
+
+
+/**
+ *  项目包类型
+ */
+typedef enum :NSUInteger{
+
+    eStatusProjectPacketTypeOfProject     = 1,//项目
+    eStatusProjectPacketTypeOfWorkSection = 2,//工段
+    eStatusProjectPacketTypeOfTaskList    = 3,//清单
+}EMStatusProjectPacketType;
+
+
+/**
+ *  结算状态
+ */
+typedef enum : NSUInteger {
+    eEMSettleAmountStatusWithSave    = 1,//保存
+    eEMSettleAmountStatusWithCommit  = 2,//提交
+    eEMSettleAmountStatusWithAppeal  = 3,//申诉
+    eEMSettleAmountStatusWithConfirm = 4,//确认
+}EMSettleAmountStatus;
+
+
+
+
+
+/**
+ *  服务器图片压缩类型
+ */
+typedef enum : NSUInteger {
+    eEMMultipleImageTypeWithOnce      = 1,//1倍图
+    eEMMultipleImageTypeWithTwice     = 2,//2倍图
+    eEMMultipleImageTypeWithFourTimes = 3,//3倍图
+}EMMultipleImageType;
+
+/**
+ *  组建状态
+ */
+typedef enum : NSUInteger {
+    eEMStateTypeNotRelease = 1,//未处理
+    eEMStateTypeIsReleased = 2,//正在处理
+    eEMStateTypeForenmen = 3,//工长确认
+    eEMStateTypeWorker = 4,//工人确认
+    eEMStateTypeIsCompleted = 5//组建完成
+    
+}EMStateTypetStatus;
+
+
+/**
+ *  任务类型
+ */
+typedef enum : NSUInteger {
+    
+    eEMTaskTypeProcessCard = 0,//工艺卡任务
+    eEMStateTypeNode = 1,//节点验收
+    eEMStateTypeCompletion = 2,//竣工验收
+    
+}EMTaskType;
+
+/**
+ *  配送状态
+ */
+typedef enum : NSUInteger {
+    
+    eEMNoDistribution = 1,//未配送
+    eEMYesDistribution = 2,//已配送
+    eEMHaveGoods = 3,//已收货
+
+}EMDistributionType;
+
+/**
+ *  补充订单状态
+ */
+typedef enum : NSUInteger {
+    
+    eEMSupplementSave = 1,//保存
+    eEMSupplementSubmit = 2,//提交
+    eEMSupplementSubmitCancel = 3,//提交取消
+    eEMSupplementReceiving = 4,//已收款
+    eEMSupplementRefund = 5,//已退款
+    eEMSupplementListing = 6,//清单确认
+    eEMSupplementTaskRelease = 7,//任务发布
+    eEMSupplementTaskAllocation = 8,//任务分配
+    eEMSupplementInvalid = 9,//作废
+    
+}EMSupplementState;
+
+
+/**
+ *  待办消息类型
+ */
+typedef enum : NSUInteger {
+    
+    eEMToDoListMessageTypeEvaluate        = 1,//评估
+    eEMToDoListMessageTypeInvite          = 2,//邀请
+    eEMToDoListMessageTypeTakeOrder       = 3,//抢单
+    eEMToDoListMessageTypeMeasureList     = 4,//计量清单
+    eEMToDoListMessageTypeMaterialDeliver = 5,//物料配送
+    eEMToDoListMessageTypeSettleAmount    = 6,//结算
+    eEMToDoListMessageTypeAppeal          = 7,//申诉
+    
+}EMToDoListMessageType;
+
+
+
+#endif /* EnumMacros_h */

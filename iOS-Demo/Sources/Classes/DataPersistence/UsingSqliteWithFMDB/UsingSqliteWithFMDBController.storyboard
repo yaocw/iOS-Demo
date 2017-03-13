@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FMDB-->
+        <scene sceneID="aPx-T0-HfC">
+            <objects>
+                <viewController storyboardIdentifier="UsingSqliteWithFMDBController" id="L3q-Bp-RqP" customClass="UsingSqliteWithFMDBController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YH3-M7-uKJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="vZ4-tZ-74Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tlv-Jy-rTZ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="搜索" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sUW-5Z-wHp" customClass="BaseTextField">
+                                <rect key="frame" x="16" y="8" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kS0-XK-aCv">
+                                <rect key="frame" x="0.0" y="47" width="320" height="457"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="L3q-Bp-RqP" id="uxT-qw-WtS"/>
+                                    <outlet property="delegate" destination="L3q-Bp-RqP" id="RhI-fC-ZWT"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ly8-NQ-auk">
+                                <rect key="frame" x="0.0" y="46" width="320" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="azo-pS-dZw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ly8-NQ-auk" firstAttribute="leading" secondItem="tlv-Jy-rTZ" secondAttribute="leading" id="0op-A8-xSm"/>
+                            <constraint firstItem="kS0-XK-aCv" firstAttribute="leading" secondItem="tlv-Jy-rTZ" secondAttribute="leading" id="7sn-xx-Cl8"/>
+                            <constraint firstItem="kS0-XK-aCv" firstAttribute="top" secondItem="ly8-NQ-auk" secondAttribute="bottom" id="8id-ua-zwW"/>
+                            <constraint firstItem="ly8-NQ-auk" firstAttribute="top" secondItem="YH3-M7-uKJ" secondAttribute="bottom" constant="46" id="BVA-GB-Xbf"/>
+                            <constraint firstItem="sUW-5Z-wHp" firstAttribute="leading" secondItem="tlv-Jy-rTZ" secondAttribute="leading" constant="16" id="HXH-py-vMU"/>
+                            <constraint firstAttribute="trailing" secondItem="kS0-XK-aCv" secondAttribute="trailing" id="Jel-kv-jrM"/>
+                            <constraint firstAttribute="trailing" secondItem="sUW-5Z-wHp" secondAttribute="trailing" constant="16" id="NqI-ep-bMW"/>
+                            <constraint firstItem="vZ4-tZ-74Z" firstAttribute="top" secondItem="kS0-XK-aCv" secondAttribute="bottom" id="NuY-uC-hSP"/>
+                            <constraint firstItem="sUW-5Z-wHp" firstAttribute="top" secondItem="YH3-M7-uKJ" secondAttribute="bottom" constant="8" id="lB4-yx-3Lu"/>
+                            <constraint firstAttribute="trailing" secondItem="ly8-NQ-auk" secondAttribute="trailing" id="p7k-Vt-D5R"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="FMDB" id="yUb-An-N6K">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="mJU-68-ZUZ">
+                            <connections>
+                                <segue destination="jtc-iL-bd8" kind="show" identifier="DP_USWF_AddUserInfoController" id="c2L-7i-Gxb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="_searchInputHeightConstraint" destination="BVA-GB-Xbf" id="xay-NF-xRh"/>
+                        <outlet property="_searchTextField" destination="sUW-5Z-wHp" id="W9a-K2-nQ4"/>
+                        <outlet property="_tableView" destination="kS0-XK-aCv" id="Jv3-gr-gap"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BmH-I8-9on" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476.25" y="-201.7605633802817"/>
+        </scene>
+        <!--DP_USWF_AddUserInfoController-->
+        <scene sceneID="gxx-TX-itj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DP_USWF_AddUserInfoController" referencedIdentifier="DP_USWF_AddUserInfoController" id="jtc-iL-bd8" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ISr-Fe-fL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1141" y="-201"/>
+        </scene>
+    </scenes>
+</document>

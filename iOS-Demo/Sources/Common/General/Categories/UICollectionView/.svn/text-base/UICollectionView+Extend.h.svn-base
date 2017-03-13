@@ -1,0 +1,50 @@
+//
+//  UICollectionView+Extend.h
+//  ksf
+//
+//  Created by gaofu on 15/11/7.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UICollectionView (Extend)
+
+//获取当前view 的 viewcontroller
+- (UIViewController*)currentViewController;
+
+/**
+ *  注册Xib Cell
+ *
+ *  @param cell的类名
+ */
+-(void)registerNibCell:(Class)cellClass;
+
+/**
+ *  注册Class Cell
+ *
+ *  @param cell的类名
+ */
+-(void)registerClassCell:(Class)cellClass;
+
+/**
+ *  注册ReusableView
+ *
+ *  @param ReusableView的类名
+*  @param ReusableView的类型
+ */
+-(void)registerNibReusableView:(Class)reusableViewClass orSupplementaryViewOfKind:(NSString*)kind;
+
+-(void)registerClassReusableView:(Class)reusableViewClass orSupplementaryViewOfKind:(NSString*)kind;
+
+/**
+ *  cell复用
+ *
+ *  @param cellClass cell的类名
+ *
+ *  @return cell
+ */
+- (__kindof UICollectionViewCell *)cellWithClass:(Class)cellClass forIndexPath:(NSIndexPath*)index;
+
+
+@end

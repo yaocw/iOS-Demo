@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--设置-->
+        <scene sceneID="m36-Or-RDZ">
+            <objects>
+                <viewController storyboardIdentifier="MusicalScaleExerciseSettingController" id="RFd-Hu-he9" customClass="MusicalScaleExerciseSettingController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZUV-oj-anz"/>
+                        <viewControllerLayoutGuide type="bottom" id="p00-pm-FE2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FmF-Od-pAT">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每次播放音阶数：1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHc-C2-Aey">
+                                <rect key="frame" x="16" y="20" width="104" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="6" translatesAutoresizingMaskIntoConstraints="NO" id="rlC-6D-MwF">
+                                <rect key="frame" x="30" y="42.5" width="276" height="31"/>
+                                <connections>
+                                    <action selector="playCountChangedAction:" destination="RFd-Hu-he9" eventType="valueChanged" id="UeK-dD-bzF"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音阶播放间隔(s)：0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDx-oo-giB">
+                                <rect key="frame" x="16" y="112.5" width="108.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="5dl-Nq-Qdf">
+                                <rect key="frame" x="30" y="135" width="276" height="31"/>
+                                <connections>
+                                    <action selector="playIntervalChangedAction:" destination="RFd-Hu-he9" eventType="valueChanged" id="d0Y-Oh-MZ9"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音阶范围：无" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEg-Hr-V8O">
+                                <rect key="frame" x="16" y="191" width="74" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2U5-Nw-PmF">
+                                <rect key="frame" x="106" y="184" width="46" height="28"/>
+                                <color key="backgroundColor" red="0.47017461059999999" green="0.64893096689999996" blue="0.0045386576090000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="fy6-xJ-q59"/>
+                                    <constraint firstAttribute="height" constant="28" id="hgI-SD-PuH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="选择">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="chooseMusicalScaleScopeAction:" destination="RFd-Hu-he9" eventType="touchUpInside" id="9zw-QY-EMb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="选择音程：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gm4-fg-bSF">
+                                <rect key="frame" x="16" y="245" width="61.5" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMh-S9-fIs">
+                                <rect key="frame" x="93.5" y="238" width="46" height="28"/>
+                                <color key="backgroundColor" red="0.47017461059999999" green="0.64893096689999996" blue="0.0045386576090000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="ewb-vZ-lBJ"/>
+                                    <constraint firstAttribute="width" constant="46" id="xSw-2H-OkI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="选择">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="chooseMusicalSoundIntervalAction:" destination="RFd-Hu-he9" eventType="touchUpInside" id="bEW-a5-aX4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="无" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icN-BX-zGd">
+                                <rect key="frame" x="70" y="287" width="234" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KMh-S9-fIs" firstAttribute="centerY" secondItem="gm4-fg-bSF" secondAttribute="centerY" id="4LE-po-qhm"/>
+                            <constraint firstItem="rlC-6D-MwF" firstAttribute="leading" secondItem="FmF-Od-pAT" secondAttribute="leading" constant="32" id="8iz-zb-mjb"/>
+                            <constraint firstAttribute="trailing" secondItem="5dl-Nq-Qdf" secondAttribute="trailing" constant="16" id="98z-H4-Smh"/>
+                            <constraint firstItem="5dl-Nq-Qdf" firstAttribute="top" secondItem="QDx-oo-giB" secondAttribute="bottom" constant="8" id="FIJ-Oo-tkb"/>
+                            <constraint firstItem="KMh-S9-fIs" firstAttribute="leading" secondItem="gm4-fg-bSF" secondAttribute="trailing" constant="16" id="H56-fy-eyf"/>
+                            <constraint firstItem="gm4-fg-bSF" firstAttribute="top" secondItem="TEg-Hr-V8O" secondAttribute="bottom" constant="39" id="Hyn-gg-0SJ"/>
+                            <constraint firstItem="TEg-Hr-V8O" firstAttribute="top" secondItem="5dl-Nq-Qdf" secondAttribute="bottom" constant="26" id="IAa-Mb-ASo"/>
+                            <constraint firstAttribute="trailing" secondItem="rlC-6D-MwF" secondAttribute="trailing" constant="16" id="R94-mi-ejM"/>
+                            <constraint firstItem="rHc-C2-Aey" firstAttribute="leading" secondItem="FmF-Od-pAT" secondAttribute="leading" constant="16" id="UuK-II-yQ8"/>
+                            <constraint firstItem="QDx-oo-giB" firstAttribute="leading" secondItem="rHc-C2-Aey" secondAttribute="leading" id="V34-sb-o5y"/>
+                            <constraint firstItem="gm4-fg-bSF" firstAttribute="leading" secondItem="TEg-Hr-V8O" secondAttribute="leading" id="VCM-oO-Ov0"/>
+                            <constraint firstItem="icN-BX-zGd" firstAttribute="top" secondItem="gm4-fg-bSF" secondAttribute="bottom" constant="27" id="anc-XO-LfM"/>
+                            <constraint firstItem="rlC-6D-MwF" firstAttribute="top" secondItem="rHc-C2-Aey" secondAttribute="bottom" constant="8" id="ec6-ED-fW5"/>
+                            <constraint firstItem="2U5-Nw-PmF" firstAttribute="leading" secondItem="TEg-Hr-V8O" secondAttribute="trailing" constant="16" id="go7-kF-hSX"/>
+                            <constraint firstItem="TEg-Hr-V8O" firstAttribute="leading" secondItem="QDx-oo-giB" secondAttribute="leading" id="kfv-Iw-AuP"/>
+                            <constraint firstItem="QDx-oo-giB" firstAttribute="top" secondItem="rlC-6D-MwF" secondAttribute="bottom" constant="40" id="kn3-pJ-eLk"/>
+                            <constraint firstItem="5dl-Nq-Qdf" firstAttribute="leading" secondItem="FmF-Od-pAT" secondAttribute="leading" constant="32" id="lgJ-at-9ve"/>
+                            <constraint firstItem="icN-BX-zGd" firstAttribute="leading" secondItem="FmF-Od-pAT" secondAttribute="leading" constant="70" id="mqL-ai-yby"/>
+                            <constraint firstAttribute="trailing" secondItem="icN-BX-zGd" secondAttribute="trailing" constant="16" id="t1z-z2-e03"/>
+                            <constraint firstItem="2U5-Nw-PmF" firstAttribute="centerY" secondItem="TEg-Hr-V8O" secondAttribute="centerY" id="x2Y-rV-OQZ"/>
+                            <constraint firstItem="rHc-C2-Aey" firstAttribute="top" secondItem="ZUV-oj-anz" secondAttribute="bottom" constant="20" id="yxQ-EU-k3P"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="设置" id="jGT-tM-sfJ">
+                        <barButtonItem key="rightBarButtonItem" title="确定" id="9QC-wd-J0M">
+                            <connections>
+                                <action selector="ensureAction:" destination="RFd-Hu-he9" id="L24-ZP-5M8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="choosedSoundIntervalLabel" destination="icN-BX-zGd" id="iD3-0k-yZW"/>
+                        <outlet property="musicalScaleScopeLabel" destination="TEg-Hr-V8O" id="8NC-f8-tJX"/>
+                        <outlet property="playCountEachTimeLabel" destination="rHc-C2-Aey" id="tWb-RP-gdx"/>
+                        <outlet property="playCountEachTimeSlider" destination="rlC-6D-MwF" id="wpg-Hz-riJ"/>
+                        <outlet property="playIntervalLabel" destination="QDx-oo-giB" id="vKp-fo-2A1"/>
+                        <outlet property="playIntervalSlider" destination="5dl-Nq-Qdf" id="YzT-EE-3bn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbN-Ou-iQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-202.5" y="-152.11267605633802"/>
+        </scene>
+    </scenes>
+</document>

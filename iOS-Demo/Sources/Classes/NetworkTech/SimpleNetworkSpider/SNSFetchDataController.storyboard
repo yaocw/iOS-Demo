@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--正在抓取...-->
+        <scene sceneID="7rd-Ob-0Cf">
+            <objects>
+                <viewController storyboardIdentifier="SNSFetchDataController" id="w5T-X5-P1V" customClass="SNSFetchDataController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Nv-Tr-FrX"/>
+                        <viewControllerLayoutGuide type="bottom" id="gGV-2I-q3c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I7g-ZQ-4z4">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tGp-6K-PMq">
+                                <rect key="frame" x="0.0" y="-64" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="0eV-6M-PL2">
+                                <rect key="frame" x="142" y="201.5" width="37" height="37"/>
+                                <color key="color" red="0.47017461059999999" green="0.64893096689999996" blue="0.0045386576090000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0eV-6M-PL2" firstAttribute="centerX" secondItem="tGp-6K-PMq" secondAttribute="centerX" id="3oh-zC-KAn"/>
+                            <constraint firstAttribute="trailing" secondItem="tGp-6K-PMq" secondAttribute="trailing" id="Jef-Vx-52V"/>
+                            <constraint firstItem="gGV-2I-q3c" firstAttribute="top" secondItem="tGp-6K-PMq" secondAttribute="bottom" id="SSJ-Un-h9k"/>
+                            <constraint firstItem="tGp-6K-PMq" firstAttribute="leading" secondItem="I7g-ZQ-4z4" secondAttribute="leading" id="XjQ-r9-SXD"/>
+                            <constraint firstItem="0eV-6M-PL2" firstAttribute="centerY" secondItem="tGp-6K-PMq" secondAttribute="centerY" id="wbv-WR-b5A"/>
+                            <constraint firstItem="tGp-6K-PMq" firstAttribute="top" secondItem="2Nv-Tr-FrX" secondAttribute="bottom" constant="-64" id="zcC-nG-vz1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="正在抓取..." id="kNE-Wq-zm5">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FAO-IO-kbe">
+                            <connections>
+                                <action selector="moreAction:" destination="w5T-X5-P1V" id="ELp-Rw-Vsh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="_activityIndicatorView" destination="0eV-6M-PL2" id="eeh-Cg-m2c"/>
+                        <outlet property="_fetchedDataTextView" destination="tGp-6K-PMq" id="dRK-3L-uZt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7R-pE-mIH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="225" y="5.28169014084507"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,29 @@
+//
+//  UIViewController+navigationItem.m
+//  hxj
+//
+//  Created by wangzhen on 15/10/27.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "UIViewController+navigationItem.h"
+
+
+
+@implementation UIViewController (navigationItem)
+
+-(void)setLeftBarButtonItemWithImageName:(NSString *)imageName action:(SEL)action
+
+{
+    UIButton * positionBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    positionBtn.frame =CGRectMake(0, 0,20, 20);
+    [positionBtn addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
+    [positionBtn setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:positionBtn];
+    self.navigationItem.leftBarButtonItem = backItem;
+}
+
+
+
+
+@end

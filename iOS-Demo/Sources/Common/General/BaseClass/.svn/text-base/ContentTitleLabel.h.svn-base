@@ -1,0 +1,13 @@
+//
+//  ContentTitleLabel.h
+//  ksf
+//
+//  Created by yaochaowen on 16/1/23.
+//  Copyright © 2016年 gaofu. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ContentTitleLabel : UILabel
+
+@end

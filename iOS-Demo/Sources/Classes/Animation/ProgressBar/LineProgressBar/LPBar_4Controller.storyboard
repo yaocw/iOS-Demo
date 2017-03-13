@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LPBar_4-->
+        <scene sceneID="tXI-RP-tNY">
+            <objects>
+                <viewController storyboardIdentifier="LPBar_4Controller" id="DYp-pB-ivq" customClass="LPBar_4Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yyC-XX-bth"/>
+                        <viewControllerLayoutGuide type="bottom" id="L8n-OI-Ov1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jvM-Zy-Ktd">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TV-am-3aI">
+                                <rect key="frame" x="132" y="392" width="56" height="56"/>
+                                <color key="backgroundColor" red="0.47017461059999999" green="0.64893096689999996" blue="0.0045386576090000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="JVO-Sb-RaB"/>
+                                    <constraint firstAttribute="width" constant="56" id="N6M-he-cbu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="开始">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resetAction:" destination="DYp-pB-ivq" eventType="touchUpInside" id="6Mi-ba-QKD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L8n-OI-Ov1" firstAttribute="top" secondItem="9TV-am-3aI" secondAttribute="bottom" constant="56" id="6sA-0E-m20"/>
+                            <constraint firstItem="9TV-am-3aI" firstAttribute="centerX" secondItem="jvM-Zy-Ktd" secondAttribute="centerX" id="u4u-6X-2xl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="LPBar_4" id="hOZ-hY-1h6"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="startButton" destination="9TV-am-3aI" id="jhQ-QW-XoO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="INs-ZN-4AS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-129" y="85"/>
+        </scene>
+    </scenes>
+</document>

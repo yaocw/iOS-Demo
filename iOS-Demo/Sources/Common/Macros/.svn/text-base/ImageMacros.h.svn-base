@@ -1,0 +1,28 @@
+//
+//  ImageMacros.h
+//  RaccoonHomeClient
+//
+//  Created by gaofu on 15/10/20.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+/**
+ *  图片宏
+ */
+
+
+#ifndef ImageMacros_h
+#define ImageMacros_h
+
+/**占位图*/
+#define Image_Appdefault @"bg_material"
+
+#define MainImage_Appdefault @"main_default"
+
+#define Image_Placeholder [UIImage imageNamed:@"appdefault"]
+
+#define Head_Image_Placeholder  [UIImage imageNamed:[Helper isClientAPP] ? @"hxj_headimg_appdefault" : @"ksf_headimg_appdefault"]
+
+#define Message_Center_Person_Group @"person_group"
+#define Message_Center_Project_Group @"project_group"
+
+#endif /* ImageMacros_h */

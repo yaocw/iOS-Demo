@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sprite Walk Through Controller-->
+        <scene sceneID="BDp-6w-DgU">
+            <objects>
+                <viewController storyboardIdentifier="SpriteWalkThroughController" id="Dtp-VZ-vRL" customClass="SpriteWalkThroughController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Ma-JH-CAA"/>
+                        <viewControllerLayoutGuide type="bottom" id="RJr-xI-SwF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0lX-bB-BXY" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccW-P9-bTO">
+                                <rect key="frame" x="16" y="28" width="31" height="30"/>
+                                <state key="normal" title="关闭"/>
+                                <connections>
+                                    <action selector="backAction:" destination="Dtp-VZ-vRL" eventType="touchUpInside" id="mO3-Ay-v4H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ccW-P9-bTO" firstAttribute="leading" secondItem="0lX-bB-BXY" secondAttribute="leadingMargin" id="5I5-WA-qGS"/>
+                            <constraint firstItem="ccW-P9-bTO" firstAttribute="top" secondItem="1Ma-JH-CAA" secondAttribute="bottom" constant="8" symbolic="YES" id="Mx3-ML-qUV"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uJ0-RF-OjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358.125" y="-188.02816901408451"/>
+        </scene>
+    </scenes>
+</document>

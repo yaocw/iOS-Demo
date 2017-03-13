@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--视唱练耳-->
+        <scene sceneID="XI8-Vl-MVA">
+            <objects>
+                <tableViewController storyboardIdentifier="SolfeggioController" id="149-8Q-Con" customClass="SolfeggioController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uvD-L2-z82">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="c1m-ph-h3P">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="bH7-P9-v5J">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bH7-P9-v5J" id="m00-Ls-lbz">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="单音练习" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6MH-MM-QEi">
+                                                    <rect key="frame" x="16" y="17.5" width="70" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6MH-MM-QEi" firstAttribute="leading" secondItem="m00-Ls-lbz" secondAttribute="leading" constant="16" id="SdD-eA-Ei5"/>
+                                                <constraint firstItem="6MH-MM-QEi" firstAttribute="centerY" secondItem="m00-Ls-lbz" secondAttribute="centerY" id="g2H-ix-l8R"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="CZh-a6-Vh5" kind="show" id="t6A-4U-Ukc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="MAQ-IN-7s9">
+                                        <rect key="frame" x="0.0" y="56" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MAQ-IN-7s9" id="RmF-i0-xdK">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音程练习" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqo-MA-DN8">
+                                                    <rect key="frame" x="16" y="17.5" width="70" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fqo-MA-DN8" firstAttribute="leading" secondItem="RmF-i0-xdK" secondAttribute="leading" constant="16" id="VCs-s7-4b7"/>
+                                                <constraint firstItem="fqo-MA-DN8" firstAttribute="centerY" secondItem="RmF-i0-xdK" secondAttribute="centerY" id="ep4-Qf-7UD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="6YN-ks-bya" kind="show" id="Qsk-5i-WRd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="149-8Q-Con" id="OVk-od-msR"/>
+                            <outlet property="delegate" destination="149-8Q-Con" id="fIe-uO-x1A"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="视唱练耳" id="m7y-pF-EfA"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vr5-lS-Cfi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-228" y="61"/>
+        </scene>
+        <!--SingleSoundExerciseController-->
+        <scene sceneID="VoZ-gv-NNh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SingleSoundExerciseController" referencedIdentifier="SingleSoundExerciseController" id="CZh-a6-Vh5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nyM-RA-4Zq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="478" y="-135"/>
+        </scene>
+        <!--MusicalScaleExerciseController-->
+        <scene sceneID="Q1B-Y9-e0Z">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MusicalScaleExerciseController" referencedIdentifier="MusicalScaleExerciseController" id="6YN-ks-bya" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PYr-Tf-tgB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="462" y="-7"/>
+        </scene>
+    </scenes>
+</document>

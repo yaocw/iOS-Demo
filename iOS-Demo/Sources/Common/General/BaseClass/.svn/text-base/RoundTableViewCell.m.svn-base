@@ -1,0 +1,47 @@
+//
+//  RoundTableViewCell.m
+//  ksf
+//
+//  Created by gaofu on 15/10/28.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "RoundTableViewCell.h"
+
+@implementation RoundTableViewCell
+
+
+-(void)awakeFromNib
+{
+    [self commonUI];
+}
+
+
+-(instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super initWithCoder:aDecoder])
+    {
+        [self commonUI];
+    }
+    return self;
+}
+
+
+#pragma mark -
+#pragma mark CommonUI
+
+-(void)commonUI
+{
+    //设置圆角
+    self.layer.masksToBounds = YES;
+    self.layer.cornerRadius =  kCornerRadius;
+    
+    
+    //边框
+//    self.layer.borderWidth = kBorderWidth;
+//    self.layer.borderColor = kUIFrameColor.CGColor;
+    
+    
+}
+
+@end

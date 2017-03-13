@@ -1,0 +1,87 @@
+//
+//  BaseCollectionViewController.m
+//  RaccoonHomeClient
+//
+//  Created by gaofu on 15/10/20.
+//  Copyright © 2015年 gaofu. All rights reserved.
+//
+
+#import "BaseCollectionViewController.h"
+
+@interface BaseCollectionViewController ()
+
+@end
+
+@implementation BaseCollectionViewController
+
+- (void)b_initializeData
+{
+    
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    //数据初始化
+    [self b_initializeData];
+    
+    //自定义导航栏
+    [self b_initNavigation];
+    
+    //初始化tableview
+    [self b_initTableview];
+    
+    //公共UI
+    [self initCommonUI];
+    
+    //网络请求
+    [self b_request];
+}
+
+- (void)b_initNavigation
+{
+
+    
+}
+
+- (void)b_initTableview
+{
+    
+}
+
+-(void)b_hiddenKeyboard
+{
+    [self.view endEditing:YES];
+}
+
+-(void)initCommonUI
+{
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(b_backAction:)];
+    
+    self.navigationController.navigationBar.tintColor = kMinorRedColorOfWorder;
+    
+    NSMutableArray*itemsArr = [NSMutableArray arrayWithArray:self.navigationItem.leftBarButtonItems];
+    [itemsArr addObjectsFromArray:self.navigationItem.rightBarButtonItems];
+    [itemsArr addObject:self.navigationItem.backBarButtonItem];
+    
+    for (UIBarButtonItem *tmpItem in itemsArr)
+    {
+        tmpItem.image = [tmpItem.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    }
+}
+
+-(void)b_backAction:(UIBarButtonItem*)sender
+{
+    
+}
+
+/**
+ *  请求
+ */
+-(void)b_request
+{
+    
+}
+
+@end
