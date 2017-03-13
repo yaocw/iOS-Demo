@@ -35,5 +35,5 @@
 		* UIComponents：UI组件
 
 ## 示例
-
+![](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/wave_effective.gif)
 
