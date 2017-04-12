@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ScrollAnimation_1-->
+        <scene sceneID="c4s-w1-uGO">
+            <objects>
+                <viewController storyboardIdentifier="ScrollAnimation_1Controller" id="XRb-7R-x4w" customClass="ScrollAnimation_1Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KDW-6N-Mle"/>
+                        <viewControllerLayoutGuide type="bottom" id="t0H-O5-BVX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zut-Bz-NCg">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDk-g5-Lxd">
+                                <rect key="frame" x="0.0" y="457" width="375" height="146"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="43F-f3-7LL">
+                                <rect key="frame" x="177" y="-97" width="20" height="400"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VaC-QT-3r6">
+                                        <rect key="frame" x="0.0" y="200" width="20" height="200"/>
+                                        <color key="backgroundColor" red="1" green="0.49803921569999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="VaC-QT-3r6" secondAttribute="trailing" id="46a-Hl-bnm"/>
+                                    <constraint firstAttribute="width" constant="20" id="Ugb-vn-xLK"/>
+                                    <constraint firstItem="VaC-QT-3r6" firstAttribute="height" secondItem="43F-f3-7LL" secondAttribute="height" multiplier="1:2" id="gAP-Dk-Xh7"/>
+                                    <constraint firstAttribute="height" constant="400" id="lmh-Le-gWH"/>
+                                    <constraint firstItem="VaC-QT-3r6" firstAttribute="leading" secondItem="43F-f3-7LL" secondAttribute="leading" id="mGP-ZE-ZuQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="VaC-QT-3r6" secondAttribute="bottom" id="wg5-b8-SQS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="43F-f3-7LL" firstAttribute="top" secondItem="KDW-6N-Mle" secondAttribute="bottom" constant="-200" id="33N-2e-uVS"/>
+                            <constraint firstItem="hDk-g5-Lxd" firstAttribute="leading" secondItem="zut-Bz-NCg" secondAttribute="leading" id="Dfq-Bu-QIr"/>
+                            <constraint firstItem="hDk-g5-Lxd" firstAttribute="bottom" secondItem="t0H-O5-BVX" secondAttribute="top" id="EEE-Iq-2u0"/>
+                            <constraint firstAttribute="trailing" secondItem="hDk-g5-Lxd" secondAttribute="trailing" id="TId-6D-sL6"/>
+                            <constraint firstItem="43F-f3-7LL" firstAttribute="centerX" secondItem="zut-Bz-NCg" secondAttribute="centerX" id="UKs-Fx-N0C"/>
+                            <constraint firstItem="hDk-g5-Lxd" firstAttribute="top" secondItem="KDW-6N-Mle" secondAttribute="bottom" constant="-64" id="s4b-Gc-UTR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ScrollAnimation_1" id="Ta2-hP-YWP"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="leverView" destination="43F-f3-7LL" id="tTF-8l-Jv6"/>
+                        <outlet property="scrollView" destination="hDk-g5-Lxd" id="okW-je-CYU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vTn-sz-vxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303.19999999999999" y="-111.0944527736132"/>
+        </scene>
+    </scenes>
+</document>

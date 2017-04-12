@@ -539,6 +539,11 @@
 		8C38C1631E7634A0003624B7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C38C1621E7634A0003624B7 /* MobileCoreServices.framework */; };
 		8C38C1651E7634A7003624B7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C38C1641E7634A7003624B7 /* AssetsLibrary.framework */; };
 		8C38C1671E7634AD003624B7 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C38C1661E7634AD003624B7 /* SpriteKit.framework */; };
+		8C501A461E9E131100003F67 /* SACircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C501A451E9E131100003F67 /* SACircleView.m */; };
+		8C501A491E9E132D00003F67 /* SACircleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C501A481E9E132D00003F67 /* SACircleView.xib */; };
+		8C501A4C1E9E278400003F67 /* SAPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C501A4B1E9E278400003F67 /* SAPageView.m */; };
+		8CBD4C6C1E9DCD13002AF0AA /* ScrollAnimation_1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBD4C6B1E9DCD13002AF0AA /* ScrollAnimation_1Controller.m */; };
+		8CBD4C6E1E9DCD1A002AF0AA /* ScrollAnimation_1Controller.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CBD4C6D1E9DCD1A002AF0AA /* ScrollAnimation_1Controller.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1392,6 +1397,14 @@
 		8C38C1621E7634A0003624B7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		8C38C1641E7634A7003624B7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		8C38C1661E7634AD003624B7 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		8C501A441E9E131100003F67 /* SACircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SACircleView.h; sourceTree = "<group>"; };
+		8C501A451E9E131100003F67 /* SACircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SACircleView.m; sourceTree = "<group>"; };
+		8C501A481E9E132D00003F67 /* SACircleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SACircleView.xib; sourceTree = "<group>"; };
+		8C501A4A1E9E278400003F67 /* SAPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPageView.h; sourceTree = "<group>"; };
+		8C501A4B1E9E278400003F67 /* SAPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPageView.m; sourceTree = "<group>"; };
+		8CBD4C6A1E9DCD13002AF0AA /* ScrollAnimation_1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollAnimation_1Controller.h; sourceTree = "<group>"; };
+		8CBD4C6B1E9DCD13002AF0AA /* ScrollAnimation_1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollAnimation_1Controller.m; sourceTree = "<group>"; };
+		8CBD4C6D1E9DCD1A002AF0AA /* ScrollAnimation_1Controller.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScrollAnimation_1Controller.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1569,6 +1582,7 @@
 		8C38BB941E763466003624B7 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				8CBD4C681E9DCCFB002AF0AA /* ScrollAnimation_1 */,
 				8C38BB951E763466003624B7 /* AnimationController.h */,
 				8C38BB961E763466003624B7 /* AnimationController.m */,
 				8C38BB971E763466003624B7 /* AnimationController.storyboard */,
@@ -3572,6 +3586,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8CBD4C681E9DCCFB002AF0AA /* ScrollAnimation_1 */ = {
+			isa = PBXGroup;
+			children = (
+				8C501A441E9E131100003F67 /* SACircleView.h */,
+				8C501A451E9E131100003F67 /* SACircleView.m */,
+				8C501A481E9E132D00003F67 /* SACircleView.xib */,
+				8C501A4A1E9E278400003F67 /* SAPageView.h */,
+				8C501A4B1E9E278400003F67 /* SAPageView.m */,
+				8CBD4C6A1E9DCD13002AF0AA /* ScrollAnimation_1Controller.h */,
+				8CBD4C6B1E9DCD13002AF0AA /* ScrollAnimation_1Controller.m */,
+				8CBD4C6D1E9DCD1A002AF0AA /* ScrollAnimation_1Controller.storyboard */,
+			);
+			path = ScrollAnimation_1;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3775,6 +3804,7 @@
 				8C38C0381E763467003624B7 /* x4-D.mp3 in Resources */,
 				8C38BF511E763467003624B7 /* test_video.mp4 in Resources */,
 				8C38BF7B1E763467003624B7 /* LineProgressBarController.storyboard in Resources */,
+				8C501A491E9E132D00003F67 /* SACircleView.xib in Resources */,
 				8C38BFE61E763467003624B7 /* ChooseMusicalScaleScopeView.xib in Resources */,
 				8C38BF521E763467003624B7 /* wings.png in Resources */,
 				8C38C0691E763467003624B7 /* SNSAddSelfDefineReplacingRuleController.storyboard in Resources */,
@@ -3885,6 +3915,7 @@
 				8C38C0951E763467003624B7 /* btn.png in Resources */,
 				8C38C0771E763467003624B7 /* SNSNetworkAddressListController.storyboard in Resources */,
 				8C38C0AA1E763467003624B7 /* fftoast_dismiss@2x.png in Resources */,
+				8CBD4C6E1E9DCD1A002AF0AA /* ScrollAnimation_1Controller.storyboard in Resources */,
 				8C38C01C1E763467003624B7 /* x2-B.mp3 in Resources */,
 				8C38BF811E763467003624B7 /* LPBar_3Controller.storyboard in Resources */,
 				8C38BFF01E763467003624B7 /* d-F.mp3 in Resources */,
@@ -4030,6 +4061,7 @@
 				8C38BF701E763467003624B7 /* CombinationAnimationController.m in Sources */,
 				8C38C1441E763468003624B7 /* UIColor+Extend.m in Sources */,
 				8C38C1361E763468003624B7 /* ViewController+MASAdditions.m in Sources */,
+				8C501A461E9E131100003F67 /* SACircleView.m in Sources */,
 				8C38BF741E763467003624B7 /* OverallAnimationsController.m in Sources */,
 				8C38C1201E763468003624B7 /* IQUIView+Hierarchy.m in Sources */,
 				8C38C11E1E763468003624B7 /* IQUIScrollView+Additions.m in Sources */,
@@ -4120,6 +4152,7 @@
 				8C38C14D1E763468003624B7 /* MMPopupCategory.m in Sources */,
 				8C38BF551E763467003624B7 /* ClickSpreadAnimationController.m in Sources */,
 				8C38C0411E763467003624B7 /* SingleSoundExerciseController.m in Sources */,
+				8CBD4C6C1E9DCD13002AF0AA /* ScrollAnimation_1Controller.m in Sources */,
 				8C38C04D1E763467003624B7 /* StartToQuartz2DController.m in Sources */,
 				8C38C1421E763468003624B7 /* UIView+Extend.m in Sources */,
 				8C38BF801E763467003624B7 /* LPBar_3Controller.m in Sources */,
@@ -4172,6 +4205,7 @@
 				8C38C0A61E763467003624B7 /* FBShimmeringView.m in Sources */,
 				8C38C14F1E763468003624B7 /* MMPopupView.m in Sources */,
 				8C38BFB51E763467003624B7 /* LittlePlaneController.m in Sources */,
+				8C501A4C1E9E278400003F67 /* SAPageView.m in Sources */,
 				8C38C05B1E763467003624B7 /* SNS_MatchingRuleModel.m in Sources */,
 				8C38C03F1E763467003624B7 /* ChooseMusicalScaleController.m in Sources */,
 				8C38BF931E763467003624B7 /* DataPersistenceController.m in Sources */,

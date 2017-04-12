@@ -24,7 +24,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZGd-fB-DYk" id="DnE-hU-SEz">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="综合动画" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LS7-AY-E1w">
@@ -47,7 +47,7 @@
                                         <rect key="frame" x="0.0" y="56" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5wf-B2-vah" id="cA0-xl-Jh4">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="弹出式菜单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CI0-dC-sx6">
@@ -70,7 +70,7 @@
                                         <rect key="frame" x="0.0" y="112" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n7Q-fI-InN" id="q5K-pM-sGx">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="旋转圆圈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEy-2g-Afh">
@@ -93,7 +93,7 @@
                                         <rect key="frame" x="0.0" y="168" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ahb-nn-4wk" id="RyL-J2-RXj">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="进度条" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJV-wq-7qF">
@@ -116,7 +116,7 @@
                                         <rect key="frame" x="0.0" y="224" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1mP-hL-1yI" id="0ys-Ve-XTh">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="画个圆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGO-DO-GtC">
@@ -139,7 +139,7 @@
                                         <rect key="frame" x="0.0" y="280" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kSt-WT-Lz0" id="lje-bE-LgH">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击扩散效果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liP-7Y-QZ9">
@@ -162,7 +162,7 @@
                                         <rect key="frame" x="0.0" y="336" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Csh-Sm-W25" id="efZ-1D-Fkd">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="气泡提示框" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDG-rg-ynf">
@@ -185,7 +185,7 @@
                                         <rect key="frame" x="0.0" y="392" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xPe-rG-z5r" id="KfR-B4-odR">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="波浪效果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SU-qX-m2L">
@@ -208,7 +208,7 @@
                                         <rect key="frame" x="0.0" y="448" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lTy-IQ-7eu" id="eiR-5J-30C">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下拉刷新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBc-Oq-5dR">
@@ -231,7 +231,7 @@
                                         <rect key="frame" x="0.0" y="504" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bnw-uL-YkP" id="qbx-pG-Qjk">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="遮罩转场动画" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Pz-km-Jo2">
@@ -254,7 +254,7 @@
                                         <rect key="frame" x="0.0" y="560" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g8s-TT-lQw" id="kTy-3q-LdT">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StoreHouseTransition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71o-xr-rbe">
@@ -271,6 +271,29 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="KNI-wV-quf" kind="show" id="gsj-Ks-9pE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="OxX-vB-PN9">
+                                        <rect key="frame" x="0.0" y="616" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OxX-vB-PN9" id="ycZ-ve-ZPG">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ScrollAnimation_1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6o-d7-YDU">
+                                                    <rect key="frame" x="16" y="17" width="133" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="J6o-d7-YDU" firstAttribute="centerY" secondItem="ycZ-ve-ZPG" secondAttribute="centerY" id="6lG-LK-PcD"/>
+                                                <constraint firstItem="J6o-d7-YDU" firstAttribute="leading" secondItem="ycZ-ve-ZPG" secondAttribute="leading" constant="16" id="egX-qD-eH9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="kG5-mY-h9P" kind="show" identifier="" id="55E-Cn-BlI"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -336,7 +359,7 @@
                 <viewControllerPlaceholder storyboardName="SimplePromptBubbleController" referencedIdentifier="SimplePromptBubbleController" id="WB5-TF-7ek" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9FF-Ip-yaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="470" y="380"/>
+            <point key="canvasLocation" x="481" y="316"/>
         </scene>
         <!--WaterWaveController-->
         <scene sceneID="Gir-ms-ScK">
@@ -344,7 +367,7 @@
                 <viewControllerPlaceholder storyboardName="WaterWaveController" referencedIdentifier="WaterWaveController" id="wb0-I0-zu8" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nnv-hA-y0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="417" y="431"/>
+            <point key="canvasLocation" x="427" y="368"/>
         </scene>
         <!--DragDownRefreshController-->
         <scene sceneID="hQh-93-GYC">
@@ -352,7 +375,7 @@
                 <viewControllerPlaceholder storyboardName="DragDownRefreshController" referencedIdentifier="DragDownRefreshController" id="uoy-vh-jPu" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bo-N4-ZCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="458" y="481"/>
+            <point key="canvasLocation" x="468" y="417"/>
         </scene>
         <!--MainMaskTransitionController-->
         <scene sceneID="PWM-AD-cOq">
@@ -360,7 +383,7 @@
                 <viewControllerPlaceholder storyboardName="MainMaskTransitionController" referencedIdentifier="MainMaskTransitionController" id="VZu-M6-cVD" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lzl-A3-Una" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="439" y="531"/>
+            <point key="canvasLocation" x="481" y="467"/>
         </scene>
         <!--MainStoreHouseTransitionController-->
         <scene sceneID="hlY-bS-RP1">
@@ -368,7 +391,15 @@
                 <viewControllerPlaceholder storyboardName="MainStoreHouseTransitionController" referencedIdentifier="MainStoreHouseTransitionController" id="KNI-wV-quf" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GLG-nD-Yom" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="473" y="584"/>
+            <point key="canvasLocation" x="515" y="520"/>
+        </scene>
+        <!--ScrollAnimation_1Controller-->
+        <scene sceneID="QHM-FF-Vc9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ScrollAnimation_1Controller" referencedIdentifier="ScrollAnimation_1Controller" id="kG5-mY-h9P" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qvB-Gx-X4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="583"/>
         </scene>
         <!--OverallAnimationsController-->
         <scene sceneID="adj-Ie-FXa">
