@@ -7,6 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C369FBA1E9F0A5100944873 /* LoadingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C369FB91E9F0A5100944873 /* LoadingAnimationController.m */; };
+		8C369FBC1E9F0A5900944873 /* LoadingAnimationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C369FBB1E9F0A5900944873 /* LoadingAnimationController.storyboard */; };
+		8C369FBF1E9F0B0000944873 /* SandglassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C369FBE1E9F0B0000944873 /* SandglassController.m */; };
+		8C369FC11E9F0B0600944873 /* SandglassController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C369FC01E9F0B0600944873 /* SandglassController.storyboard */; };
+		8C369FC41E9F0E1C00944873 /* Sandglass.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C369FC31E9F0E1C00944873 /* Sandglass.png */; };
+		8C369FCE1E9F174D00944873 /* TenDotsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C369FCD1E9F174D00944873 /* TenDotsController.m */; };
+		8C369FD01E9F175400944873 /* TenDotsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C369FCF1E9F175400944873 /* TenDotsController.storyboard */; };
+		8C369FD31E9F17CC00944873 /* TDDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C369FD21E9F17CC00944873 /* TDDotView.m */; };
+		8C369FD61E9F1CE800944873 /* TDDotsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C369FD51E9F1CE800944873 /* TDDotsView.m */; };
+		8C369FDB1E9F61B100944873 /* ColorsMatrixController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C369FDA1E9F61B100944873 /* ColorsMatrixController.m */; };
+		8C369FDD1E9F61B800944873 /* ColorsMatrixController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C369FDC1E9F61B800944873 /* ColorsMatrixController.storyboard */; };
+		8C369FE01E9F622400944873 /* CMColorsBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C369FDF1E9F622400944873 /* CMColorsBoxView.m */; };
+		8C369FE41E9F686900944873 /* HandwritingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C369FE31E9F686900944873 /* HandwritingController.m */; };
+		8C369FE61E9F686F00944873 /* HandwritingController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C369FE51E9F686F00944873 /* HandwritingController.storyboard */; };
+		8C369FEA1E9F717700944873 /* HillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C369FE91E9F717700944873 /* HillsViewController.m */; };
+		8C369FEC1E9F717E00944873 /* HillsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C369FEB1E9F717E00944873 /* HillsViewController.storyboard */; };
+		8C369FF31E9F729F00944873 /* hill1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C369FEE1E9F729F00944873 /* hill1.png */; };
+		8C369FF41E9F729F00944873 /* hill2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C369FEF1E9F729F00944873 /* hill2.png */; };
+		8C369FF51E9F729F00944873 /* hill3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C369FF01E9F729F00944873 /* hill3.png */; };
+		8C369FF61E9F729F00944873 /* hill4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C369FF11E9F729F00944873 /* hill4.png */; };
+		8C369FF71E9F729F00944873 /* hill5.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C369FF21E9F729F00944873 /* hill5.png */; };
+		8C369FFB1E9F7C9100944873 /* ThreeDotsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C369FFA1E9F7C9100944873 /* ThreeDotsController.m */; };
+		8C369FFD1E9F7C9700944873 /* ThreeDotsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C369FFC1E9F7C9700944873 /* ThreeDotsController.storyboard */; };
+		8C36A0021E9F802C00944873 /* RaderSpreadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C36A0011E9F802C00944873 /* RaderSpreadController.m */; };
+		8C36A0041E9F803C00944873 /* RaderSpreadController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C36A0031E9F803C00944873 /* RaderSpreadController.storyboard */; };
 		8C38BB501E763418003624B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C38BB4F1E763418003624B7 /* main.m */; };
 		8C38BB531E763418003624B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C38BB521E763418003624B7 /* AppDelegate.m */; };
 		8C38BB591E763418003624B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C38BB571E763418003624B7 /* Main.storyboard */; };
@@ -571,6 +596,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C369FB81E9F0A5100944873 /* LoadingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingAnimationController.h; sourceTree = "<group>"; };
+		8C369FB91E9F0A5100944873 /* LoadingAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingAnimationController.m; sourceTree = "<group>"; };
+		8C369FBB1E9F0A5900944873 /* LoadingAnimationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoadingAnimationController.storyboard; sourceTree = "<group>"; };
+		8C369FBD1E9F0B0000944873 /* SandglassController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandglassController.h; sourceTree = "<group>"; };
+		8C369FBE1E9F0B0000944873 /* SandglassController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SandglassController.m; sourceTree = "<group>"; };
+		8C369FC01E9F0B0600944873 /* SandglassController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SandglassController.storyboard; sourceTree = "<group>"; };
+		8C369FC31E9F0E1C00944873 /* Sandglass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sandglass.png; sourceTree = "<group>"; };
+		8C369FCC1E9F174D00944873 /* TenDotsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenDotsController.h; sourceTree = "<group>"; };
+		8C369FCD1E9F174D00944873 /* TenDotsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TenDotsController.m; sourceTree = "<group>"; };
+		8C369FCF1E9F175400944873 /* TenDotsController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TenDotsController.storyboard; sourceTree = "<group>"; };
+		8C369FD11E9F17CC00944873 /* TDDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDDotView.h; sourceTree = "<group>"; };
+		8C369FD21E9F17CC00944873 /* TDDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDDotView.m; sourceTree = "<group>"; };
+		8C369FD41E9F1CE800944873 /* TDDotsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDDotsView.h; sourceTree = "<group>"; };
+		8C369FD51E9F1CE800944873 /* TDDotsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDDotsView.m; sourceTree = "<group>"; };
+		8C369FD91E9F61B100944873 /* ColorsMatrixController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorsMatrixController.h; sourceTree = "<group>"; };
+		8C369FDA1E9F61B100944873 /* ColorsMatrixController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorsMatrixController.m; sourceTree = "<group>"; };
+		8C369FDC1E9F61B800944873 /* ColorsMatrixController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ColorsMatrixController.storyboard; sourceTree = "<group>"; };
+		8C369FDE1E9F622400944873 /* CMColorsBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMColorsBoxView.h; sourceTree = "<group>"; };
+		8C369FDF1E9F622400944873 /* CMColorsBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMColorsBoxView.m; sourceTree = "<group>"; };
+		8C369FE21E9F686900944873 /* HandwritingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandwritingController.h; sourceTree = "<group>"; };
+		8C369FE31E9F686900944873 /* HandwritingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandwritingController.m; sourceTree = "<group>"; };
+		8C369FE51E9F686F00944873 /* HandwritingController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HandwritingController.storyboard; sourceTree = "<group>"; };
+		8C369FE81E9F717700944873 /* HillsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HillsViewController.h; sourceTree = "<group>"; };
+		8C369FE91E9F717700944873 /* HillsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HillsViewController.m; sourceTree = "<group>"; };
+		8C369FEB1E9F717E00944873 /* HillsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HillsViewController.storyboard; sourceTree = "<group>"; };
+		8C369FEE1E9F729F00944873 /* hill1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hill1.png; sourceTree = "<group>"; };
+		8C369FEF1E9F729F00944873 /* hill2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hill2.png; sourceTree = "<group>"; };
+		8C369FF01E9F729F00944873 /* hill3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hill3.png; sourceTree = "<group>"; };
+		8C369FF11E9F729F00944873 /* hill4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hill4.png; sourceTree = "<group>"; };
+		8C369FF21E9F729F00944873 /* hill5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hill5.png; sourceTree = "<group>"; };
+		8C369FF91E9F7C9100944873 /* ThreeDotsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeDotsController.h; sourceTree = "<group>"; };
+		8C369FFA1E9F7C9100944873 /* ThreeDotsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeDotsController.m; sourceTree = "<group>"; };
+		8C369FFC1E9F7C9700944873 /* ThreeDotsController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ThreeDotsController.storyboard; sourceTree = "<group>"; };
+		8C36A0001E9F802C00944873 /* RaderSpreadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaderSpreadController.h; sourceTree = "<group>"; };
+		8C36A0011E9F802C00944873 /* RaderSpreadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaderSpreadController.m; sourceTree = "<group>"; };
+		8C36A0031E9F803C00944873 /* RaderSpreadController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RaderSpreadController.storyboard; sourceTree = "<group>"; };
 		8C38BB4B1E763418003624B7 /* iOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C38BB4F1E763418003624B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8C38BB511E763418003624B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "iOS-Demo/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
@@ -1441,6 +1502,121 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C369FB61E9F09EC00944873 /* LoadingAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				8C369FFF1E9F802300944873 /* RaderSpread */,
+				8C369FF81E9F7C8100944873 /* ThreeDots */,
+				8C369FE71E9F716600944873 /* Hills */,
+				8C369FE11E9F684900944873 /* Handwriting */,
+				8C369FD81E9F60C800944873 /* ColorsMatrix */,
+				8C369FCB1E9F174100944873 /* TenDots */,
+				8C369FB71E9F0A2200944873 /* Sandglass */,
+				8C369FB81E9F0A5100944873 /* LoadingAnimationController.h */,
+				8C369FB91E9F0A5100944873 /* LoadingAnimationController.m */,
+				8C369FBB1E9F0A5900944873 /* LoadingAnimationController.storyboard */,
+			);
+			path = LoadingAnimation;
+			sourceTree = "<group>";
+		};
+		8C369FB71E9F0A2200944873 /* Sandglass */ = {
+			isa = PBXGroup;
+			children = (
+				8C369FC21E9F0E1C00944873 /* Resources */,
+				8C369FBD1E9F0B0000944873 /* SandglassController.h */,
+				8C369FBE1E9F0B0000944873 /* SandglassController.m */,
+				8C369FC01E9F0B0600944873 /* SandglassController.storyboard */,
+			);
+			path = Sandglass;
+			sourceTree = "<group>";
+		};
+		8C369FC21E9F0E1C00944873 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C369FC31E9F0E1C00944873 /* Sandglass.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8C369FCB1E9F174100944873 /* TenDots */ = {
+			isa = PBXGroup;
+			children = (
+				8C369FD11E9F17CC00944873 /* TDDotView.h */,
+				8C369FD21E9F17CC00944873 /* TDDotView.m */,
+				8C369FD41E9F1CE800944873 /* TDDotsView.h */,
+				8C369FD51E9F1CE800944873 /* TDDotsView.m */,
+				8C369FCC1E9F174D00944873 /* TenDotsController.h */,
+				8C369FCD1E9F174D00944873 /* TenDotsController.m */,
+				8C369FCF1E9F175400944873 /* TenDotsController.storyboard */,
+			);
+			path = TenDots;
+			sourceTree = "<group>";
+		};
+		8C369FD81E9F60C800944873 /* ColorsMatrix */ = {
+			isa = PBXGroup;
+			children = (
+				8C369FDE1E9F622400944873 /* CMColorsBoxView.h */,
+				8C369FDF1E9F622400944873 /* CMColorsBoxView.m */,
+				8C369FD91E9F61B100944873 /* ColorsMatrixController.h */,
+				8C369FDA1E9F61B100944873 /* ColorsMatrixController.m */,
+				8C369FDC1E9F61B800944873 /* ColorsMatrixController.storyboard */,
+			);
+			path = ColorsMatrix;
+			sourceTree = "<group>";
+		};
+		8C369FE11E9F684900944873 /* Handwriting */ = {
+			isa = PBXGroup;
+			children = (
+				8C369FE21E9F686900944873 /* HandwritingController.h */,
+				8C369FE31E9F686900944873 /* HandwritingController.m */,
+				8C369FE51E9F686F00944873 /* HandwritingController.storyboard */,
+			);
+			path = Handwriting;
+			sourceTree = "<group>";
+		};
+		8C369FE71E9F716600944873 /* Hills */ = {
+			isa = PBXGroup;
+			children = (
+				8C369FED1E9F729F00944873 /* Resources */,
+				8C369FE81E9F717700944873 /* HillsViewController.h */,
+				8C369FE91E9F717700944873 /* HillsViewController.m */,
+				8C369FEB1E9F717E00944873 /* HillsViewController.storyboard */,
+			);
+			path = Hills;
+			sourceTree = "<group>";
+		};
+		8C369FED1E9F729F00944873 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C369FEE1E9F729F00944873 /* hill1.png */,
+				8C369FEF1E9F729F00944873 /* hill2.png */,
+				8C369FF01E9F729F00944873 /* hill3.png */,
+				8C369FF11E9F729F00944873 /* hill4.png */,
+				8C369FF21E9F729F00944873 /* hill5.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8C369FF81E9F7C8100944873 /* ThreeDots */ = {
+			isa = PBXGroup;
+			children = (
+				8C369FF91E9F7C9100944873 /* ThreeDotsController.h */,
+				8C369FFA1E9F7C9100944873 /* ThreeDotsController.m */,
+				8C369FFC1E9F7C9700944873 /* ThreeDotsController.storyboard */,
+			);
+			path = ThreeDots;
+			sourceTree = "<group>";
+		};
+		8C369FFF1E9F802300944873 /* RaderSpread */ = {
+			isa = PBXGroup;
+			children = (
+				8C36A0001E9F802C00944873 /* RaderSpreadController.h */,
+				8C36A0011E9F802C00944873 /* RaderSpreadController.m */,
+				8C36A0031E9F803C00944873 /* RaderSpreadController.storyboard */,
+			);
+			path = RaderSpread;
+			sourceTree = "<group>";
+		};
 		8C38BB421E763418003624B7 = {
 			isa = PBXGroup;
 			children = (
@@ -1582,6 +1758,7 @@
 		8C38BB941E763466003624B7 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				8C369FB61E9F09EC00944873 /* LoadingAnimation */,
 				8CBD4C681E9DCCFB002AF0AA /* ScrollAnimation_1 */,
 				8C38BB951E763466003624B7 /* AnimationController.h */,
 				8C38BB961E763466003624B7 /* AnimationController.m */,
@@ -3736,6 +3913,7 @@
 				8C38BF9B1E763467003624B7 /* DP_USWCD_UserInfoItemCell.xib in Resources */,
 				8C38C00F1E763467003624B7 /* x1-A.mp3 in Resources */,
 				8C38BF971E763467003624B7 /* ObjectSerializationController.storyboard in Resources */,
+				8C369FBC1E9F0A5900944873 /* LoadingAnimationController.storyboard in Resources */,
 				8C38BF941E763467003624B7 /* DataPersistenceController.storyboard in Resources */,
 				8C38C04B1E763467003624B7 /* SolfeggioController.storyboard in Resources */,
 				8C38C03C1E763467003624B7 /* x4-G#.mp3 in Resources */,
@@ -3789,6 +3967,9 @@
 				8C38C07E1E763467003624B7 /* shake_down@2x.png in Resources */,
 				8C38C0C01E763468003624B7 /* fftoast_warning@3x.png in Resources */,
 				8C38BFE41E763467003624B7 /* MusicalScaleExercise.plist in Resources */,
+				8C369FC41E9F0E1C00944873 /* Sandglass.png in Resources */,
+				8C369FF61E9F729F00944873 /* hill4.png in Resources */,
+				8C36A0041E9F803C00944873 /* RaderSpreadController.storyboard in Resources */,
 				8C38C08C1E763467003624B7 /* BEMSimpleLineGraphController.storyboard in Resources */,
 				8C38C1141E763468003624B7 /* cordova.js in Resources */,
 				8C38C0371E763467003624B7 /* x4-D#.mp3 in Resources */,
@@ -3832,12 +4013,14 @@
 				8C38C0021E763467003624B7 /* x-A#.mp3 in Resources */,
 				8C38C0981E763467003624B7 /* index.js in Resources */,
 				8C38BFFE1E763467003624B7 /* d1-G.mp3 in Resources */,
+				8C369FEC1E9F717E00944873 /* HillsViewController.storyboard in Resources */,
 				8C38C0361E763467003624B7 /* x4-C.mp3 in Resources */,
 				8C38BB5E1E763418003624B7 /* Assets.xcassets in Resources */,
 				8C38BF7D1E763467003624B7 /* LPBar_1Controller.storyboard in Resources */,
 				8C38BFB91E763467003624B7 /* little_plane.png in Resources */,
 				8C38C0191E763467003624B7 /* x1-G.mp3 in Resources */,
 				8C38BF751E763467003624B7 /* OverallAnimationsController.storyboard in Resources */,
+				8C369FF31E9F729F00944873 /* hill1.png in Resources */,
 				8C38BF8A1E763467003624B7 /* SimplePromptBubbleController.storyboard in Resources */,
 				8C38BF601E763467003624B7 /* sky@3x.png in Resources */,
 				8C38C0F21E763468003624B7 /* SphereTagsController.storyboard in Resources */,
@@ -3857,6 +4040,7 @@
 				8C38C01D1E763467003624B7 /* x2-C#.mp3 in Resources */,
 				8C38C05D1E763467003624B7 /* SNSAddMatchingRuleController.storyboard in Resources */,
 				8C38BFF21E763467003624B7 /* d-G.mp3 in Resources */,
+				8C369FD01E9F175400944873 /* TenDotsController.storyboard in Resources */,
 				8C38C0061E763467003624B7 /* x-C.mp3 in Resources */,
 				8C38C00D1E763467003624B7 /* x-G.mp3 in Resources */,
 				8C38C0351E763467003624B7 /* x4-C#.mp3 in Resources */,
@@ -3864,6 +4048,7 @@
 				8C38C0011E763467003624B7 /* d2-B.mp3 in Resources */,
 				8C38BF711E763467003624B7 /* CombinationAnimationController.storyboard in Resources */,
 				8C38BF8D1E763467003624B7 /* MainStoreHouseTransitionController.storyboard in Resources */,
+				8C369FDD1E9F61B800944873 /* ColorsMatrixController.storyboard in Resources */,
 				8C38C00A1E763467003624B7 /* x-F#.mp3 in Resources */,
 				8C38C0B31E763468003624B7 /* fftoast_info@2x.png in Resources */,
 				8C38C0B81E763468003624B7 /* fftoast_success.png in Resources */,
@@ -3921,6 +4106,7 @@
 				8C38BFF01E763467003624B7 /* d-F.mp3 in Resources */,
 				8C38C0E01E763468003624B7 /* ChartItemCell.xib in Resources */,
 				8C38BFEC1E763467003624B7 /* d-D#.mp3 in Resources */,
+				8C369FF41E9F729F00944873 /* hill2.png in Resources */,
 				8C38BFF71E763467003624B7 /* d1-C.mp3 in Resources */,
 				8C38C12C1E763468003624B7 /* LICENSE in Resources */,
 				8C38C0791E763467003624B7 /* CompassController.storyboard in Resources */,
@@ -3941,10 +4127,13 @@
 				8C38C0901E763467003624B7 /* exec.js in Resources */,
 				8C38C01F1E763467003624B7 /* x2-D#.mp3 in Resources */,
 				8C38BFEF1E763467003624B7 /* d-F#.mp3 in Resources */,
+				8C369FFD1E9F7C9700944873 /* ThreeDotsController.storyboard in Resources */,
 				8C38C0261E763467003624B7 /* x3-A#.mp3 in Resources */,
 				8C38BFDA1E763467003624B7 /* PaintbrushSettingController.storyboard in Resources */,
 				8C38C05F1E763467003624B7 /* SNSAddSelfDefineMatchingRuleController.storyboard in Resources */,
 				8C38C0EA1E763468003624B7 /* LeftMenuController.storyboard in Resources */,
+				8C369FF51E9F729F00944873 /* hill3.png in Resources */,
+				8C369FE61E9F686F00944873 /* HandwritingController.storyboard in Resources */,
 				8C38BFF41E763467003624B7 /* d1-A.mp3 in Resources */,
 				8C38C0231E763467003624B7 /* x2-F.mp3 in Resources */,
 				8C38BF731E763467003624B7 /* KeyFrameAnimationController.storyboard in Resources */,
@@ -3952,6 +4141,7 @@
 				8C38BFB21E763467003624B7 /* KindsOfNodesController.storyboard in Resources */,
 				8C38BF581E763467003624B7 /* DDR_RefreshView.xib in Resources */,
 				8C38BF9F1E763467003624B7 /* UsingSqliteWithCoreDataController.storyboard in Resources */,
+				8C369FC11E9F0B0600944873 /* SandglassController.storyboard in Resources */,
 				8C38C0FB1E763468003624B7 /* MyCollectionViewLayoutCell.xib in Resources */,
 				8C38BF791E763467003624B7 /* PopMenuController.storyboard in Resources */,
 				8C38C09B1E763467003624B7 /* paint01-01.png in Resources */,
@@ -3980,6 +4170,7 @@
 				8C38C0071E763467003624B7 /* x-D#.mp3 in Resources */,
 				8C38BFFF1E763467003624B7 /* d2-A#.mp3 in Resources */,
 				8C38C0C21E763468003624B7 /* fftoast_warning_highlight@2x.png in Resources */,
+				8C369FF71E9F729F00944873 /* hill5.png in Resources */,
 				8C38C0F01E763468003624B7 /* RevolverMenuController.storyboard in Resources */,
 				8C38C0101E763467003624B7 /* x1-B.mp3 in Resources */,
 				8C38C0811E763467003624B7 /* shake_up@2x.png in Resources */,
@@ -4033,6 +4224,7 @@
 				8C38C1131E763468003624B7 /* UIDevice+Extensions.m in Sources */,
 				8C38C1081E763468003624B7 /* CDVPluginResult.m in Sources */,
 				8C38C0C91E763468003624B7 /* UsingFFToastController.m in Sources */,
+				8C369FD31E9F17CC00944873 /* TDDotView.m in Sources */,
 				8C38C0991E763467003624B7 /* MDMatrix.m in Sources */,
 				8C38C0D91E763468003624B7 /* PNScatterChartData.m in Sources */,
 				8C38C0CC1E763468003624B7 /* PNBarChart.m in Sources */,
@@ -4070,6 +4262,7 @@
 				8C38BF681E763467003624B7 /* MainMaskTransitionController.m in Sources */,
 				8C38C0C81E763468003624B7 /* FFToast.m in Sources */,
 				8C38C1391E763468003624B7 /* UITableView+FDKeyedHeightCache.m in Sources */,
+				8C369FBA1E9F0A5100944873 /* LoadingAnimationController.m in Sources */,
 				8C38C0C61E763468003624B7 /* FFBaseToastView.m in Sources */,
 				8C38BFDB1E763467003624B7 /* SimpleScrawlController.m in Sources */,
 				8C38BFBF1E763467003624B7 /* SpaceshipScene.m in Sources */,
@@ -4096,6 +4289,7 @@
 				8C38C0DD1E763468003624B7 /* UsingPNChartController.m in Sources */,
 				8C38C0D21E763468003624B7 /* PNLineChartData.m in Sources */,
 				8C38C1041E763468003624B7 /* CDVJSON.m in Sources */,
+				8C369FBF1E9F0B0000944873 /* SandglassController.m in Sources */,
 				8C38C0681E763467003624B7 /* SNSAddSelfDefineReplacingRuleController.m in Sources */,
 				8C38BFCA1E763467003624B7 /* LittleToysController.m in Sources */,
 				8C38BF8E1E763467003624B7 /* OtherStoreHouseTransitionController.m in Sources */,
@@ -4179,7 +4373,9 @@
 				8C38C04A1E763467003624B7 /* SolfeggioController.m in Sources */,
 				8C38C0E91E763468003624B7 /* LeftMenuController.m in Sources */,
 				8C38C13C1E763468003624B7 /* BaseTextField.m in Sources */,
+				8C36A0021E9F802C00944873 /* RaderSpreadController.m in Sources */,
 				8C38BFAE1E763467003624B7 /* FollowMeScene.m in Sources */,
+				8C369FD61E9F1CE800944873 /* TDDotsView.m in Sources */,
 				8C38C1261E763468003624B7 /* IQBarButtonItem.m in Sources */,
 				8C38C0821E763467003624B7 /* ShakeShakeController.m in Sources */,
 				8C38BFA41E763467003624B7 /* DP_USWF_UserInfoModel.m in Sources */,
@@ -4230,18 +4426,23 @@
 				8C38C08A1E763467003624B7 /* BEMSimpleLineGraphView.m in Sources */,
 				8C38C1501E763468003624B7 /* MMPopupWindow.m in Sources */,
 				8C38BFCF1E763467003624B7 /* TCGameOverView.m in Sources */,
+				8C369FDB1E9F61B100944873 /* ColorsMatrixController.m in Sources */,
 				8C38BF6C1E763467003624B7 /* OtherMaskTransitionController.m in Sources */,
 				8C38C1171E763468003624B7 /* FMDatabaseAdditions.m in Sources */,
 				8C38C1311E763468003624B7 /* MASViewAttribute.m in Sources */,
 				8C38BF6A1E763467003624B7 /* MTPopTransition.m in Sources */,
 				8C38C07A1E763467003624B7 /* SPCompassView.m in Sources */,
 				8C38C13B1E763468003624B7 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
+				8C369FCE1E9F174D00944873 /* TenDotsController.m in Sources */,
 				8C38C1181E763468003624B7 /* FMDatabasePool.m in Sources */,
 				8C38BFCC1E763467003624B7 /* TurnCardsModel.m in Sources */,
 				8C38BFCD1E763467003624B7 /* TurnCardsController.m in Sources */,
+				8C369FFB1E9F7C9100944873 /* ThreeDotsController.m in Sources */,
+				8C369FE01E9F622400944873 /* CMColorsBoxView.m in Sources */,
 				8C38C05C1E763467003624B7 /* SNSAddMatchingRuleController.m in Sources */,
 				8C38C0661E763467003624B7 /* SNSAddReplacingRuleController.m in Sources */,
 				8C38C1451E763468003624B7 /* UIImage+Extend.m in Sources */,
+				8C369FE41E9F686900944873 /* HandwritingController.m in Sources */,
 				8C38BB501E763418003624B7 /* main.m in Sources */,
 				8C38C0571E763467003624B7 /* STDebugFoundation.m in Sources */,
 				8C38C0FA1E763468003624B7 /* MyCollectionViewLayoutCell.m in Sources */,
@@ -4272,6 +4473,7 @@
 				8C38C06A1E763467003624B7 /* SNS_AddReplacingRuleCell.m in Sources */,
 				8C38C1111E763468003624B7 /* NSDictionary+Extensions.m in Sources */,
 				8C38C1291E763468003624B7 /* IQToolbar.m in Sources */,
+				8C369FEA1E9F717700944873 /* HillsViewController.m in Sources */,
 				8C38C0DA1E763468003624B7 /* PNScatterChartDataItem.m in Sources */,
 				8C38C0551E763467003624B7 /* PingNetworkViewController.m in Sources */,
 				8C38C14A1E763468003624B7 /* CustomIOS7AlertView.m in Sources */,

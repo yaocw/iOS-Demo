@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--沙漏-->
+        <scene sceneID="KJd-gv-0vo">
+            <objects>
+                <viewController storyboardIdentifier="SandglassController" id="LFr-mW-tgT" customClass="SandglassController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ojx-tv-mc5"/>
+                        <viewControllerLayoutGuide type="bottom" id="VCM-io-tpO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qRC-6r-iBz">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tf3-gE-3mK">
+                                <rect key="frame" x="128.5" y="195.5" width="118" height="212"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sandglass.png" translatesAutoresizingMaskIntoConstraints="NO" id="IT5-OY-GdF">
+                                        <rect key="frame" x="0.0" y="0.0" width="118" height="212"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="212" id="RVB-qM-Ofy"/>
+                                            <constraint firstAttribute="width" constant="118" id="e2n-7c-rIb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1B4-z8-1ih">
+                                        <rect key="frame" x="0.0" y="0.0" width="118" height="10"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="bLk-IZ-5ry"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M6h-3E-upj">
+                                        <rect key="frame" x="0.0" y="132" width="118" height="80"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="drj-7w-fB6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="M6h-3E-upj" firstAttribute="leading" secondItem="IT5-OY-GdF" secondAttribute="leading" id="1bw-s2-jPd"/>
+                                    <constraint firstItem="IT5-OY-GdF" firstAttribute="top" secondItem="tf3-gE-3mK" secondAttribute="top" id="3AU-PW-W57"/>
+                                    <constraint firstItem="IT5-OY-GdF" firstAttribute="leading" secondItem="tf3-gE-3mK" secondAttribute="leading" id="EvX-GQ-6Nj"/>
+                                    <constraint firstAttribute="height" constant="212" id="MCe-4d-fWN"/>
+                                    <constraint firstAttribute="width" constant="118" id="MOX-so-3DS"/>
+                                    <constraint firstItem="1B4-z8-1ih" firstAttribute="width" secondItem="IT5-OY-GdF" secondAttribute="width" id="P0R-N4-8kH"/>
+                                    <constraint firstItem="1B4-z8-1ih" firstAttribute="top" secondItem="IT5-OY-GdF" secondAttribute="top" id="cmq-xJ-amD"/>
+                                    <constraint firstItem="1B4-z8-1ih" firstAttribute="leading" secondItem="IT5-OY-GdF" secondAttribute="leading" id="lt5-QW-mAh"/>
+                                    <constraint firstItem="M6h-3E-upj" firstAttribute="width" secondItem="IT5-OY-GdF" secondAttribute="width" id="vJB-6R-Sgq"/>
+                                    <constraint firstItem="M6h-3E-upj" firstAttribute="bottom" secondItem="IT5-OY-GdF" secondAttribute="bottom" id="whg-Qp-gVi"/>
+                                    <constraint firstItem="IT5-OY-GdF" firstAttribute="leading" secondItem="tf3-gE-3mK" secondAttribute="leading" id="yTY-5v-zpB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tf3-gE-3mK" firstAttribute="centerX" secondItem="qRC-6r-iBz" secondAttribute="centerX" id="RBN-U9-adB"/>
+                            <constraint firstItem="tf3-gE-3mK" firstAttribute="centerY" secondItem="qRC-6r-iBz" secondAttribute="centerY" id="o7E-Tv-cL2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="沙漏" id="7oR-uG-V3g"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="bottomMaskHeightConstraint" destination="drj-7w-fB6" id="un6-Bj-k3q"/>
+                        <outlet property="sandglassView" destination="tf3-gE-3mK" id="dLa-1c-vPC"/>
+                        <outlet property="topMaskHeightConstraint" destination="bLk-IZ-5ry" id="0C8-AM-DF2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VsA-5N-ETJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="-188.45577211394306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Sandglass.png" width="512" height="994"/>
+    </resources>
+</document>

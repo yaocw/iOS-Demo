@@ -19,6 +19,7 @@
 typedef void(^BLKBlock)();
 typedef void (^BLKCompleteBlock)(NSString *text);
 typedef void(^BLKSelecetIndexBlock)(NSInteger index);
+typedef void(^BLKIndexBlock)(NSInteger index);
 typedef void(^BLKArrBlock)(NSArray *arr);
 typedef void(^BLKObjectBlock)(id obj);
 
