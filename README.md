@@ -37,8 +37,6 @@
 ## 示例
 ![波浪效果](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/wave_effective.gif)
 
-![气泡提示](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/bubble_tip.gif)
-
 ![点击扩散](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/click_spread.gif)
 
 ![手势密码](https://github.com/yaocw/MyPictures/blob/master/iOS-Demo-ExamplesGif/gesture_secret.gif)
