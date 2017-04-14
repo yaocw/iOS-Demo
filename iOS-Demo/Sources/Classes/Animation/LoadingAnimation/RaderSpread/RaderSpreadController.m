@@ -27,9 +27,9 @@ static const float timeinterval = 0.5f;
     [self initializeUIComponents];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
+- (void)viewDidDisappear:(BOOL)animated
 {
-    [super viewWillDisappear:animated];
+    [super viewDidDisappear:animated];
     
     [_timer invalidate];
 }

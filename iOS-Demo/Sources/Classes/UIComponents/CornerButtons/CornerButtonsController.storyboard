@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Corner Buttons-->
+        <scene sceneID="Zrv-RB-RsU">
+            <objects>
+                <viewController storyboardIdentifier="CornerButtonsController" id="Tdt-nS-TeO" customClass="CornerButtonsController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C8h-hp-emf"/>
+                        <viewControllerLayoutGuide type="bottom" id="KQi-ds-9m3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bsd-cv-07G">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiG-kZ-cgJ" customClass="CBRoundedButton">
+                                <rect key="frame" x="55" y="361" width="128.5" height="51"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="6ej-ka-oCQ"/>
+                                </constraints>
+                                <state key="normal" title="BL - BR">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Faz-GW-aoq" customClass="CBRoundedButton">
+                                <rect key="frame" x="55" y="302" width="128.5" height="51"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="RM0-uG-jo1"/>
+                                </constraints>
+                                <state key="normal" title="TL - TR">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoR-0o-50E" customClass="CBRoundedButton">
+                                <rect key="frame" x="191.5" y="302" width="128.5" height="51"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Iiv-hw-8ip"/>
+                                </constraints>
+                                <state key="normal" title="TL - BL - BR">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdL-uH-s5Q" customClass="CBRoundedButton">
+                                <rect key="frame" x="191.5" y="361" width="128.5" height="51"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="GFP-wt-NIN"/>
+                                </constraints>
+                                <state key="normal" title="BL - BL - BR">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBA-vf-N8A" customClass="CBRoundedButton">
+                                <rect key="frame" x="55" y="243" width="265" height="51"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="21l-2H-6mg"/>
+                                </constraints>
+                                <state key="normal" title="ALL">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBb-ji-Hr8" customClass="CBRoundedButton">
+                                <rect key="frame" x="55" y="184" width="128.5" height="51"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="cOD-Qr-p45"/>
+                                </constraints>
+                                <state key="normal" title="BL">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zas-7Q-5TJ" customClass="CBRoundedButton">
+                                <rect key="frame" x="191" y="184" width="129" height="51"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.12549019610000001" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="D9e-yI-maz"/>
+                                </constraints>
+                                <state key="normal" title="BR">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJ7-2t-kky" customClass="CBRoundedButton">
+                                <rect key="frame" x="55" y="125" width="128.5" height="51"/>
+                                <color key="backgroundColor" red="0.68627450980000004" green="0.78823529410000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="vDO-Nc-RWk"/>
+                                </constraints>
+                                <state key="normal" title="TL">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IC-uv-AvW" customClass="CBRoundedButton">
+                                <rect key="frame" x="191.5" y="125" width="128.5" height="51"/>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.5568627451" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="LkR-Cr-YvV"/>
+                                </constraints>
+                                <state key="normal" title="TR">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WB-Cb-rmW" customClass="CBRoundedButton">
+                                <rect key="frame" x="55" y="420" width="128.5" height="51"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="7Sa-pN-Wak"/>
+                                </constraints>
+                                <state key="normal" title="TL - BL">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bK9-EK-OtY" customClass="CBRoundedButton">
+                                <rect key="frame" x="191.5" y="420" width="128.5" height="51"/>
+                                <color key="backgroundColor" red="0.47017461059999999" green="0.64893096689999996" blue="0.0045386576090000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="SS6-fh-FAS"/>
+                                </constraints>
+                                <state key="normal" title="TR - BR">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yBA-vf-N8A" secondAttribute="trailing" constant="55" id="0Sq-DJ-YE6"/>
+                            <constraint firstItem="CdL-uH-s5Q" firstAttribute="leading" secondItem="qiG-kZ-cgJ" secondAttribute="trailing" constant="8" id="18L-ta-u2x"/>
+                            <constraint firstItem="bK9-EK-OtY" firstAttribute="top" secondItem="CdL-uH-s5Q" secondAttribute="bottom" constant="8" id="3M5-6t-YFA"/>
+                            <constraint firstItem="FoR-0o-50E" firstAttribute="leading" secondItem="Faz-GW-aoq" secondAttribute="trailing" constant="8" id="44I-g6-Cpr"/>
+                            <constraint firstItem="CdL-uH-s5Q" firstAttribute="trailing" secondItem="FoR-0o-50E" secondAttribute="trailing" id="6O9-6w-m1c"/>
+                            <constraint firstItem="5WB-Cb-rmW" firstAttribute="top" secondItem="qiG-kZ-cgJ" secondAttribute="bottom" constant="8" id="9hm-aT-hM9"/>
+                            <constraint firstItem="YJ7-2t-kky" firstAttribute="leading" secondItem="NBb-ji-Hr8" secondAttribute="leading" id="CJX-Zw-ogp"/>
+                            <constraint firstItem="yBA-vf-N8A" firstAttribute="top" secondItem="Zas-7Q-5TJ" secondAttribute="bottom" constant="8" id="F2U-ri-qGJ"/>
+                            <constraint firstItem="qiG-kZ-cgJ" firstAttribute="leading" secondItem="Faz-GW-aoq" secondAttribute="leading" id="F9M-CC-Gl4"/>
+                            <constraint firstItem="7IC-uv-AvW" firstAttribute="leading" secondItem="YJ7-2t-kky" secondAttribute="trailing" constant="8" id="FEU-mc-5c4"/>
+                            <constraint firstItem="CdL-uH-s5Q" firstAttribute="height" secondItem="qiG-kZ-cgJ" secondAttribute="height" id="Gpv-ox-6Nm"/>
+                            <constraint firstItem="Zas-7Q-5TJ" firstAttribute="width" secondItem="NBb-ji-Hr8" secondAttribute="width" id="I6O-zW-gna"/>
+                            <constraint firstItem="Zas-7Q-5TJ" firstAttribute="top" secondItem="7IC-uv-AvW" secondAttribute="bottom" constant="8" id="IGZ-qv-Z0Z"/>
+                            <constraint firstItem="NBb-ji-Hr8" firstAttribute="leading" secondItem="yBA-vf-N8A" secondAttribute="leading" id="Irj-Jy-9ep"/>
+                            <constraint firstItem="7IC-uv-AvW" firstAttribute="width" secondItem="YJ7-2t-kky" secondAttribute="width" id="MAm-Gc-esL"/>
+                            <constraint firstItem="FoR-0o-50E" firstAttribute="trailing" secondItem="yBA-vf-N8A" secondAttribute="trailing" id="MTW-g8-NXg"/>
+                            <constraint firstItem="Faz-GW-aoq" firstAttribute="top" secondItem="yBA-vf-N8A" secondAttribute="bottom" constant="8" id="NY6-rT-W7K"/>
+                            <constraint firstItem="yBA-vf-N8A" firstAttribute="top" secondItem="NBb-ji-Hr8" secondAttribute="bottom" constant="8" id="PZG-MR-ZFI"/>
+                            <constraint firstItem="yBA-vf-N8A" firstAttribute="leading" secondItem="bsd-cv-07G" secondAttribute="leading" constant="55" id="Pzx-Zp-YaJ"/>
+                            <constraint firstItem="5WB-Cb-rmW" firstAttribute="leading" secondItem="qiG-kZ-cgJ" secondAttribute="leading" id="Qoz-4b-hLr"/>
+                            <constraint firstItem="yBA-vf-N8A" firstAttribute="centerY" secondItem="bsd-cv-07G" secondAttribute="centerY" constant="-33" id="SJe-nP-IFK"/>
+                            <constraint firstItem="7IC-uv-AvW" firstAttribute="height" secondItem="YJ7-2t-kky" secondAttribute="height" id="T3Y-Dg-wZq"/>
+                            <constraint firstItem="qiG-kZ-cgJ" firstAttribute="top" secondItem="Faz-GW-aoq" secondAttribute="bottom" constant="8" id="YZE-pg-1WA"/>
+                            <constraint firstItem="Faz-GW-aoq" firstAttribute="leading" secondItem="yBA-vf-N8A" secondAttribute="leading" id="ciK-Lc-rQg"/>
+                            <constraint firstItem="Zas-7Q-5TJ" firstAttribute="leading" secondItem="NBb-ji-Hr8" secondAttribute="trailing" constant="8" id="dv5-75-S4D"/>
+                            <constraint firstItem="bK9-EK-OtY" firstAttribute="leading" secondItem="5WB-Cb-rmW" secondAttribute="trailing" constant="8" id="eza-pj-hca"/>
+                            <constraint firstItem="FoR-0o-50E" firstAttribute="top" secondItem="yBA-vf-N8A" secondAttribute="bottom" constant="8" id="j7f-dG-ATj"/>
+                            <constraint firstItem="bK9-EK-OtY" firstAttribute="width" secondItem="5WB-Cb-rmW" secondAttribute="width" id="jei-oU-Mhk"/>
+                            <constraint firstItem="bK9-EK-OtY" firstAttribute="height" secondItem="5WB-Cb-rmW" secondAttribute="height" id="kqw-NT-Drn"/>
+                            <constraint firstItem="Zas-7Q-5TJ" firstAttribute="height" secondItem="NBb-ji-Hr8" secondAttribute="height" id="lCG-yC-Mah"/>
+                            <constraint firstItem="NBb-ji-Hr8" firstAttribute="top" secondItem="YJ7-2t-kky" secondAttribute="bottom" constant="8" id="n0A-X2-Pma"/>
+                            <constraint firstItem="7IC-uv-AvW" firstAttribute="trailing" secondItem="Zas-7Q-5TJ" secondAttribute="trailing" id="nQ3-A9-05c"/>
+                            <constraint firstItem="CdL-uH-s5Q" firstAttribute="top" secondItem="FoR-0o-50E" secondAttribute="bottom" constant="8" id="pEy-jE-jRe"/>
+                            <constraint firstItem="Zas-7Q-5TJ" firstAttribute="trailing" secondItem="yBA-vf-N8A" secondAttribute="trailing" id="rys-lj-MP4"/>
+                            <constraint firstItem="FoR-0o-50E" firstAttribute="height" secondItem="Faz-GW-aoq" secondAttribute="height" id="vS5-WD-pgs"/>
+                            <constraint firstItem="FoR-0o-50E" firstAttribute="width" secondItem="Faz-GW-aoq" secondAttribute="width" id="w8h-75-eHi"/>
+                            <constraint firstItem="CdL-uH-s5Q" firstAttribute="width" secondItem="qiG-kZ-cgJ" secondAttribute="width" id="xld-h9-UYw"/>
+                            <constraint firstItem="bK9-EK-OtY" firstAttribute="trailing" secondItem="CdL-uH-s5Q" secondAttribute="trailing" id="yFR-Dh-r6J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Corner Buttons" id="kbw-1A-f7R"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8GG-05-buF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-186" y="211"/>
+        </scene>
+    </scenes>
+</document>

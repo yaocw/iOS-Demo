@@ -35,6 +35,13 @@ static CGFloat kIncreaseStep = 0.5f;
     [self initializeUIComponents];
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    
+    [_displayLink invalidate];
+}
+
 - (void)initializeBaseData
 {
     _topMaskHeightConstraint.constant = 0.f;

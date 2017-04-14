@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C07593A1EA0A290005A4343 /* WaveLoadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0759391EA0A290005A4343 /* WaveLoadingController.m */; };
+		8C07593C1EA0A297005A4343 /* WaveLoadingController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C07593B1EA0A297005A4343 /* WaveLoadingController.storyboard */; };
+		8C07593F1EA0A2D5005A4343 /* WaveLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C07593E1EA0A2D5005A4343 /* WaveLoadingView.m */; };
+		8C0759471EA0A67B005A4343 /* blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C0759411EA0A67B005A4343 /* blue@2x.png */; };
+		8C0759481EA0A67B005A4343 /* blue@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C0759421EA0A67B005A4343 /* blue@3x.png */; };
+		8C0759491EA0A67B005A4343 /* du@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C0759431EA0A67B005A4343 /* du@2x.png */; };
+		8C07594A1EA0A67B005A4343 /* du@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C0759441EA0A67B005A4343 /* du@3x.png */; };
+		8C07594B1EA0A67B005A4343 /* gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C0759451EA0A67B005A4343 /* gray@2x.png */; };
+		8C07594C1EA0A67B005A4343 /* gray@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C0759461EA0A67B005A4343 /* gray@3x.png */; };
+		8C0759501EA0A964005A4343 /* CornerButtonsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C07594F1EA0A964005A4343 /* CornerButtonsController.m */; };
+		8C0759521EA0A96A005A4343 /* CornerButtonsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0759511EA0A96A005A4343 /* CornerButtonsController.storyboard */; };
+		8C0759551EA0AA17005A4343 /* CBRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0759541EA0AA17005A4343 /* CBRoundedButton.m */; };
+		8C0759591EA0AD18005A4343 /* ShineLabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0759581EA0AD18005A4343 /* ShineLabelController.m */; };
+		8C07595B1EA0AD1F005A4343 /* ShineLabelController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C07595A1EA0AD1F005A4343 /* ShineLabelController.storyboard */; };
+		8C07595E1EA0AD78005A4343 /* RQShineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C07595D1EA0AD78005A4343 /* RQShineLabel.m */; };
 		8C369FBA1E9F0A5100944873 /* LoadingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C369FB91E9F0A5100944873 /* LoadingAnimationController.m */; };
 		8C369FBC1E9F0A5900944873 /* LoadingAnimationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C369FBB1E9F0A5900944873 /* LoadingAnimationController.storyboard */; };
 		8C369FBF1E9F0B0000944873 /* SandglassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C369FBE1E9F0B0000944873 /* SandglassController.m */; };
@@ -567,6 +582,13 @@
 		8C501A461E9E131100003F67 /* SACircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C501A451E9E131100003F67 /* SACircleView.m */; };
 		8C501A491E9E132D00003F67 /* SACircleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C501A481E9E132D00003F67 /* SACircleView.xib */; };
 		8C501A4C1E9E278400003F67 /* SAPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C501A4B1E9E278400003F67 /* SAPageView.m */; };
+		8C76EB441EA05BB700CA3500 /* TwoBallRollingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C76EB431EA05BB700CA3500 /* TwoBallRollingController.m */; };
+		8C76EB461EA05BBD00CA3500 /* TwoBallRollingController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C76EB451EA05BBD00CA3500 /* TwoBallRollingController.storyboard */; };
+		8C76EB4D1EA0649D00CA3500 /* IncessantPagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C76EB4C1EA0649D00CA3500 /* IncessantPagesController.m */; };
+		8C76EB4F1EA064A300CA3500 /* IncessantPagesController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C76EB4E1EA064A300CA3500 /* IncessantPagesController.storyboard */; };
+		8C76EB531EA099FD00CA3500 /* LoadingButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C76EB521EA099FD00CA3500 /* LoadingButtonController.m */; };
+		8C76EB551EA09A2B00CA3500 /* LoadingButtonController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C76EB541EA09A2B00CA3500 /* LoadingButtonController.storyboard */; };
+		8C76EB581EA09AD900CA3500 /* LBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C76EB571EA09AD900CA3500 /* LBButton.m */; };
 		8CBD4C6C1E9DCD13002AF0AA /* ScrollAnimation_1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBD4C6B1E9DCD13002AF0AA /* ScrollAnimation_1Controller.m */; };
 		8CBD4C6E1E9DCD1A002AF0AA /* ScrollAnimation_1Controller.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CBD4C6D1E9DCD1A002AF0AA /* ScrollAnimation_1Controller.storyboard */; };
 /* End PBXBuildFile section */
@@ -596,6 +618,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C0759381EA0A290005A4343 /* WaveLoadingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveLoadingController.h; sourceTree = "<group>"; };
+		8C0759391EA0A290005A4343 /* WaveLoadingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveLoadingController.m; sourceTree = "<group>"; };
+		8C07593B1EA0A297005A4343 /* WaveLoadingController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WaveLoadingController.storyboard; sourceTree = "<group>"; };
+		8C07593D1EA0A2D5005A4343 /* WaveLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveLoadingView.h; sourceTree = "<group>"; };
+		8C07593E1EA0A2D5005A4343 /* WaveLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveLoadingView.m; sourceTree = "<group>"; };
+		8C0759411EA0A67B005A4343 /* blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue@2x.png"; sourceTree = "<group>"; };
+		8C0759421EA0A67B005A4343 /* blue@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue@3x.png"; sourceTree = "<group>"; };
+		8C0759431EA0A67B005A4343 /* du@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "du@2x.png"; sourceTree = "<group>"; };
+		8C0759441EA0A67B005A4343 /* du@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "du@3x.png"; sourceTree = "<group>"; };
+		8C0759451EA0A67B005A4343 /* gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gray@2x.png"; sourceTree = "<group>"; };
+		8C0759461EA0A67B005A4343 /* gray@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gray@3x.png"; sourceTree = "<group>"; };
+		8C07594E1EA0A964005A4343 /* CornerButtonsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CornerButtonsController.h; sourceTree = "<group>"; };
+		8C07594F1EA0A964005A4343 /* CornerButtonsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CornerButtonsController.m; sourceTree = "<group>"; };
+		8C0759511EA0A96A005A4343 /* CornerButtonsController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CornerButtonsController.storyboard; sourceTree = "<group>"; };
+		8C0759531EA0AA17005A4343 /* CBRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBRoundedButton.h; sourceTree = "<group>"; };
+		8C0759541EA0AA17005A4343 /* CBRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBRoundedButton.m; sourceTree = "<group>"; };
+		8C0759571EA0AD18005A4343 /* ShineLabelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShineLabelController.h; sourceTree = "<group>"; };
+		8C0759581EA0AD18005A4343 /* ShineLabelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShineLabelController.m; sourceTree = "<group>"; };
+		8C07595A1EA0AD1F005A4343 /* ShineLabelController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShineLabelController.storyboard; sourceTree = "<group>"; };
+		8C07595C1EA0AD78005A4343 /* RQShineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RQShineLabel.h; sourceTree = "<group>"; };
+		8C07595D1EA0AD78005A4343 /* RQShineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RQShineLabel.m; sourceTree = "<group>"; };
 		8C369FB81E9F0A5100944873 /* LoadingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingAnimationController.h; sourceTree = "<group>"; };
 		8C369FB91E9F0A5100944873 /* LoadingAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingAnimationController.m; sourceTree = "<group>"; };
 		8C369FBB1E9F0A5900944873 /* LoadingAnimationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoadingAnimationController.storyboard; sourceTree = "<group>"; };
@@ -1463,6 +1506,17 @@
 		8C501A481E9E132D00003F67 /* SACircleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SACircleView.xib; sourceTree = "<group>"; };
 		8C501A4A1E9E278400003F67 /* SAPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPageView.h; sourceTree = "<group>"; };
 		8C501A4B1E9E278400003F67 /* SAPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPageView.m; sourceTree = "<group>"; };
+		8C76EB421EA05BB700CA3500 /* TwoBallRollingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoBallRollingController.h; sourceTree = "<group>"; };
+		8C76EB431EA05BB700CA3500 /* TwoBallRollingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoBallRollingController.m; sourceTree = "<group>"; };
+		8C76EB451EA05BBD00CA3500 /* TwoBallRollingController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TwoBallRollingController.storyboard; sourceTree = "<group>"; };
+		8C76EB4B1EA0649D00CA3500 /* IncessantPagesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncessantPagesController.h; sourceTree = "<group>"; };
+		8C76EB4C1EA0649D00CA3500 /* IncessantPagesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncessantPagesController.m; sourceTree = "<group>"; };
+		8C76EB4E1EA064A300CA3500 /* IncessantPagesController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IncessantPagesController.storyboard; sourceTree = "<group>"; };
+		8C76EB511EA099FD00CA3500 /* LoadingButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingButtonController.h; sourceTree = "<group>"; };
+		8C76EB521EA099FD00CA3500 /* LoadingButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingButtonController.m; sourceTree = "<group>"; };
+		8C76EB541EA09A2B00CA3500 /* LoadingButtonController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoadingButtonController.storyboard; sourceTree = "<group>"; };
+		8C76EB561EA09AD900CA3500 /* LBButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBButton.h; sourceTree = "<group>"; };
+		8C76EB571EA09AD900CA3500 /* LBButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBButton.m; sourceTree = "<group>"; };
 		8CBD4C6A1E9DCD13002AF0AA /* ScrollAnimation_1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollAnimation_1Controller.h; sourceTree = "<group>"; };
 		8CBD4C6B1E9DCD13002AF0AA /* ScrollAnimation_1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollAnimation_1Controller.m; sourceTree = "<group>"; };
 		8CBD4C6D1E9DCD1A002AF0AA /* ScrollAnimation_1Controller.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScrollAnimation_1Controller.storyboard; sourceTree = "<group>"; };
@@ -1502,9 +1556,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C0759361EA0A281005A4343 /* WaveLoading */ = {
+			isa = PBXGroup;
+			children = (
+				8C0759401EA0A67B005A4343 /* Resources */,
+				8C07593D1EA0A2D5005A4343 /* WaveLoadingView.h */,
+				8C07593E1EA0A2D5005A4343 /* WaveLoadingView.m */,
+				8C0759381EA0A290005A4343 /* WaveLoadingController.h */,
+				8C0759391EA0A290005A4343 /* WaveLoadingController.m */,
+				8C07593B1EA0A297005A4343 /* WaveLoadingController.storyboard */,
+			);
+			path = WaveLoading;
+			sourceTree = "<group>";
+		};
+		8C0759401EA0A67B005A4343 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C0759411EA0A67B005A4343 /* blue@2x.png */,
+				8C0759421EA0A67B005A4343 /* blue@3x.png */,
+				8C0759431EA0A67B005A4343 /* du@2x.png */,
+				8C0759441EA0A67B005A4343 /* du@3x.png */,
+				8C0759451EA0A67B005A4343 /* gray@2x.png */,
+				8C0759461EA0A67B005A4343 /* gray@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8C07594D1EA0A941005A4343 /* CornerButtons */ = {
+			isa = PBXGroup;
+			children = (
+				8C0759531EA0AA17005A4343 /* CBRoundedButton.h */,
+				8C0759541EA0AA17005A4343 /* CBRoundedButton.m */,
+				8C07594E1EA0A964005A4343 /* CornerButtonsController.h */,
+				8C07594F1EA0A964005A4343 /* CornerButtonsController.m */,
+				8C0759511EA0A96A005A4343 /* CornerButtonsController.storyboard */,
+			);
+			path = CornerButtons;
+			sourceTree = "<group>";
+		};
+		8C0759561EA0AD0A005A4343 /* ShineLabel */ = {
+			isa = PBXGroup;
+			children = (
+				8C07595C1EA0AD78005A4343 /* RQShineLabel.h */,
+				8C07595D1EA0AD78005A4343 /* RQShineLabel.m */,
+				8C0759571EA0AD18005A4343 /* ShineLabelController.h */,
+				8C0759581EA0AD18005A4343 /* ShineLabelController.m */,
+				8C07595A1EA0AD1F005A4343 /* ShineLabelController.storyboard */,
+			);
+			path = ShineLabel;
+			sourceTree = "<group>";
+		};
 		8C369FB61E9F09EC00944873 /* LoadingAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				8C0759361EA0A281005A4343 /* WaveLoading */,
+				8C76EB401EA05BAC00CA3500 /* TwoBallRolling */,
 				8C369FFF1E9F802300944873 /* RaderSpread */,
 				8C369FF81E9F7C8100944873 /* ThreeDots */,
 				8C369FE71E9F716600944873 /* Hills */,
@@ -3130,13 +3236,17 @@
 		8C38BE3A1E763467003624B7 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				8C0759561EA0AD0A005A4343 /* ShineLabel */,
+				8C07594D1EA0A941005A4343 /* CornerButtons */,
+				8C76EB501EA099BA00CA3500 /* LoadingButton */,
+				8C76EB4A1EA0649200CA3500 /* IncessantPages */,
 				8C38BE3B1E763467003624B7 /* LeftMenu */,
 				8C38BE451E763467003624B7 /* RevolverMenu */,
+				8C38BE541E763467003624B7 /* UsingCollectionView */,
 				8C38BE491E763467003624B7 /* SphereTags */,
 				8C38BE511E763467003624B7 /* UIComponentsController.h */,
 				8C38BE521E763467003624B7 /* UIComponentsController.m */,
 				8C38BE531E763467003624B7 /* UIComponentsController.storyboard */,
-				8C38BE541E763467003624B7 /* UsingCollectionView */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -3763,6 +3873,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8C76EB401EA05BAC00CA3500 /* TwoBallRolling */ = {
+			isa = PBXGroup;
+			children = (
+				8C76EB421EA05BB700CA3500 /* TwoBallRollingController.h */,
+				8C76EB431EA05BB700CA3500 /* TwoBallRollingController.m */,
+				8C76EB451EA05BBD00CA3500 /* TwoBallRollingController.storyboard */,
+			);
+			path = TwoBallRolling;
+			sourceTree = "<group>";
+		};
+		8C76EB4A1EA0649200CA3500 /* IncessantPages */ = {
+			isa = PBXGroup;
+			children = (
+				8C76EB4B1EA0649D00CA3500 /* IncessantPagesController.h */,
+				8C76EB4C1EA0649D00CA3500 /* IncessantPagesController.m */,
+				8C76EB4E1EA064A300CA3500 /* IncessantPagesController.storyboard */,
+			);
+			path = IncessantPages;
+			sourceTree = "<group>";
+		};
+		8C76EB501EA099BA00CA3500 /* LoadingButton */ = {
+			isa = PBXGroup;
+			children = (
+				8C76EB561EA09AD900CA3500 /* LBButton.h */,
+				8C76EB571EA09AD900CA3500 /* LBButton.m */,
+				8C76EB511EA099FD00CA3500 /* LoadingButtonController.h */,
+				8C76EB521EA099FD00CA3500 /* LoadingButtonController.m */,
+				8C76EB541EA09A2B00CA3500 /* LoadingButtonController.storyboard */,
+			);
+			path = LoadingButton;
+			sourceTree = "<group>";
+		};
 		8CBD4C681E9DCCFB002AF0AA /* ScrollAnimation_1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3907,6 +4049,7 @@
 				8C38C0511E763467003624B7 /* NetworkStateMonitorController.storyboard in Resources */,
 				8C38BFC81E763467003624B7 /* LinkUpController.storyboard in Resources */,
 				8C38C0A81E763467003624B7 /* UsingFBShimmeringController.storyboard in Resources */,
+				8C0759481EA0A67B005A4343 /* blue@3x.png in Resources */,
 				8C38C0B61E763468003624B7 /* fftoast_info_highlight@2x.png in Resources */,
 				8C38C0A41E763467003624B7 /* TherThirdTechController.storyboard in Resources */,
 				8C38C0B21E763468003624B7 /* fftoast_info.png in Resources */,
@@ -3951,6 +4094,7 @@
 				8C38C0921E763467003624B7 /* cordova.js in Resources */,
 				8C38C0211E763467003624B7 /* x2-E.mp3 in Resources */,
 				8C38BFB31E763467003624B7 /* rain.sks in Resources */,
+				8C0759471EA0A67B005A4343 /* blue@2x.png in Resources */,
 				8C38C0051E763467003624B7 /* x-C#.mp3 in Resources */,
 				8C38C0151E763467003624B7 /* x1-E.mp3 in Resources */,
 				8C38C0F81E763468003624B7 /* MyCollectionViewLayoutController.storyboard in Resources */,
@@ -3966,6 +4110,7 @@
 				8C38BF7F1E763467003624B7 /* LPBar_2Controller.storyboard in Resources */,
 				8C38C07E1E763467003624B7 /* shake_down@2x.png in Resources */,
 				8C38C0C01E763468003624B7 /* fftoast_warning@3x.png in Resources */,
+				8C07593C1EA0A297005A4343 /* WaveLoadingController.storyboard in Resources */,
 				8C38BFE41E763467003624B7 /* MusicalScaleExercise.plist in Resources */,
 				8C369FC41E9F0E1C00944873 /* Sandglass.png in Resources */,
 				8C369FF61E9F729F00944873 /* hill4.png in Resources */,
@@ -4012,6 +4157,7 @@
 				8C38C0181E763467003624B7 /* x1-G#.mp3 in Resources */,
 				8C38C0021E763467003624B7 /* x-A#.mp3 in Resources */,
 				8C38C0981E763467003624B7 /* index.js in Resources */,
+				8C07594A1EA0A67B005A4343 /* du@3x.png in Resources */,
 				8C38BFFE1E763467003624B7 /* d1-G.mp3 in Resources */,
 				8C369FEC1E9F717E00944873 /* HillsViewController.storyboard in Resources */,
 				8C38C0361E763467003624B7 /* x4-C.mp3 in Resources */,
@@ -4044,9 +4190,11 @@
 				8C38C0061E763467003624B7 /* x-C.mp3 in Resources */,
 				8C38C00D1E763467003624B7 /* x-G.mp3 in Resources */,
 				8C38C0351E763467003624B7 /* x4-C#.mp3 in Resources */,
+				8C0759521EA0A96A005A4343 /* CornerButtonsController.storyboard in Resources */,
 				8C38BF691E763467003624B7 /* MainMaskTransitionController.storyboard in Resources */,
 				8C38C0011E763467003624B7 /* d2-B.mp3 in Resources */,
 				8C38BF711E763467003624B7 /* CombinationAnimationController.storyboard in Resources */,
+				8C0759491EA0A67B005A4343 /* du@2x.png in Resources */,
 				8C38BF8D1E763467003624B7 /* MainStoreHouseTransitionController.storyboard in Resources */,
 				8C369FDD1E9F61B800944873 /* ColorsMatrixController.storyboard in Resources */,
 				8C38C00A1E763467003624B7 /* x-F#.mp3 in Resources */,
@@ -4097,6 +4245,7 @@
 				8C38C0451E763467003624B7 /* SingleSoundExercise.plist in Resources */,
 				8C38C0CA1E763468003624B7 /* UsingFFToastController.storyboard in Resources */,
 				8C38C0DE1E763468003624B7 /* UsingPNChartController.storyboard in Resources */,
+				8C76EB461EA05BBD00CA3500 /* TwoBallRollingController.storyboard in Resources */,
 				8C38C0951E763467003624B7 /* btn.png in Resources */,
 				8C38C0771E763467003624B7 /* SNSNetworkAddressListController.storyboard in Resources */,
 				8C38C0AA1E763467003624B7 /* fftoast_dismiss@2x.png in Resources */,
@@ -4128,8 +4277,10 @@
 				8C38C01F1E763467003624B7 /* x2-D#.mp3 in Resources */,
 				8C38BFEF1E763467003624B7 /* d-F#.mp3 in Resources */,
 				8C369FFD1E9F7C9700944873 /* ThreeDotsController.storyboard in Resources */,
+				8C07595B1EA0AD1F005A4343 /* ShineLabelController.storyboard in Resources */,
 				8C38C0261E763467003624B7 /* x3-A#.mp3 in Resources */,
 				8C38BFDA1E763467003624B7 /* PaintbrushSettingController.storyboard in Resources */,
+				8C76EB4F1EA064A300CA3500 /* IncessantPagesController.storyboard in Resources */,
 				8C38C05F1E763467003624B7 /* SNSAddSelfDefineMatchingRuleController.storyboard in Resources */,
 				8C38C0EA1E763468003624B7 /* LeftMenuController.storyboard in Resources */,
 				8C369FF51E9F729F00944873 /* hill3.png in Resources */,
@@ -4164,12 +4315,14 @@
 				8C38BF5C1E763467003624B7 /* buildings@2x.png in Resources */,
 				8C38C0B41E763468003624B7 /* fftoast_info@3x.png in Resources */,
 				8C38BFDF1E763467003624B7 /* ChooseSoundIntervalController.storyboard in Resources */,
+				8C76EB551EA09A2B00CA3500 /* LoadingButtonController.storyboard in Resources */,
 				8C38C09F1E763467003624B7 /* paint01-03@2x.png in Resources */,
 				8C38BFCE1E763467003624B7 /* TurnCardsController.storyboard in Resources */,
 				8C38C07D1E763467003624B7 /* shake_down.png in Resources */,
 				8C38C0071E763467003624B7 /* x-D#.mp3 in Resources */,
 				8C38BFFF1E763467003624B7 /* d2-A#.mp3 in Resources */,
 				8C38C0C21E763468003624B7 /* fftoast_warning_highlight@2x.png in Resources */,
+				8C07594C1EA0A67B005A4343 /* gray@3x.png in Resources */,
 				8C369FF71E9F729F00944873 /* hill5.png in Resources */,
 				8C38C0F01E763468003624B7 /* RevolverMenuController.storyboard in Resources */,
 				8C38C0101E763467003624B7 /* x1-B.mp3 in Resources */,
@@ -4178,6 +4331,7 @@
 				8C38BFBC1E763467003624B7 /* lp_point.caf in Resources */,
 				8C38C0131E763467003624B7 /* x1-D#.mp3 in Resources */,
 				8C38BFA31E763467003624B7 /* DP_USWF_UserInfoItemCell.xib in Resources */,
+				8C07594B1EA0A67B005A4343 /* gray@2x.png in Resources */,
 				8C38BF771E763467003624B7 /* TransitionAnimationController.storyboard in Resources */,
 				8C38C0C31E763468003624B7 /* fftoast_warning_highlight@3x.png in Resources */,
 				8C38BF5D1E763467003624B7 /* buildings@3x.png in Resources */,
@@ -4225,6 +4379,7 @@
 				8C38C1081E763468003624B7 /* CDVPluginResult.m in Sources */,
 				8C38C0C91E763468003624B7 /* UsingFFToastController.m in Sources */,
 				8C369FD31E9F17CC00944873 /* TDDotView.m in Sources */,
+				8C76EB581EA09AD900CA3500 /* LBButton.m in Sources */,
 				8C38C0991E763467003624B7 /* MDMatrix.m in Sources */,
 				8C38C0D91E763468003624B7 /* PNScatterChartData.m in Sources */,
 				8C38C0CC1E763468003624B7 /* PNBarChart.m in Sources */,
@@ -4273,6 +4428,7 @@
 				8C38C0E11E763468003624B7 /* UsingUUChartController.m in Sources */,
 				8C38BFB71E763467003624B7 /* LPFinalScoreNode.m in Sources */,
 				8C38C1271E763468003624B7 /* IQPreviousNextView.m in Sources */,
+				8C07593F1EA0A2D5005A4343 /* WaveLoadingView.m in Sources */,
 				8C38BFAF1E763467003624B7 /* GameTechController.m in Sources */,
 				8C38C1301E763468003624B7 /* MASLayoutConstraint.m in Sources */,
 				8C38C0871E763467003624B7 /* BEMCircle.m in Sources */,
@@ -4330,6 +4486,7 @@
 				8C38C0711E763467003624B7 /* SNS_NetworkAddressItemCell.m in Sources */,
 				8C38C10D1E763468003624B7 /* CDVWebViewDelegate.m in Sources */,
 				8C38BFD81E763467003624B7 /* SS_Line.m in Sources */,
+				8C0759551EA0AA17005A4343 /* CBRoundedButton.m in Sources */,
 				8C38BFD41E763467003624B7 /* MainController.m in Sources */,
 				8C38C1121E763468003624B7 /* NSMutableArray+QueueAdditions.m in Sources */,
 				8C38BF891E763467003624B7 /* SimplePromptBubbleController.m in Sources */,
@@ -4343,10 +4500,13 @@
 				8C38C05E1E763467003624B7 /* SNSAddSelfDefineMatchingRuleController.m in Sources */,
 				8C38BF7E1E763467003624B7 /* LPBar_2Controller.m in Sources */,
 				8C38BFB11E763467003624B7 /* KindsOfNodesController.m in Sources */,
+				8C0759591EA0AD18005A4343 /* ShineLabelController.m in Sources */,
+				8C07595E1EA0AD78005A4343 /* RQShineLabel.m in Sources */,
 				8C38C14D1E763468003624B7 /* MMPopupCategory.m in Sources */,
 				8C38BF551E763467003624B7 /* ClickSpreadAnimationController.m in Sources */,
 				8C38C0411E763467003624B7 /* SingleSoundExerciseController.m in Sources */,
 				8CBD4C6C1E9DCD13002AF0AA /* ScrollAnimation_1Controller.m in Sources */,
+				8C76EB531EA099FD00CA3500 /* LoadingButtonController.m in Sources */,
 				8C38C04D1E763467003624B7 /* StartToQuartz2DController.m in Sources */,
 				8C38C1421E763468003624B7 /* UIView+Extend.m in Sources */,
 				8C38BF801E763467003624B7 /* LPBar_3Controller.m in Sources */,
@@ -4363,6 +4523,7 @@
 				8C38C0E71E763468003624B7 /* UUChartLabel.m in Sources */,
 				8C38C1241E763468003624B7 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				8C38C0F91E763468003624B7 /* MyCollectionViewLayout.m in Sources */,
+				8C07593A1EA0A290005A4343 /* WaveLoadingController.m in Sources */,
 				8C38C1461E763468003624B7 /* Helper.m in Sources */,
 				8C38C0461E763467003624B7 /* MusicalScaleItemCell.m in Sources */,
 				8C38BF4C1E763467003624B7 /* DP_USWCD_Database.xcdatamodeld in Sources */,
@@ -4453,6 +4614,7 @@
 				8C38BFE21E763467003624B7 /* MusicalScaleExerciseSettingController.m in Sources */,
 				8C38BFB41E763467003624B7 /* ShowNodesScene.m in Sources */,
 				8C38BFD11E763467003624B7 /* TurnCardsItemCell.m in Sources */,
+				8C76EB4D1EA0649D00CA3500 /* IncessantPagesController.m in Sources */,
 				8C38C1101E763468003624B7 /* NSData+Base64.m in Sources */,
 				8C38C0651E763467003624B7 /* SNS_ReplacingRuleModel.m in Sources */,
 				8C38C0881E763467003624B7 /* BEMLine.m in Sources */,
@@ -4461,6 +4623,7 @@
 				8C38C0A31E763467003624B7 /* TherThirdTechController.m in Sources */,
 				8C38BF9A1E763467003624B7 /* DP_USWCD_UserInfoItemCell.m in Sources */,
 				8C38BF591E763467003624B7 /* DragDownRefreshController.m in Sources */,
+				8C76EB441EA05BB700CA3500 /* TwoBallRollingController.m in Sources */,
 				8C38C1221E763468003624B7 /* IQUIWindow+Hierarchy.m in Sources */,
 				8C38C1481E763468003624B7 /* LMPopMenu.m in Sources */,
 				8C38BFA71E763467003624B7 /* UsingUserDefaultsController.m in Sources */,
@@ -4471,6 +4634,7 @@
 				8C38C0D41E763468003624B7 /* PNPieChart.m in Sources */,
 				8C38C0D01E763468003624B7 /* PNGenericChart.m in Sources */,
 				8C38C06A1E763467003624B7 /* SNS_AddReplacingRuleCell.m in Sources */,
+				8C0759501EA0A964005A4343 /* CornerButtonsController.m in Sources */,
 				8C38C1111E763468003624B7 /* NSDictionary+Extensions.m in Sources */,
 				8C38C1291E763468003624B7 /* IQToolbar.m in Sources */,
 				8C369FEA1E9F717700944873 /* HillsViewController.m in Sources */,

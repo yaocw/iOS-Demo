@@ -48,6 +48,13 @@ static CGFloat kIncreaseStep = 2.5f;
     [self initializeUIComponents];
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    
+    [_displayLink invalidate];
+}
+
 - (void)initializeBaseData
 {
     _maxHill1Height = kGetRandomFloatWithLimit(kMinHillHeight + 50.f, kMaxHillHeight);
