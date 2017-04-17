@@ -578,6 +578,16 @@
 		8C38C1631E7634A0003624B7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C38C1621E7634A0003624B7 /* MobileCoreServices.framework */; };
 		8C38C1651E7634A7003624B7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C38C1641E7634A7003624B7 /* AssetsLibrary.framework */; };
 		8C38C1671E7634AD003624B7 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C38C1661E7634AD003624B7 /* SpriteKit.framework */; };
+		8C4094911EA4B51C002F0B83 /* IftttJotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4094901EA4B51C002F0B83 /* IftttJotController.m */; };
+		8C4094931EA4B522002F0B83 /* IftttJotController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4094921EA4B522002F0B83 /* IftttJotController.storyboard */; };
+		8C4094A61EA4B5AA002F0B83 /* JotDrawingContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4094971EA4B5AA002F0B83 /* JotDrawingContainer.m */; };
+		8C4094A71EA4B5AA002F0B83 /* JotDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4094991EA4B5AA002F0B83 /* JotDrawView.m */; };
+		8C4094A81EA4B5AA002F0B83 /* JotTextEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C40949B1EA4B5AA002F0B83 /* JotTextEditView.m */; };
+		8C4094A91EA4B5AA002F0B83 /* JotTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C40949D1EA4B5AA002F0B83 /* JotTextView.m */; };
+		8C4094AA1EA4B5AA002F0B83 /* JotTouchBezier.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C40949F1EA4B5AA002F0B83 /* JotTouchBezier.m */; };
+		8C4094AB1EA4B5AA002F0B83 /* JotTouchPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4094A11EA4B5AA002F0B83 /* JotTouchPoint.m */; };
+		8C4094AC1EA4B5AA002F0B83 /* JotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4094A31EA4B5AA002F0B83 /* JotViewController.m */; };
+		8C4094AD1EA4B5AA002F0B83 /* UIImage+Jot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4094A51EA4B5AA002F0B83 /* UIImage+Jot.m */; };
 		8C501A461E9E131100003F67 /* SACircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C501A451E9E131100003F67 /* SACircleView.m */; };
 		8C501A491E9E132D00003F67 /* SACircleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C501A481E9E132D00003F67 /* SACircleView.xib */; };
 		8C501A4C1E9E278400003F67 /* SAPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C501A4B1E9E278400003F67 /* SAPageView.m */; };
@@ -1508,6 +1518,26 @@
 		8C38C1621E7634A0003624B7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		8C38C1641E7634A7003624B7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		8C38C1661E7634AD003624B7 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		8C40948F1EA4B51C002F0B83 /* IftttJotController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IftttJotController.h; sourceTree = "<group>"; };
+		8C4094901EA4B51C002F0B83 /* IftttJotController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IftttJotController.m; sourceTree = "<group>"; };
+		8C4094921EA4B522002F0B83 /* IftttJotController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IftttJotController.storyboard; sourceTree = "<group>"; };
+		8C4094951EA4B5AA002F0B83 /* jot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jot.h; sourceTree = "<group>"; };
+		8C4094961EA4B5AA002F0B83 /* JotDrawingContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JotDrawingContainer.h; sourceTree = "<group>"; };
+		8C4094971EA4B5AA002F0B83 /* JotDrawingContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JotDrawingContainer.m; sourceTree = "<group>"; };
+		8C4094981EA4B5AA002F0B83 /* JotDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JotDrawView.h; sourceTree = "<group>"; };
+		8C4094991EA4B5AA002F0B83 /* JotDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JotDrawView.m; sourceTree = "<group>"; };
+		8C40949A1EA4B5AA002F0B83 /* JotTextEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JotTextEditView.h; sourceTree = "<group>"; };
+		8C40949B1EA4B5AA002F0B83 /* JotTextEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JotTextEditView.m; sourceTree = "<group>"; };
+		8C40949C1EA4B5AA002F0B83 /* JotTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JotTextView.h; sourceTree = "<group>"; };
+		8C40949D1EA4B5AA002F0B83 /* JotTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JotTextView.m; sourceTree = "<group>"; };
+		8C40949E1EA4B5AA002F0B83 /* JotTouchBezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JotTouchBezier.h; sourceTree = "<group>"; };
+		8C40949F1EA4B5AA002F0B83 /* JotTouchBezier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JotTouchBezier.m; sourceTree = "<group>"; };
+		8C4094A01EA4B5AA002F0B83 /* JotTouchPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JotTouchPoint.h; sourceTree = "<group>"; };
+		8C4094A11EA4B5AA002F0B83 /* JotTouchPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JotTouchPoint.m; sourceTree = "<group>"; };
+		8C4094A21EA4B5AA002F0B83 /* JotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JotViewController.h; sourceTree = "<group>"; };
+		8C4094A31EA4B5AA002F0B83 /* JotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JotViewController.m; sourceTree = "<group>"; };
+		8C4094A41EA4B5AA002F0B83 /* UIImage+Jot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Jot.h"; sourceTree = "<group>"; };
+		8C4094A51EA4B5AA002F0B83 /* UIImage+Jot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Jot.m"; sourceTree = "<group>"; };
 		8C501A441E9E131100003F67 /* SACircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SACircleView.h; sourceTree = "<group>"; };
 		8C501A451E9E131100003F67 /* SACircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SACircleView.m; sourceTree = "<group>"; };
 		8C501A481E9E132D00003F67 /* SACircleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SACircleView.xib; sourceTree = "<group>"; };
@@ -2435,6 +2465,7 @@
 		8C38BC881E763466003624B7 /* MultimediaTech */ = {
 			isa = PBXGroup;
 			children = (
+				8C40948D1EA4B4F8002F0B83 /* IftttJot */,
 				8C38BC891E763466003624B7 /* IDCardRecognition */,
 				8C38BC8B1E763466003624B7 /* MutimediaTectController.h */,
 				8C38BC8C1E763466003624B7 /* MutimediaTectController.m */,
@@ -3899,6 +3930,49 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8C40948D1EA4B4F8002F0B83 /* IftttJot */ = {
+			isa = PBXGroup;
+			children = (
+				8C4094AE1EA4B71B002F0B83 /* Resources */,
+				8C4094941EA4B5AA002F0B83 /* jot */,
+				8C40948F1EA4B51C002F0B83 /* IftttJotController.h */,
+				8C4094901EA4B51C002F0B83 /* IftttJotController.m */,
+				8C4094921EA4B522002F0B83 /* IftttJotController.storyboard */,
+			);
+			path = IftttJot;
+			sourceTree = "<group>";
+		};
+		8C4094941EA4B5AA002F0B83 /* jot */ = {
+			isa = PBXGroup;
+			children = (
+				8C4094951EA4B5AA002F0B83 /* jot.h */,
+				8C4094961EA4B5AA002F0B83 /* JotDrawingContainer.h */,
+				8C4094971EA4B5AA002F0B83 /* JotDrawingContainer.m */,
+				8C4094981EA4B5AA002F0B83 /* JotDrawView.h */,
+				8C4094991EA4B5AA002F0B83 /* JotDrawView.m */,
+				8C40949A1EA4B5AA002F0B83 /* JotTextEditView.h */,
+				8C40949B1EA4B5AA002F0B83 /* JotTextEditView.m */,
+				8C40949C1EA4B5AA002F0B83 /* JotTextView.h */,
+				8C40949D1EA4B5AA002F0B83 /* JotTextView.m */,
+				8C40949E1EA4B5AA002F0B83 /* JotTouchBezier.h */,
+				8C40949F1EA4B5AA002F0B83 /* JotTouchBezier.m */,
+				8C4094A01EA4B5AA002F0B83 /* JotTouchPoint.h */,
+				8C4094A11EA4B5AA002F0B83 /* JotTouchPoint.m */,
+				8C4094A21EA4B5AA002F0B83 /* JotViewController.h */,
+				8C4094A31EA4B5AA002F0B83 /* JotViewController.m */,
+				8C4094A41EA4B5AA002F0B83 /* UIImage+Jot.h */,
+				8C4094A51EA4B5AA002F0B83 /* UIImage+Jot.m */,
+			);
+			path = jot;
+			sourceTree = "<group>";
+		};
+		8C4094AE1EA4B71B002F0B83 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		8C76EB401EA05BAC00CA3500 /* TwoBallRolling */ = {
 			isa = PBXGroup;
 			children = (
@@ -4281,6 +4355,7 @@
 				8C38BF5B1E763467003624B7 /* buildings.png in Resources */,
 				8C38C0041E763467003624B7 /* x-B.mp3 in Resources */,
 				8C38BFE31E763467003624B7 /* MusicalScaleExerciseSettingController.storyboard in Resources */,
+				8C4094931EA4B522002F0B83 /* IftttJotController.storyboard in Resources */,
 				8C38C0C11E763468003624B7 /* fftoast_warning_highlight.png in Resources */,
 				8C38BF501E763467003624B7 /* sex_girl_2.jpg in Resources */,
 				8C38BF621E763467003624B7 /* sun@2x.png in Resources */,
@@ -4454,6 +4529,7 @@
 				8C38C0D31E763468003624B7 /* PNLineChartDataItem.m in Sources */,
 				8C38C1281E763468003624B7 /* IQTitleBarButtonItem.m in Sources */,
 				8C38BFD51E763467003624B7 /* MutimediaTectController.m in Sources */,
+				8C4094AC1EA4B5AA002F0B83 /* JotViewController.m in Sources */,
 				8C38BFA91E763467003624B7 /* CollisionEffectController.m in Sources */,
 				8C38BF721E763467003624B7 /* KeyFrameAnimationController.m in Sources */,
 				8C38C12F1E763468003624B7 /* MASConstraintMaker.m in Sources */,
@@ -4462,6 +4538,7 @@
 				8C38C0F31E763468003624B7 /* STSphereTagsView.m in Sources */,
 				8C38C0D81E763468003624B7 /* PNScatterChart.m in Sources */,
 				8C38C0641E763467003624B7 /* SNS_MatchingRuleView.m in Sources */,
+				8C4094A61EA4B5AA002F0B83 /* JotDrawingContainer.m in Sources */,
 				8C38C1511E763468003624B7 /* MMSheetView.m in Sources */,
 				8C38C1381E763468003624B7 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				8C38C13D1E763468003624B7 /* BaseTextView.m in Sources */,
@@ -4593,6 +4670,7 @@
 				8C38C0461E763467003624B7 /* MusicalScaleItemCell.m in Sources */,
 				8C38BF4C1E763467003624B7 /* DP_USWCD_Database.xcdatamodeld in Sources */,
 				8C38C1091E763468003624B7 /* CDVTimer.m in Sources */,
+				8C4094AA1EA4B5AA002F0B83 /* JotTouchBezier.m in Sources */,
 				8C38C14E1E763468003624B7 /* MMPopupitem.m in Sources */,
 				8C38BFC31E763467003624B7 /* SuperJumperController.m in Sources */,
 				8C38C1351E763468003624B7 /* View+MASAdditions.m in Sources */,
@@ -4602,12 +4680,14 @@
 				8C36A0021E9F802C00944873 /* RaderSpreadController.m in Sources */,
 				8C38BFAE1E763467003624B7 /* FollowMeScene.m in Sources */,
 				8C369FD61E9F1CE800944873 /* TDDotsView.m in Sources */,
+				8C4094A91EA4B5AA002F0B83 /* JotTextView.m in Sources */,
 				8C38C1261E763468003624B7 /* IQBarButtonItem.m in Sources */,
 				8C38C0821E763467003624B7 /* ShakeShakeController.m in Sources */,
 				8C38BFA41E763467003624B7 /* DP_USWF_UserInfoModel.m in Sources */,
 				8C38C0481E763467003624B7 /* MusicalScaleItemHeaderView.m in Sources */,
 				8C38C0ED1E763468003624B7 /* MainContentView.m in Sources */,
 				8C38BFBE1E763467003624B7 /* HelloScene.m in Sources */,
+				8C4094911EA4B51C002F0B83 /* IftttJotController.m in Sources */,
 				8C38C1491E763468003624B7 /* NirKxMenu.m in Sources */,
 				8C38C0751E763467003624B7 /* SNSHtmlHelper.m in Sources */,
 				8C38BFC01E763467003624B7 /* SpriteWalkThroughController.m in Sources */,
@@ -4619,8 +4699,10 @@
 				8C38C1031E763468003624B7 /* CDVInvokedUrlCommand.m in Sources */,
 				8C38C10C1E763468003624B7 /* CDVViewController.m in Sources */,
 				8C38C0841E763467003624B7 /* SystemPrincipleController.m in Sources */,
+				8C4094AB1EA4B5AA002F0B83 /* JotTouchPoint.m in Sources */,
 				8C38C0C51E763468003624B7 /* UIImage+FFToast.m in Sources */,
 				8C38BF961E763467003624B7 /* ObjectSerializationController.m in Sources */,
+				8C4094A71EA4B5AA002F0B83 /* JotDrawView.m in Sources */,
 				8C38BB531E763418003624B7 /* AppDelegate.m in Sources */,
 				8C38BF531E763467003624B7 /* AnimationController.m in Sources */,
 				8C38C1321E763468003624B7 /* MASViewConstraint.m in Sources */,
@@ -4649,6 +4731,7 @@
 				8C38C0E41E763468003624B7 /* UUBarChart.m in Sources */,
 				8C38C0EB1E763468003624B7 /* LeftMenuView.m in Sources */,
 				8C38C0581E763467003624B7 /* STDPingServices.m in Sources */,
+				8C4094AD1EA4B5AA002F0B83 /* UIImage+Jot.m in Sources */,
 				8C38C08A1E763467003624B7 /* BEMSimpleLineGraphView.m in Sources */,
 				8C38C1501E763468003624B7 /* MMPopupWindow.m in Sources */,
 				8C38BFCF1E763467003624B7 /* TCGameOverView.m in Sources */,
@@ -4656,6 +4739,7 @@
 				8C38BF6C1E763467003624B7 /* OtherMaskTransitionController.m in Sources */,
 				8C38C1171E763468003624B7 /* FMDatabaseAdditions.m in Sources */,
 				8C38C1311E763468003624B7 /* MASViewAttribute.m in Sources */,
+				8C4094A81EA4B5AA002F0B83 /* JotTextEditView.m in Sources */,
 				8C38BF6A1E763467003624B7 /* MTPopTransition.m in Sources */,
 				8C38C07A1E763467003624B7 /* SPCompassView.m in Sources */,
 				8C38C13B1E763468003624B7 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,

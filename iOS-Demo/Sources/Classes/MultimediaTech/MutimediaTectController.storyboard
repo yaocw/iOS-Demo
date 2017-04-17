@@ -89,6 +89,29 @@
                                             <segue destination="K9Y-iE-2tT" kind="show" id="Af5-qK-cl0"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Kr7-Ow-5ge">
+                                        <rect key="frame" x="0.0" y="168" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kr7-Ow-5ge" id="1bU-ZA-ZfU">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IFTTT-jot    From Skelton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdX-jF-mVP">
+                                                    <rect key="frame" x="16" y="17" width="189" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SdX-jF-mVP" firstAttribute="leading" secondItem="1bU-ZA-ZfU" secondAttribute="leading" constant="16" id="Qkm-Uq-JjY"/>
+                                                <constraint firstItem="SdX-jF-mVP" firstAttribute="centerY" secondItem="1bU-ZA-ZfU" secondAttribute="centerY" id="XYr-gR-ISm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Adl-5B-W9H" kind="show" id="n6H-tI-bJf"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -107,26 +130,34 @@
         <!--StartToQuartz2DController-->
         <scene sceneID="GoI-nY-aq5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fAR-U7-08e" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="StartToQuartz2DController" referencedIdentifier="StartToQuartz2DController" id="fX4-PM-f7f" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fAR-U7-08e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="818" y="-147"/>
         </scene>
         <!--SolfeggioController-->
         <scene sceneID="LVO-RX-cj1">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9J0-LR-hHq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="SolfeggioController" referencedIdentifier="SolfeggioController" id="4sv-sf-8G5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9J0-LR-hHq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="773" y="-89"/>
         </scene>
         <!--SimpleScrawlController-->
         <scene sceneID="Xyq-Ls-PFF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ln5-jC-GU1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="SimpleScrawlController" referencedIdentifier="SimpleScrawlController" id="K9Y-iE-2tT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ln5-jC-GU1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="794" y="-38"/>
+        </scene>
+        <!--IftttJotController-->
+        <scene sceneID="4PZ-w0-McP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="IftttJotController" referencedIdentifier="IftttJotController" id="Adl-5B-W9H" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uCi-SB-uxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="11"/>
         </scene>
     </scenes>
 </document>

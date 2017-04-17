@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--IFTTT-Jot-->
+        <scene sceneID="bUr-Tq-RdR">
+            <objects>
+                <viewController storyboardIdentifier="IftttJotController" id="Ev8-Fb-uUl" customClass="IftttJotController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OG1-40-POs"/>
+                        <viewControllerLayoutGuide type="bottom" id="FQf-Ie-Z3x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fVQ-es-btL">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ac-zI-gVm">
+                                <rect key="frame" x="0.0" y="537" width="375" height="66"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfK-41-FpF">
+                                        <rect key="frame" x="303" y="18" width="56" height="30"/>
+                                        <color key="backgroundColor" red="0.90588235289999997" green="0.3803921569" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Txt">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="toggleDrawingButtonAction:" destination="Ev8-Fb-uUl" eventType="touchUpInside" id="hq9-18-WY4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqC-N9-v9s">
+                                        <rect key="frame" x="16" y="18" width="56" height="30"/>
+                                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="56" id="e7V-Y1-T0f"/>
+                                        </constraints>
+                                        <state key="normal" title="Clr">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clearButtonAction:" destination="Ev8-Fb-uUl" eventType="touchUpInside" id="960-zq-GdY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2O0-kb-sTe">
+                                        <rect key="frame" x="104" y="18" width="56" height="30"/>
+                                        <color key="backgroundColor" red="0.47017461059999999" green="0.64893096689999996" blue="0.0045386576090000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="saveButtonAction:" destination="Ev8-Fb-uUl" eventType="touchUpInside" id="O0U-dE-l5p"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="bfK-41-FpF" firstAttribute="centerY" secondItem="oqC-N9-v9s" secondAttribute="centerY" id="Azu-OW-lTI"/>
+                                    <constraint firstItem="bfK-41-FpF" firstAttribute="width" secondItem="oqC-N9-v9s" secondAttribute="width" id="ML4-Mf-ZMy"/>
+                                    <constraint firstAttribute="height" constant="66" id="MTd-2a-77x"/>
+                                    <constraint firstItem="oqC-N9-v9s" firstAttribute="leading" secondItem="7Ac-zI-gVm" secondAttribute="leading" constant="16" id="Mh3-Q6-uOa"/>
+                                    <constraint firstItem="2O0-kb-sTe" firstAttribute="centerY" secondItem="oqC-N9-v9s" secondAttribute="centerY" id="OMY-NF-E3A"/>
+                                    <constraint firstAttribute="trailing" secondItem="bfK-41-FpF" secondAttribute="trailing" constant="16" id="ftM-cH-tV5"/>
+                                    <constraint firstItem="2O0-kb-sTe" firstAttribute="width" secondItem="oqC-N9-v9s" secondAttribute="width" id="mJx-Ea-M9e"/>
+                                    <constraint firstItem="2O0-kb-sTe" firstAttribute="leading" secondItem="oqC-N9-v9s" secondAttribute="trailing" constant="32" id="or5-JT-Q2R"/>
+                                    <constraint firstItem="oqC-N9-v9s" firstAttribute="centerY" secondItem="7Ac-zI-gVm" secondAttribute="centerY" id="qmG-sX-DVN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FQf-Ie-Z3x" firstAttribute="top" secondItem="7Ac-zI-gVm" secondAttribute="bottom" id="8TD-jD-d9n"/>
+                            <constraint firstAttribute="trailing" secondItem="7Ac-zI-gVm" secondAttribute="trailing" id="ksf-me-5Pn"/>
+                            <constraint firstItem="7Ac-zI-gVm" firstAttribute="leading" secondItem="fVQ-es-btL" secondAttribute="leading" id="naj-gI-DiC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="IFTTT-Jot" id="C30-gu-LZ0"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="clearButton" destination="oqC-N9-v9s" id="n8u-WS-fQB"/>
+                        <outlet property="saveButton" destination="2O0-kb-sTe" id="9fr-Yx-lNw"/>
+                        <outlet property="toggleDrawingButton" destination="bfK-41-FpF" id="v6g-Zq-dk7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXs-Ia-nHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="397.60000000000002" y="-114.69265367316342"/>
+        </scene>
+    </scenes>
+</document>
