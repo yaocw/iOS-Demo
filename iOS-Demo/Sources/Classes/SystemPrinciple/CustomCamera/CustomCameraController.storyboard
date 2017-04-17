@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Camera-->
+        <scene sceneID="QBY-Gl-daC">
+            <objects>
+                <viewController storyboardIdentifier="CustomCameraController" id="UU6-zV-EGL" customClass="CustomCameraController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EsF-RH-rZH"/>
+                        <viewControllerLayoutGuide type="bottom" id="wWB-fv-XHG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mw0-Ny-8nD">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krK-JD-sVW">
+                                <rect key="frame" x="157" y="487" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.47017461059999999" green="0.64893096689999996" blue="0.0045386576090000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="59c-eP-5FJ"/>
+                                    <constraint firstAttribute="width" constant="60" id="S82-mV-EvW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="拍照"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="photographAction:" destination="UU6-zV-EGL" eventType="touchUpInside" id="Ehg-1r-YLM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.64999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWs-8d-oJp">
+                                <rect key="frame" x="61" y="487" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.41568627450000001" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="K6U-N0-7Uj"/>
+                                    <constraint firstAttribute="width" constant="60" id="pha-RG-5d8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="前/后"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="switchCaermaAction:" destination="UU6-zV-EGL" eventType="touchUpInside" id="XRl-im-q5u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.64999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zo2-zX-C3O">
+                                <rect key="frame" x="253" y="487" width="60" height="60"/>
+                                <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="YF6-pa-aF7"/>
+                                    <constraint firstAttribute="height" constant="60" id="dDM-pn-MbW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="闪光灯"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="switchFlashAction:" destination="UU6-zV-EGL" eventType="touchUpInside" id="kAW-cF-gzI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkZ-mv-HZT">
+                                <rect key="frame" x="32" y="36" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="drV-gq-Jzf"/>
+                                    <constraint firstAttribute="height" constant="60" id="xeB-2S-cyJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="返回">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backAction:" destination="UU6-zV-EGL" eventType="touchUpInside" id="9Iz-LL-hGa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wWB-fv-XHG" firstAttribute="top" secondItem="krK-JD-sVW" secondAttribute="bottom" constant="56" id="ANb-uI-EYS"/>
+                            <constraint firstItem="TWs-8d-oJp" firstAttribute="centerY" secondItem="krK-JD-sVW" secondAttribute="centerY" id="Ntk-l6-xIE"/>
+                            <constraint firstItem="krK-JD-sVW" firstAttribute="leading" secondItem="TWs-8d-oJp" secondAttribute="trailing" constant="36" id="Tew-66-DoD"/>
+                            <constraint firstItem="krK-JD-sVW" firstAttribute="centerX" secondItem="Mw0-Ny-8nD" secondAttribute="centerX" id="USj-m7-YAH"/>
+                            <constraint firstItem="Zo2-zX-C3O" firstAttribute="leading" secondItem="krK-JD-sVW" secondAttribute="trailing" constant="36" id="a3b-1s-Ooy"/>
+                            <constraint firstItem="bkZ-mv-HZT" firstAttribute="top" secondItem="Mw0-Ny-8nD" secondAttribute="top" constant="36" id="eY2-tm-92c"/>
+                            <constraint firstItem="Zo2-zX-C3O" firstAttribute="centerY" secondItem="krK-JD-sVW" secondAttribute="centerY" id="h3n-FK-q2e"/>
+                            <constraint firstItem="bkZ-mv-HZT" firstAttribute="leading" secondItem="Mw0-Ny-8nD" secondAttribute="leadingMargin" constant="16" id="isA-Wg-gdg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Custom Camera" id="tAw-h0-Awy"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="backBtn" destination="bkZ-mv-HZT" id="wSF-fT-8z7"/>
+                        <outlet property="photographBtn" destination="krK-JD-sVW" id="hJR-zp-e8N"/>
+                        <outlet property="switchCameraBtn" destination="TWs-8d-oJp" id="Yco-Sf-5Oh"/>
+                        <outlet property="switchFlashBtn" destination="Zo2-zX-C3O" id="O04-rF-d4f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EY3-87-Qaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="350" y="291"/>
+        </scene>
+    </scenes>
+</document>

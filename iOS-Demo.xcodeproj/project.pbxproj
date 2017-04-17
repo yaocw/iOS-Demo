@@ -573,7 +573,6 @@
 		8C38C1581E763475003624B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C38C1571E763475003624B7 /* SystemConfiguration.framework */; };
 		8C38C15A1E76347B003624B7 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C38C1591E76347B003624B7 /* libsqlite3.0.tbd */; };
 		8C38C15B1E763481003624B7 /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C38C1551E763468003624B7 /* libCordova.a */; };
-		8C38C15D1E763487003624B7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C38C15C1E763487003624B7 /* CoreMedia.framework */; };
 		8C38C15F1E763492003624B7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C38C15E1E763492003624B7 /* AVFoundation.framework */; };
 		8C38C1611E76349A003624B7 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C38C1601E76349A003624B7 /* CoreVideo.framework */; };
 		8C38C1631E7634A0003624B7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C38C1621E7634A0003624B7 /* MobileCoreServices.framework */; };
@@ -591,6 +590,14 @@
 		8C76EB581EA09AD900CA3500 /* LBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C76EB571EA09AD900CA3500 /* LBButton.m */; };
 		8CBD4C6C1E9DCD13002AF0AA /* ScrollAnimation_1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBD4C6B1E9DCD13002AF0AA /* ScrollAnimation_1Controller.m */; };
 		8CBD4C6E1E9DCD1A002AF0AA /* ScrollAnimation_1Controller.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CBD4C6D1E9DCD1A002AF0AA /* ScrollAnimation_1Controller.storyboard */; };
+		8CED49691EA4580E00EA11B8 /* CustomCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CED49681EA4580E00EA11B8 /* CustomCameraController.m */; };
+		8CED496D1EA4584500EA11B8 /* CustomCameraController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CED496C1EA4584500EA11B8 /* CustomCameraController.storyboard */; };
+		8CED49731EA459E600EA11B8 /* photograph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CED496F1EA459E600EA11B8 /* photograph@2x.png */; };
+		8CED49741EA459E600EA11B8 /* photograph@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CED49701EA459E600EA11B8 /* photograph@3x.png */; };
+		8CED49751EA459E600EA11B8 /* photograph_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CED49711EA459E600EA11B8 /* photograph_select@2x.png */; };
+		8CED49761EA459E600EA11B8 /* photograph_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CED49721EA459E600EA11B8 /* photograph_select@3x.png */; };
+		8CED497D1EA4910600EA11B8 /* HandleCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CED497C1EA4910600EA11B8 /* HandleCameraController.m */; };
+		8CED497F1EA4910E00EA11B8 /* HandleCameraController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CED497E1EA4910E00EA11B8 /* HandleCameraController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1520,6 +1527,20 @@
 		8CBD4C6A1E9DCD13002AF0AA /* ScrollAnimation_1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollAnimation_1Controller.h; sourceTree = "<group>"; };
 		8CBD4C6B1E9DCD13002AF0AA /* ScrollAnimation_1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollAnimation_1Controller.m; sourceTree = "<group>"; };
 		8CBD4C6D1E9DCD1A002AF0AA /* ScrollAnimation_1Controller.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScrollAnimation_1Controller.storyboard; sourceTree = "<group>"; };
+		8CED49671EA4580E00EA11B8 /* CustomCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCameraController.h; sourceTree = "<group>"; };
+		8CED49681EA4580E00EA11B8 /* CustomCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCameraController.m; sourceTree = "<group>"; };
+		8CED496C1EA4584500EA11B8 /* CustomCameraController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomCameraController.storyboard; sourceTree = "<group>"; };
+		8CED496F1EA459E600EA11B8 /* photograph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph@2x.png"; sourceTree = "<group>"; };
+		8CED49701EA459E600EA11B8 /* photograph@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph@3x.png"; sourceTree = "<group>"; };
+		8CED49711EA459E600EA11B8 /* photograph_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph_select@2x.png"; sourceTree = "<group>"; };
+		8CED49721EA459E600EA11B8 /* photograph_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph_select@3x.png"; sourceTree = "<group>"; };
+		8CED497B1EA4910600EA11B8 /* HandleCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandleCameraController.h; sourceTree = "<group>"; };
+		8CED497C1EA4910600EA11B8 /* HandleCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandleCameraController.m; sourceTree = "<group>"; };
+		8CED497E1EA4910E00EA11B8 /* HandleCameraController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HandleCameraController.storyboard; sourceTree = "<group>"; };
+		8CED49801EA497DB00EA11B8 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		8CED49821EA4982A00EA11B8 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		8CED49841EA4987D00EA11B8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		8CED49861EA4988900EA11B8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1532,7 +1553,6 @@
 				8C38C1631E7634A0003624B7 /* MobileCoreServices.framework in Frameworks */,
 				8C38C1611E76349A003624B7 /* CoreVideo.framework in Frameworks */,
 				8C38C15F1E763492003624B7 /* AVFoundation.framework in Frameworks */,
-				8C38C15D1E763487003624B7 /* CoreMedia.framework in Frameworks */,
 				8C38C15B1E763481003624B7 /* libCordova.a in Frameworks */,
 				8C38C15A1E76347B003624B7 /* libsqlite3.0.tbd in Frameworks */,
 				8C38C1581E763475003624B7 /* SystemConfiguration.framework in Frameworks */,
@@ -2843,6 +2863,8 @@
 		8C38BD731E763466003624B7 /* SystemPrinciple */ = {
 			isa = PBXGroup;
 			children = (
+				8CED497A1EA490F100EA11B8 /* HandleCamera */,
+				8CED49651EA457F900EA11B8 /* CustomCamera */,
 				8C38BD741E763466003624B7 /* Compass */,
 				8C38BD7C1E763466003624B7 /* Resources */,
 				8C38BD831E763466003624B7 /* ShakeShake */,
@@ -3861,6 +3883,10 @@
 		8C38C1561E763474003624B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CED49861EA4988900EA11B8 /* ImageIO.framework */,
+				8CED49841EA4987D00EA11B8 /* OpenGLES.framework */,
+				8CED49821EA4982A00EA11B8 /* libc++abi.tbd */,
+				8CED49801EA497DB00EA11B8 /* CoreImage.framework */,
 				8C38C1661E7634AD003624B7 /* SpriteKit.framework */,
 				8C38C1641E7634A7003624B7 /* AssetsLibrary.framework */,
 				8C38C1621E7634A0003624B7 /* MobileCoreServices.framework */,
@@ -3918,6 +3944,38 @@
 				8CBD4C6D1E9DCD1A002AF0AA /* ScrollAnimation_1Controller.storyboard */,
 			);
 			path = ScrollAnimation_1;
+			sourceTree = "<group>";
+		};
+		8CED49651EA457F900EA11B8 /* CustomCamera */ = {
+			isa = PBXGroup;
+			children = (
+				8CED496E1EA459E600EA11B8 /* Resources */,
+				8CED49671EA4580E00EA11B8 /* CustomCameraController.h */,
+				8CED49681EA4580E00EA11B8 /* CustomCameraController.m */,
+				8CED496C1EA4584500EA11B8 /* CustomCameraController.storyboard */,
+			);
+			path = CustomCamera;
+			sourceTree = "<group>";
+		};
+		8CED496E1EA459E600EA11B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8CED496F1EA459E600EA11B8 /* photograph@2x.png */,
+				8CED49701EA459E600EA11B8 /* photograph@3x.png */,
+				8CED49711EA459E600EA11B8 /* photograph_select@2x.png */,
+				8CED49721EA459E600EA11B8 /* photograph_select@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8CED497A1EA490F100EA11B8 /* HandleCamera */ = {
+			isa = PBXGroup;
+			children = (
+				8CED497B1EA4910600EA11B8 /* HandleCameraController.h */,
+				8CED497C1EA4910600EA11B8 /* HandleCameraController.m */,
+				8CED497E1EA4910E00EA11B8 /* HandleCameraController.storyboard */,
+			);
+			path = HandleCamera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -4046,6 +4104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C38BFA81E763467003624B7 /* UsingUserDefaultsController.storyboard in Resources */,
+				8CED497F1EA4910E00EA11B8 /* HandleCameraController.storyboard in Resources */,
 				8C38C0511E763467003624B7 /* NetworkStateMonitorController.storyboard in Resources */,
 				8C38BFC81E763467003624B7 /* LinkUpController.storyboard in Resources */,
 				8C38C0A81E763467003624B7 /* UsingFBShimmeringController.storyboard in Resources */,
@@ -4159,6 +4218,7 @@
 				8C38C0981E763467003624B7 /* index.js in Resources */,
 				8C07594A1EA0A67B005A4343 /* du@3x.png in Resources */,
 				8C38BFFE1E763467003624B7 /* d1-G.mp3 in Resources */,
+				8CED49751EA459E600EA11B8 /* photograph_select@2x.png in Resources */,
 				8C369FEC1E9F717E00944873 /* HillsViewController.storyboard in Resources */,
 				8C38C0361E763467003624B7 /* x4-C.mp3 in Resources */,
 				8C38BB5E1E763418003624B7 /* Assets.xcassets in Resources */,
@@ -4189,6 +4249,8 @@
 				8C369FD01E9F175400944873 /* TenDotsController.storyboard in Resources */,
 				8C38C0061E763467003624B7 /* x-C.mp3 in Resources */,
 				8C38C00D1E763467003624B7 /* x-G.mp3 in Resources */,
+				8CED496D1EA4584500EA11B8 /* CustomCameraController.storyboard in Resources */,
+				8CED49731EA459E600EA11B8 /* photograph@2x.png in Resources */,
 				8C38C0351E763467003624B7 /* x4-C#.mp3 in Resources */,
 				8C0759521EA0A96A005A4343 /* CornerButtonsController.storyboard in Resources */,
 				8C38BF691E763467003624B7 /* MainMaskTransitionController.storyboard in Resources */,
@@ -4279,6 +4341,7 @@
 				8C369FFD1E9F7C9700944873 /* ThreeDotsController.storyboard in Resources */,
 				8C07595B1EA0AD1F005A4343 /* ShineLabelController.storyboard in Resources */,
 				8C38C0261E763467003624B7 /* x3-A#.mp3 in Resources */,
+				8CED49761EA459E600EA11B8 /* photograph_select@3x.png in Resources */,
 				8C38BFDA1E763467003624B7 /* PaintbrushSettingController.storyboard in Resources */,
 				8C76EB4F1EA064A300CA3500 /* IncessantPagesController.storyboard in Resources */,
 				8C38C05F1E763467003624B7 /* SNSAddSelfDefineMatchingRuleController.storyboard in Resources */,
@@ -4336,6 +4399,7 @@
 				8C38C0C31E763468003624B7 /* fftoast_warning_highlight@3x.png in Resources */,
 				8C38BF5D1E763467003624B7 /* buildings@3x.png in Resources */,
 				8C38C0B91E763468003624B7 /* fftoast_success@2x.png in Resources */,
+				8CED49741EA459E600EA11B8 /* photograph@3x.png in Resources */,
 				8C38C04E1E763467003624B7 /* StartToQuartz2DController.storyboard in Resources */,
 				8C38C1151E763468003624B7 /* VERSION in Resources */,
 				8C38C01B1E763467003624B7 /* x2-A.mp3 in Resources */,
@@ -4401,6 +4465,7 @@
 				8C38C1511E763468003624B7 /* MMSheetView.m in Sources */,
 				8C38C1381E763468003624B7 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				8C38C13D1E763468003624B7 /* BaseTextView.m in Sources */,
+				8CED49691EA4580E00EA11B8 /* CustomCameraController.m in Sources */,
 				8C38C08D1E763467003624B7 /* StatsViewController.m in Sources */,
 				8C38C0861E763467003624B7 /* BEMAverageLine.m in Sources */,
 				8C38BF8C1E763467003624B7 /* MainStoreHouseTransitionController.m in Sources */,
@@ -4623,6 +4688,7 @@
 				8C38C0A31E763467003624B7 /* TherThirdTechController.m in Sources */,
 				8C38BF9A1E763467003624B7 /* DP_USWCD_UserInfoItemCell.m in Sources */,
 				8C38BF591E763467003624B7 /* DragDownRefreshController.m in Sources */,
+				8CED497D1EA4910600EA11B8 /* HandleCameraController.m in Sources */,
 				8C76EB441EA05BB700CA3500 /* TwoBallRollingController.m in Sources */,
 				8C38C1221E763468003624B7 /* IQUIWindow+Hierarchy.m in Sources */,
 				8C38C1481E763468003624B7 /* LMPopMenu.m in Sources */,

@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +24,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JJS-DI-GeN" id="j5r-DV-svT">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="摇一摇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sop-bE-hTU">
@@ -46,7 +47,7 @@
                                         <rect key="frame" x="0.0" y="56" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N65-fZ-YRs" id="AxH-4j-3JF">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="指南针" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4R-wn-Lz2">
@@ -63,6 +64,52 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="O8v-sY-xlR" kind="show" id="aQQ-1e-3a8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="KkE-eL-MOm">
+                                        <rect key="frame" x="0.0" y="112" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KkE-eL-MOm" id="Pik-bW-azv">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自定义相机外观" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5r7-rs-yO5">
+                                                    <rect key="frame" x="16" y="17" width="122" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5r7-rs-yO5" firstAttribute="centerY" secondItem="Pik-bW-azv" secondAttribute="centerY" id="Sil-q1-rqs"/>
+                                                <constraint firstItem="5r7-rs-yO5" firstAttribute="leading" secondItem="Pik-bW-azv" secondAttribute="leading" constant="16" id="dYR-kr-m4Q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nv7-4K-mKB" kind="show" id="qNq-QY-xbd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="mxE-cV-xrb">
+                                        <rect key="frame" x="0.0" y="168" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mxE-cV-xrb" id="Z99-wf-8AQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自定义相机(实时滤镜)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bm-Uj-sDC">
+                                                    <rect key="frame" x="16" y="17" width="168" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0bm-Uj-sDC" firstAttribute="centerY" secondItem="Z99-wf-8AQ" secondAttribute="centerY" id="EyB-ch-qh6"/>
+                                                <constraint firstItem="0bm-Uj-sDC" firstAttribute="leading" secondItem="Z99-wf-8AQ" secondAttribute="leading" constant="16" id="jGu-Hr-ydD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="deV-cY-eFC" kind="show" id="575-er-Cev"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -95,6 +142,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NIF-AO-1QI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="760" y="155"/>
+        </scene>
+        <!--CustomCameraController-->
+        <scene sceneID="biW-kb-V4U">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CustomCameraController" referencedIdentifier="CustomCameraController" id="nv7-4K-mKB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lSB-Xk-rcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773" y="204"/>
+        </scene>
+        <!--HandleCameraController-->
+        <scene sceneID="Aq9-BL-OIG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HandleCameraController" referencedIdentifier="HandleCameraController" id="deV-cY-eFC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j0k-pE-yLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="258"/>
         </scene>
     </scenes>
 </document>
