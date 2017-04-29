@@ -23,4 +23,13 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    
+    
+    <!--  自定义插件  Start-->
+    <feature name="MyFirstCdvPlugin">
+        <param name="ios-package" value="MyFirstCdvPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <!--  自定义插件  End-->
+    
 </widget>

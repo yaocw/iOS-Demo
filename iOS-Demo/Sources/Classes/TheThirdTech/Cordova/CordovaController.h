@@ -15,12 +15,3 @@
 @interface CordovaController : CDVViewController
 
 @end
-
-
-@interface CordovaCommandDelegate : CDVCommandDelegateImpl
-
-@end
-
-@interface CordovaCommandQueue : CDVCommandQueue
-
-@end

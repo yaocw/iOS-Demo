@@ -375,15 +375,6 @@
 		8C38C08D1E763467003624B7 /* StatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C38BD9B1E763466003624B7 /* StatsViewController.m */; };
 		8C38C08E1E763467003624B7 /* CordovaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C38BD9E1E763466003624B7 /* CordovaController.m */; };
 		8C38C08F1E763467003624B7 /* CordovaController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C38BD9F1E763466003624B7 /* CordovaController.storyboard */; };
-		8C38C0901E763467003624B7 /* exec.js in Resources */ = {isa = PBXBuildFile; fileRef = 8C38BDA21E763466003624B7 /* exec.js */; };
-		8C38C0911E763467003624B7 /* platform.js in Resources */ = {isa = PBXBuildFile; fileRef = 8C38BDA31E763466003624B7 /* platform.js */; };
-		8C38C0921E763467003624B7 /* cordova.js in Resources */ = {isa = PBXBuildFile; fileRef = 8C38BDA41E763467003624B7 /* cordova.js */; };
-		8C38C0931E763467003624B7 /* cordova_plugins.js in Resources */ = {isa = PBXBuildFile; fileRef = 8C38BDA51E763467003624B7 /* cordova_plugins.js */; };
-		8C38C0941E763467003624B7 /* index.css in Resources */ = {isa = PBXBuildFile; fileRef = 8C38BDA71E763467003624B7 /* index.css */; };
-		8C38C0951E763467003624B7 /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C38BDA91E763467003624B7 /* btn.png */; };
-		8C38C0961E763467003624B7 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C38BDAA1E763467003624B7 /* logo.png */; };
-		8C38C0971E763467003624B7 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 8C38BDAB1E763467003624B7 /* index.html */; };
-		8C38C0981E763467003624B7 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 8C38BDAD1E763467003624B7 /* index.js */; };
 		8C38C0991E763467003624B7 /* MDMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C38BDB11E763467003624B7 /* MDMatrix.m */; };
 		8C38C09A1E763467003624B7 /* MDScratchImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8C38BDB31E763467003624B7 /* MDScratchImageView.mm */; };
 		8C38C09B1E763467003624B7 /* paint01-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C38BDB51E763467003624B7 /* paint01-01.png */; };
@@ -608,6 +599,8 @@
 		8CED49761EA459E600EA11B8 /* photograph_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CED49721EA459E600EA11B8 /* photograph_select@3x.png */; };
 		8CED497D1EA4910600EA11B8 /* HandleCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CED497C1EA4910600EA11B8 /* HandleCameraController.m */; };
 		8CED497F1EA4910E00EA11B8 /* HandleCameraController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CED497E1EA4910E00EA11B8 /* HandleCameraController.storyboard */; };
+		C7CB13291EB44A6100664F08 /* www in Resources */ = {isa = PBXBuildFile; fileRef = C7CB13281EB44A6100664F08 /* www */; };
+		C7CB132D1EB44AA300664F08 /* MyFirstCdvPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CB132C1EB44AA300664F08 /* MyFirstCdvPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1153,15 +1146,6 @@
 		8C38BD9D1E763466003624B7 /* CordovaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CordovaController.h; sourceTree = "<group>"; };
 		8C38BD9E1E763466003624B7 /* CordovaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CordovaController.m; sourceTree = "<group>"; };
 		8C38BD9F1E763466003624B7 /* CordovaController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CordovaController.storyboard; sourceTree = "<group>"; };
-		8C38BDA21E763466003624B7 /* exec.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = exec.js; sourceTree = "<group>"; };
-		8C38BDA31E763466003624B7 /* platform.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = platform.js; sourceTree = "<group>"; };
-		8C38BDA41E763467003624B7 /* cordova.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = cordova.js; sourceTree = "<group>"; };
-		8C38BDA51E763467003624B7 /* cordova_plugins.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = cordova_plugins.js; sourceTree = "<group>"; };
-		8C38BDA71E763467003624B7 /* index.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = index.css; sourceTree = "<group>"; };
-		8C38BDA91E763467003624B7 /* btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn.png; sourceTree = "<group>"; };
-		8C38BDAA1E763467003624B7 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		8C38BDAB1E763467003624B7 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		8C38BDAD1E763467003624B7 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
 		8C38BDB01E763467003624B7 /* MDMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDMatrix.h; sourceTree = "<group>"; };
 		8C38BDB11E763467003624B7 /* MDMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDMatrix.m; sourceTree = "<group>"; };
 		8C38BDB21E763467003624B7 /* MDScratchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDScratchImageView.h; sourceTree = "<group>"; };
@@ -1571,6 +1555,9 @@
 		8CED49821EA4982A00EA11B8 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 		8CED49841EA4987D00EA11B8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		8CED49861EA4988900EA11B8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		C7CB13281EB44A6100664F08 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		C7CB132B1EB44AA300664F08 /* MyFirstCdvPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFirstCdvPlugin.h; sourceTree = "<group>"; };
+		C7CB132C1EB44AA300664F08 /* MyFirstCdvPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFirstCdvPlugin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2993,60 +2980,13 @@
 		8C38BD9C1E763466003624B7 /* Cordova */ = {
 			isa = PBXGroup;
 			children = (
+				C7CB132A1EB44A8200664F08 /* MyCdvPlugins */,
+				C7CB13281EB44A6100664F08 /* www */,
 				8C38BD9D1E763466003624B7 /* CordovaController.h */,
 				8C38BD9E1E763466003624B7 /* CordovaController.m */,
 				8C38BD9F1E763466003624B7 /* CordovaController.storyboard */,
-				8C38BDA01E763466003624B7 /* www */,
 			);
 			path = Cordova;
-			sourceTree = "<group>";
-		};
-		8C38BDA01E763466003624B7 /* www */ = {
-			isa = PBXGroup;
-			children = (
-				8C38BDA11E763466003624B7 /* cordova-js-src */,
-				8C38BDA41E763467003624B7 /* cordova.js */,
-				8C38BDA51E763467003624B7 /* cordova_plugins.js */,
-				8C38BDA61E763467003624B7 /* css */,
-				8C38BDA81E763467003624B7 /* img */,
-				8C38BDAB1E763467003624B7 /* index.html */,
-				8C38BDAC1E763467003624B7 /* js */,
-			);
-			path = www;
-			sourceTree = "<group>";
-		};
-		8C38BDA11E763466003624B7 /* cordova-js-src */ = {
-			isa = PBXGroup;
-			children = (
-				8C38BDA21E763466003624B7 /* exec.js */,
-				8C38BDA31E763466003624B7 /* platform.js */,
-			);
-			path = "cordova-js-src";
-			sourceTree = "<group>";
-		};
-		8C38BDA61E763467003624B7 /* css */ = {
-			isa = PBXGroup;
-			children = (
-				8C38BDA71E763467003624B7 /* index.css */,
-			);
-			path = css;
-			sourceTree = "<group>";
-		};
-		8C38BDA81E763467003624B7 /* img */ = {
-			isa = PBXGroup;
-			children = (
-				8C38BDA91E763467003624B7 /* btn.png */,
-				8C38BDAA1E763467003624B7 /* logo.png */,
-			);
-			path = img;
-			sourceTree = "<group>";
-		};
-		8C38BDAC1E763467003624B7 /* js */ = {
-			isa = PBXGroup;
-			children = (
-				8C38BDAD1E763467003624B7 /* index.js */,
-			);
-			path = js;
 			sourceTree = "<group>";
 		};
 		8C38BDAE1E763467003624B7 /* ScratchEffect */ = {
@@ -4052,6 +3992,15 @@
 			path = HandleCamera;
 			sourceTree = "<group>";
 		};
+		C7CB132A1EB44A8200664F08 /* MyCdvPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				C7CB132B1EB44AA300664F08 /* MyFirstCdvPlugin.h */,
+				C7CB132C1EB44AA300664F08 /* MyFirstCdvPlugin.m */,
+			);
+			path = MyCdvPlugins;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -4119,7 +4068,7 @@
 				TargetAttributes = {
 					8C38BB4A1E763418003624B7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 45MEXERZ45;
+						DevelopmentTeam = 5WTRA4JZZB;
 						ProvisioningStyle = Automatic;
 					};
 					8C38BB661E763418003624B7 = {
@@ -4213,6 +4162,7 @@
 				8C38C0BA1E763468003624B7 /* fftoast_success@3x.png in Resources */,
 				8C38BFF61E763467003624B7 /* d1-C#.mp3 in Resources */,
 				8C38C0281E763467003624B7 /* x3-B.mp3 in Resources */,
+				C7CB13291EB44A6100664F08 /* www in Resources */,
 				8C38BF6D1E763467003624B7 /* OtherMaskTransitionController.storyboard in Resources */,
 				8C38BF4D1E763467003624B7 /* beauty_girl.jpg in Resources */,
 				8C38BFCB1E763467003624B7 /* LittleToysController.storyboard in Resources */,
@@ -4224,7 +4174,6 @@
 				8C38BFEE1E763467003624B7 /* d-E.mp3 in Resources */,
 				8C38BFFA1E763467003624B7 /* d1-E.mp3 in Resources */,
 				8C38C0671E763467003624B7 /* SNSAddReplacingRuleController.storyboard in Resources */,
-				8C38C0921E763467003624B7 /* cordova.js in Resources */,
 				8C38C0211E763467003624B7 /* x2-E.mp3 in Resources */,
 				8C38BFB31E763467003624B7 /* rain.sks in Resources */,
 				8C0759471EA0A67B005A4343 /* blue@2x.png in Resources */,
@@ -4289,7 +4238,6 @@
 				8C38BFAA1E763467003624B7 /* CollisionEffectController.storyboard in Resources */,
 				8C38C0181E763467003624B7 /* x1-G#.mp3 in Resources */,
 				8C38C0021E763467003624B7 /* x-A#.mp3 in Resources */,
-				8C38C0981E763467003624B7 /* index.js in Resources */,
 				8C07594A1EA0A67B005A4343 /* du@3x.png in Resources */,
 				8C38BFFE1E763467003624B7 /* d1-G.mp3 in Resources */,
 				8CED49751EA459E600EA11B8 /* photograph_select@2x.png in Resources */,
@@ -4344,7 +4292,6 @@
 				8C38C0271E763467003624B7 /* x3-A.mp3 in Resources */,
 				8C38C00B1E763467003624B7 /* x-F.mp3 in Resources */,
 				8C38BFA11E763467003624B7 /* DP_USWF_AddUserInfoController.storyboard in Resources */,
-				8C38C0961E763467003624B7 /* logo.png in Resources */,
 				8C38C12B1E763468003624B7 /* IQKeyboardManager.bundle in Resources */,
 				8C38C0FD1E763468003624B7 /* UsingCollectionViewController.storyboard in Resources */,
 				8C38BFEB1E763467003624B7 /* d-C.mp3 in Resources */,
@@ -4383,7 +4330,6 @@
 				8C38C0CA1E763468003624B7 /* UsingFFToastController.storyboard in Resources */,
 				8C38C0DE1E763468003624B7 /* UsingPNChartController.storyboard in Resources */,
 				8C76EB461EA05BBD00CA3500 /* TwoBallRollingController.storyboard in Resources */,
-				8C38C0951E763467003624B7 /* btn.png in Resources */,
 				8C38C0771E763467003624B7 /* SNSNetworkAddressListController.storyboard in Resources */,
 				8C38C0AA1E763467003624B7 /* fftoast_dismiss@2x.png in Resources */,
 				8CBD4C6E1E9DCD1A002AF0AA /* ScrollAnimation_1Controller.storyboard in Resources */,
@@ -4400,8 +4346,6 @@
 				8C38C0AD1E763468003624B7 /* fftoast_error@2x.png in Resources */,
 				8C38C02D1E763467003624B7 /* x3-E.mp3 in Resources */,
 				8C38C03D1E763467003624B7 /* x4-G.mp3 in Resources */,
-				8C38C0941E763467003624B7 /* index.css in Resources */,
-				8C38C0971E763467003624B7 /* index.html in Resources */,
 				8C38BFD61E763467003624B7 /* MutimediaTectController.storyboard in Resources */,
 				8C38C0241E763467003624B7 /* x2-G#.mp3 in Resources */,
 				8C38C02C1E763467003624B7 /* x3-D.mp3 in Resources */,
@@ -4410,7 +4354,6 @@
 				8C38C0311E763467003624B7 /* x3-G.mp3 in Resources */,
 				8C38C0491E763467003624B7 /* MusicalScaleItemHeaderView.xib in Resources */,
 				8C38BF561E763467003624B7 /* ClickSpreadAnimationController.storyboard in Resources */,
-				8C38C0901E763467003624B7 /* exec.js in Resources */,
 				8C38C01F1E763467003624B7 /* x2-D#.mp3 in Resources */,
 				8C38BFEF1E763467003624B7 /* d-F#.mp3 in Resources */,
 				8C369FFD1E9F7C9700944873 /* ThreeDotsController.storyboard in Resources */,
@@ -4442,11 +4385,9 @@
 				8C38C0541E763467003624B7 /* NetworkTechController.storyboard in Resources */,
 				8C38C0401E763467003624B7 /* ChooseMusicalScaleController.storyboard in Resources */,
 				8C38C0471E763467003624B7 /* MusicalScaleItemCell.xib in Resources */,
-				8C38C0911E763467003624B7 /* platform.js in Resources */,
 				8C38BF6F1E763467003624B7 /* BaseAnimationController.storyboard in Resources */,
 				8C38BFD01E763467003624B7 /* TCGameOverView.xib in Resources */,
 				8C38C06D1E763467003624B7 /* SNS_ReplacingRuleCell.xib in Resources */,
-				8C38C0931E763467003624B7 /* cordova_plugins.js in Resources */,
 				8C38C02F1E763467003624B7 /* x3-F.mp3 in Resources */,
 				8C38C0A21E763467003624B7 /* ScratchEffectController.storyboard in Resources */,
 				8C38C0001E763467003624B7 /* d2-A.mp3 in Resources */,
@@ -4788,6 +4729,7 @@
 				8C38C1111E763468003624B7 /* NSDictionary+Extensions.m in Sources */,
 				8C38C1291E763468003624B7 /* IQToolbar.m in Sources */,
 				8C369FEA1E9F717700944873 /* HillsViewController.m in Sources */,
+				C7CB132D1EB44AA300664F08 /* MyFirstCdvPlugin.m in Sources */,
 				8C38C0DA1E763468003624B7 /* PNScatterChartDataItem.m in Sources */,
 				8C38C0551E763467003624B7 /* PingNetworkViewController.m in Sources */,
 				8C38C14A1E763468003624B7 /* CustomIOS7AlertView.m in Sources */,
@@ -4942,7 +4884,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 45MEXERZ45;
+				DEVELOPMENT_TEAM = 5WTRA4JZZB;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-Demo/AppBase/PrefixHeader.pch";
@@ -4959,7 +4901,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 45MEXERZ45;
+				DEVELOPMENT_TEAM = 5WTRA4JZZB;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-Demo/AppBase/PrefixHeader.pch";
