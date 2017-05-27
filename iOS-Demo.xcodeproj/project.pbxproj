@@ -599,6 +599,9 @@
 		8CED49761EA459E600EA11B8 /* photograph_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CED49721EA459E600EA11B8 /* photograph_select@3x.png */; };
 		8CED497D1EA4910600EA11B8 /* HandleCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CED497C1EA4910600EA11B8 /* HandleCameraController.m */; };
 		8CED497F1EA4910E00EA11B8 /* HandleCameraController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CED497E1EA4910E00EA11B8 /* HandleCameraController.storyboard */; };
+		C7BFD3B91ED9CD2D00DF16F7 /* RecognizeStaveController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BFD3B81ED9CD2D00DF16F7 /* RecognizeStaveController.m */; };
+		C7BFD3BB1ED9CD3400DF16F7 /* RecognizeStaveController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7BFD3BA1ED9CD3400DF16F7 /* RecognizeStaveController.storyboard */; };
+		C7BFD3BE1ED9CE4C00DF16F7 /* StaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BFD3BD1ED9CE4C00DF16F7 /* StaveView.m */; };
 		C7CB13291EB44A6100664F08 /* www in Resources */ = {isa = PBXBuildFile; fileRef = C7CB13281EB44A6100664F08 /* www */; };
 		C7CB132D1EB44AA300664F08 /* MyFirstCdvPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CB132C1EB44AA300664F08 /* MyFirstCdvPlugin.m */; };
 /* End PBXBuildFile section */
@@ -1555,6 +1558,11 @@
 		8CED49821EA4982A00EA11B8 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 		8CED49841EA4987D00EA11B8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		8CED49861EA4988900EA11B8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		C7BFD3B71ED9CD2D00DF16F7 /* RecognizeStaveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecognizeStaveController.h; sourceTree = "<group>"; };
+		C7BFD3B81ED9CD2D00DF16F7 /* RecognizeStaveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecognizeStaveController.m; sourceTree = "<group>"; };
+		C7BFD3BA1ED9CD3400DF16F7 /* RecognizeStaveController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RecognizeStaveController.storyboard; sourceTree = "<group>"; };
+		C7BFD3BC1ED9CE4C00DF16F7 /* StaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaveView.h; sourceTree = "<group>"; };
+		C7BFD3BD1ED9CE4C00DF16F7 /* StaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaveView.m; sourceTree = "<group>"; };
 		C7CB13281EB44A6100664F08 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		C7CB132B1EB44AA300664F08 /* MyFirstCdvPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFirstCdvPlugin.h; sourceTree = "<group>"; };
 		C7CB132C1EB44AA300664F08 /* MyFirstCdvPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFirstCdvPlugin.m; sourceTree = "<group>"; };
@@ -2452,6 +2460,7 @@
 		8C38BC881E763466003624B7 /* MultimediaTech */ = {
 			isa = PBXGroup;
 			children = (
+				C7BFD3B51ED9CD0F00DF16F7 /* RecognizeStave */,
 				8C40948D1EA4B4F8002F0B83 /* IftttJot */,
 				8C38BC891E763466003624B7 /* IDCardRecognition */,
 				8C38BC8B1E763466003624B7 /* MutimediaTectController.h */,
@@ -3992,6 +4001,18 @@
 			path = HandleCamera;
 			sourceTree = "<group>";
 		};
+		C7BFD3B51ED9CD0F00DF16F7 /* RecognizeStave */ = {
+			isa = PBXGroup;
+			children = (
+				C7BFD3BC1ED9CE4C00DF16F7 /* StaveView.h */,
+				C7BFD3BD1ED9CE4C00DF16F7 /* StaveView.m */,
+				C7BFD3B71ED9CD2D00DF16F7 /* RecognizeStaveController.h */,
+				C7BFD3B81ED9CD2D00DF16F7 /* RecognizeStaveController.m */,
+				C7BFD3BA1ED9CD3400DF16F7 /* RecognizeStaveController.storyboard */,
+			);
+			path = RecognizeStave;
+			sourceTree = "<group>";
+		};
 		C7CB132A1EB44A8200664F08 /* MyCdvPlugins */ = {
 			isa = PBXGroup;
 			children = (
@@ -4305,6 +4326,7 @@
 				8C4094931EA4B522002F0B83 /* IftttJotController.storyboard in Resources */,
 				8C38C0C11E763468003624B7 /* fftoast_warning_highlight.png in Resources */,
 				8C38BF501E763467003624B7 /* sex_girl_2.jpg in Resources */,
+				C7BFD3BB1ED9CD3400DF16F7 /* RecognizeStaveController.storyboard in Resources */,
 				8C38BF621E763467003624B7 /* sun@2x.png in Resources */,
 				8C38C0321E763467003624B7 /* x4-A#.mp3 in Resources */,
 				8C38C0B71E763468003624B7 /* fftoast_info_highlight@3x.png in Resources */,
@@ -4560,6 +4582,7 @@
 				8C38C13E1E763468003624B7 /* UIViewController+BackButtonHandler.m in Sources */,
 				8C38C0CB1E763468003624B7 /* PNBar.m in Sources */,
 				8C38C12A1E763468003624B7 /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				C7BFD3BE1ED9CE4C00DF16F7 /* StaveView.m in Sources */,
 				8C38C0CD1E763468003624B7 /* PNChartLabel.m in Sources */,
 				8C38C1211E763468003624B7 /* IQUIViewController+Additions.m in Sources */,
 				8C38C08B1E763467003624B7 /* BEMSimpleLineGraphController.m in Sources */,
@@ -4601,6 +4624,7 @@
 				8C38C11A1E763468003624B7 /* FMResultSet.m in Sources */,
 				8C38C06C1E763467003624B7 /* SNS_ReplacingRuleCell.m in Sources */,
 				8C38BF911E763467003624B7 /* WaterWaveController.m in Sources */,
+				C7BFD3B91ED9CD2D00DF16F7 /* RecognizeStaveController.m in Sources */,
 				8C38C1231E763468003624B7 /* IQKeyboardManager.m in Sources */,
 				8C38BFC71E763467003624B7 /* LinkUpController.m in Sources */,
 				8C38C0E71E763468003624B7 /* UUChartLabel.m in Sources */,
