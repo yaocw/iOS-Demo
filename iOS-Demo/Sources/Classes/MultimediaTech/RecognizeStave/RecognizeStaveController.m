@@ -11,6 +11,9 @@
 
 #import <AVFoundation/AVFoundation.h>
 
+#define mCenterLevelOfNotesForTrebleClef 14
+#define mCenterLevelOfNotesForBassClef 16
+
 @interface RecognizeStaveController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *trebleClefImageView;
@@ -24,6 +27,8 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *showResultButton;
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *divideThreePartsSegControl;
 
 @end
 
@@ -72,14 +77,14 @@
         _musicalSounds = [(NSArray *)kLoadArrayFromPlistFile(@"MusicalSoundsForTrebleClef") mutableCopy];
         _musicalSounds = (NSMutableArray *)[[_musicalSounds reverseObjectEnumerator] allObjects];
         
-        _staveView.centerLevelOfNotes = 14;
+        _staveView.centerLevelOfNotes = mCenterLevelOfNotesForTrebleClef;
     }
     else
     {
         _musicalSounds = [(NSArray *)kLoadArrayFromPlistFile(@"MusicalSoundsForBassClef") mutableCopy];
         _musicalSounds = (NSMutableArray *)[[_musicalSounds reverseObjectEnumerator] allObjects];
         
-        _staveView.centerLevelOfNotes = 16;
+        _staveView.centerLevelOfNotes = mCenterLevelOfNotesForBassClef;
     }
 }
 
@@ -112,6 +117,15 @@
         }
     }
     
+    NSInteger centerLevelOfNotes = 0;
+    if (_isUsingTrebleClef)
+    {
+        centerLevelOfNotes = mCenterLevelOfNotesForTrebleClef;
+    }
+    else
+    {
+        centerLevelOfNotes = mCenterLevelOfNotesForBassClef;
+    }
     
     switch (sender.tag)
     {
@@ -124,20 +138,70 @@
         case 1:
         {
             _currentNoteLevel = _previousNoteLevel + 1;
-            _currentNoteLevel > 29 ? (_currentNoteLevel = 29) : _currentNoteLevel;
+            
+            if (_divideThreePartsSegControl.selectedSegmentIndex == 0)
+            {
+                _currentNoteLevel > 29 ? (_currentNoteLevel = 29) : _currentNoteLevel;
+            }
+            else if (_divideThreePartsSegControl.selectedSegmentIndex == 1)
+            {
+                _currentNoteLevel > (centerLevelOfNotes - 5) ? (_currentNoteLevel = centerLevelOfNotes - 5) : _currentNoteLevel;
+            }
+            else if (_divideThreePartsSegControl.selectedSegmentIndex == 2)
+            {
+                _currentNoteLevel > (centerLevelOfNotes + 4) ? (_currentNoteLevel = centerLevelOfNotes + 4) : _currentNoteLevel;
+            }
+            else
+            {
+                _currentNoteLevel > 29 ? (_currentNoteLevel = 29) : _currentNoteLevel;
+            }
+            
             break;
         }
             
         case 2:
         {
             _currentNoteLevel = _previousNoteLevel - 1;
-            _currentNoteLevel < 1 ? (_currentNoteLevel = 1) : _currentNoteLevel;
+            
+            if (_divideThreePartsSegControl.selectedSegmentIndex == 0)
+            {
+                _currentNoteLevel < (centerLevelOfNotes + 5) ? (_currentNoteLevel = centerLevelOfNotes + 5) : _currentNoteLevel;
+            }
+            else if (_divideThreePartsSegControl.selectedSegmentIndex == 1)
+            {
+                _currentNoteLevel < 1 ? (_currentNoteLevel = 1) : _currentNoteLevel;
+            }
+            else if (_divideThreePartsSegControl.selectedSegmentIndex == 2)
+            {
+                _currentNoteLevel < (centerLevelOfNotes - 4) ? (_currentNoteLevel = centerLevelOfNotes - 4) : _currentNoteLevel;
+            }
+            else
+            {
+                _currentNoteLevel < 1 ? (_currentNoteLevel = 1) : _currentNoteLevel;
+            }
+            
             break;
         }
             
         case 3:
         {
-            _currentNoteLevel = kGetRandomIntWithLimit(0, 30);
+            if (_divideThreePartsSegControl.selectedSegmentIndex == 0)
+            {
+                _currentNoteLevel = kGetRandomIntWithLimit(centerLevelOfNotes + 4, _musicalSounds.count + 1);
+            }
+            else if (_divideThreePartsSegControl.selectedSegmentIndex == 1)
+            {
+                _currentNoteLevel = kGetRandomIntWithLimit(0, centerLevelOfNotes - 4);
+            }
+            else if (_divideThreePartsSegControl.selectedSegmentIndex == 2)
+            {
+                _currentNoteLevel = kGetRandomIntWithLimit(centerLevelOfNotes - 5, centerLevelOfNotes + 5);
+            }
+            else
+            {
+                _currentNoteLevel = kGetRandomIntWithLimit(0, _musicalSounds.count + 1);
+            }
+            
             break;
         }
             
@@ -225,8 +289,8 @@
     
     if (sender.tag == (_currentNoteLevel % 7))
     {
-        sender.backgroundColor = kHexColor(@"0080FF");
         [self playSoundWithPath:@"answer_right"];
+        [self nextNoteForRandom];
     }
     else
     {
@@ -268,6 +332,8 @@
         
         _practiseModeOptView.hidden = NO;
         _testModeOptView.hidden = YES;
+        
+        [self nextNoteForRandom];
     }
     else
     {
@@ -287,6 +353,12 @@
         [self nextNoteForRandom];
     }
 }
+
+- (IBAction)divideThreePartsAction:(id)sender
+{
+    [self nextNoteForRandom];
+}
+
 
 #pragma mark -- dealloc
 

@@ -72,105 +72,6 @@
                                     <constraint firstItem="mzo-PP-IG6" firstAttribute="centerY" secondItem="b6k-zQ-Vqe" secondAttribute="centerY" id="hx4-NF-oHG"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3iw-py-np7">
-                                <rect key="frame" x="0.0" y="271" width="375" height="331.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1W-Lo-dwU">
-                                        <rect key="frame" x="146" y="16" width="83" height="39"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOx-M5-Zgb">
-                                        <rect key="frame" x="285.5" y="234" width="73.5" height="33"/>
-                                        <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="随机">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="nextNoteAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="LJK-Hf-WRF"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfM-XG-vAQ">
-                                        <rect key="frame" x="106" y="234" width="73.5" height="33"/>
-                                        <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="上行">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="nextNoteAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="YRg-gU-Rex"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDB-L8-K8M">
-                                        <rect key="frame" x="195.5" y="234" width="74" height="33"/>
-                                        <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="下行">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="nextNoteAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="lst-qV-Q0l"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7v9-zE-H0Q">
-                                        <rect key="frame" x="16" y="234" width="74" height="33"/>
-                                        <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="重复">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="nextNoteAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="biU-t3-aOV"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="Q1W-Lo-dwU" firstAttribute="top" secondItem="3iw-py-np7" secondAttribute="top" constant="16" id="1lM-43-G8f"/>
-                                    <constraint firstItem="mDB-L8-K8M" firstAttribute="height" secondItem="7v9-zE-H0Q" secondAttribute="height" id="3AR-fg-Is2"/>
-                                    <constraint firstItem="7v9-zE-H0Q" firstAttribute="leading" secondItem="3iw-py-np7" secondAttribute="leading" constant="16" id="4cb-7d-s7w"/>
-                                    <constraint firstItem="hOx-M5-Zgb" firstAttribute="width" secondItem="7v9-zE-H0Q" secondAttribute="width" id="4o4-9R-P7W"/>
-                                    <constraint firstItem="mDB-L8-K8M" firstAttribute="leading" secondItem="ZfM-XG-vAQ" secondAttribute="trailing" constant="16" id="7Us-uo-jJa"/>
-                                    <constraint firstItem="mDB-L8-K8M" firstAttribute="centerY" secondItem="7v9-zE-H0Q" secondAttribute="centerY" id="A5T-ar-cgi"/>
-                                    <constraint firstItem="mDB-L8-K8M" firstAttribute="width" secondItem="7v9-zE-H0Q" secondAttribute="width" id="Qrf-i3-nN3"/>
-                                    <constraint firstItem="ZfM-XG-vAQ" firstAttribute="leading" secondItem="7v9-zE-H0Q" secondAttribute="trailing" constant="16" id="ST0-Ld-4ZB"/>
-                                    <constraint firstItem="hOx-M5-Zgb" firstAttribute="leading" secondItem="mDB-L8-K8M" secondAttribute="trailing" constant="16" id="SUY-YY-um4"/>
-                                    <constraint firstItem="hOx-M5-Zgb" firstAttribute="centerY" secondItem="7v9-zE-H0Q" secondAttribute="centerY" id="V7r-dH-pD6"/>
-                                    <constraint firstItem="ZfM-XG-vAQ" firstAttribute="height" secondItem="7v9-zE-H0Q" secondAttribute="height" id="VSW-MM-Rqg"/>
-                                    <constraint firstAttribute="trailing" secondItem="hOx-M5-Zgb" secondAttribute="trailing" constant="16" id="daS-lf-g4G"/>
-                                    <constraint firstItem="ZfM-XG-vAQ" firstAttribute="width" secondItem="7v9-zE-H0Q" secondAttribute="width" id="jOC-jv-GPb"/>
-                                    <constraint firstItem="hOx-M5-Zgb" firstAttribute="height" secondItem="7v9-zE-H0Q" secondAttribute="height" id="oBa-Xg-kX3"/>
-                                    <constraint firstItem="ZfM-XG-vAQ" firstAttribute="centerY" secondItem="7v9-zE-H0Q" secondAttribute="centerY" id="phc-1k-qzD"/>
-                                    <constraint firstAttribute="bottom" secondItem="7v9-zE-H0Q" secondAttribute="bottom" constant="64" id="qgg-OO-fuB"/>
-                                    <constraint firstItem="Q1W-Lo-dwU" firstAttribute="centerX" secondItem="3iw-py-np7" secondAttribute="centerX" id="yER-Wl-Cqq"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ctq-bV-Nvj">
                                 <rect key="frame" x="0.0" y="271" width="375" height="331.5"/>
                                 <subviews>
@@ -421,6 +322,119 @@
                                     <constraint firstItem="3NR-Wt-gDi" firstAttribute="leading" secondItem="ctq-bV-Nvj" secondAttribute="leading" constant="16" id="zgf-JH-ikf"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3iw-py-np7">
+                                <rect key="frame" x="0.0" y="271" width="375" height="331.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1W-Lo-dwU">
+                                        <rect key="frame" x="146" y="16" width="83" height="39"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOx-M5-Zgb">
+                                        <rect key="frame" x="285.5" y="234" width="73.5" height="33"/>
+                                        <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="随机">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextNoteAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="LJK-Hf-WRF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfM-XG-vAQ">
+                                        <rect key="frame" x="106" y="234" width="73.5" height="33"/>
+                                        <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="上行">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextNoteAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="YRg-gU-Rex"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDB-L8-K8M">
+                                        <rect key="frame" x="195.5" y="234" width="74" height="33"/>
+                                        <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="下行">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextNoteAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="lst-qV-Q0l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7v9-zE-H0Q">
+                                        <rect key="frame" x="16" y="234" width="74" height="33"/>
+                                        <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="重复">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextNoteAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="biU-t3-aOV"/>
+                                        </connections>
+                                    </button>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eYu-QX-LG6">
+                                        <rect key="frame" x="78" y="170" width="219" height="29"/>
+                                        <segments>
+                                            <segment title="上加线"/>
+                                            <segment title="下加线"/>
+                                            <segment title="五  线"/>
+                                            <segment title="全  部"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="divideThreePartsAction:" destination="D5s-OF-55x" eventType="valueChanged" id="hgn-jv-pTs"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="eYu-QX-LG6" firstAttribute="centerX" secondItem="3iw-py-np7" secondAttribute="centerX" id="0KN-wO-fM2"/>
+                                    <constraint firstItem="Q1W-Lo-dwU" firstAttribute="top" secondItem="3iw-py-np7" secondAttribute="top" constant="16" id="1lM-43-G8f"/>
+                                    <constraint firstItem="mDB-L8-K8M" firstAttribute="height" secondItem="7v9-zE-H0Q" secondAttribute="height" id="3AR-fg-Is2"/>
+                                    <constraint firstItem="7v9-zE-H0Q" firstAttribute="top" secondItem="eYu-QX-LG6" secondAttribute="bottom" constant="36" id="4AM-Ma-x93"/>
+                                    <constraint firstItem="7v9-zE-H0Q" firstAttribute="leading" secondItem="3iw-py-np7" secondAttribute="leading" constant="16" id="4cb-7d-s7w"/>
+                                    <constraint firstItem="hOx-M5-Zgb" firstAttribute="width" secondItem="7v9-zE-H0Q" secondAttribute="width" id="4o4-9R-P7W"/>
+                                    <constraint firstItem="mDB-L8-K8M" firstAttribute="leading" secondItem="ZfM-XG-vAQ" secondAttribute="trailing" constant="16" id="7Us-uo-jJa"/>
+                                    <constraint firstItem="mDB-L8-K8M" firstAttribute="centerY" secondItem="7v9-zE-H0Q" secondAttribute="centerY" id="A5T-ar-cgi"/>
+                                    <constraint firstItem="mDB-L8-K8M" firstAttribute="width" secondItem="7v9-zE-H0Q" secondAttribute="width" id="Qrf-i3-nN3"/>
+                                    <constraint firstItem="ZfM-XG-vAQ" firstAttribute="leading" secondItem="7v9-zE-H0Q" secondAttribute="trailing" constant="16" id="ST0-Ld-4ZB"/>
+                                    <constraint firstItem="hOx-M5-Zgb" firstAttribute="leading" secondItem="mDB-L8-K8M" secondAttribute="trailing" constant="16" id="SUY-YY-um4"/>
+                                    <constraint firstItem="hOx-M5-Zgb" firstAttribute="centerY" secondItem="7v9-zE-H0Q" secondAttribute="centerY" id="V7r-dH-pD6"/>
+                                    <constraint firstItem="ZfM-XG-vAQ" firstAttribute="height" secondItem="7v9-zE-H0Q" secondAttribute="height" id="VSW-MM-Rqg"/>
+                                    <constraint firstAttribute="trailing" secondItem="hOx-M5-Zgb" secondAttribute="trailing" constant="16" id="daS-lf-g4G"/>
+                                    <constraint firstItem="ZfM-XG-vAQ" firstAttribute="width" secondItem="7v9-zE-H0Q" secondAttribute="width" id="jOC-jv-GPb"/>
+                                    <constraint firstItem="hOx-M5-Zgb" firstAttribute="height" secondItem="7v9-zE-H0Q" secondAttribute="height" id="oBa-Xg-kX3"/>
+                                    <constraint firstItem="ZfM-XG-vAQ" firstAttribute="centerY" secondItem="7v9-zE-H0Q" secondAttribute="centerY" id="phc-1k-qzD"/>
+                                    <constraint firstAttribute="bottom" secondItem="7v9-zE-H0Q" secondAttribute="bottom" constant="64" id="qgg-OO-fuB"/>
+                                    <constraint firstItem="Q1W-Lo-dwU" firstAttribute="centerX" secondItem="3iw-py-np7" secondAttribute="centerX" id="yER-Wl-Cqq"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -442,6 +456,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="bassClefImageView" destination="Hqn-3A-dA4" id="nLR-zS-Un1"/>
+                        <outlet property="divideThreePartsSegControl" destination="eYu-QX-LG6" id="1Bh-2U-KuS"/>
                         <outlet property="noteLevelLabel" destination="Q1W-Lo-dwU" id="c37-sn-G8B"/>
                         <outlet property="practiseModeOptView" destination="3iw-py-np7" id="WMk-ze-6GY"/>
                         <outlet property="resultLabel" destination="evC-fF-bDF" id="vuT-la-14w"/>

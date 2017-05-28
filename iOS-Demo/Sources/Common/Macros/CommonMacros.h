@@ -149,12 +149,10 @@
 #define kGetRandomIntWithUpperLimit(upperLimit) (arc4random() % (upperLimit))
 
 //随机产生指定下限(不包括本身)的随机整数(int)
-#define kGetRandomIntWithLowerLimit(lowerLimit) (arc4random() % (RAND_MAX - lowerLimit) + (lowerLimit + 1))
+#define kGetRandomIntWithLowerLimit(lowerLimit) (arc4random() % (RAND_MAX - (lowerLimit)) + ((lowerLimit) + 1))
 
 //随机产生指定上限(不包括本身)和下限(不包括本身)的随机整数(int)
-#define kGetRandomIntWithLimit(lowerLimit, upperLimit) (arc4random() % (upperLimit - lowerLimit - 1) + (lowerLimit + 1))
-
-//随机产生指定上限(不包括本身)和下限(不包括本身)的随机整数(int)
+#define kGetRandomIntWithLimit(lowerLimit, upperLimit) (arc4random() % ((upperLimit) - (lowerLimit) - 1) + ((lowerLimit) + 1))
 
 
 
@@ -163,13 +161,13 @@
 #define kGetRandomFloat (arc4random() / (CGFloat)ARC4RANDOM_MAX)
 
 //随机产生指定上限(包括本身)的随机浮点数(float)
-#define kGetRandomFloatWithUpperLimit(upperLimit) (kGetRandomFloat * upperLimit)
+#define kGetRandomFloatWithUpperLimit(upperLimit) (kGetRandomFloat * (upperLimit))
 
 //随机产生指定下限(包括本身)的随机浮点数(float)
-#define kGetRandomFloatWithLowerLimit(lowerLimit) ((kGetRandomFloat * ((CGFloat)RAND_MAX - lowerLimit)) + lowerLimit)
+#define kGetRandomFloatWithLowerLimit(lowerLimit) ((kGetRandomFloat * ((CGFloat)RAND_MAX - (lowerLimit))) + (lowerLimit))
 
 //随机产生指定上限(包括本身)和下限(包括本身)的随机浮点数(float)
-#define kGetRandomFloatWithLimit(lowerLimit, upperLimit) (kGetRandomFloat * (upperLimit - lowerLimit) + lowerLimit)
+#define kGetRandomFloatWithLimit(lowerLimit, upperLimit) (kGetRandomFloat * ((upperLimit) - (lowerLimit)) + (lowerLimit))
 
 
 
