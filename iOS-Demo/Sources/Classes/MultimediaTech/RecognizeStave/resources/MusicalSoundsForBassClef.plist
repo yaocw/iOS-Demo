@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>x2-C</string>
+	<string>x1-B</string>
+	<string>x1-A</string>
+	<string>x1-G</string>
+	<string>x1-F</string>
+	<string>x1-E</string>
+	<string>x1-D</string>
+	<string>x1-C</string>
+	<string>x-B</string>
+	<string>x-A</string>
+	<string>x-G</string>
+	<string>x-F</string>
+	<string>x-E</string>
+	<string>x-D</string>
+	<string>x-C</string>
+	<string>d-B</string>
+	<string>d-A</string>
+	<string>d-G</string>
+	<string>d-F</string>
+	<string>d-E</string>
+	<string>d-D</string>
+	<string>d-C</string>
+	<string>d1-B</string>
+	<string>d1-A</string>
+	<string>d1-G</string>
+	<string>d1-F</string>
+	<string>d1-E</string>
+	<string>d1-D</string>
+	<string>d1-C</string>
+</array>
+</plist>

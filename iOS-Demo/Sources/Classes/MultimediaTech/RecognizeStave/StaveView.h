@@ -11,5 +11,6 @@
 @interface StaveView : UIView
 
 @property (nonatomic, assign) NSInteger noteLevel;
+@property (nonatomic, assign) NSInteger centerLevelOfNotes;
 
 @end

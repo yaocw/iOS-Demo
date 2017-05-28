@@ -599,6 +599,12 @@
 		8CED49761EA459E600EA11B8 /* photograph_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CED49721EA459E600EA11B8 /* photograph_select@3x.png */; };
 		8CED497D1EA4910600EA11B8 /* HandleCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CED497C1EA4910600EA11B8 /* HandleCameraController.m */; };
 		8CED497F1EA4910E00EA11B8 /* HandleCameraController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CED497E1EA4910E00EA11B8 /* HandleCameraController.storyboard */; };
+		C79F04941ED9EB0B005EDEB0 /* bass_clef.png in Resources */ = {isa = PBXBuildFile; fileRef = C79F04921ED9EB0B005EDEB0 /* bass_clef.png */; };
+		C79F04951ED9EB0B005EDEB0 /* treble_clef.png in Resources */ = {isa = PBXBuildFile; fileRef = C79F04931ED9EB0B005EDEB0 /* treble_clef.png */; };
+		C79F04991EDA7410005EDEB0 /* MusicalSoundsForTrebleClef.plist in Resources */ = {isa = PBXBuildFile; fileRef = C79F04981EDA7410005EDEB0 /* MusicalSoundsForTrebleClef.plist */; };
+		C79F049D1EDA8860005EDEB0 /* answer_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C79F049B1EDA8860005EDEB0 /* answer_right.mp3 */; };
+		C79F049E1EDA8860005EDEB0 /* answer_wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C79F049C1EDA8860005EDEB0 /* answer_wrong.mp3 */; };
+		C79F04A01EDA940B005EDEB0 /* MusicalSoundsForBassClef.plist in Resources */ = {isa = PBXBuildFile; fileRef = C79F049F1EDA940B005EDEB0 /* MusicalSoundsForBassClef.plist */; };
 		C7BFD3B91ED9CD2D00DF16F7 /* RecognizeStaveController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BFD3B81ED9CD2D00DF16F7 /* RecognizeStaveController.m */; };
 		C7BFD3BB1ED9CD3400DF16F7 /* RecognizeStaveController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7BFD3BA1ED9CD3400DF16F7 /* RecognizeStaveController.storyboard */; };
 		C7BFD3BE1ED9CE4C00DF16F7 /* StaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BFD3BD1ED9CE4C00DF16F7 /* StaveView.m */; };
@@ -1558,6 +1564,12 @@
 		8CED49821EA4982A00EA11B8 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 		8CED49841EA4987D00EA11B8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		8CED49861EA4988900EA11B8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		C79F04921ED9EB0B005EDEB0 /* bass_clef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass_clef.png; sourceTree = "<group>"; };
+		C79F04931ED9EB0B005EDEB0 /* treble_clef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treble_clef.png; sourceTree = "<group>"; };
+		C79F04981EDA7410005EDEB0 /* MusicalSoundsForTrebleClef.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MusicalSoundsForTrebleClef.plist; sourceTree = "<group>"; };
+		C79F049B1EDA8860005EDEB0 /* answer_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = answer_right.mp3; sourceTree = "<group>"; };
+		C79F049C1EDA8860005EDEB0 /* answer_wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = answer_wrong.mp3; sourceTree = "<group>"; };
+		C79F049F1EDA940B005EDEB0 /* MusicalSoundsForBassClef.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MusicalSoundsForBassClef.plist; sourceTree = "<group>"; };
 		C7BFD3B71ED9CD2D00DF16F7 /* RecognizeStaveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecognizeStaveController.h; sourceTree = "<group>"; };
 		C7BFD3B81ED9CD2D00DF16F7 /* RecognizeStaveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecognizeStaveController.m; sourceTree = "<group>"; };
 		C7BFD3BA1ED9CD3400DF16F7 /* RecognizeStaveController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RecognizeStaveController.storyboard; sourceTree = "<group>"; };
@@ -4001,9 +4013,23 @@
 			path = HandleCamera;
 			sourceTree = "<group>";
 		};
+		C79F04911ED9EB0B005EDEB0 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				C79F049B1EDA8860005EDEB0 /* answer_right.mp3 */,
+				C79F049C1EDA8860005EDEB0 /* answer_wrong.mp3 */,
+				C79F04981EDA7410005EDEB0 /* MusicalSoundsForTrebleClef.plist */,
+				C79F049F1EDA940B005EDEB0 /* MusicalSoundsForBassClef.plist */,
+				C79F04921ED9EB0B005EDEB0 /* bass_clef.png */,
+				C79F04931ED9EB0B005EDEB0 /* treble_clef.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		C7BFD3B51ED9CD0F00DF16F7 /* RecognizeStave */ = {
 			isa = PBXGroup;
 			children = (
+				C79F04911ED9EB0B005EDEB0 /* resources */,
 				C7BFD3BC1ED9CE4C00DF16F7 /* StaveView.h */,
 				C7BFD3BD1ED9CE4C00DF16F7 /* StaveView.m */,
 				C7BFD3B71ED9CD2D00DF16F7 /* RecognizeStaveController.h */,
@@ -4229,6 +4255,7 @@
 				8C38C0851E763467003624B7 /* SystemPrincipleController.storyboard in Resources */,
 				8C38BF5A1E763467003624B7 /* DragDownRefreshController.storyboard in Resources */,
 				8C38C0EE1E763468003624B7 /* MainContentView.xib in Resources */,
+				C79F04941ED9EB0B005EDEB0 /* bass_clef.png in Resources */,
 				8C38C0F51E763468003624B7 /* UIComponentsController.storyboard in Resources */,
 				8C38C0381E763467003624B7 /* x4-D.mp3 in Resources */,
 				8C38BF511E763467003624B7 /* test_video.mp4 in Resources */,
@@ -4253,6 +4280,7 @@
 				8C38BFC41E763467003624B7 /* SuperJumperController.storyboard in Resources */,
 				8C38C0BC1E763468003624B7 /* fftoast_success_highlight@2x.png in Resources */,
 				8C38BF4E1E763467003624B7 /* logo_seal.jpg in Resources */,
+				C79F04951ED9EB0B005EDEB0 /* treble_clef.png in Resources */,
 				8C38C0831E763467003624B7 /* ShakeShakeController.storyboard in Resources */,
 				8C38BFFC1E763467003624B7 /* d1-F.mp3 in Resources */,
 				8C38BFF81E763467003624B7 /* d1-D#.mp3 in Resources */,
@@ -4370,6 +4398,7 @@
 				8C38C03D1E763467003624B7 /* x4-G.mp3 in Resources */,
 				8C38BFD61E763467003624B7 /* MutimediaTectController.storyboard in Resources */,
 				8C38C0241E763467003624B7 /* x2-G#.mp3 in Resources */,
+				C79F049D1EDA8860005EDEB0 /* answer_right.mp3 in Resources */,
 				8C38C02C1E763467003624B7 /* x3-D.mp3 in Resources */,
 				8C38BFAD1E763467003624B7 /* FollowMeController.storyboard in Resources */,
 				8C38C03E1E763467003624B7 /* x5-C.mp3 in Resources */,
@@ -4381,6 +4410,7 @@
 				8C369FFD1E9F7C9700944873 /* ThreeDotsController.storyboard in Resources */,
 				8C07595B1EA0AD1F005A4343 /* ShineLabelController.storyboard in Resources */,
 				8C38C0261E763467003624B7 /* x3-A#.mp3 in Resources */,
+				C79F04991EDA7410005EDEB0 /* MusicalSoundsForTrebleClef.plist in Resources */,
 				8CED49761EA459E600EA11B8 /* photograph_select@3x.png in Resources */,
 				8C38BFDA1E763467003624B7 /* PaintbrushSettingController.storyboard in Resources */,
 				8C76EB4F1EA064A300CA3500 /* IncessantPagesController.storyboard in Resources */,
@@ -4398,9 +4428,11 @@
 				8C369FC11E9F0B0600944873 /* SandglassController.storyboard in Resources */,
 				8C38C0FB1E763468003624B7 /* MyCollectionViewLayoutCell.xib in Resources */,
 				8C38BF791E763467003624B7 /* PopMenuController.storyboard in Resources */,
+				C79F04A01EDA940B005EDEB0 /* MusicalSoundsForBassClef.plist in Resources */,
 				8C38C09B1E763467003624B7 /* paint01-01.png in Resources */,
 				8C38BFC11E763467003624B7 /* SpriteWalkThroughController.storyboard in Resources */,
 				8C38C0631E763467003624B7 /* SNS_MatchingRuleCell.xib in Resources */,
+				C79F049E1EDA8860005EDEB0 /* answer_wrong.mp3 in Resources */,
 				8C38BFBA1E763467003624B7 /* lp_hit.caf in Resources */,
 				8C38C0701E763467003624B7 /* SimpleNetworkSpiderController.storyboard in Resources */,
 				8C38C0331E763467003624B7 /* x4-A.mp3 in Resources */,

@@ -61,9 +61,9 @@
     
     
     CGFloat noteCenter_y = 0.f;
-    if (_noteLevel > 14)
+    if (_noteLevel > _centerLevelOfNotes)
     {
-        NSInteger spaceNoteLevel = _noteLevel - 14;
+        NSInteger spaceNoteLevel = _noteLevel - _centerLevelOfNotes;
         noteCenter_y = midHeight - (spaceNoteLevel * (mSpaceOfStaveLine * 0.5f)) - mNoteSize.height * 0.5f;
         
         CGFloat tempTheFifthStaveLine_y = midHeight - (2 * mSpaceOfStaveLine);
@@ -75,13 +75,13 @@
             CGContextAddPath(context, staveLinesPath);
         }
     }
-    else if (_noteLevel == 14)
+    else if (_noteLevel == _centerLevelOfNotes)
     {
         noteCenter_y = midHeight - mNoteSize.height * 0.5f;
     }
     else
     {
-        NSInteger spaceNoteLevel = 14 - _noteLevel;
+        NSInteger spaceNoteLevel = _centerLevelOfNotes - _noteLevel;
         noteCenter_y = midHeight + (spaceNoteLevel * (mSpaceOfStaveLine * 0.5f)) - mNoteSize.height * 0.5f;
         
         CGFloat tempTheFifthStaveLine_y = midHeight + (2 * mSpaceOfStaveLine);
