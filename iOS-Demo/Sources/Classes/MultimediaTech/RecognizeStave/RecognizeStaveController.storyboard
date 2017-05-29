@@ -22,457 +22,61 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b6k-zQ-Vqe" customClass="StaveView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="271.5"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="treble_clef.png" translatesAutoresizingMaskIntoConstraints="NO" id="mzo-PP-IG6">
-                                        <rect key="frame" x="0.0" y="82.5" width="100" height="106"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="U23-TQ-USx"/>
-                                            <constraint firstAttribute="height" constant="106" id="r7H-Zi-s0x"/>
-                                        </constraints>
-                                    </imageView>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pus-Tu-Are">
-                                        <rect key="frame" x="222" y="24" width="137" height="29"/>
-                                        <segments>
-                                            <segment title="练习模式"/>
-                                            <segment title="测验模式"/>
-                                        </segments>
-                                        <connections>
-                                            <action selector="switchModeAction:" destination="D5s-OF-55x" eventType="valueChanged" id="iiG-ET-qIR"/>
-                                        </connections>
-                                    </segmentedControl>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nT4-Zc-fZg">
-                                        <rect key="frame" x="16" y="24" width="137" height="29"/>
-                                        <segments>
-                                            <segment title="高音谱表"/>
-                                            <segment title="低音谱表"/>
-                                        </segments>
-                                        <connections>
-                                            <action selector="switchClefAction:" destination="D5s-OF-55x" eventType="valueChanged" id="AfF-3P-jgP"/>
-                                        </connections>
-                                    </segmentedControl>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bass_clef.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hqn-3A-dA4">
-                                        <rect key="frame" x="20" y="100" width="60" height="66"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="66" id="PxA-Y4-xqT"/>
-                                            <constraint firstAttribute="width" constant="60" id="yQd-0G-E1K"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="nT4-Zc-fZg" firstAttribute="top" secondItem="b6k-zQ-Vqe" secondAttribute="top" constant="24" id="3U3-rp-6tJ"/>
-                                    <constraint firstItem="Hqn-3A-dA4" firstAttribute="centerY" secondItem="b6k-zQ-Vqe" secondAttribute="centerY" constant="-3" id="AQy-sX-KW0"/>
-                                    <constraint firstItem="pus-Tu-Are" firstAttribute="top" secondItem="b6k-zQ-Vqe" secondAttribute="top" constant="24" id="B1D-4N-NpI"/>
-                                    <constraint firstItem="mzo-PP-IG6" firstAttribute="leading" secondItem="b6k-zQ-Vqe" secondAttribute="leading" id="FQr-1P-boT"/>
-                                    <constraint firstAttribute="trailing" secondItem="pus-Tu-Are" secondAttribute="trailing" constant="16" id="MVr-jZ-yB9"/>
-                                    <constraint firstItem="Hqn-3A-dA4" firstAttribute="leading" secondItem="b6k-zQ-Vqe" secondAttribute="leading" constant="20" id="SC1-os-4jJ"/>
-                                    <constraint firstItem="nT4-Zc-fZg" firstAttribute="leading" secondItem="b6k-zQ-Vqe" secondAttribute="leading" constant="16" id="Wzm-Zv-o7R"/>
-                                    <constraint firstItem="mzo-PP-IG6" firstAttribute="centerY" secondItem="b6k-zQ-Vqe" secondAttribute="centerY" id="hx4-NF-oHG"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ctq-bV-Nvj">
-                                <rect key="frame" x="0.0" y="271" width="375" height="331.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evC-fF-bDF">
-                                        <rect key="frame" x="146" y="16" width="83" height="39"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucC-Wb-mXl">
-                                        <rect key="frame" x="195.5" y="234" width="76" height="33"/>
-                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="下一个">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="nextNoteAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="QgO-Z2-T8h"/>
-                                        </connections>
-                                    </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v0r-qe-Cno">
-                                        <rect key="frame" x="179.5" y="267.5" width="16" height="64"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="64" id="buE-Y6-VjL"/>
-                                            <constraint firstAttribute="width" constant="16" id="hW1-Xi-LdQ"/>
-                                        </constraints>
-                                    </view>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NR-Wt-gDi">
-                                        <rect key="frame" x="16" y="111" width="74" height="33"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Do - 1">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="answerAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="6zq-BO-rZx"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYf-YM-FL1">
-                                        <rect key="frame" x="106" y="111" width="73.5" height="33"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Re - 2">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="answerAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="68R-Ot-K7E"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eK-lh-gXG">
-                                        <rect key="frame" x="195.5" y="111" width="74" height="33"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Mi - 3">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="answerAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="xVT-Tz-t9W"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxn-EV-Vih">
-                                        <rect key="frame" x="285.5" y="111" width="73.5" height="33"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Fa - 4">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="answerAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="Vdf-Yy-Bdx"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aN9-Pn-sQg">
-                                        <rect key="frame" x="16" y="166.5" width="74" height="33"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Sol - 5">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="answerAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="Juc-7C-oP9"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIh-vb-tHo">
-                                        <rect key="frame" x="106" y="166.5" width="73.5" height="33"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="La - 6">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="answerAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="5ru-7d-38p"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pm-Xp-10k">
-                                        <rect key="frame" x="195.5" y="166.5" width="74" height="33"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Si - 7">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="answerAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="yVc-Oe-Toh"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rp5-3F-MUO">
-                                        <rect key="frame" x="285.5" y="166.5" width="73.5" height="33"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIS-zQ-QF9">
-                                        <rect key="frame" x="103.5" y="234" width="76" height="33"/>
-                                        <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="76" id="ax2-6k-PUa"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="重复">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="nextNoteAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="zUW-Ia-fVI"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoI-xT-yvM">
-                                        <rect key="frame" x="146" y="21" width="83" height="30"/>
-                                        <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="83" id="mZU-9j-Aum"/>
-                                        </constraints>
-                                        <state key="normal" title="显示答案">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="showResultAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="VoR-90-a6b"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Hxn-EV-Vih" secondAttribute="trailing" constant="16" id="492-oJ-dsG"/>
-                                    <constraint firstItem="Hxn-EV-Vih" firstAttribute="centerY" secondItem="3NR-Wt-gDi" secondAttribute="centerY" id="76i-PN-EAK"/>
-                                    <constraint firstItem="ucC-Wb-mXl" firstAttribute="width" secondItem="DIS-zQ-QF9" secondAttribute="width" id="9Bb-fy-7Is"/>
-                                    <constraint firstItem="3eK-lh-gXG" firstAttribute="leading" secondItem="mYf-YM-FL1" secondAttribute="trailing" constant="16" id="9Q9-1y-vZU"/>
-                                    <constraint firstItem="mYf-YM-FL1" firstAttribute="height" secondItem="3NR-Wt-gDi" secondAttribute="height" id="9jp-01-W3E"/>
-                                    <constraint firstItem="mYf-YM-FL1" firstAttribute="width" secondItem="3NR-Wt-gDi" secondAttribute="width" id="CBI-IK-DiR"/>
-                                    <constraint firstItem="DIS-zQ-QF9" firstAttribute="top" secondItem="3NR-Wt-gDi" secondAttribute="bottom" constant="90" id="Can-Nn-7m2"/>
-                                    <constraint firstAttribute="bottom" secondItem="DIS-zQ-QF9" secondAttribute="bottom" constant="64" id="FTc-rg-ia2"/>
-                                    <constraint firstItem="3eK-lh-gXG" firstAttribute="centerY" secondItem="3NR-Wt-gDi" secondAttribute="centerY" id="FYa-24-MJf"/>
-                                    <constraint firstItem="mYf-YM-FL1" firstAttribute="leading" secondItem="3NR-Wt-gDi" secondAttribute="trailing" constant="16" id="Iaq-yZ-R6s"/>
-                                    <constraint firstItem="3eK-lh-gXG" firstAttribute="height" secondItem="3NR-Wt-gDi" secondAttribute="height" id="OYB-ol-JmH"/>
-                                    <constraint firstItem="mYf-YM-FL1" firstAttribute="centerY" secondItem="3NR-Wt-gDi" secondAttribute="centerY" id="QCU-dR-FcU"/>
-                                    <constraint firstItem="evC-fF-bDF" firstAttribute="top" secondItem="ctq-bV-Nvj" secondAttribute="top" constant="16" id="QDd-pE-8ee"/>
-                                    <constraint firstItem="XIh-vb-tHo" firstAttribute="leading" secondItem="aN9-Pn-sQg" secondAttribute="trailing" constant="16" id="V6I-Jt-q5v"/>
-                                    <constraint firstItem="XIh-vb-tHo" firstAttribute="height" secondItem="aN9-Pn-sQg" secondAttribute="height" id="VWe-7c-bYM"/>
-                                    <constraint firstItem="Hxn-EV-Vih" firstAttribute="height" secondItem="3NR-Wt-gDi" secondAttribute="height" id="WZz-3Z-RrG"/>
-                                    <constraint firstItem="aN9-Pn-sQg" firstAttribute="leading" secondItem="ctq-bV-Nvj" secondAttribute="leading" constant="16" id="Y4a-Fh-77p"/>
-                                    <constraint firstAttribute="bottom" secondItem="v0r-qe-Cno" secondAttribute="bottom" id="ZSj-h7-7Ly"/>
-                                    <constraint firstItem="rp5-3F-MUO" firstAttribute="centerY" secondItem="aN9-Pn-sQg" secondAttribute="centerY" id="ZX7-Tk-ne7"/>
-                                    <constraint firstItem="ucC-Wb-mXl" firstAttribute="leading" secondItem="v0r-qe-Cno" secondAttribute="trailing" id="ZlG-5J-huY"/>
-                                    <constraint firstItem="evC-fF-bDF" firstAttribute="centerX" secondItem="ctq-bV-Nvj" secondAttribute="centerX" id="c9t-pz-sAO"/>
-                                    <constraint firstItem="0Pm-Xp-10k" firstAttribute="width" secondItem="aN9-Pn-sQg" secondAttribute="width" id="dCH-Ip-tus"/>
-                                    <constraint firstItem="0Pm-Xp-10k" firstAttribute="centerY" secondItem="aN9-Pn-sQg" secondAttribute="centerY" id="eVp-NQ-6NH"/>
-                                    <constraint firstAttribute="trailing" secondItem="rp5-3F-MUO" secondAttribute="trailing" constant="16" id="ebx-9b-sJQ"/>
-                                    <constraint firstItem="Hxn-EV-Vih" firstAttribute="width" secondItem="3NR-Wt-gDi" secondAttribute="width" id="fz8-Xe-3a8"/>
-                                    <constraint firstItem="0Pm-Xp-10k" firstAttribute="leading" secondItem="XIh-vb-tHo" secondAttribute="trailing" constant="16" id="g0C-a4-4C6"/>
-                                    <constraint firstItem="XIh-vb-tHo" firstAttribute="centerY" secondItem="aN9-Pn-sQg" secondAttribute="centerY" id="gM1-D2-aSe"/>
-                                    <constraint firstItem="HoI-xT-yvM" firstAttribute="centerX" secondItem="ctq-bV-Nvj" secondAttribute="centerX" id="gjQ-pJ-nv4"/>
-                                    <constraint firstItem="v0r-qe-Cno" firstAttribute="leading" secondItem="DIS-zQ-QF9" secondAttribute="trailing" id="hlY-Hg-t11"/>
-                                    <constraint firstItem="3eK-lh-gXG" firstAttribute="width" secondItem="3NR-Wt-gDi" secondAttribute="width" id="m15-l8-Mug"/>
-                                    <constraint firstItem="XIh-vb-tHo" firstAttribute="width" secondItem="aN9-Pn-sQg" secondAttribute="width" id="nG5-gT-0Ho"/>
-                                    <constraint firstItem="ucC-Wb-mXl" firstAttribute="centerY" secondItem="DIS-zQ-QF9" secondAttribute="centerY" id="nmb-t1-ouM"/>
-                                    <constraint firstItem="v0r-qe-Cno" firstAttribute="centerX" secondItem="ctq-bV-Nvj" secondAttribute="centerX" id="q0c-n6-WWU"/>
-                                    <constraint firstItem="rp5-3F-MUO" firstAttribute="leading" secondItem="0Pm-Xp-10k" secondAttribute="trailing" constant="16" id="rho-Jo-SaB"/>
-                                    <constraint firstItem="aN9-Pn-sQg" firstAttribute="top" secondItem="3NR-Wt-gDi" secondAttribute="bottom" constant="22.5" id="uH9-w0-pcp"/>
-                                    <constraint firstItem="Hxn-EV-Vih" firstAttribute="leading" secondItem="3eK-lh-gXG" secondAttribute="trailing" constant="16" id="wsZ-6L-T1x"/>
-                                    <constraint firstItem="rp5-3F-MUO" firstAttribute="width" secondItem="aN9-Pn-sQg" secondAttribute="width" id="x2T-zn-rmM"/>
-                                    <constraint firstItem="HoI-xT-yvM" firstAttribute="top" secondItem="ctq-bV-Nvj" secondAttribute="top" constant="21" id="xXe-Q4-Nyn"/>
-                                    <constraint firstItem="0Pm-Xp-10k" firstAttribute="height" secondItem="aN9-Pn-sQg" secondAttribute="height" id="xxb-X9-L8S"/>
-                                    <constraint firstItem="rp5-3F-MUO" firstAttribute="height" secondItem="aN9-Pn-sQg" secondAttribute="height" id="ysG-17-xHm"/>
-                                    <constraint firstItem="3NR-Wt-gDi" firstAttribute="leading" secondItem="ctq-bV-Nvj" secondAttribute="leading" constant="16" id="zgf-JH-ikf"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3iw-py-np7">
-                                <rect key="frame" x="0.0" y="271" width="375" height="331.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1W-Lo-dwU">
-                                        <rect key="frame" x="146" y="16" width="83" height="39"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOx-M5-Zgb">
-                                        <rect key="frame" x="285.5" y="234" width="73.5" height="33"/>
-                                        <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="随机">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="nextNoteAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="LJK-Hf-WRF"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfM-XG-vAQ">
-                                        <rect key="frame" x="106" y="234" width="73.5" height="33"/>
-                                        <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="上行">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="nextNoteAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="YRg-gU-Rex"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDB-L8-K8M">
-                                        <rect key="frame" x="195.5" y="234" width="74" height="33"/>
-                                        <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="下行">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="nextNoteAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="lst-qV-Q0l"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7v9-zE-H0Q">
-                                        <rect key="frame" x="16" y="234" width="74" height="33"/>
-                                        <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="重复">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="nextNoteAction:" destination="D5s-OF-55x" eventType="touchUpInside" id="biU-t3-aOV"/>
-                                        </connections>
-                                    </button>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eYu-QX-LG6">
-                                        <rect key="frame" x="78" y="170" width="219" height="29"/>
-                                        <segments>
-                                            <segment title="上加线"/>
-                                            <segment title="下加线"/>
-                                            <segment title="五  线"/>
-                                            <segment title="全  部"/>
-                                        </segments>
-                                        <connections>
-                                            <action selector="divideThreePartsAction:" destination="D5s-OF-55x" eventType="valueChanged" id="hgn-jv-pTs"/>
-                                        </connections>
-                                    </segmentedControl>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="eYu-QX-LG6" firstAttribute="centerX" secondItem="3iw-py-np7" secondAttribute="centerX" id="0KN-wO-fM2"/>
-                                    <constraint firstItem="Q1W-Lo-dwU" firstAttribute="top" secondItem="3iw-py-np7" secondAttribute="top" constant="16" id="1lM-43-G8f"/>
-                                    <constraint firstItem="mDB-L8-K8M" firstAttribute="height" secondItem="7v9-zE-H0Q" secondAttribute="height" id="3AR-fg-Is2"/>
-                                    <constraint firstItem="7v9-zE-H0Q" firstAttribute="top" secondItem="eYu-QX-LG6" secondAttribute="bottom" constant="36" id="4AM-Ma-x93"/>
-                                    <constraint firstItem="7v9-zE-H0Q" firstAttribute="leading" secondItem="3iw-py-np7" secondAttribute="leading" constant="16" id="4cb-7d-s7w"/>
-                                    <constraint firstItem="hOx-M5-Zgb" firstAttribute="width" secondItem="7v9-zE-H0Q" secondAttribute="width" id="4o4-9R-P7W"/>
-                                    <constraint firstItem="mDB-L8-K8M" firstAttribute="leading" secondItem="ZfM-XG-vAQ" secondAttribute="trailing" constant="16" id="7Us-uo-jJa"/>
-                                    <constraint firstItem="mDB-L8-K8M" firstAttribute="centerY" secondItem="7v9-zE-H0Q" secondAttribute="centerY" id="A5T-ar-cgi"/>
-                                    <constraint firstItem="mDB-L8-K8M" firstAttribute="width" secondItem="7v9-zE-H0Q" secondAttribute="width" id="Qrf-i3-nN3"/>
-                                    <constraint firstItem="ZfM-XG-vAQ" firstAttribute="leading" secondItem="7v9-zE-H0Q" secondAttribute="trailing" constant="16" id="ST0-Ld-4ZB"/>
-                                    <constraint firstItem="hOx-M5-Zgb" firstAttribute="leading" secondItem="mDB-L8-K8M" secondAttribute="trailing" constant="16" id="SUY-YY-um4"/>
-                                    <constraint firstItem="hOx-M5-Zgb" firstAttribute="centerY" secondItem="7v9-zE-H0Q" secondAttribute="centerY" id="V7r-dH-pD6"/>
-                                    <constraint firstItem="ZfM-XG-vAQ" firstAttribute="height" secondItem="7v9-zE-H0Q" secondAttribute="height" id="VSW-MM-Rqg"/>
-                                    <constraint firstAttribute="trailing" secondItem="hOx-M5-Zgb" secondAttribute="trailing" constant="16" id="daS-lf-g4G"/>
-                                    <constraint firstItem="ZfM-XG-vAQ" firstAttribute="width" secondItem="7v9-zE-H0Q" secondAttribute="width" id="jOC-jv-GPb"/>
-                                    <constraint firstItem="hOx-M5-Zgb" firstAttribute="height" secondItem="7v9-zE-H0Q" secondAttribute="height" id="oBa-Xg-kX3"/>
-                                    <constraint firstItem="ZfM-XG-vAQ" firstAttribute="centerY" secondItem="7v9-zE-H0Q" secondAttribute="centerY" id="phc-1k-qzD"/>
-                                    <constraint firstAttribute="bottom" secondItem="7v9-zE-H0Q" secondAttribute="bottom" constant="64" id="qgg-OO-fuB"/>
-                                    <constraint firstItem="Q1W-Lo-dwU" firstAttribute="centerX" secondItem="3iw-py-np7" secondAttribute="centerX" id="yER-Wl-Cqq"/>
-                                </constraints>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyT-7G-x3f">
+                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="201"/>
+                                <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="识谱练习一">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bsT-cs-5Gc" kind="show" id="FUF-Ee-VUi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idd-sQ-ZO9">
+                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="201"/>
+                                <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="识谱练习二">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hfL-Yq-MCa" kind="show" id="OVb-IY-RHi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3iw-py-np7" firstAttribute="leading" secondItem="V4p-Lw-QiP" secondAttribute="leading" id="2HN-G3-X6v"/>
-                            <constraint firstItem="b6k-zQ-Vqe" firstAttribute="top" secondItem="L8j-JL-2uD" secondAttribute="bottom" id="2qh-lL-bS4"/>
-                            <constraint firstItem="3iw-py-np7" firstAttribute="top" secondItem="b6k-zQ-Vqe" secondAttribute="bottom" id="C6b-pM-ZjS"/>
-                            <constraint firstAttribute="trailing" secondItem="ctq-bV-Nvj" secondAttribute="trailing" id="JIc-6W-u8Z"/>
-                            <constraint firstAttribute="trailing" secondItem="3iw-py-np7" secondAttribute="trailing" id="Kfp-i9-KQF"/>
-                            <constraint firstAttribute="trailing" secondItem="b6k-zQ-Vqe" secondAttribute="trailing" id="N4N-Zt-NNW"/>
-                            <constraint firstItem="QnE-O4-VDs" firstAttribute="top" secondItem="3iw-py-np7" secondAttribute="bottom" id="VIg-yc-PG7"/>
-                            <constraint firstItem="b6k-zQ-Vqe" firstAttribute="height" secondItem="V4p-Lw-QiP" secondAttribute="height" multiplier="0.9:2" id="Vrp-19-jsD"/>
-                            <constraint firstItem="QnE-O4-VDs" firstAttribute="top" secondItem="ctq-bV-Nvj" secondAttribute="bottom" id="bEL-Px-u70"/>
-                            <constraint firstItem="ctq-bV-Nvj" firstAttribute="top" secondItem="b6k-zQ-Vqe" secondAttribute="bottom" id="fkJ-Ha-7iR"/>
-                            <constraint firstItem="b6k-zQ-Vqe" firstAttribute="leading" secondItem="V4p-Lw-QiP" secondAttribute="leading" id="jXh-sl-l5Y"/>
-                            <constraint firstItem="ctq-bV-Nvj" firstAttribute="leading" secondItem="V4p-Lw-QiP" secondAttribute="leading" id="jaZ-T7-Nj2"/>
+                            <constraint firstItem="idd-sQ-ZO9" firstAttribute="top" secondItem="L8j-JL-2uD" secondAttribute="bottom" id="298-ud-9cX"/>
+                            <constraint firstItem="idd-sQ-ZO9" firstAttribute="height" secondItem="nyT-7G-x3f" secondAttribute="height" id="G1G-BW-9U9"/>
+                            <constraint firstItem="idd-sQ-ZO9" firstAttribute="width" secondItem="nyT-7G-x3f" secondAttribute="width" id="Sli-TK-cJy"/>
+                            <constraint firstItem="nyT-7G-x3f" firstAttribute="height" secondItem="V4p-Lw-QiP" secondAttribute="height" multiplier="1:3" id="Ycu-im-4as"/>
+                            <constraint firstItem="nyT-7G-x3f" firstAttribute="leading" secondItem="V4p-Lw-QiP" secondAttribute="leading" id="pbU-2I-o5e"/>
+                            <constraint firstAttribute="trailing" secondItem="idd-sQ-ZO9" secondAttribute="trailing" id="plc-OZ-Fmz"/>
+                            <constraint firstItem="nyT-7G-x3f" firstAttribute="top" secondItem="L8j-JL-2uD" secondAttribute="bottom" id="qeM-yA-GRI"/>
+                            <constraint firstItem="idd-sQ-ZO9" firstAttribute="leading" secondItem="nyT-7G-x3f" secondAttribute="trailing" id="zBg-Fw-c2Q"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="识谱练习" id="W8g-PT-s43"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <connections>
-                        <outlet property="bassClefImageView" destination="Hqn-3A-dA4" id="nLR-zS-Un1"/>
-                        <outlet property="divideThreePartsSegControl" destination="eYu-QX-LG6" id="1Bh-2U-KuS"/>
-                        <outlet property="noteLevelLabel" destination="Q1W-Lo-dwU" id="c37-sn-G8B"/>
-                        <outlet property="practiseModeOptView" destination="3iw-py-np7" id="WMk-ze-6GY"/>
-                        <outlet property="resultLabel" destination="evC-fF-bDF" id="vuT-la-14w"/>
-                        <outlet property="showResultButton" destination="HoI-xT-yvM" id="P3j-Bu-925"/>
-                        <outlet property="staveView" destination="b6k-zQ-Vqe" id="dSm-cg-HSj"/>
-                        <outlet property="testModeOptView" destination="ctq-bV-Nvj" id="SVM-Es-eVM"/>
-                        <outlet property="trebleClefImageView" destination="mzo-PP-IG6" id="FsZ-Nm-YbK"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wJ-Wd-jRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="403.90625" y="-144.7265625"/>
+            <point key="canvasLocation" x="402.39999999999998" y="-145.27736131934034"/>
+        </scene>
+        <!--RecognizeStaveForOneController-->
+        <scene sceneID="tk0-Tn-F43">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RecognizeStaveForOneController" referencedIdentifier="RecognizeStaveForOneController" id="bsT-cs-5Gc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DtO-Tj-bBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="-299"/>
+        </scene>
+        <!--RecognizeStaveForTwoController-->
+        <scene sceneID="DYT-Qz-Daf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RecognizeStaveForTwoController" referencedIdentifier="RecognizeStaveForTwoController" id="hfL-Yq-MCa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqR-P1-m0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="-252"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="bass_clef.png" width="256" height="256"/>
-        <image name="treble_clef.png" width="256" height="256"/>
-    </resources>
 </document>

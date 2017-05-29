@@ -15,10 +15,6 @@
 #define mShortStaveLineWidth 50.f
 
 @implementation StaveView
-{
-    
-}
-
 
 - (void)drawRect:(CGRect)rect
 {

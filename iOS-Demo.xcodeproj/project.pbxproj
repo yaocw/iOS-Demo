@@ -599,6 +599,11 @@
 		8CED49761EA459E600EA11B8 /* photograph_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CED49721EA459E600EA11B8 /* photograph_select@3x.png */; };
 		8CED497D1EA4910600EA11B8 /* HandleCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CED497C1EA4910600EA11B8 /* HandleCameraController.m */; };
 		8CED497F1EA4910E00EA11B8 /* HandleCameraController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CED497E1EA4910E00EA11B8 /* HandleCameraController.storyboard */; };
+		C773F77F1EDC3DAD00123707 /* RecognizeStaveForOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = C773F77E1EDC3DAD00123707 /* RecognizeStaveForOneController.m */; };
+		C773F7821EDC3DB600123707 /* RecognizeStaveForOneController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C773F7811EDC3DB600123707 /* RecognizeStaveForOneController.storyboard */; };
+		C773F7851EDC3DF900123707 /* RecognizeStaveForTwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = C773F7841EDC3DF900123707 /* RecognizeStaveForTwoController.m */; };
+		C773F7871EDC3E0400123707 /* RecognizeStaveForTwoController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C773F7861EDC3E0400123707 /* RecognizeStaveForTwoController.storyboard */; };
+		C773F78A1EDC4B0A00123707 /* StaveForTwoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C773F7891EDC4B0A00123707 /* StaveForTwoView.m */; };
 		C79F04941ED9EB0B005EDEB0 /* bass_clef.png in Resources */ = {isa = PBXBuildFile; fileRef = C79F04921ED9EB0B005EDEB0 /* bass_clef.png */; };
 		C79F04951ED9EB0B005EDEB0 /* treble_clef.png in Resources */ = {isa = PBXBuildFile; fileRef = C79F04931ED9EB0B005EDEB0 /* treble_clef.png */; };
 		C79F04991EDA7410005EDEB0 /* MusicalSoundsForTrebleClef.plist in Resources */ = {isa = PBXBuildFile; fileRef = C79F04981EDA7410005EDEB0 /* MusicalSoundsForTrebleClef.plist */; };
@@ -1564,6 +1569,14 @@
 		8CED49821EA4982A00EA11B8 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 		8CED49841EA4987D00EA11B8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		8CED49861EA4988900EA11B8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		C773F77D1EDC3DAD00123707 /* RecognizeStaveForOneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecognizeStaveForOneController.h; sourceTree = "<group>"; };
+		C773F77E1EDC3DAD00123707 /* RecognizeStaveForOneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecognizeStaveForOneController.m; sourceTree = "<group>"; };
+		C773F7811EDC3DB600123707 /* RecognizeStaveForOneController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RecognizeStaveForOneController.storyboard; sourceTree = "<group>"; };
+		C773F7831EDC3DF900123707 /* RecognizeStaveForTwoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecognizeStaveForTwoController.h; sourceTree = "<group>"; };
+		C773F7841EDC3DF900123707 /* RecognizeStaveForTwoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecognizeStaveForTwoController.m; sourceTree = "<group>"; };
+		C773F7861EDC3E0400123707 /* RecognizeStaveForTwoController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RecognizeStaveForTwoController.storyboard; sourceTree = "<group>"; };
+		C773F7881EDC4B0A00123707 /* StaveForTwoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaveForTwoView.h; sourceTree = "<group>"; };
+		C773F7891EDC4B0A00123707 /* StaveForTwoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaveForTwoView.m; sourceTree = "<group>"; };
 		C79F04921ED9EB0B005EDEB0 /* bass_clef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass_clef.png; sourceTree = "<group>"; };
 		C79F04931ED9EB0B005EDEB0 /* treble_clef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treble_clef.png; sourceTree = "<group>"; };
 		C79F04981EDA7410005EDEB0 /* MusicalSoundsForTrebleClef.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MusicalSoundsForTrebleClef.plist; sourceTree = "<group>"; };
@@ -4032,9 +4045,17 @@
 				C79F04911ED9EB0B005EDEB0 /* resources */,
 				C7BFD3BC1ED9CE4C00DF16F7 /* StaveView.h */,
 				C7BFD3BD1ED9CE4C00DF16F7 /* StaveView.m */,
+				C773F7881EDC4B0A00123707 /* StaveForTwoView.h */,
+				C773F7891EDC4B0A00123707 /* StaveForTwoView.m */,
 				C7BFD3B71ED9CD2D00DF16F7 /* RecognizeStaveController.h */,
 				C7BFD3B81ED9CD2D00DF16F7 /* RecognizeStaveController.m */,
 				C7BFD3BA1ED9CD3400DF16F7 /* RecognizeStaveController.storyboard */,
+				C773F77D1EDC3DAD00123707 /* RecognizeStaveForOneController.h */,
+				C773F77E1EDC3DAD00123707 /* RecognizeStaveForOneController.m */,
+				C773F7811EDC3DB600123707 /* RecognizeStaveForOneController.storyboard */,
+				C773F7831EDC3DF900123707 /* RecognizeStaveForTwoController.h */,
+				C773F7841EDC3DF900123707 /* RecognizeStaveForTwoController.m */,
+				C773F7861EDC3E0400123707 /* RecognizeStaveForTwoController.storyboard */,
 			);
 			path = RecognizeStave;
 			sourceTree = "<group>";
@@ -4397,6 +4418,7 @@
 				8C38C02D1E763467003624B7 /* x3-E.mp3 in Resources */,
 				8C38C03D1E763467003624B7 /* x4-G.mp3 in Resources */,
 				8C38BFD61E763467003624B7 /* MutimediaTectController.storyboard in Resources */,
+				C773F7821EDC3DB600123707 /* RecognizeStaveForOneController.storyboard in Resources */,
 				8C38C0241E763467003624B7 /* x2-G#.mp3 in Resources */,
 				C79F049D1EDA8860005EDEB0 /* answer_right.mp3 in Resources */,
 				8C38C02C1E763467003624B7 /* x3-D.mp3 in Resources */,
@@ -4432,6 +4454,7 @@
 				8C38C09B1E763467003624B7 /* paint01-01.png in Resources */,
 				8C38BFC11E763467003624B7 /* SpriteWalkThroughController.storyboard in Resources */,
 				8C38C0631E763467003624B7 /* SNS_MatchingRuleCell.xib in Resources */,
+				C773F7871EDC3E0400123707 /* RecognizeStaveForTwoController.storyboard in Resources */,
 				C79F049E1EDA8860005EDEB0 /* answer_wrong.mp3 in Resources */,
 				8C38BFBA1E763467003624B7 /* lp_hit.caf in Resources */,
 				8C38C0701E763467003624B7 /* SimpleNetworkSpiderController.storyboard in Resources */,
@@ -4521,6 +4544,7 @@
 				8C38BF8B1E763467003624B7 /* CBStoreHouseTransition.m in Sources */,
 				8C38BFAC1E763467003624B7 /* FollowMeController.m in Sources */,
 				8C38C04F1E763467003624B7 /* NTIpAddressUtils.m in Sources */,
+				C773F77F1EDC3DAD00123707 /* RecognizeStaveForOneController.m in Sources */,
 				8C38C0D31E763468003624B7 /* PNLineChartDataItem.m in Sources */,
 				8C38C1281E763468003624B7 /* IQTitleBarButtonItem.m in Sources */,
 				8C38BFD51E763467003624B7 /* MutimediaTectController.m in Sources */,
@@ -4551,6 +4575,7 @@
 				8C38C11E1E763468003624B7 /* IQUIScrollView+Additions.m in Sources */,
 				8C38BF7A1E763467003624B7 /* LineProgressBarController.m in Sources */,
 				8C38C04C1E763467003624B7 /* KCView.m in Sources */,
+				C773F7851EDC3DF900123707 /* RecognizeStaveForTwoController.m in Sources */,
 				8C38BF681E763467003624B7 /* MainMaskTransitionController.m in Sources */,
 				8C38C0C81E763468003624B7 /* FFToast.m in Sources */,
 				8C38C1391E763468003624B7 /* UITableView+FDKeyedHeightCache.m in Sources */,
@@ -4703,6 +4728,7 @@
 				8C38BB531E763418003624B7 /* AppDelegate.m in Sources */,
 				8C38BF531E763467003624B7 /* AnimationController.m in Sources */,
 				8C38C1321E763468003624B7 /* MASViewConstraint.m in Sources */,
+				C773F78A1EDC4B0A00123707 /* StaveForTwoView.m in Sources */,
 				8C38C0A61E763467003624B7 /* FBShimmeringView.m in Sources */,
 				8C38C14F1E763468003624B7 /* MMPopupView.m in Sources */,
 				8C38BFB51E763467003624B7 /* LittlePlaneController.m in Sources */,
