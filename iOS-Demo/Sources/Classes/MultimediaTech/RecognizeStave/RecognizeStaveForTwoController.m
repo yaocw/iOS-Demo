@@ -243,11 +243,6 @@
     }
     
     _noteLevelText = tempNoteLevelText;
-    
-//    NSMutableAttributedString *noteLevelTextAttrString = [[NSMutableAttributedString alloc] initWithString:_noteLevelText];
-//    [noteLevelTextAttrString addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, 1)];
-//    _noteLevelLabel.attributedText = noteLevelTextAttrString;
-    
     _staveView.notesLevel = _currentNotesLevel;
     [self playSounds];
 }
@@ -342,6 +337,21 @@
 {
     [self clear];
     [self nextNoteForRandom];
+}
+
+- (IBAction)showOrHideResultAction:(UIButton *)sender
+{
+    if (sender.currentTitle.length > 0)
+    {
+        [sender setTitle:@"" forState:UIControlStateNormal];
+        _noteLevelLabel.hidden = NO;
+    }
+    else
+    {
+        [sender setTitle:@"点击显示音符名称" forState:UIControlStateNormal];
+        [sender setTitleColor:kHexColor(@"FF6FCF") forState:UIControlStateNormal];
+        _noteLevelLabel.hidden = YES;
+    }
 }
 
 #pragma mark -- dealloc
