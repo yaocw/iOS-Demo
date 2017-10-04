@@ -2,8 +2,8 @@
 //  NSString+Regular.h
 //  hxj
 //
-//  Created by gaofu on 15/10/22.
-//  Copyright © 2015年 gaofu. All rights reserved.
+//  Created by yaochaowen on 15/10/22.
+//  Copyright © 2015年 yaochaowen. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

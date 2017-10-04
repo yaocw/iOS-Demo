@@ -2,8 +2,8 @@
 //  ServerMacros.h
 //  ksf
 //
-//  Created by gaofu on 15/11/11.
-//  Copyright © 2015年 gaofu. All rights reserved.
+//  Created by yaochaowen on 15/11/11.
+//  Copyright © 2015年 yaochaowen. All rights reserved.
 //服务器地址
 
 #ifndef ServerMacros_h

@@ -714,7 +714,6 @@
 		8C38BB721E763418003624B7 /* iOS-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C38BB761E763418003624B7 /* iOS_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_DemoUITests.m; sourceTree = "<group>"; };
 		8C38BB781E763418003624B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C38BB851E763466003624B7 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		8C38BB891E763466003624B7 /* DP_USWCD_Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DP_USWCD_Database.xcdatamodel; sourceTree = "<group>"; };
 		8C38BB8B1E763466003624B7 /* beauty_girl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beauty_girl.jpg; sourceTree = "<group>"; };
 		8C38BB8C1E763466003624B7 /* logo_seal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo_seal.jpg; sourceTree = "<group>"; };
@@ -1591,6 +1590,7 @@
 		C7CB13281EB44A6100664F08 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		C7CB132B1EB44AA300664F08 /* MyFirstCdvPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFirstCdvPlugin.h; sourceTree = "<group>"; };
 		C7CB132C1EB44AA300664F08 /* MyFirstCdvPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFirstCdvPlugin.m; sourceTree = "<group>"; };
+		C7ED33CD1F851D27008A7A38 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1856,10 +1856,10 @@
 		8C38BB841E763466003624B7 /* AppBase */ = {
 			isa = PBXGroup;
 			children = (
+				C7ED33CD1F851D27008A7A38 /* PrefixHeader.pch */,
 				8C38BB5D1E763418003624B7 /* Assets.xcassets */,
 				8C38BB5F1E763418003624B7 /* LaunchScreen.storyboard */,
 				8C38BB621E763418003624B7 /* Info.plist */,
-				8C38BB851E763466003624B7 /* PrefixHeader.pch */,
 			);
 			path = AppBase;
 			sourceTree = "<group>";
